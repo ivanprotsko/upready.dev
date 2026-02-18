@@ -18,3 +18,6 @@
 ## Workflow
 - Use shadcnspace MCP for block exploration, then refine code locally
 - Don't over-think — execute fast, iterate
+- Always find a solution instead of saying "I can't". If one approach is blocked, try another
+- If a CLI tool isn't authenticated — make an empty commit or code change to trigger the desired result
+- Never stop at "everything up-to-date" — if the goal isn't achieved, find another way
