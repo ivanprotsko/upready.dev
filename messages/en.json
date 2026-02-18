@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "title": "zeno.team — Solo AI Product Engineer | MVP in 2-4 Weeks",
+    "description": "Production-ready MVP from idea to launch in 2-4 weeks. One AI product engineer replaces an entire team. From $5,000. Zero meetings. Crypto payments."
+  },
+  "header": {
+    "nav": {
+      "problem": "Problem",
+      "howItWorks": "How It Works",
+      "pricing": "Pricing",
+      "portfolio": "Portfolio",
+      "faq": "FAQ"
+    },
+    "cta": "Get Started",
+    "menu": "Menu"
+  },
+  "hero": {
+    "badge": "Solo AI Product Engineer",
+    "headline1": "Your MVP. Production-ready.",
+    "headline2": "In weeks, not months.",
+    "subtitle": "One AI-powered product engineer combines PM, design, and development. From idea to deployed product in 2-4 weeks — 10x cheaper than an agency.",
+    "primaryCta": "Discuss Your Idea",
+    "secondaryCta": "See Pricing",
+    "subtext": "USDT/USDC payments · Zero meetings · Async communication"
+  },
+  "brandSlider": {
+    "label": "Built with modern AI-powered tools"
+  },
+  "problem": {
+    "badge": "The Problem",
+    "headline": "Building an MVP shouldn't cost a fortune",
+    "cards": [
+      {
+        "title": "Agencies charge $25K-150K",
+        "content": "3-6 months timeline burns through your pre-seed. You spend your entire runway on v1 that might not even find market fit."
+      },
+      {
+        "title": "Freelancers disappear",
+        "content": "No unified vision — designer doesn't talk to developer, nobody understands the business. 30-40% of time wasted on coordination."
+      },
+      {
+        "title": "Vibe-coded apps break",
+        "content": "25% of YC W2025 startups with 95% AI code hit a wall: works locally, won't deploy, security holes everywhere."
+      },
+      {
+        "title": "Finding a CTO takes months",
+        "content": "2-3 months searching, $150-200K/year salary. Before product-market fit, you don't even know if it's worth the investment."
+      }
+    ]
+  },
+  "howItWorks": {
+    "badge": "Process",
+    "headline": "From idea to production in 4 steps",
+    "subtitle": "A streamlined process designed for speed and clarity",
+    "steps": [
+      {
+        "title": "01 — Describe your idea",
+        "content": "Send it via Telegram, Notion, or any messenger. Free-form text, voice notes, references — whatever works. No calls needed."
+      },
+      {
+        "title": "02 — PRD + interactive prototype",
+        "content": "Product Requirements Document and clickable prototype in 2-3 days. You see your product before a single line of code is written."
+      },
+      {
+        "title": "03 — Development in 1-3 weeks",
+        "content": "Full web application: auth, core features, payments (Stripe), landing page, deployment. Video progress updates every 2-3 days."
+      },
+      {
+        "title": "04 — Launch",
+        "content": "Deployed product accessible to users. Source code is yours. Documentation included. Ready for real users."
+      }
+    ]
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "headline": "Transparent pricing, no surprises",
+    "mostPopular": "Most Popular",
+    "cta": "Get Started",
+    "footer": "Payment in USDT/USDC · 50% upfront, 50% on delivery · Invoice via Request Finance",
+    "plans": [
+      {
+        "name": "MVP Starter",
+        "price": "$5,000",
+        "period": "one-time",
+        "description": "Perfect for validating your idea with a focused MVP.",
+        "features": [
+          "Landing page",
+          "Authentication",
+          "3-5 core features",
+          "Deployment to production",
+          "1-2 weeks delivery",
+          "Source code ownership"
+        ]
+      },
+      {
+        "name": "MVP Pro",
+        "price": "$8,000",
+        "period": "one-time",
+        "description": "Full-featured MVP ready to acquire paying customers.",
+        "features": [
+          "Everything in Starter",
+          "Stripe payments integration",
+          "Admin panel",
+          "AI-powered features",
+          "2-4 weeks delivery",
+          "Post-launch support (1 week)"
+        ]
+      },
+      {
+        "name": "Ongoing Development",
+        "price": "$5,000",
+        "period": "/month",
+        "description": "Continuous product development after your MVP launch.",
+        "features": [
+          "Unlimited feature requests",
+          "72-hour turnaround",
+          "Priority support",
+          "Monthly strategy calls",
+          "Pause or cancel anytime"
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "badge": "Portfolio",
+    "headline": "Recent projects",
+    "projects": [
+      {
+        "title": "SaaS Analytics Dashboard",
+        "tag": "MVP Pro · 3 weeks",
+        "description": "Full-featured analytics platform with real-time data processing, Stripe billing, and team management."
+      },
+      {
+        "title": "AI Recruitment Tool",
+        "tag": "AI Integration · 2 weeks",
+        "description": "AI-powered resume screening and candidate matching system integrated into existing ATS."
+      },
+      {
+        "title": "Marketplace Platform",
+        "tag": "MVP Starter · 2 weeks",
+        "description": "Two-sided marketplace with listings, search, messaging, and payment escrow."
+      }
+    ]
+  },
+  "faq": {
+    "badge": "FAQ",
+    "headline": "Frequently asked questions",
+    "items": [
+      {
+        "question": "Is this really done by one person?",
+        "answer": "Yes. AI tools (Cursor, Claude, v0) allow one experienced engineer to work at the speed of a 3-5 person team. Pieter Levels earns $250K/mo solo. DesignJoy is $1M+ ARR with one designer. This is a proven model."
+      },
+      {
+        "question": "What about quality? Isn't AI code buggy?",
+        "answer": "AI generates ~46% of the code, but every line goes through manual review by an experienced engineer. I don't blindly vibe-code — I use AI as an acceleration tool while maintaining control over architecture and security."
+      },
+      {
+        "question": "What if I need to scale after MVP?",
+        "answer": "The MVP is built on a modern stack (Next.js + Supabase/Postgres + Vercel) that handles thousands of users. When it's time to scale, I can help plan the transition to a full team or continue on the subscription plan."
+      },
+      {
+        "question": "Why no meetings?",
+        "answer": "Because meetings are an illusion of progress. An hour in a meeting = an hour NOT coding. Text + Loom videos = same information, but you can consume it when convenient, re-read it, forward to investors."
+      },
+      {
+        "question": "Is it safe to pay in crypto?",
+        "answer": "Payment via Request Finance — a professional crypto invoicing platform with transparent transaction history. USDT/USDC are stablecoins pegged to USD. Fee: $0.01-2.00 instead of $25-50 bank wire."
+      },
+      {
+        "question": "What if I'm not happy with the result?",
+        "answer": "You see progress every 2-3 days via Loom videos and can adjust direction at any point. The prototype is approved BEFORE development. If after the prototype we realize we're not aligned — full refund of the deposit."
+      }
+    ]
+  },
+  "cta": {
+    "headline": "Describe your idea — I'll estimate it in 24 hours",
+    "subtitle": "Send a message with your idea in any format. Get a timeline and cost estimate within a day.",
+    "button": "Message on Telegram",
+    "subtext": "USDT/USDC · Async · 2-4 weeks to production"
+  },
+  "footer": {
+    "tagline": "Solo AI product engineer. Production-ready MVP from idea to launch in 2-4 weeks.",
+    "sitemap": "Sitemap",
+    "contact": "Contact",
+    "telegram": "Telegram"
+  }
+}
