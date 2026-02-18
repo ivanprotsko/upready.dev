@@ -9,6 +9,7 @@
   - Deleted unused files → commit
 - Use conventional commits: `feat:`, `fix:`, `chore:`, `refactor:`
 - Always run `next build` before committing to catch errors early
+- Git config for this repo: name="Ivan Protsko", email="11537501+ivanprotsko@users.noreply.github.com"
 
 ## Stack
 - Next.js App Router, pnpm, Tailwind CSS v4, shadcn/ui
