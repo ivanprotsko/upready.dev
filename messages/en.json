@@ -73,50 +73,65 @@
   },
   "pricing": {
     "badge": "Pricing",
-    "headline": "Transparent pricing, no surprises",
-    "mostPopular": "Most Popular",
+    "headline": "Pick the plan that fits your startup",
+    "featuresLabel": "Features",
     "cta": "Get Started",
     "footer": "Payment in USDT/USDC · 50% upfront, 50% on delivery · Invoice via Request Finance",
     "plans": [
       {
-        "name": "MVP Starter",
+        "name": "Fast MVP",
         "price": "$5,000",
-        "period": "one-time",
-        "description": "Perfect for validating your idea with a focused MVP.",
+        "period": " one-time",
+        "description": "Validate your idea fast. MVP with AI tools included.",
         "features": [
-          "Landing page",
-          "Authentication",
+          "Landing page + auth",
           "3-5 core features",
+          "AI-powered functionality",
           "Deployment to production",
           "1-2 weeks delivery",
           "Source code ownership"
         ]
       },
       {
-        "name": "MVP Pro",
+        "name": "MVP + Dashboard",
         "price": "$8,000",
-        "period": "one-time",
-        "description": "Full-featured MVP ready to acquire paying customers.",
+        "period": " one-time",
+        "description": "Full product with admin panel for paying customers.",
         "features": [
-          "Everything in Starter",
+          "Everything in Fast MVP",
+          "Admin dashboard",
           "Stripe payments integration",
-          "Admin panel",
-          "AI-powered features",
+          "Analytics & reporting",
           "2-4 weeks delivery",
           "Post-launch support (1 week)"
         ]
       },
       {
-        "name": "Ongoing Development",
-        "price": "$5,000",
+        "name": "Growth Support",
+        "price": "$3,000",
         "period": "/month",
-        "description": "Continuous product development after your MVP launch.",
+        "description": "Ongoing development and product support after launch.",
         "features": [
           "Unlimited feature requests",
           "72-hour turnaround",
-          "Priority support",
-          "Monthly strategy calls",
+          "Bug fixes & optimization",
+          "Priority async support",
+          "Monthly strategy review",
           "Pause or cancel anytime"
+        ]
+      },
+      {
+        "name": "Viral Video",
+        "price": "$5,000",
+        "period": "/month",
+        "description": "Subscription for creating viral social media content.",
+        "features": [
+          "Reels, Shorts & TikTok",
+          "Scripting & storyboarding",
+          "Professional editing",
+          "Trend-driven content",
+          "Up to 15 videos/month",
+          "Revisions included"
         ]
       }
     ]
