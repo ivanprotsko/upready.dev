@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "title": "zeno.team — Solo AI Product Engineer | MVP w 2-4 tygodnie",
+    "description": "Gotowy do produkcji MVP od pomysłu do startu w 2-4 tygodnie. Jeden AI-inżynier zastępuje cały zespół. Od $5,000. Bez spotkań. Płatności w kryptowalutach."
+  },
+  "header": {
+    "nav": {
+      "problem": "Problem",
+      "howItWorks": "Jak to działa",
+      "pricing": "Cennik",
+      "portfolio": "Portfolio",
+      "faq": "FAQ"
+    },
+    "cta": "Rozpocznij",
+    "menu": "Menu"
+  },
+  "hero": {
+    "badge": "Solo AI Product Engineer",
+    "headline1": "Twoje MVP. Production-ready.",
+    "headline2": "W tygodnie, nie miesiące.",
+    "subtitle": "Jeden AI-inżynier łączy PM, design i development. Od pomysłu do wdrożonego produktu w 2-4 tygodnie — 10x taniej niż agencja.",
+    "primaryCta": "Omów swój pomysł",
+    "secondaryCta": "Zobacz cennik",
+    "subtext": "Płatności USDT/USDC · Bez spotkań · Komunikacja asynchroniczna"
+  },
+  "brandSlider": {
+    "label": "Zbudowane z nowoczesnymi narzędziami AI"
+  },
+  "problem": {
+    "badge": "Problem",
+    "headline": "Tworzenie MVP nie powinno kosztować fortuny",
+    "cards": [
+      {
+        "title": "Agencje pobierają $25K-150K",
+        "content": "3-6 miesięcy pochłania Twój pre-seed. Cały budżet idzie na v1, która może nie znaleźć product-market fit."
+      },
+      {
+        "title": "Freelancerzy znikają",
+        "content": "Brak wspólnej wizji — designer nie rozmawia z developerem, nikt nie rozumie biznesu. 30-40% czasu marnowane na koordynację."
+      },
+      {
+        "title": "Vibe-coded aplikacje się psują",
+        "content": "25% startupów YC W2025 z 95% kodem AI uderzyło w ścianę: działa lokalnie, nie deployuje się, luki bezpieczeństwa wszędzie."
+      },
+      {
+        "title": "Znalezienie CTO zajmuje miesiące",
+        "content": "2-3 miesiące szukania, $150-200K/rok pensji. Przed product-market fit nawet nie wiesz, czy warto inwestować."
+      }
+    ]
+  },
+  "howItWorks": {
+    "badge": "Proces",
+    "headline": "Od pomysłu do produkcji w 4 krokach",
+    "subtitle": "Usprawniony proces zaprojektowany dla szybkości i przejrzystości",
+    "steps": [
+      {
+        "title": "01 — Opisz swój pomysł",
+        "content": "Wyślij przez Telegram, Notion lub dowolny komunikator. Dowolny tekst, notatki głosowe, referencje — cokolwiek działa. Bez rozmów."
+      },
+      {
+        "title": "02 — PRD + interaktywny prototyp",
+        "content": "Dokument wymagań i klikalny prototyp w 2-3 dni. Widzisz swój produkt przed napisaniem pierwszej linii kodu."
+      },
+      {
+        "title": "03 — Rozwój w 1-3 tygodnie",
+        "content": "Pełna aplikacja webowa: autoryzacja, główne funkcje, płatności (Stripe), landing page, deployment. Aktualizacje wideo co 2-3 dni."
+      },
+      {
+        "title": "04 — Start",
+        "content": "Wdrożony produkt dostępny dla użytkowników. Kod źródłowy jest Twój. Dokumentacja w zestawie. Gotowy na prawdziwych użytkowników."
+      }
+    ]
+  },
+  "pricing": {
+    "badge": "Cennik",
+    "headline": "Przejrzyste ceny, bez niespodzianek",
+    "mostPopular": "Najpopularniejszy",
+    "featuresLabel": "Co zawiera",
+    "cta": "Rozpocznij",
+    "footer": "Płatność w USDT/USDC · 50% z góry, 50% po dostarczeniu · Faktura przez Request Finance",
+    "plans": [
+      {
+        "name": "MVP Starter",
+        "price": "$5,000",
+        "period": "jednorazowo",
+        "description": "Idealny do walidacji pomysłu ze skupionym MVP.",
+        "features": [
+          "Landing page",
+          "Autoryzacja",
+          "3-5 głównych funkcji",
+          "Deployment na produkcję",
+          "1-2 tygodnie dostawy",
+          "Własność kodu źródłowego"
+        ]
+      },
+      {
+        "name": "MVP Pro",
+        "price": "$8,000",
+        "period": "jednorazowo",
+        "description": "Pełnofunkcyjne MVP gotowe do pozyskiwania płacących klientów.",
+        "features": [
+          "Wszystko ze Startera",
+          "Integracja płatności Stripe",
+          "Panel administracyjny",
+          "Funkcje AI",
+          "2-4 tygodnie dostawy",
+          "Wsparcie po starcie (1 tydzień)"
+        ]
+      },
+      {
+        "name": "Ongoing Development",
+        "price": "$5,000",
+        "period": "/mies.",
+        "description": "Ciągły rozwój produktu po starcie MVP.",
+        "features": [
+          "Nieograniczone zapytania o funkcje",
+          "Realizacja w 72 godziny",
+          "Priorytetowe wsparcie",
+          "Miesięczne rozmowy strategiczne",
+          "Pauza lub anulowanie w każdej chwili"
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "badge": "Portfolio",
+    "headline": "Ostatnie projekty",
+    "projects": [
+      {
+        "title": "SaaS Analytics Dashboard",
+        "tag": "MVP Pro · 3 tygodnie",
+        "description": "Pełnofunkcyjna platforma analityczna z przetwarzaniem danych w czasie rzeczywistym, rozliczeniami Stripe i zarządzaniem zespołem."
+      },
+      {
+        "title": "AI Recruitment Tool",
+        "tag": "Integracja AI · 2 tygodnie",
+        "description": "Screening CV i system dopasowania kandydatów oparty na AI, zintegrowany z istniejącym ATS."
+      },
+      {
+        "title": "Marketplace Platform",
+        "tag": "MVP Starter · 2 tygodnie",
+        "description": "Dwustronny marketplace z ogłoszeniami, wyszukiwaniem, wiadomościami i escrow płatności."
+      }
+    ]
+  },
+  "faq": {
+    "badge": "FAQ",
+    "headline": "Często zadawane pytania",
+    "items": [
+      {
+        "question": "Czy to naprawdę robi jedna osoba?",
+        "answer": "Tak. Narzędzia AI (Cursor, Claude, v0) pozwalają jednemu doświadczonemu inżynierowi pracować z szybkością zespołu 3-5 osób. Pieter Levels zarabia $250K/mies. solo. DesignJoy to $1M+ ARR z jednym designerem. To sprawdzony model."
+      },
+      {
+        "question": "A co z jakością? Czy kod AI nie jest bugowy?",
+        "answer": "AI generuje ~46% kodu, ale każda linia przechodzi ręczną recenzję doświadczonego inżyniera. Nie koduję bezmyślnie — używam AI jako narzędzia przyspieszenia, zachowując kontrolę nad architekturą i bezpieczeństwem."
+      },
+      {
+        "question": "Co jeśli trzeba skalować po MVP?",
+        "answer": "MVP jest zbudowane na nowoczesnym stacku (Next.js + Supabase/Postgres + Vercel), który obsługuje tysiące użytkowników. Gdy przyjdzie czas na skalowanie, pomogę zaplanować przejście do pełnego zespołu lub kontynuuję na subskrypcji."
+      },
+      {
+        "question": "Dlaczego bez spotkań?",
+        "answer": "Bo spotkania to iluzja postępu. Godzina na spotkaniu = godzina BEZ kodowania. Tekst + filmy Loom = te same informacje, ale oglądasz kiedy chcesz, czytasz ponownie, przesyłasz inwestorom."
+      },
+      {
+        "question": "Czy płacenie w krypto jest bezpieczne?",
+        "answer": "Płatność przez Request Finance — profesjonalną platformę do faktur krypto z przejrzystą historią transakcji. USDT/USDC to stablecoiny powiązane z USD. Opłata: $0.01-2.00 zamiast $25-50 przelewu bankowego."
+      },
+      {
+        "question": "Co jeśli nie jestem zadowolony z wyniku?",
+        "answer": "Widzisz postęp co 2-3 dni przez filmy Loom i możesz korygować kierunek w każdym momencie. Prototyp jest zatwierdzany PRZED developmentem. Jeśli po prototypie stwierdzimy, że nie jesteśmy zgodni — pełny zwrot depozytu."
+      }
+    ]
+  },
+  "cta": {
+    "headline": "Opisz swój pomysł — wycenię w 24 godziny",
+    "subtitle": "Wyślij wiadomość z pomysłem w dowolnym formacie. Otrzymaj szacunek czasu i kosztów w ciągu dnia.",
+    "button": "Napisz na Telegramie",
+    "subtext": "USDT/USDC · Asynchronicznie · 2-4 tygodnie do produkcji"
+  },
+  "footer": {
+    "tagline": "Solo AI product engineer. Production-ready MVP od pomysłu do startu w 2-4 tygodnie.",
+    "sitemap": "Mapa strony",
+    "contact": "Kontakt",
+    "telegram": "Telegram"
+  },
+  "localeSuggestion": {
+    "message": "Chcesz zobaczyć stronę po polsku?",
+    "accept": "Tak, po polsku",
+    "dismiss": "No, thanks"
+  }
+}

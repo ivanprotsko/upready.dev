@@ -198,5 +198,10 @@
     "sitemap": "Sitemap",
     "contact": "Contact",
     "telegram": "Telegram"
+  },
+  "localeSuggestion": {
+    "message": "Would you like to view this site in {language}?",
+    "accept": "Yes, switch",
+    "dismiss": "No, thanks"
   }
 }

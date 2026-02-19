@@ -198,5 +198,10 @@
     "sitemap": "Карта сайта",
     "contact": "Контакты",
     "telegram": "Telegram"
+  },
+  "localeSuggestion": {
+    "message": "Хотите видеть сайт на {language}?",
+    "accept": "Да, переключить",
+    "dismiss": "Нет, спасибо"
   }
 }
