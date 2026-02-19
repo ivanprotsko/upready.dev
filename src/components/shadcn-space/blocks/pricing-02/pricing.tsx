@@ -14,7 +14,7 @@ const TELEGRAM_URL = "https://t.me/ivanprotsko";
 const planMeta = [
   { recommended: false, featureCount: 6 },
   { recommended: true, featureCount: 6 },
-  { recommended: false, featureCount: 5 },
+  { recommended: false, featureCount: 6 },
 ];
 
 const Pricing = () => {

@@ -74,7 +74,7 @@
   "pricing": {
     "badge": "Pricing",
     "headline": "Pick the plan that fits your startup",
-    "featuresLabel": "Features",
+    "mostPopular": "Most Popular",
     "cta": "Get Started",
     "footer": "Payment in USDT/USDC · 50% upfront, 50% on delivery · Invoice via Request Finance",
     "plans": [
@@ -82,30 +82,52 @@
         "name": "Fast MVP",
         "price": "$5,000",
         "period": " one-time",
-        "description": "Validate your idea fast. MVP with AI tools included.",
+        "description": "Validate your idea fast with a focused, production-ready MVP.",
         "features": [
           "Landing page + auth",
           "3-5 core features",
-          "AI-powered functionality",
+          "Stripe payments integration",
           "Deployment to production",
           "1-2 weeks delivery",
           "Source code ownership"
         ]
       },
       {
-        "name": "MVP + Dashboard",
+        "name": "MVP + AI",
         "price": "$8,000",
         "period": " one-time",
-        "description": "Full product with admin panel for paying customers.",
+        "description": "Smart MVP with AI-powered features for a competitive edge.",
         "features": [
           "Everything in Fast MVP",
-          "Admin dashboard",
-          "Stripe payments integration",
-          "Analytics & reporting",
-          "2-4 weeks delivery",
+          "AI-powered functionality",
+          "Custom AI integrations",
+          "Advanced business logic",
+          "2-3 weeks delivery",
           "Post-launch support (1 week)"
         ]
       },
+      {
+        "name": "MVP + Dashboard",
+        "price": "$12,000",
+        "period": " one-time",
+        "description": "Full product with admin panel, analytics, and AI features.",
+        "features": [
+          "Everything in MVP + AI",
+          "Admin dashboard",
+          "Analytics & reporting",
+          "Role-based access control",
+          "3-4 weeks delivery",
+          "Post-launch support (2 weeks)"
+        ]
+      }
+    ]
+  },
+  "pricingSubs": {
+    "badge": "Subscriptions",
+    "headline": "Scale and grow after launch",
+    "featuresLabel": "Features",
+    "cta": "Get Started",
+    "plans": [
       {
         "name": "Growth Support",
         "price": "$3,000",
@@ -124,7 +146,7 @@
         "name": "Viral Video",
         "price": "$5,000",
         "period": "/month",
-        "description": "Subscription for creating viral social media content.",
+        "description": "Viral content for Reels, Shorts and TikTok.",
         "features": [
           "Reels, Shorts & TikTok",
           "Scripting & storyboarding",

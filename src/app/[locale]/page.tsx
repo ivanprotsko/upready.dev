@@ -3,7 +3,8 @@ import HeroSection from "@/components/shadcn-space/blocks/hero-01/hero";
 import BrandSlider from "@/components/shadcn-space/blocks/hero-01/brand-slider";
 import Feature from "@/components/shadcn-space/blocks/feature-02/feature";
 import HowItWorks from "@/components/shadcn-space/blocks/feature-03/feature";
-import Pricing from "@/components/shadcn-space/blocks/pricing-01/pricing";
+import Pricing from "@/components/shadcn-space/blocks/pricing-02/pricing";
+import PricingSubscriptions from "@/components/shadcn-space/blocks/pricing-01/pricing";
 import Portfolio from "@/components/shadcn-space/blocks/portfolio-01/portfolio";
 import Faq from "@/components/shadcn-space/blocks/faq-01/faq";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
@@ -19,6 +20,7 @@ export default function HomePage() {
         <Feature />
         <HowItWorks />
         <Pricing />
+        <PricingSubscriptions />
         <Portfolio />
         <Faq />
         <CTA />

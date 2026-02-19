@@ -14,24 +14,22 @@ const TELEGRAM_URL = "https://t.me/ivanprotsko";
 const planMeta = [
   { bgColor: "bg-blue-500/10", featureCount: 6 },
   { bgColor: "bg-teal-400/20", featureCount: 6 },
-  { bgColor: "bg-purple-500/10", featureCount: 6 },
-  { bgColor: "bg-amber-400/15", featureCount: 6 },
 ];
 
-const Pricing = () => {
-  const t = useTranslations("pricing");
+const PricingSubscriptions = () => {
+  const t = useTranslations("pricingSubs");
 
   const cardVariants = {
     hidden: { opacity: 0, y: 80 },
     visible: (index: number) => ({
       opacity: 1,
       y: 0,
-      transition: { delay: index * 0.15, duration: 0.6, ease: "easeInOut" as const },
+      transition: { delay: index * 0.2, duration: 0.6, ease: "easeInOut" as const },
     }),
   };
 
   return (
-    <section id="pricing" className="bg-background py-10 xl:py-0">
+    <section className="bg-background py-10 xl:py-0">
       <div className="max-w-7xl mx-auto px-4 lg:px-8 xl:px-16 lg:py-20 sm:py-16 py-8">
         <div className="flex flex-col gap-8 md:gap-12 justify-center items-center w-full">
           <div className="flex flex-col gap-4 justify-center items-center animate-in fade-in slide-in-from-top-8 duration-700 ease-in-out">
@@ -41,14 +39,14 @@ const Pricing = () => {
             >
               {t("badge")}
             </Badge>
-            <div className="max-w-3xs sm:max-w-md mx-auto text-center">
+            <div className="max-w-3xs sm:max-w-lg mx-auto text-center">
               <h2 className="text-foreground text-3xl sm:text-5xl font-medium">
                 {t("headline")}
               </h2>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
+          <div className="flex flex-col lg:flex-row items-center justify-center grow gap-6 w-full">
             {planMeta.map((meta, index) => (
               <motion.div
                 key={index}
@@ -57,16 +55,16 @@ const Pricing = () => {
                 whileInView="visible"
                 viewport={{ once: true }}
                 custom={index}
-                className="w-full"
+                className="w-full sm:w-fit"
               >
                 <Card
                   className={cn(
                     meta.bgColor,
-                    "p-8 sm:p-10 rounded-2xl ring-0 w-full h-full"
+                    "p-8 sm:p-10 rounded-2xl ring-0 w-full sm:w-fit"
                   )}
                 >
                   <CardContent className="flex flex-col sm:flex-row gap-6 md:gap-10 items-start self-stretch px-0 h-full w-full">
-                    <div className="flex flex-col items-start justify-between self-stretch gap-6 sm:min-w-[200px]">
+                    <div className="flex flex-col items-start justify-between self-stretch gap-6">
                       <div className="flex flex-col gap-3">
                         <Badge className="py-1 px-3 text-sm font-normal leading-5 w-fit h-7">
                           {t(`plans.${index}.name`)}
@@ -134,14 +132,10 @@ const Pricing = () => {
               </motion.div>
             ))}
           </div>
-
-          <p className="text-center text-sm text-muted-foreground">
-            {t("footer")}
-          </p>
         </div>
       </div>
     </section>
   );
 };
 
-export default Pricing;
+export default PricingSubscriptions;
