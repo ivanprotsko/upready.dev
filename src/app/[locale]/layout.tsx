@@ -4,10 +4,11 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import LocaleSuggestion from "@/components/locale-suggestion";
 import "../globals.css";
 
 const inter = Inter({
-  subsets: ["latin", "cyrillic"],
+  subsets: ["latin", "cyrillic", "latin-ext"],
   display: "swap",
   variable: "--font-inter",
 });
@@ -53,6 +54,7 @@ export default async function LocaleLayout({
       <body className={`${inter.variable} font-sans antialiased`}>
         <NextIntlClientProvider>
           {children}
+          <LocaleSuggestion />
         </NextIntlClientProvider>
       </body>
     </html>
