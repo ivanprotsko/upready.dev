@@ -9,8 +9,6 @@ import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { useRouter, usePathname } from "@/i18n/navigation";
-import { useLocale } from "next-intl";
 
 const TELEGRAM_URL = "https://t.me/ivanprotsko";
 
@@ -30,9 +28,6 @@ const ZenoLogo = () => (
 
 const Header = () => {
   const t = useTranslations("header");
-  const locale = useLocale();
-  const router = useRouter();
-  const pathname = usePathname();
   const [sticky, setSticky] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -54,10 +49,6 @@ const Header = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, [handleScroll, handleResize]);
-
-  const switchLocale = (newLocale: "en" | "ru") => {
-    router.replace(pathname, { locale: newLocale });
-  };
 
   return (
     <motion.header
@@ -93,13 +84,6 @@ const Header = () => {
         </NavigationMenu>
 
         <div className="flex items-center gap-3">
-          <button
-            onClick={() => switchLocale(locale === "en" ? "ru" : "en")}
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors px-2 py-1 rounded-full border border-border hover:bg-muted cursor-pointer"
-          >
-            {locale === "en" ? "RU" : "EN"}
-          </button>
-
           <Button asChild className="relative text-sm font-medium rounded-full h-10 p-1 ps-4 pe-12 group transition-all duration-500 hover:ps-12 hover:pe-4 w-fit overflow-hidden hidden lg:flex">
             <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
               <span className="relative z-10 transition-all duration-500">{t("cta")}</span>
@@ -145,14 +129,6 @@ const Header = () => {
                         ))}
                       </NavigationMenuList>
                     </NavigationMenu>
-                    <div className="flex items-center gap-4">
-                      <button
-                        onClick={() => switchLocale(locale === "en" ? "ru" : "en")}
-                        className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors px-3 py-1.5 rounded-full border border-border hover:bg-muted cursor-pointer"
-                      >
-                        {locale === "en" ? "RU" : "EN"}
-                      </button>
-                    </div>
                     <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} zeno.team</p>
                   </div>
                 </SheetContent>
