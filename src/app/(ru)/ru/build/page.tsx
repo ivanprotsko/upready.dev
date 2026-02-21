@@ -49,6 +49,7 @@ import { Icon } from "@iconify/react";
 // ---------------------------------------------------------------------------
 
 const CALENDLY_URL = "https://calendly.com/upready";
+const TELEGRAM_URL = "https://t.me/ivanprotsko";
 
 const META_TITLE = "Построим MVP за недели, а не месяцы — UpReady Build";
 
@@ -129,7 +130,7 @@ function Header() {
           >
             <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
               <span className="relative z-10 transition-all duration-500">
-                Забронировать звонок
+                Записаться на звонок
               </span>
               <span className="absolute right-1 w-8 h-8 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-36px)] group-hover:rotate-45">
                 <ArrowUpRight size={16} />
@@ -211,7 +212,7 @@ function Header() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Забронировать звонок
+                        Записаться на звонок
                       </a>
                     </Button>
                     <p className="text-sm text-muted-foreground">
@@ -427,7 +428,7 @@ function WhatYouGet() {
               variant="outline"
               className="px-3 py-1 h-auto text-sm border-0 outline outline-border"
             >
-              Что вы получаете
+              Результат
             </Badge>
             <h2 className="text-3xl md:text-4xl font-semibold text-center tracking-[-1px]">
               Что вы получаете
@@ -513,7 +514,7 @@ function IdealFor() {
               Для кого
             </Badge>
             <h2 className="text-3xl md:text-4xl font-semibold text-center tracking-[-1px]">
-              Для кого это
+              Идеально для
             </h2>
           </motion.div>
           <motion.div
@@ -861,7 +862,7 @@ function FaqSection() {
             variant="outline"
             className="text-sm h-auto py-1 px-3 border-0 outline outline-border"
           >
-            FAQ
+            Вопросы
           </Badge>
           <h2 className="text-5xl font-medium text-center max-w-lg">
             Частые вопросы
@@ -947,8 +948,6 @@ function CtaSection() {
 // Footer
 // ---------------------------------------------------------------------------
 
-const TELEGRAM_URL = "https://t.me/ivanprotsko";
-
 const footerNavItems = [
   { label: "Главная", href: "/ru" },
   { label: "Build", href: "/ru/build" },
@@ -970,7 +969,7 @@ function FooterSection() {
                   UpReady
                 </a>
                 <p className="text-base font-normal text-muted-foreground max-w-sm">
-                  Мы строим и спасаем MVP, чтобы фаундеры могли сфокусироваться
+                  Мы строим и спасаем MVP, чтобы фаундеры могли сосредоточиться
                   на главном.
                 </p>
                 <a
@@ -987,7 +986,7 @@ function FooterSection() {
             <div className="col-span-2">
               <div className="flex flex-col gap-4">
                 <p className="text-base font-medium text-foreground">
-                  Навигация
+                  Карта сайта
                 </p>
                 <ul className="flex flex-col gap-3">
                   {footerNavItems.map((item) => (
@@ -1026,7 +1025,7 @@ function FooterSection() {
                       rel="noopener noreferrer"
                       className="text-base font-normal text-muted-foreground hover:text-foreground transition-colors"
                     >
-                      Забронировать звонок
+                      Записаться на звонок
                     </a>
                   </li>
                 </ul>
@@ -1047,7 +1046,7 @@ function FooterSection() {
 // Page (default export)
 // ---------------------------------------------------------------------------
 
-export default function BuildPage() {
+export default function BuildPageRu() {
   return (
     <>
       <title>{META_TITLE}</title>
