@@ -1,0 +1,23 @@
+.primary-gradient {
+    background: linear-gradient(180deg, #3b82f633 0%, #3b82f600 100%);
+}
+
+.orange-gradient {
+    background: linear-gradient(180deg, #fb923c33 0%, #fb923c00 100%);
+}
+
+.teal-gradient {
+    background: linear-gradient(180deg, #2dd4bf33 0%, #2dd4bf00 100%);
+}
+
+.red-gradient {
+    background: linear-gradient(180deg, #ef444433 0%, #ef444400 100%);
+}
+
+.warning-gradient {
+    background: linear-gradient(180deg, #fcd34d33 0%, #fcd34d00 100%);
+}
+
+.sky-gradient {
+    background: linear-gradient(180deg, #38bdf833 0%, #38bdf800 100%);
+}

@@ -1,0 +1,23 @@
+#vector-map svg .dxm-background {
+  stroke: transparent !important;
+}
+#vector-map svg path {
+  fill: #c9d6de !important;
+  stroke-width: 0.2px;
+}
+.dxm-tooltip svg path {
+  fill: var(--color-dark) !important;
+  stroke-width: 0;
+}
+.dxm-tooltip div {
+  color: #fff !important;
+  font-family: inherit !important;
+}
+
+.dark #vector-map svg .dxm-background {
+  fill: transparent !important;
+}
+
+.dark #vector-map svg path {
+  stroke-width: 0;
+}

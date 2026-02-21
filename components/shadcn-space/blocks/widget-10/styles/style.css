@@ -1,0 +1,19 @@
+.primary-gradient {
+    background: linear-gradient(180deg, #3B82F61F 0%, #3B82F608 100%);
+}
+
+.warning-gradient {
+    background: linear-gradient(180deg, #FCD34D1F 0%, #FCD34D08 100%);
+}
+
+.secondary-gradient {
+    background: linear-gradient(180deg, #2DD4BF1F 0%, #2DD4BF08 100%);
+}
+
+.error-gradient {
+    background: linear-gradient(180deg, #EF44441F 0%, #EF444408 100%);
+}
+
+.success-gradient {
+    background: linear-gradient(180deg, #38BDF81F 0%, #38BDF808 100%);
+}
