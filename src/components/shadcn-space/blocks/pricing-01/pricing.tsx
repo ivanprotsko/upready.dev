@@ -38,21 +38,31 @@ const cardVariants = {
   }),
 };
 
-export default function Pricing01({ id, badge, headline, plans, featuresLabel }: Pricing01Props) {
+export default function Pricing01({
+  id,
+  badge,
+  headline,
+  plans,
+  featuresLabel,
+}: Pricing01Props) {
   return (
     <section id={id} className="bg-background py-10 xl:py-0">
       <div className="max-w-7xl mx-auto px-4 lg:px-8 xl:px-16 lg:py-20 sm:py-16 py-8">
         <div className="flex flex-col gap-8 md:gap-12 justify-center items-center w-full">
-          <div className="flex flex-col gap-4 justify-center items-center">
-            <Badge variant="outline" className="py-1 px-3 text-sm font-normal leading-5 w-fit h-7">
+          <div className="flex flex-col gap-4 justify-center items-center animate-in fade-in slide-in-from-top-8 duration-700 ease-in-out">
+            <Badge
+              variant="outline"
+              className="py-1 px-3 text-sm font-normal leading-5 w-fit h-7"
+            >
               {badge}
             </Badge>
-            <div className="max-w-3xs sm:max-w-lg mx-auto text-center">
-              <h2 className="text-foreground text-3xl sm:text-5xl font-medium">{headline}</h2>
+            <div className="max-w-3xs sm:max-w-md mx-auto text-center">
+              <h2 className="text-foreground text-3xl sm:text-5xl font-medium">
+                {headline}
+              </h2>
             </div>
           </div>
-
-          <div className="flex flex-col lg:flex-row items-center justify-center grow gap-6 w-full">
+          <div className="flex flex-col lg:flex-row items-stretch justify-center grow gap-6 w-full">
             {plans.map((plan, index) => (
               <motion.div
                 key={index}
@@ -61,10 +71,13 @@ export default function Pricing01({ id, badge, headline, plans, featuresLabel }:
                 whileInView="visible"
                 viewport={{ once: true }}
                 custom={index}
-                className="w-full sm:w-fit"
+                className="w-full flex-1"
               >
                 <Card
-                  className={cn(plan.bgColor || "bg-blue-500/10", "p-8 sm:p-10 rounded-2xl ring-0 w-full sm:w-fit")}
+                  className={cn(
+                    plan.bgColor || "bg-blue-500/10",
+                    "p-8 sm:p-10 rounded-2xl ring-0 w-full h-full",
+                  )}
                 >
                   <CardContent className="flex flex-col sm:flex-row gap-6 md:gap-10 items-start self-stretch px-0 h-full w-full">
                     <div className="flex flex-col items-start justify-between self-stretch gap-6">
@@ -79,18 +92,20 @@ export default function Pricing01({ id, badge, headline, plans, featuresLabel }:
                       <div className="flex flex-col gap-4">
                         <p className="text-4xl sm:text-5xl font-semibold text-card-foreground flex items-end">
                           {plan.price}
-                          {plan.period && (
-                            <span className="text-base font-normal text-muted-foreground">
-                              {plan.period}
-                            </span>
-                          )}
+                          <span className="text-base font-normal text-muted-foreground">
+                            {plan.period}
+                          </span>
                         </p>
                         <Button
                           asChild
                           className="relative bg-white hover:bg-white hover:text-black dark:hover:text-black text-black text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden"
                         >
                           {plan.external ? (
-                            <a href={plan.href} target="_blank" rel="noopener noreferrer">
+                            <a
+                              href={plan.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <span className="relative z-10 transition-all duration-500">
                                 {plan.cta}
                               </span>
@@ -111,8 +126,14 @@ export default function Pricing01({ id, badge, headline, plans, featuresLabel }:
                         </Button>
                       </div>
                     </div>
-                    <Separator orientation="vertical" className="hidden sm:block" />
-                    <Separator orientation="horizontal" className="sm:hidden block" />
+                    <Separator
+                      orientation="vertical"
+                      className="hidden sm:block"
+                    />
+                    <Separator
+                      orientation="horizontal"
+                      className="sm:hidden block"
+                    />
                     <div className="flex flex-col items-start gap-3 grow">
                       <p className="text-card-foreground text-base sm:text-xl font-normal sm:font-medium">
                         {featuresLabel}
@@ -123,7 +144,7 @@ export default function Pricing01({ id, badge, headline, plans, featuresLabel }:
                             key={i}
                             className="flex items-center gap-3 text-card-foreground text-base font-normal tracking-normal"
                           >
-                            <Check size={16} aria-hidden="true" className="shrink-0" />
+                            <Check size={16} aria-hidden="true" />
                             {feature}
                           </li>
                         ))}
