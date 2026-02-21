@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion } from "motion/react";
-import { cn } from "@/lib/utils";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -26,6 +26,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
 import { Icon } from "@iconify/react";
 import {
   ArrowUpRight,
@@ -50,8 +51,6 @@ import {
   MessageSquare,
   DollarSign,
 } from "lucide-react";
-
-// ─── CONSTANTS ───────────────────────────────────────────────────────────────
 
 const CALENDLY_URL = "https://calendly.com/upready";
 
@@ -100,12 +99,12 @@ function Header() {
             : "bg-transparent border-transparent"
         )}
       >
-        <a
+        <Link
           href="/ru"
           className="text-base font-semibold tracking-tight text-foreground"
         >
           UpReady
-        </a>
+        </Link>
 
         <NavigationMenu className="max-md:hidden bg-muted p-0.5 rounded-full">
           <NavigationMenuList className="flex gap-0">
@@ -123,12 +122,12 @@ function Header() {
         </NavigationMenu>
 
         <div className="flex items-center gap-3">
-          <a
+          <Link
             href="/rescue"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors max-md:hidden"
           >
             EN
-          </a>
+          </Link>
 
           <Button
             asChild
@@ -154,7 +153,7 @@ function Header() {
                       width={20}
                       height={20}
                     />
-                    <span className="sr-only">Меню</span>
+                    <span className="sr-only">Menu</span>
                   </span>
                 </SheetTrigger>
                 <SheetContent
@@ -163,12 +162,12 @@ function Header() {
                   className="w-full sm:w-96 p-0 border-l-0"
                 >
                   <div className="flex items-center justify-between p-6">
-                    <a
+                    <Link
                       href="/ru"
                       className="text-base font-semibold tracking-tight text-foreground"
                     >
                       UpReady
-                    </a>
+                    </Link>
                     <SheetClose>
                       <span className="rounded-full border border-border p-2.5 block">
                         <Icon icon="lucide:x" width={16} height={16} />
@@ -176,7 +175,7 @@ function Header() {
                     </SheetClose>
                   </div>
                   <div className="flex flex-col gap-12 px-6 pb-6">
-                    <SheetTitle className="sr-only">Меню</SheetTitle>
+                    <SheetTitle className="sr-only">Menu</SheetTitle>
                     <NavigationMenu
                       orientation="vertical"
                       className="items-start flex-none"
@@ -254,7 +253,7 @@ function Hero() {
                     className="text-sm h-auto py-1.5 px-4 border-0 outline outline-border gap-2"
                   >
                     <AlertTriangle className="size-4 text-amber-500" />
-                    Сервис спасения AI-приложений
+                    Спасение AI-приложений
                   </Badge>
                 </motion.div>
                 <motion.h1
@@ -428,14 +427,13 @@ function Problems() {
   );
 }
 
-// ─── ЧТО МЫ ЧИНИМ ──────────────────────────────────────────────────────────
+// ─── ЧТО МЫ ЧИНИМ ─────────────────────────────────────────────────────────────
 
 const fixes = [
   {
     icon: Lock,
     title: "Авторизация и Supabase",
-    description:
-      "Сломанный логин, неправильные RLS-политики, проблемы с сессиями",
+    description: "Сломанный логин, неправильные RLS-политики, проблемы с сессиями",
   },
   {
     icon: Rocket,
@@ -445,8 +443,7 @@ const fixes = [
   {
     icon: Bug,
     title: "UI/UX баги",
-    description:
-      "Поехавшая вёрстка, сломанная адаптивность, конфликты стилей",
+    description: "Поехавшая вёрстка, сломанная адаптивность, конфликты стилей",
   },
   {
     icon: Globe,
@@ -564,38 +561,33 @@ function WhatWeFix() {
   );
 }
 
-// ─── КАК РАБОТАЕТ RESCUE ────────────────────────────────────────────────────
+// ─── КАК РАБОТАЕТ RESCUE ────────────────────────────────────────────────────────
 
-const rescueSteps = [
+const steps = [
   {
     icon: MessageSquare,
     title: "Опишите проблему",
-    description:
-      "Расскажите, что сломалось — или запишитесь на 15-минутный звонок.",
+    description: "Расскажите, что сломалось — или запишитесь на 15-минутный звонок.",
   },
   {
     icon: Shield,
     title: "Бесплатная диагностика",
-    description:
-      "Мы проводим аудит приложения и находим корневые причины. Бесплатно.",
+    description: "Мы проводим аудит приложения и находим корневые причины. Бесплатно.",
   },
   {
     icon: DollarSign,
     title: "Получите цену",
-    description:
-      "Фиксированная стоимость по сложности. Никаких сюрпризов с почасовой оплатой.",
+    description: "Фиксированная стоимость по сложности. Никаких сюрпризов с почасовой оплатой.",
   },
   {
     icon: Zap,
     title: "Мы чиним",
-    description:
-      "24–72 часа на большинство проблем. Вы получаете обновления о ходе работы.",
+    description: "24–72 часа на большинство проблем. Вы получаете обновления о ходе работы.",
   },
   {
     icon: Check,
     title: "Вы готовы к запуску",
-    description:
-      "Рабочее приложение. Задеплоено. Плюс документация по каждому изменению.",
+    description: "Рабочее приложение. Задеплоено. Плюс документация по каждому изменению.",
   },
 ];
 
@@ -652,7 +644,7 @@ function HowItWorks() {
             >
               <Card className="p-6 sm:p-8 shadow-none rounded-2xl">
                 <CardContent className="p-0 flex flex-col gap-6 sm:gap-8">
-                  {rescueSteps.map((step, index) => {
+                  {steps.map((step, index) => {
                     const IconComp = step.icon;
                     return (
                       <motion.div key={index} variants={itemVariants}>
@@ -663,7 +655,7 @@ function HowItWorks() {
                                 {index + 1}
                               </span>
                             </div>
-                            {index < rescueSteps.length - 1 && (
+                            {index < steps.length - 1 && (
                               <div className="w-px flex-1 bg-border" />
                             )}
                           </div>
@@ -692,18 +684,17 @@ function HowItWorks() {
   );
 }
 
-// ─── ЦЕНЫ ───────────────────────────────────────────────────────────────────
+// ─── PRICING ─────────────────────────────────────────────────────────────────
 
 const pricingPlans = [
   {
     name: "Простая починка",
     price: "$500",
     period: "от",
-    description:
-      "Один баг, проблема конфигурации, ошибка деплоя.",
+    description: "Один баг, проблема конфигурации, ошибка деплоя.",
     features: [
       "Одна конкретная проблема",
-      "24–48 часов на исправление",
+      "24–48 часов",
       "14-дневная гарантия",
       "Полная документация",
     ],
@@ -716,12 +707,11 @@ const pricingPlans = [
     name: "Глубокое спасение",
     price: "$1 500",
     period: "от",
-    description:
-      "Несколько связанных проблем. Рефакторинг кода. Переделка авторизации.",
+    description: "Несколько связанных проблем. Рефакторинг кода. Переделка авторизации.",
     features: [
       "Решение нескольких проблем",
       "Рефакторинг кода включён",
-      "48–72 часа на исправление",
+      "48–72 часа",
       "14-дневная гарантия",
       "Полная документация",
       "Приоритетная поддержка",
@@ -735,18 +725,17 @@ const pricingPlans = [
     name: "Полная пересборка",
     price: "По запросу",
     period: "",
-    description:
-      "Код не подлежит ремонту. Пересобираем ядро с нуля.",
+    description: "Код не подлежит ремонту. Пересобираем ядро с нуля.",
     features: [
-      "Полный переписывание кода",
+      "Полная переписка кода",
       "Современная архитектура",
       "Деплой в продакшен",
       "14-дневная гарантия",
       "Полная документация",
-      "Опции постоянной поддержки",
+      "Постоянная поддержка",
     ],
     featured: false,
-    cta: "Узнать о Build",
+    cta: "Узнать про Build",
     href: "/ru/build",
     external: false,
   },
@@ -829,14 +818,14 @@ function Pricing() {
                       </div>
                       <CardContent className="flex flex-col flex-1 gap-8 p-0">
                         <div className="flex items-baseline gap-2">
+                          <span className="text-foreground text-4xl sm:text-5xl font-medium">
+                            {plan.price}
+                          </span>
                           {plan.period && (
                             <span className="text-muted-foreground text-base font-normal">
                               {plan.period}
                             </span>
                           )}
-                          <span className="text-foreground text-4xl sm:text-5xl font-medium">
-                            {plan.price}
-                          </span>
                         </div>
                         <Separator />
                         <ul className="flex flex-col gap-4 flex-1">
@@ -864,7 +853,7 @@ function Pricing() {
                               {plan.cta}
                             </a>
                           ) : (
-                            <a href={plan.href}>{plan.cta}</a>
+                            <Link href={plan.href}>{plan.cta}</Link>
                           )}
                         </Button>
                       </CardContent>
@@ -874,8 +863,7 @@ function Pricing() {
               })}
             </div>
             <p className="text-center text-sm text-muted-foreground">
-              Каждый проект начинается с бесплатного 15-минутного
-              диагностического звонка.
+              Каждый проект начинается с бесплатного 15-минутного диагностического звонка.
             </p>
           </div>
         </div>
@@ -899,22 +887,19 @@ const faqItems = [
   },
   {
     question: "Что если проблема вернётся?",
-    answer:
-      "Каждая починка идёт с 14-дневной гарантией. Если тот же баг вернётся — чиним повторно бесплатно.",
+    answer: "Каждая починка идёт с 14-дневной гарантией. Если тот же баг вернётся — чиним бесплатно.",
   },
   {
     question: "Я сохраняю права на код?",
-    answer:
-      "100%. Ваш код, ваш репозиторий, ваше приложение. Никакой привязки.",
+    answer: "100%. Ваш код, ваш репозиторий, ваше приложение.",
   },
   {
     question: "Что если приложению нужно больше, чем починка?",
     answer:
-      "Скажем прямо. Если проекту нужна пересборка — порекомендуем наш сервис Build или поможем найти лучший путь.",
+      "Скажем прямо. Если нужна пересборка — порекомендуем наш сервис Build или поможем найти лучший путь.",
   },
   {
-    question:
-      "Можете работать с проектом, который уже пытался починить фрилансер?",
+    question: "Можете работать с проектом, который уже пытался починить фрилансер?",
     answer:
       "Да. Мы спасали приложения, через которые прошли три разных фрилансера.",
   },
@@ -1014,7 +999,7 @@ function CTASection() {
 
 // ─── FOOTER ──────────────────────────────────────────────────────────────────
 
-function FooterSection() {
+function Footer() {
   return (
     <footer className="py-10">
       <div className="max-w-7xl xl:px-16 lg:px-8 px-4 mx-auto">
@@ -1022,14 +1007,14 @@ function FooterSection() {
           <div className="py-12 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 lg:grid-cols-12 gap-x-8 gap-y-10 px-6 xl:px-0">
             <div className="col-span-full lg:col-span-5">
               <div className="flex flex-col gap-6">
-                <a
+                <Link
                   href="/ru"
                   className="text-lg font-semibold tracking-tight text-foreground"
                 >
                   UpReady
-                </a>
+                </Link>
                 <p className="text-base font-normal text-muted-foreground max-w-sm">
-                  Чиним AI-приложения и строим production-ready софт.
+                  Спасаем AI-приложения и строим production-ready софт.
                 </p>
                 <a
                   href={CALENDLY_URL}
@@ -1044,23 +1029,25 @@ function FooterSection() {
             <div className="col-span-1 lg:block hidden" />
             <div className="col-span-2">
               <div className="flex flex-col gap-4">
-                <p className="text-base font-medium text-foreground">Услуги</p>
+                <p className="text-base font-medium text-foreground">
+                  Услуги
+                </p>
                 <ul className="flex flex-col gap-3">
                   <li>
-                    <a
+                    <Link
                       href="/ru/rescue"
                       className="text-base font-normal text-muted-foreground hover:text-foreground transition-colors"
                     >
                       Rescue
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       href="/ru/build"
                       className="text-base font-normal text-muted-foreground hover:text-foreground transition-colors"
                     >
                       Build
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -1068,7 +1055,7 @@ function FooterSection() {
             <div className="col-span-3">
               <div className="flex flex-col gap-4">
                 <p className="text-base font-medium text-foreground">
-                  Контакты
+                  Контакт
                 </p>
                 <ul className="flex flex-col gap-3">
                   <li>
@@ -1078,7 +1065,7 @@ function FooterSection() {
                       rel="noopener noreferrer"
                       className="text-base font-normal text-muted-foreground hover:text-foreground transition-colors"
                     >
-                      Записаться на звонок
+                      Забронировать звонок
                     </a>
                   </li>
                 </ul>
@@ -1099,8 +1086,7 @@ function FooterSection() {
 
 export default function RescuePageRu() {
   useEffect(() => {
-    document.title =
-      "Починим AI-приложение за 72 часа — UpReady Rescue";
+    document.title = "Починим AI-приложение за 72 часа — UpReady Rescue";
   }, []);
 
   return (
@@ -1115,7 +1101,7 @@ export default function RescuePageRu() {
         <FAQ />
         <CTASection />
       </main>
-      <FooterSection />
+      <Footer />
     </div>
   );
 }
