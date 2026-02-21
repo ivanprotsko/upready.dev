@@ -1,3 +1,7 @@
+"use client";
+
+import { NextIntlClientProvider } from "next-intl";
+import messages from "../../../../../../messages/en.json";
 import Header from "@/components/shadcn-space/blocks/hero-01/header";
 import HeroSection from "@/components/shadcn-space/blocks/hero-01/hero";
 import BrandSlider from "@/components/shadcn-space/blocks/hero-01/brand-slider";
@@ -10,22 +14,24 @@ import Faq from "@/components/shadcn-space/blocks/faq-01/faq";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 import Footer from "@/components/shadcn-space/blocks/footer-01/footer";
 
-export default function HomePage() {
+export default function V1Page() {
   return (
-    <div className="relative">
-      <Header />
-      <main>
-        <HeroSection />
-        <BrandSlider />
-        <Feature />
-        <HowItWorks />
-        <Pricing />
-        <PricingSubscriptions />
-        <Portfolio />
-        <Faq />
-        <CTA />
-      </main>
-      <Footer />
-    </div>
+    <NextIntlClientProvider locale="en" messages={messages}>
+      <div className="relative">
+        <Header />
+        <main>
+          <HeroSection />
+          <BrandSlider />
+          <Feature />
+          <HowItWorks />
+          <Pricing />
+          <PricingSubscriptions />
+          <Portfolio />
+          <Faq />
+          <CTA />
+        </main>
+        <Footer />
+      </div>
+    </NextIntlClientProvider>
   );
 }
