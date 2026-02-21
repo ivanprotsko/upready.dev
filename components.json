@@ -1,11 +1,11 @@
 {
   "$schema": "https://ui.shadcn.com/schema.json",
-  "style": "new-york",
+  "style": "base-vega",
   "rsc": true,
   "tsx": true,
   "tailwind": {
     "config": "",
-    "css": "src/app/globals.css",
+    "css": "app/globals.css",
     "baseColor": "neutral",
     "cssVariables": true,
     "prefix": ""
@@ -19,13 +19,11 @@
     "lib": "@/lib",
     "hooks": "@/hooks"
   },
+  "menuColor": "default",
+  "menuAccent": "subtle",
   "registries": {
     "@shadcn-space": {
-      "url": "https://shadcnspace.com/r/{name}.json",
-      "params": {
-        "email": "figmatutorial@gmail.com",
-        "license_key": "LIC-45DDBE33"
-      }
+      "url": "https://shadcnspace.com/r/{name}.json?email=${SHADCN_SPACE_EMAIL}&license_key=${SHADCN_SPACE_LICENSE_KEY}"
     }
   }
 }

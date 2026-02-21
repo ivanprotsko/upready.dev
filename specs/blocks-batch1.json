@@ -1,0 +1,924 @@
+[
+  {
+    "block_id": "hero-01",
+    "block_title": "Hero 01 - Agency Hero with Header & Brand Slider",
+    "category": "hero",
+    "files": [
+      "components/shadcn-space/blocks/hero-01/hero.tsx",
+      "components/shadcn-space/blocks/hero-01/header.tsx",
+      "components/shadcn-space/blocks/hero-01/brand-slider.tsx",
+      "components/shadcn-space/blocks/hero-01/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Let's Collaborate",
+            "max_chars": 17,
+            "min_chars": 9,
+            "type": "button",
+            "notes": "CTA button in header and mobile menu"
+          },
+          {
+            "field_id": "copyright",
+            "element": "p",
+            "original_text": "© 2026 Shadcn Space",
+            "max_chars": 19,
+            "min_chars": 10,
+            "type": "label",
+            "notes": "Copyright text in mobile menu footer"
+          }
+        ]
+      },
+      {
+        "section": "hero",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h1",
+            "original_text": "Building bold brands with thoughtful design",
+            "max_chars": 43,
+            "min_chars": 22,
+            "type": "heading",
+            "notes": "Main hero heading. 'thoughtful design' rendered in italic Instrument Serif font"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "At shadcn space, we help small startups tackle the world's biggest challenges with tailored solutions, guiding you from strategy to success in a competitive market.",
+            "max_chars": 164,
+            "min_chars": 82,
+            "type": "description",
+            "notes": "Subtext below the heading"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Get Started",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "Primary CTA button with arrow icon"
+          },
+          {
+            "field_id": "social_proof",
+            "element": "p",
+            "original_text": "Trusted by 1000+ clients",
+            "max_chars": 24,
+            "min_chars": 12,
+            "type": "label",
+            "notes": "Social proof text next to avatar stack and star rating"
+          }
+        ]
+      },
+      {
+        "section": "brand_slider",
+        "fields": [
+          {
+            "field_id": "slider_label",
+            "element": "p",
+            "original_text": "Loved by 1000+ big and small brands around the worlds",
+            "max_chars": 53,
+            "min_chars": 27,
+            "type": "label",
+            "notes": "Label text centered above brand logo marquee"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "nav_links",
+        "count": 6,
+        "fields": [
+          {
+            "field_id": "link_title",
+            "sample_text": "About us",
+            "max_chars": 8,
+            "min_chars": 4
+          }
+        ],
+        "original_items": [
+          "Home",
+          "About us",
+          "Services",
+          "Team",
+          "Pricing",
+          "Awards"
+        ]
+      },
+      {
+        "item_id": "brand_logos",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "brand_name",
+            "sample_text": "Brand 1",
+            "max_chars": 7,
+            "min_chars": 4
+          }
+        ],
+        "notes": "Brand logo images in marquee slider. Each has dark/light image variants and a name for alt text."
+      },
+      {
+        "item_id": "social_icons",
+        "count": 4,
+        "fields": [],
+        "notes": "Social media icons in mobile menu (Dribbble, Instagram, Twitter, LinkedIn). No visible text labels."
+      }
+    ]
+  },
+  {
+    "block_id": "hero-02",
+    "block_title": "Hero 02 - Real Estate Hero with Navbar",
+    "category": "hero",
+    "files": [
+      "components/shadcn-space/blocks/hero-02/hero.tsx",
+      "components/shadcn-space/blocks/hero-02/navbar.tsx",
+      "components/shadcn-space/blocks/hero-02/seamless-cloud.tsx",
+      "components/shadcn-space/blocks/hero-02/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "navbar",
+        "fields": [
+          {
+            "field_id": "phone_number",
+            "element": "a",
+            "original_text": "+1-212-456-789",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "label",
+            "notes": "Phone number displayed in navbar with phone icon"
+          },
+          {
+            "field_id": "menu_button",
+            "element": "Button",
+            "original_text": "Menu",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "button",
+            "notes": "Menu toggle button with hamburger icon"
+          },
+          {
+            "field_id": "contact_label",
+            "element": "p",
+            "original_text": "Contact",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Label in mobile sheet navigation"
+          },
+          {
+            "field_id": "contact_email",
+            "element": "a",
+            "original_text": "hello@homely.com",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "inline",
+            "notes": "Contact email in mobile sheet"
+          },
+          {
+            "field_id": "contact_phone",
+            "element": "a",
+            "original_text": "+1-212-456-7890",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "inline",
+            "notes": "Contact phone in mobile sheet"
+          },
+          {
+            "field_id": "socials_label",
+            "element": "p",
+            "original_text": "Socials",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Label above social links in mobile sheet"
+          }
+        ]
+      },
+      {
+        "section": "hero",
+        "fields": [
+          {
+            "field_id": "location_label",
+            "element": "p",
+            "original_text": "Palm springs, CA",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Small location text above main heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h1",
+            "original_text": "Space Residence",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "heading",
+            "notes": "Main heading. 'Residence' is bold/semibold"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Schedule a tour",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "button",
+            "notes": "Primary CTA button, white on dark background"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "nav_links",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "link_name",
+            "sample_text": "Home",
+            "max_chars": 10,
+            "min_chars": 5
+          }
+        ],
+        "original_items": [
+          "Home",
+          "Properties",
+          "Blog",
+          "Contact",
+          "Docs"
+        ]
+      },
+      {
+        "item_id": "property_features",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "feature_label",
+            "sample_text": "4 Bedrooms",
+            "max_chars": 17,
+            "min_chars": 9
+          },
+          {
+            "field_id": "feature_price",
+            "sample_text": "$4,750,000",
+            "max_chars": 10,
+            "min_chars": 5
+          }
+        ],
+        "original_items": [
+          {
+            "label": "4 Bedrooms"
+          },
+          {
+            "label": "4 Restroom"
+          },
+          {
+            "label": "Parking space"
+          },
+          {
+            "price": "$4,750,000",
+            "label": "For selling price"
+          }
+        ],
+        "notes": "Bottom feature bar: 3 items have icons + label, 1 item has price + label"
+      },
+      {
+        "item_id": "social_links",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "social_name",
+            "sample_text": "X / Twitter",
+            "max_chars": 11,
+            "min_chars": 6
+          }
+        ],
+        "original_items": [
+          "X / Twitter",
+          "Facebook",
+          "Instagram"
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "hero-03",
+    "block_title": "Hero 03 - Video Background Hero with Dropdown Navbar",
+    "category": "hero",
+    "files": [
+      "components/shadcn-space/blocks/hero-03/hero.tsx",
+      "components/shadcn-space/blocks/hero-03/navbar.tsx",
+      "components/shadcn-space/blocks/hero-03/navlink.tsx",
+      "components/shadcn-space/blocks/hero-03/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "navbar",
+        "fields": [
+          {
+            "field_id": "menu_label",
+            "element": "p",
+            "original_text": "Menu",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "label",
+            "notes": "Label in dropdown menu header"
+          },
+          {
+            "field_id": "contact_phone",
+            "element": "a",
+            "original_text": "+1-212-456-7890",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "inline",
+            "notes": "Phone number in dropdown menu contact section"
+          },
+          {
+            "field_id": "contact_email",
+            "element": "a",
+            "original_text": "info@wrappixel.com",
+            "max_chars": 18,
+            "min_chars": 9,
+            "type": "inline",
+            "notes": "Email in dropdown menu contact section, large text"
+          }
+        ]
+      },
+      {
+        "section": "hero",
+        "fields": [
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "We create high-performing digital designs that elevate brands and enhance conversions.",
+            "max_chars": 86,
+            "min_chars": 43,
+            "type": "description",
+            "notes": "Description text with 'high-performing' highlighted in teal-400 color. Placed next to spinning leaf icon."
+          },
+          {
+            "field_id": "heading",
+            "element": "h1",
+            "original_text": "SHADCN®SPACE",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "heading",
+            "notes": "Main large heading. All caps, bold. Accompanied by teal arrow button."
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "nav_links",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "link_title",
+            "sample_text": "Home",
+            "max_chars": 10,
+            "min_chars": 5
+          }
+        ],
+        "original_items": [
+          "Home",
+          "Properties",
+          "Blog",
+          "Contact",
+          "Docs"
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "navbar-01",
+    "block_title": "Navbar 01 - Sticky Agency Navbar",
+    "category": "navbar",
+    "files": [
+      "components/shadcn-space/blocks/navbar-01/navbar.tsx"
+    ],
+    "sections": [
+      {
+        "section": "main",
+        "fields": [
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Let's Collaborate",
+            "max_chars": 17,
+            "min_chars": 9,
+            "type": "button",
+            "notes": "CTA button with animated arrow icon, rounded pill shape"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "nav_links",
+        "count": 6,
+        "fields": [
+          {
+            "field_id": "link_title",
+            "sample_text": "About us",
+            "max_chars": 8,
+            "min_chars": 4
+          }
+        ],
+        "original_items": [
+          "About us",
+          "Services",
+          "Work",
+          "Team",
+          "Pricing",
+          "Awards"
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "logo-cloud-01",
+    "block_title": "Logo Cloud 01 - Brand Logo Marquee",
+    "category": "logo-cloud",
+    "files": [
+      "components/shadcn-space/blocks/logo-cloud-01/logo-cloud.tsx"
+    ],
+    "sections": [],
+    "repeatable_items": [
+      {
+        "item_id": "brand_logos",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "brand_name",
+            "sample_text": "Brand 1",
+            "max_chars": 7,
+            "min_chars": 4
+          }
+        ],
+        "notes": "Marquee of brand logos with left/right gradient blur. Each brand has dark/light image variants and a name for alt text. No visible text on screen -- only images."
+      }
+    ]
+  },
+  {
+    "block_id": "feature-01",
+    "block_title": "Feature 01 - Innovation Features with Testimonial Card",
+    "category": "feature",
+    "files": [
+      "components/shadcn-space/blocks/feature-01/feature.tsx",
+      "components/shadcn-space/blocks/feature-01/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge_text",
+            "element": "Badge",
+            "original_text": "Features",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "inline",
+            "notes": "Outline badge above heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Leading with innovation",
+            "max_chars": 23,
+            "min_chars": 12,
+            "type": "heading",
+            "notes": "Section heading"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "We're west coast change-makers in a complex world, crafting purposeful and powerful brands with fluidity",
+            "max_chars": 104,
+            "min_chars": 52,
+            "type": "description",
+            "notes": "Subtext below the heading"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Browse more block",
+            "max_chars": 17,
+            "min_chars": 9,
+            "type": "button",
+            "notes": "Button aligned right of the heading row"
+          }
+        ]
+      },
+      {
+        "section": "testimonial_card",
+        "fields": [
+          {
+            "field_id": "quote",
+            "element": "h3",
+            "original_text": "\"Before Shadcn Space, we stitched UIs together from random snippets. Now we ship polished interfaces in hours for frontend.\"",
+            "max_chars": 124,
+            "min_chars": 62,
+            "type": "description",
+            "notes": "Testimonial quote in left-side card with background image"
+          },
+          {
+            "field_id": "author_name",
+            "element": "p",
+            "original_text": "JOHNATHAN DOE",
+            "max_chars": 13,
+            "min_chars": 7,
+            "type": "label",
+            "notes": "Author name in uppercase, primary color"
+          },
+          {
+            "field_id": "author_role",
+            "element": "span",
+            "original_text": "HEAD OF FINANCE @SHADCN SPACE",
+            "max_chars": 29,
+            "min_chars": 15,
+            "type": "label",
+            "notes": "Author role in uppercase, muted color"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "feature_cards",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "content",
+            "sample_text": "Instantly sync and update your documentation across teams without manual rework.",
+            "max_chars": 81,
+            "min_chars": 41
+          }
+        ],
+        "original_items": [
+          "Instantly sync and update your documentation across teams without manual rework.",
+          "Get real-time alerts when docs are updated, reviewed, or need your attention.",
+          "Automatically keep your documentation up to date with seamless content refreshes.",
+          "Organize your docs with smart tags for faster search and better discoverability."
+        ],
+        "notes": "Each card has an icon and a content paragraph. Cards are in a 2x2 grid on the right side."
+      }
+    ]
+  },
+  {
+    "block_id": "feature-02",
+    "block_title": "Feature 02 - Developer Features Grid with CTA",
+    "category": "feature",
+    "files": [
+      "components/shadcn-space/blocks/feature-02/feature.tsx",
+      "components/shadcn-space/blocks/feature-02/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge_text",
+            "element": "Badge",
+            "original_text": "Features",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "inline",
+            "notes": "Outline badge centered above heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h1",
+            "original_text": "Designed for Developer Flow Helping them to Get Started",
+            "max_chars": 55,
+            "min_chars": 28,
+            "type": "heading",
+            "notes": "Centered section heading"
+          }
+        ]
+      },
+      {
+        "section": "footer",
+        "fields": [
+          {
+            "field_id": "footer_note",
+            "element": "p",
+            "original_text": "Launch faster with modular designs by Shadcn Space now",
+            "max_chars": 54,
+            "min_chars": 27,
+            "type": "label",
+            "notes": "Note text with asterisk icon, below the feature grid"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Browse more block",
+            "max_chars": 17,
+            "min_chars": 9,
+            "type": "button",
+            "notes": "Centered button below the note text"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "feature_cards",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "title",
+            "sample_text": "Streamline your international payroll.",
+            "max_chars": 45,
+            "min_chars": 23
+          },
+          {
+            "field_id": "content",
+            "sample_text": "Launch faster with modular tools that automate workflows, centralize data, and scale securely, helping teams build, deploy, and manage products.",
+            "max_chars": 144,
+            "min_chars": 72
+          }
+        ],
+        "original_items": [
+          {
+            "title": "Streamline your international payroll.",
+            "content": "Launch faster with modular tools that automate workflows, centralize data, and scale securely, helping teams build, deploy, and manage products."
+          },
+          {
+            "title": "Easily track your spend and growth analytics.",
+            "content": "Power your business with real-time analytics, seamless integrations, and cloud-ready architecture designed to reduce costs, boost productivity."
+          },
+          {
+            "title": "Build better products in half the time.",
+            "content": "All-in-one SaaS platform offering automation, collaboration, and performance monitoring so growing teams can optimize operations."
+          }
+        ],
+        "notes": "3-column grid of cards. Each card has an icon, title, and content. Cards have top-border hover effect."
+      }
+    ]
+  },
+  {
+    "block_id": "about-us-01",
+    "block_title": "About Us 01 - Values & Statistics Counter",
+    "category": "about-us",
+    "files": [
+      "components/shadcn-space/blocks/about-us-01/about-us.tsx",
+      "components/shadcn-space/blocks/about-us-01/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "main",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Crafting exceptional, well experienced & technology driven strategies to drive impactful results with",
+            "max_chars": 101,
+            "min_chars": 51,
+            "type": "heading",
+            "notes": "Main heading. The value pills (Creativity, Innovation, Strategy) appear inline below this text to complete the sentence."
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "value_pills",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "title",
+            "sample_text": "Creativity",
+            "max_chars": 10,
+            "min_chars": 5
+          }
+        ],
+        "original_items": [
+          {
+            "title": "Creativity",
+            "color": "bg-blue-500/10 text-blue-500"
+          },
+          {
+            "title": "Innovation",
+            "color": "bg-teal-400/10 text-teal-400"
+          },
+          {
+            "title": "Strategy",
+            "color": "bg-orange-400/10 text-orange-400"
+          }
+        ],
+        "notes": "Colored pill badges with icons, displayed inline below the heading. Each has an icon + italic text in Instrument Serif font."
+      },
+      {
+        "item_id": "statistics",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "stat_value",
+            "sample_text": "40",
+            "max_chars": 3,
+            "min_chars": 2
+          },
+          {
+            "field_id": "stat_label",
+            "sample_text": "Total Projects Completed",
+            "max_chars": 24,
+            "min_chars": 12
+          }
+        ],
+        "original_items": [
+          {
+            "count": 40,
+            "title": "Total Projects Completed"
+          },
+          {
+            "count": 15,
+            "title": "Years of Experience"
+          },
+          {
+            "count": 12,
+            "title": "Design Awards"
+          }
+        ],
+        "notes": "Animated counter statistics. Each displays '+{count}' with spring animation and a label below. Separated by vertical dividers."
+      }
+    ]
+  },
+  {
+    "block_id": "testimonial-01",
+    "block_title": "Testimonial 01 - Mixed Grid Testimonials",
+    "category": "testimonial",
+    "files": [
+      "components/shadcn-space/blocks/testimonial-01/testimonial.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge_text",
+            "element": "Badge",
+            "original_text": "Testimonials",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "inline",
+            "notes": "Outline badge centered above heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "What our satisfied customers are saying about us",
+            "max_chars": 48,
+            "min_chars": 24,
+            "type": "heading",
+            "notes": "Centered section heading"
+          }
+        ]
+      },
+      {
+        "section": "card_1_featured",
+        "fields": [
+          {
+            "field_id": "card_label",
+            "element": "p",
+            "original_text": "Customer stories",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Card label text, white/70 opacity on background image card. Spans 8 of 12 columns."
+          },
+          {
+            "field_id": "quote",
+            "element": "p",
+            "original_text": "Shadn Space expertise transformed my vision into success with creativity, precision, and a deep understanding of my goals.",
+            "max_chars": 122,
+            "min_chars": 61,
+            "type": "description",
+            "notes": "Testimonial quote text, white text"
+          },
+          {
+            "field_id": "author_name",
+            "element": "p",
+            "original_text": "Anaya Shah",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "label",
+            "notes": "Author name, white text"
+          },
+          {
+            "field_id": "author_role",
+            "element": "p",
+            "original_text": "Founder of Chipsland",
+            "max_chars": 20,
+            "min_chars": 10,
+            "type": "label",
+            "notes": "Author role, white/70 opacity text"
+          }
+        ]
+      },
+      {
+        "section": "card_2_stats",
+        "fields": [
+          {
+            "field_id": "card_label",
+            "element": "p",
+            "original_text": "Facts & numbers",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Card label on blue-500 background card. Spans 4 of 12 columns."
+          },
+          {
+            "field_id": "stat_value",
+            "element": "p",
+            "original_text": "91%",
+            "max_chars": 3,
+            "min_chars": 2,
+            "type": "stat_value",
+            "notes": "Large percentage statistic, white text"
+          },
+          {
+            "field_id": "stat_description",
+            "element": "p",
+            "original_text": "clients recommend our design services.\"",
+            "max_chars": 39,
+            "min_chars": 20,
+            "type": "stat_label",
+            "notes": "Description of the stat, white text"
+          }
+        ]
+      },
+      {
+        "section": "card_3_short",
+        "fields": [
+          {
+            "field_id": "card_label",
+            "element": "p",
+            "original_text": "Customer stories",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Card label on dark gray-950 card. Spans 4 of 12 columns."
+          },
+          {
+            "field_id": "quote",
+            "element": "p",
+            "original_text": "Their creativity and attention to detail transformed our brand completely!",
+            "max_chars": 74,
+            "min_chars": 37,
+            "type": "description",
+            "notes": "Short testimonial quote, white text. Card also has a background image below."
+          }
+        ]
+      },
+      {
+        "section": "card_4_attributed",
+        "fields": [
+          {
+            "field_id": "card_label",
+            "element": "p",
+            "original_text": "Customer stories",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Card label on primary/10 background card. Spans 8 of 12 columns."
+          },
+          {
+            "field_id": "quote",
+            "element": "p",
+            "original_text": "\"Shadcn Space Agency brought our ideas to life with exceptional creativity and precision, exceeding expectations.\"",
+            "max_chars": 114,
+            "min_chars": 57,
+            "type": "description",
+            "notes": "Testimonial quote in quotation marks"
+          },
+          {
+            "field_id": "author_name",
+            "element": "p",
+            "original_text": "Sarah Mitchell",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "label",
+            "notes": "Author name, card-foreground color"
+          },
+          {
+            "field_id": "author_role",
+            "element": "p",
+            "original_text": "Marketing Head at TalentConnect",
+            "max_chars": 31,
+            "min_chars": 16,
+            "type": "label",
+            "notes": "Author role, muted-foreground color"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": []
+  }
+]

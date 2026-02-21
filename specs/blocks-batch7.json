@@ -1,0 +1,1612 @@
+[
+  {
+    "block_id": "contact-02",
+    "block_title": "Contact 02 - Minimal contact form with socials and footer branding",
+    "category": "contact",
+    "files": [
+      "components/shadcn-space/blocks/contact-02/contact.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Contact Me",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl md:text-5xl font-medium"
+          },
+          {
+            "field_id": "section_number",
+            "element": "p",
+            "original_text": "(05)",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "inline",
+            "notes": "text-xl font-medium, right-aligned section index"
+          }
+        ]
+      },
+      {
+        "section": "form",
+        "fields": [
+          {
+            "field_id": "label_name",
+            "element": "Label",
+            "original_text": "Name*",
+            "max_chars": 5,
+            "min_chars": 3,
+            "type": "label",
+            "notes": "text-sm font-normal text-muted-foreground"
+          },
+          {
+            "field_id": "label_phone",
+            "element": "Label",
+            "original_text": "Phone*",
+            "max_chars": 6,
+            "min_chars": 3,
+            "type": "label",
+            "notes": "text-sm font-normal text-muted-foreground"
+          },
+          {
+            "field_id": "label_email",
+            "element": "Label",
+            "original_text": "Email*",
+            "max_chars": 6,
+            "min_chars": 3,
+            "type": "label",
+            "notes": "text-sm font-normal text-muted-foreground"
+          },
+          {
+            "field_id": "label_message",
+            "element": "Label",
+            "original_text": "Message*",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "text-sm font-normal text-muted-foreground"
+          },
+          {
+            "field_id": "submit_button",
+            "element": "Button",
+            "original_text": "Send Now",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "button",
+            "notes": "rounded-full, text-sm font-medium"
+          }
+        ]
+      },
+      {
+        "section": "contact_info",
+        "fields": [
+          {
+            "field_id": "email_link",
+            "element": "a",
+            "original_text": "hello@shadcnspace.com",
+            "max_chars": 21,
+            "min_chars": 11,
+            "type": "inline",
+            "notes": "text-foreground/50 font-medium, mailto link"
+          },
+          {
+            "field_id": "phone_link",
+            "element": "a",
+            "original_text": "+901 5588 2500",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "inline",
+            "notes": "text-foreground/50 font-medium, tel link"
+          }
+        ]
+      },
+      {
+        "section": "footer_branding",
+        "fields": [
+          {
+            "field_id": "credit",
+            "element": "p",
+            "original_text": "Designed by shadcnspace",
+            "max_chars": 23,
+            "min_chars": 12,
+            "type": "inline",
+            "notes": "text-base font-normal text-foreground/50"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "social_links",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "social_name",
+            "sample_text": "Dribble",
+            "max_chars": 10,
+            "min_chars": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "contact-03",
+    "block_title": "Contact 03 - Contact form with checklist and avatar testimonial",
+    "category": "contact",
+    "files": [
+      "components/shadcn-space/blocks/contact-03/contact.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Get in touch",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl md:text-5xl font-semibold"
+          }
+        ]
+      },
+      {
+        "section": "info_panel",
+        "fields": [
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Let's collaborate and create something amazing! Tell me about your project—I'm all ears.",
+            "max_chars": 88,
+            "min_chars": 44,
+            "type": "description",
+            "notes": "text-lg font-normal text-muted-foreground"
+          },
+          {
+            "field_id": "person_name",
+            "element": "p",
+            "original_text": "Courtney Henry",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "inline",
+            "notes": "text-base font-medium, avatar name"
+          },
+          {
+            "field_id": "person_role",
+            "element": "p",
+            "original_text": "Onboarding & Success Manager",
+            "max_chars": 28,
+            "min_chars": 14,
+            "type": "inline",
+            "notes": "text-sm font-normal text-muted-foreground"
+          }
+        ]
+      },
+      {
+        "section": "form",
+        "fields": [
+          {
+            "field_id": "placeholder_name",
+            "element": "Input",
+            "original_text": "Name *",
+            "max_chars": 6,
+            "min_chars": 3,
+            "type": "label",
+            "notes": "Input placeholder"
+          },
+          {
+            "field_id": "placeholder_email",
+            "element": "Input",
+            "original_text": "Email *",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Input placeholder"
+          },
+          {
+            "field_id": "placeholder_message",
+            "element": "Textarea",
+            "original_text": "Tell us about your project",
+            "max_chars": 26,
+            "min_chars": 13,
+            "type": "label",
+            "notes": "Textarea placeholder"
+          },
+          {
+            "field_id": "submit_button",
+            "element": "Button",
+            "original_text": "Submit message",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "button",
+            "notes": "rounded-full, animated arrow icon, text-sm font-medium"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "checklist_items",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "item_text",
+            "sample_text": "Access to all core Shadcn UI blocks",
+            "max_chars": 36,
+            "min_chars": 18
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "contact-04",
+    "block_title": "Contact 04 - Inverted card with location info, image, and inquiry form",
+    "category": "contact",
+    "files": [
+      "components/shadcn-space/blocks/contact-04/contact.tsx"
+    ],
+    "sections": [
+      {
+        "section": "info_panel",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "Our locations",
+            "max_chars": 13,
+            "min_chars": 7,
+            "type": "label",
+            "notes": "bg-background text-foreground, pill badge"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Let's discuss about your project and take it the next level.",
+            "max_chars": 60,
+            "min_chars": 30,
+            "type": "heading",
+            "notes": "text-3xl md:text-4xl font-medium, white text on dark bg"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "We proudly serve many local communities. Check if we're in your area.",
+            "max_chars": 69,
+            "min_chars": 35,
+            "type": "description",
+            "notes": "text-base font-normal, white/50 opacity"
+          },
+          {
+            "field_id": "address",
+            "element": "p",
+            "original_text": "202 Willow Creek Rd, Round Rock, TX 78664",
+            "max_chars": 41,
+            "min_chars": 21,
+            "type": "inline",
+            "notes": "Paired with MapPin icon, white text"
+          },
+          {
+            "field_id": "map_link",
+            "element": "a",
+            "original_text": "View on map",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "inline",
+            "notes": "Underlined link under address"
+          },
+          {
+            "field_id": "email",
+            "element": "p",
+            "original_text": "info@shadcnspace.com",
+            "max_chars": 20,
+            "min_chars": 10,
+            "type": "inline",
+            "notes": "Paired with Mail icon, mailto link"
+          },
+          {
+            "field_id": "phone",
+            "element": "p",
+            "original_text": "(512) 203-0405",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "inline",
+            "notes": "Paired with Phone icon, tel link"
+          }
+        ]
+      },
+      {
+        "section": "form",
+        "fields": [
+          {
+            "field_id": "form_heading",
+            "element": "p",
+            "original_text": "Get a free quote",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "subheading",
+            "notes": "text-2xl font-semibold"
+          },
+          {
+            "field_id": "placeholder_username",
+            "element": "Input",
+            "original_text": "Username *",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "label",
+            "notes": "Input placeholder"
+          },
+          {
+            "field_id": "placeholder_phone",
+            "element": "Input",
+            "original_text": "Phone number *",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "label",
+            "notes": "Input placeholder, type=number"
+          },
+          {
+            "field_id": "placeholder_email",
+            "element": "Input",
+            "original_text": "Email address *",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Input placeholder, type=email"
+          },
+          {
+            "field_id": "checkbox_web_design",
+            "element": "Label",
+            "original_text": "Web design services",
+            "max_chars": 19,
+            "min_chars": 10,
+            "type": "label",
+            "notes": "Checkbox label, text-sm font-normal"
+          },
+          {
+            "field_id": "checkbox_web_dev",
+            "element": "Label",
+            "original_text": "Web development",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Checkbox label, text-sm font-normal"
+          },
+          {
+            "field_id": "checkbox_branding",
+            "element": "Label",
+            "original_text": "Branding & marketing",
+            "max_chars": 20,
+            "min_chars": 10,
+            "type": "label",
+            "notes": "Checkbox label, text-sm font-normal"
+          },
+          {
+            "field_id": "submit_button",
+            "element": "Button",
+            "original_text": "Submit Inquiry",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "button",
+            "notes": "rounded-lg, w-fit"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": []
+  },
+  {
+    "block_id": "faq-02",
+    "block_title": "FAQ 02 - Side-by-side images with accordion and teal badge",
+    "category": "faq",
+    "files": [
+      "components/shadcn-space/blocks/faq-02/faq.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "FAQs",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "label",
+            "notes": "bg-teal-400 text-white rounded-full"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Frequently asked questions",
+            "max_chars": 26,
+            "min_chars": 13,
+            "type": "heading",
+            "notes": "text-5xl font-medium"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Choosing the right digital partner is an important decision. Here are answers to common questions.",
+            "max_chars": 98,
+            "min_chars": 49,
+            "type": "description",
+            "notes": "text-muted-foreground text-lg"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "faq_items",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "question",
+            "sample_text": "1. What services does your web agency offer?",
+            "max_chars": 49,
+            "min_chars": 25
+          },
+          {
+            "field_id": "answer",
+            "sample_text": "We provide end-to-end digital solutions including website design, development, branding, UI/UX, eCommerce platforms, and ongoing optimization to help businesses scale effectively.",
+            "max_chars": 179,
+            "min_chars": 90
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "faq-03",
+    "block_title": "FAQ 03 - Bordered layout with image, accordion and stats grid",
+    "category": "faq",
+    "files": [
+      "components/shadcn-space/blocks/faq-03/faq.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "subtitle",
+            "element": "span",
+            "original_text": "Know us better",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "inline",
+            "notes": "text-base font-normal text-muted-foreground, dot prefix"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "FAQs.",
+            "max_chars": 5,
+            "min_chars": 3,
+            "type": "heading",
+            "notes": "text-5xl sm:text-6xl md:text-7xl font-semibold"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "faq_items",
+        "count": 6,
+        "fields": [
+          {
+            "field_id": "question",
+            "sample_text": "What services do you offer?",
+            "max_chars": 45,
+            "min_chars": 23
+          },
+          {
+            "field_id": "answer",
+            "sample_text": "We offer a wide range of services including web development, app development, and digital marketing.",
+            "max_chars": 286,
+            "min_chars": 143
+          }
+        ]
+      },
+      {
+        "item_id": "stat_items",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "count",
+            "sample_text": "38+",
+            "max_chars": 4,
+            "min_chars": 2
+          },
+          {
+            "field_id": "title",
+            "sample_text": "Agencies approved",
+            "max_chars": 19,
+            "min_chars": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "faq-04",
+    "block_title": "FAQ 04 - FAQ with sidebar CTA card, avatar group, and numbered accordion",
+    "category": "faq",
+    "files": [
+      "components/shadcn-space/blocks/faq-04/faq.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "FAQs",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "label",
+            "notes": "variant=outline, border-0 outline outline-border"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Explore answers to our asked questions",
+            "max_chars": 38,
+            "min_chars": 19,
+            "type": "heading",
+            "notes": "text-3xl md:text-5xl font-medium max-w-lg"
+          }
+        ]
+      },
+      {
+        "section": "cta_card",
+        "fields": [
+          {
+            "field_id": "card_heading",
+            "element": "h4",
+            "original_text": "Still have questions? Our team is ready to assist.",
+            "max_chars": 50,
+            "min_chars": 25,
+            "type": "subheading",
+            "notes": "text-2xl font-medium, inside bordered card"
+          },
+          {
+            "field_id": "button_schedule",
+            "element": "Button",
+            "original_text": "Schedule a Call",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "button",
+            "notes": "Primary button with Calendar icon, rounded-full"
+          },
+          {
+            "field_id": "button_quote",
+            "element": "Button",
+            "original_text": "Get a Quote",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "variant=outline with Mail icon, rounded-full"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "faq_items",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "question",
+            "sample_text": "How much does a typical project cost?",
+            "max_chars": 56,
+            "min_chars": 28
+          },
+          {
+            "field_id": "answer",
+            "sample_text": "Pricing varies based on scope and requirements, but we focus on delivering measurable value. After understanding your needs, we provide transparent, tailored proposals.",
+            "max_chars": 286,
+            "min_chars": 143
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "blog-02",
+    "block_title": "Blog 02 - Blog grid with featured wide card, badges, and dates",
+    "category": "blog",
+    "files": [
+      "components/shadcn-space/blocks/blog-02/blog.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "section_number",
+            "element": "span",
+            "original_text": "[06]",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "inline",
+            "notes": "Section index label"
+          },
+          {
+            "field_id": "subtitle",
+            "element": "p",
+            "original_text": "Media center",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "inline",
+            "notes": "text-foreground/50"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Stay updated with the latest news, insights and more",
+            "max_chars": 53,
+            "min_chars": 27,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl md:text-5xl font-medium"
+          },
+          {
+            "field_id": "view_all_button",
+            "element": "Button",
+            "original_text": "View All",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "button",
+            "notes": "variant=outline, with ArrowRight icon"
+          },
+          {
+            "field_id": "read_more",
+            "element": "span",
+            "original_text": "Read more",
+            "max_chars": 9,
+            "min_chars": 5,
+            "type": "inline",
+            "notes": "text-sm font-medium, on each card with ChevronRight"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "blog_cards",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "title",
+            "sample_text": "How SaaS companies can scale faster with smart design and development",
+            "max_chars": 69,
+            "min_chars": 35
+          },
+          {
+            "field_id": "category",
+            "sample_text": "Insights",
+            "max_chars": 8,
+            "min_chars": 4
+          },
+          {
+            "field_id": "date",
+            "sample_text": "2026-10-21",
+            "max_chars": 10,
+            "min_chars": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "blog-03",
+    "block_title": "Blog 03 - Horizontal carousel blog with progress bar and bordered layout",
+    "category": "blog",
+    "files": [
+      "components/shadcn-space/blocks/blog-03/blog.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "subtitle",
+            "element": "span",
+            "original_text": "Whats cooking?",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "inline",
+            "notes": "text-base font-normal text-muted-foreground, dot prefix"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Blogs.",
+            "max_chars": 6,
+            "min_chars": 3,
+            "type": "heading",
+            "notes": "text-5xl sm:text-6xl md:text-7xl font-semibold"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "blog_cards",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "title",
+            "sample_text": "Digital Strategy & Layouts",
+            "max_chars": 36,
+            "min_chars": 18
+          },
+          {
+            "field_id": "description",
+            "sample_text": "We create conversion-driven layouts and visual structures that turn visitors into customers while keeping your brand visually powerful.",
+            "max_chars": 135,
+            "min_chars": 68
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "blog-04",
+    "block_title": "Blog 04 - Featured blog post with small side cards on muted background",
+    "category": "blog",
+    "files": [
+      "components/shadcn-space/blocks/blog-04/blog.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Latest insights",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "heading",
+            "notes": "text-3xl sm:text-5xl font-semibold"
+          },
+          {
+            "field_id": "view_all_button",
+            "element": "Button",
+            "original_text": "View All",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "button",
+            "notes": "variant=outline, rounded-full with ArrowRight"
+          }
+        ]
+      },
+      {
+        "section": "featured_post",
+        "fields": [
+          {
+            "field_id": "featured_title",
+            "element": "h3",
+            "original_text": "Global markets will bloom in early 2026",
+            "max_chars": 39,
+            "min_chars": 20,
+            "type": "subheading",
+            "notes": "text-2xl font-medium"
+          },
+          {
+            "field_id": "featured_description",
+            "element": "p",
+            "original_text": "Economic indicators point toward renewed investor confidence as global markets rebound.",
+            "max_chars": 87,
+            "min_chars": 44,
+            "type": "description",
+            "notes": "text-lg text-muted-foreground"
+          },
+          {
+            "field_id": "featured_author",
+            "element": "p",
+            "original_text": "Evelyn Hayes",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "inline",
+            "notes": "text-lg font-medium, with avatar"
+          },
+          {
+            "field_id": "featured_date",
+            "element": "span",
+            "original_text": "Nov 15, 2026",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "inline",
+            "notes": "text-sm text-muted-foreground"
+          },
+          {
+            "field_id": "featured_badge",
+            "element": "Badge",
+            "original_text": "Insights",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "variant=secondary"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "blog_cards",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "title",
+            "sample_text": "Travel trends shift globally",
+            "max_chars": 46,
+            "min_chars": 23
+          },
+          {
+            "field_id": "author",
+            "sample_text": "Elias Thorne",
+            "max_chars": 12,
+            "min_chars": 6
+          },
+          {
+            "field_id": "date",
+            "sample_text": "2026-12-12",
+            "max_chars": 10,
+            "min_chars": 5
+          },
+          {
+            "field_id": "category",
+            "sample_text": "Trends",
+            "max_chars": 8,
+            "min_chars": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "blog-05",
+    "block_title": "Blog 05 - Blog cards with author avatar, badges, and hover tilt",
+    "category": "blog",
+    "files": [
+      "components/shadcn-space/blocks/blog-05/blog.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "subtitle",
+            "element": "span",
+            "original_text": "Whats new?",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "inline",
+            "notes": "text-base font-normal text-muted-foreground, dot prefix"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Stay updated with the latest news, insights",
+            "max_chars": 44,
+            "min_chars": 22,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl md:text-5xl font-medium"
+          },
+          {
+            "field_id": "view_all_button",
+            "element": "Button",
+            "original_text": "View All",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "button",
+            "notes": "rounded-full, text-sm font-medium with ArrowRight"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "blog_cards",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "title",
+            "sample_text": "How AI is reshaping the future of SaaS platforms",
+            "max_chars": 53,
+            "min_chars": 27
+          },
+          {
+            "field_id": "badge",
+            "sample_text": "AI",
+            "max_chars": 8,
+            "min_chars": 4
+          },
+          {
+            "field_id": "date",
+            "sample_text": "2026-02-13",
+            "max_chars": 10,
+            "min_chars": 5
+          },
+          {
+            "field_id": "author_name",
+            "sample_text": "Evelyn Hayes",
+            "max_chars": 12,
+            "min_chars": 6
+          },
+          {
+            "field_id": "published_date",
+            "sample_text": "2026-01-15",
+            "max_chars": 10,
+            "min_chars": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "footer-03",
+    "block_title": "Footer 03 - Footer with newsletter signup, link columns, legal links, and SVG subfooter",
+    "category": "footer",
+    "files": [
+      "components/shadcn-space/blocks/footer-03/footer.tsx",
+      "components/shadcn-space/blocks/footer-03/subfooter.tsx"
+    ],
+    "sections": [
+      {
+        "section": "newsletter",
+        "fields": [
+          {
+            "field_id": "newsletter_heading",
+            "element": "h3",
+            "original_text": "Unlock what's hidden ✨",
+            "max_chars": 22,
+            "min_chars": 11,
+            "type": "subheading",
+            "notes": "text-2xl font-medium, contains emoji"
+          },
+          {
+            "field_id": "newsletter_description",
+            "element": "p",
+            "original_text": "Get early access to exclusive programs, workshops, and events. Stay updated with industry news and reports.",
+            "max_chars": 107,
+            "min_chars": 54,
+            "type": "description",
+            "notes": "text-base text-muted-foreground"
+          },
+          {
+            "field_id": "email_placeholder",
+            "element": "Input",
+            "original_text": "Enter your email",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Input placeholder, rounded-full"
+          },
+          {
+            "field_id": "subscribe_button",
+            "element": "Button",
+            "original_text": "Subscribe",
+            "max_chars": 9,
+            "min_chars": 5,
+            "type": "button",
+            "notes": "rounded-full, text-sm font-medium with ArrowRight"
+          }
+        ]
+      },
+      {
+        "section": "legal",
+        "fields": [
+          {
+            "field_id": "copyright",
+            "element": "p",
+            "original_text": "©2026 Shadcn Space. All Rights Reserved.",
+            "max_chars": 40,
+            "min_chars": 20,
+            "type": "inline",
+            "notes": "text-base font-normal text-muted-foreground"
+          },
+          {
+            "field_id": "terms_link",
+            "element": "a",
+            "original_text": "Terms & Conditions",
+            "max_chars": 18,
+            "min_chars": 9,
+            "type": "inline",
+            "notes": "text-muted-foreground text-base"
+          },
+          {
+            "field_id": "privacy_link",
+            "element": "a",
+            "original_text": "Privacy policy",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "inline",
+            "notes": "text-muted-foreground text-base"
+          },
+          {
+            "field_id": "sitemap_link",
+            "element": "a",
+            "original_text": "Sitemap",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "inline",
+            "notes": "text-muted-foreground text-base"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "link_column_1",
+        "count": 6,
+        "fields": [
+          {
+            "field_id": "link_title",
+            "sample_text": "Landing page",
+            "max_chars": 12,
+            "min_chars": 6
+          }
+        ]
+      },
+      {
+        "item_id": "link_column_2",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "link_title",
+            "sample_text": "Startup",
+            "max_chars": 11,
+            "min_chars": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "footer-04",
+    "block_title": "Footer 04 - Multi-column footer with section titles, newsletter, social icons, SVG subfooter",
+    "category": "footer",
+    "files": [
+      "components/shadcn-space/blocks/footer-04/footer.tsx",
+      "components/shadcn-space/blocks/footer-04/subfooter.tsx"
+    ],
+    "sections": [
+      {
+        "section": "newsletter",
+        "fields": [
+          {
+            "field_id": "newsletter_subtitle",
+            "element": "p",
+            "original_text": "Stay Connected",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "inline",
+            "notes": "text-sm text-muted-foreground"
+          },
+          {
+            "field_id": "newsletter_heading",
+            "element": "h3",
+            "original_text": "Subscribe to our Newsletter for the latest news",
+            "max_chars": 48,
+            "min_chars": 24,
+            "type": "subheading",
+            "notes": "text-lg font-medium"
+          },
+          {
+            "field_id": "email_placeholder",
+            "element": "Input",
+            "original_text": "Enter your email",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Input placeholder, rounded-full"
+          }
+        ]
+      },
+      {
+        "section": "legal",
+        "fields": [
+          {
+            "field_id": "copyright",
+            "element": "p",
+            "original_text": "©2026 Shadcn Space. All Rights Reserved.",
+            "max_chars": 40,
+            "min_chars": 20,
+            "type": "inline",
+            "notes": "text-sm font-normal text-muted-foreground"
+          },
+          {
+            "field_id": "terms_link",
+            "element": "a",
+            "original_text": "Terms & Conditions",
+            "max_chars": 18,
+            "min_chars": 9,
+            "type": "inline",
+            "notes": "text-sm text-muted-foreground"
+          },
+          {
+            "field_id": "privacy_link",
+            "element": "a",
+            "original_text": "Privacy policy",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "inline",
+            "notes": "text-sm text-muted-foreground"
+          },
+          {
+            "field_id": "sitemap_link",
+            "element": "a",
+            "original_text": "Sitemap",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "inline",
+            "notes": "text-sm text-muted-foreground"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "footer_section_quick_links",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "section_title",
+            "sample_text": "Quick Links",
+            "max_chars": 11,
+            "min_chars": 6
+          },
+          {
+            "field_id": "link_title",
+            "sample_text": "Shadcn UI Blocks & Templates",
+            "max_chars": 28,
+            "min_chars": 14
+          }
+        ]
+      },
+      {
+        "item_id": "footer_section_media",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "section_title",
+            "sample_text": "Media & Resources",
+            "max_chars": 17,
+            "min_chars": 9
+          },
+          {
+            "field_id": "link_title",
+            "sample_text": "News / Press Release",
+            "max_chars": 20,
+            "min_chars": 10
+          }
+        ]
+      },
+      {
+        "item_id": "footer_section_services",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "section_title",
+            "sample_text": "Our Services",
+            "max_chars": 12,
+            "min_chars": 6
+          },
+          {
+            "field_id": "link_title",
+            "sample_text": "Search Engine Optimization & SEM",
+            "max_chars": 32,
+            "min_chars": 16
+          }
+        ]
+      },
+      {
+        "item_id": "footer_section_other",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "section_title",
+            "sample_text": "Other",
+            "max_chars": 5,
+            "min_chars": 3
+          },
+          {
+            "field_id": "link_title",
+            "sample_text": "Contact us",
+            "max_chars": 10,
+            "min_chars": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "footer-05",
+    "block_title": "Footer 05 - Minimal centered footer with nav links and bordered layout",
+    "category": "footer",
+    "files": [
+      "components/shadcn-space/blocks/footer-05/footer.tsx"
+    ],
+    "sections": [
+      {
+        "section": "bottom",
+        "fields": [
+          {
+            "field_id": "copyright",
+            "element": "p",
+            "original_text": "© 2026 shadcnspace. All Rights Reserved.",
+            "max_chars": 40,
+            "min_chars": 20,
+            "type": "inline",
+            "notes": "text-base text-muted-foreground"
+          },
+          {
+            "field_id": "designed_by_prefix",
+            "element": "p",
+            "original_text": "Designed by",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "inline",
+            "notes": "text-base text-muted-foreground"
+          },
+          {
+            "field_id": "designed_by_link",
+            "element": "a",
+            "original_text": "shadcnspace",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "inline",
+            "notes": "hover:text-foreground link"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "nav_links",
+        "count": 6,
+        "fields": [
+          {
+            "field_id": "label",
+            "sample_text": "Services",
+            "max_chars": 8,
+            "min_chars": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "footer-06",
+    "block_title": "Footer 06 - CTA footer with personal profile, contact email, social grid, and bordered layout",
+    "category": "footer",
+    "files": [
+      "components/shadcn-space/blocks/footer-06/footer.tsx"
+    ],
+    "sections": [
+      {
+        "section": "cta",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Ready to create something extraordinary? Let's do it.",
+            "max_chars": 53,
+            "min_chars": 27,
+            "type": "heading",
+            "notes": "text-4xl lg:text-5xl xl:text-6xl font-medium"
+          },
+          {
+            "field_id": "subtitle",
+            "element": "p",
+            "original_text": "Let's create together",
+            "max_chars": 21,
+            "min_chars": 11,
+            "type": "inline",
+            "notes": "text-base font-normal text-muted-foreground"
+          }
+        ]
+      },
+      {
+        "section": "profile",
+        "fields": [
+          {
+            "field_id": "person_name",
+            "element": "p",
+            "original_text": "Bianca Doe",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "inline",
+            "notes": "text-xl font-medium"
+          },
+          {
+            "field_id": "person_role",
+            "element": "p",
+            "original_text": "Front-end Developer",
+            "max_chars": 19,
+            "min_chars": 10,
+            "type": "inline",
+            "notes": "text-lg font-normal text-muted-foreground"
+          },
+          {
+            "field_id": "contact_label",
+            "element": "p",
+            "original_text": "Contact me",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "inline",
+            "notes": "text-base text-muted-foreground font-normal"
+          },
+          {
+            "field_id": "email",
+            "element": "a",
+            "original_text": "info@shadcnspace.com",
+            "max_chars": 20,
+            "min_chars": 10,
+            "type": "inline",
+            "notes": "text-2xl lg:text-3xl font-medium, mailto link"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Book a Call",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "rounded-full, animated arrow, text-sm font-medium"
+          }
+        ]
+      },
+      {
+        "section": "bottom",
+        "fields": [
+          {
+            "field_id": "copyright",
+            "element": "p",
+            "original_text": "© 2026 shadcnspace. All Rights Reserved.",
+            "max_chars": 40,
+            "min_chars": 20,
+            "type": "inline",
+            "notes": "text-sm font-normal text-muted-foreground"
+          },
+          {
+            "field_id": "designed_by_prefix",
+            "element": "p",
+            "original_text": "Designed by",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "inline",
+            "notes": "text-sm font-normal text-muted-foreground"
+          },
+          {
+            "field_id": "designed_by_name",
+            "element": "p",
+            "original_text": "Shadcnspace",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "inline",
+            "notes": "text-sm font-normal text-muted-foreground, with avatar"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": []
+  },
+  {
+    "block_id": "newsletter-02",
+    "block_title": "Newsletter 02 - Newsletter with image marquee and subscribe input",
+    "category": "newsletter",
+    "files": [
+      "components/shadcn-space/blocks/newsletter-02/newsletter.tsx"
+    ],
+    "sections": [
+      {
+        "section": "content",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Subscribe to Newsletter",
+            "max_chars": 23,
+            "min_chars": 12,
+            "type": "heading",
+            "notes": "sm:text-4xl text-3xl font-medium text-center"
+          },
+          {
+            "field_id": "email_placeholder",
+            "element": "InputGroupInput",
+            "original_text": "Email address",
+            "max_chars": 13,
+            "min_chars": 7,
+            "type": "label",
+            "notes": "Input placeholder"
+          },
+          {
+            "field_id": "subscribe_button",
+            "element": "InputGroupButton",
+            "original_text": "Subscribe",
+            "max_chars": 9,
+            "min_chars": 5,
+            "type": "button",
+            "notes": "rounded-full, animated ArrowUpRight, text-sm font-medium"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "marquee_items",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "category",
+            "sample_text": "Photography",
+            "max_chars": 11,
+            "min_chars": 6
+          },
+          {
+            "field_id": "count",
+            "sample_text": "65",
+            "max_chars": 2,
+            "min_chars": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "logo-cloud-02",
+    "block_title": "Logo Cloud 02 - Two-row marquee with hover text overlay on logo cards",
+    "category": "logo-cloud",
+    "files": [
+      "components/shadcn-space/blocks/logo-cloud-02/logo-cloud.tsx"
+    ],
+    "sections": [],
+    "repeatable_items": [
+      {
+        "item_id": "logo_cards",
+        "count": 11,
+        "fields": [
+          {
+            "field_id": "hover_title",
+            "sample_text": "Shadcn Space",
+            "max_chars": 12,
+            "min_chars": 6
+          },
+          {
+            "field_id": "hover_description",
+            "sample_text": "dummy text lorem ipsum logo text",
+            "max_chars": 32,
+            "min_chars": 16
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "logo-cloud-03",
+    "block_title": "Logo Cloud 03 - Single-row marquee with bordered logo items",
+    "category": "logo-cloud",
+    "files": [
+      "components/shadcn-space/blocks/logo-cloud-03/logo-cloud.tsx"
+    ],
+    "sections": [],
+    "repeatable_items": [
+      {
+        "item_id": "brand_logos",
+        "count": 6,
+        "fields": [
+          {
+            "field_id": "name",
+            "sample_text": "Brand 1",
+            "max_chars": 7,
+            "min_chars": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "logo-cloud-05",
+    "block_title": "Logo Cloud 05 - Centered grid with heading, description, and dot-corner cards",
+    "category": "logo-cloud",
+    "files": [
+      "components/shadcn-space/blocks/logo-cloud-05/logo-cloud.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Trusted by the world's leading brands/partners",
+            "max_chars": 47,
+            "min_chars": 24,
+            "type": "heading",
+            "notes": "md:text-5xl text-4xl font-medium text-center"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Over the years, we've cultivated strong partnerships with leading brands worldwide, ensuring top-tier service and innovative solutions.",
+            "max_chars": 135,
+            "min_chars": 68,
+            "type": "description",
+            "notes": "text-base text-muted-foreground text-center max-w-xl"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "logo_cards",
+        "count": 10,
+        "fields": [
+          {
+            "field_id": "alt",
+            "sample_text": "Logo 1",
+            "max_chars": 7,
+            "min_chars": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "gallery-02",
+    "block_title": "Gallery 02 - Auto-scrolling carousel of masterclass cards with ratings",
+    "category": "gallery",
+    "files": [
+      "components/shadcn-space/blocks/gallery-02/gallery.tsx"
+    ],
+    "sections": [],
+    "repeatable_items": [
+      {
+        "item_id": "masterclass_cards",
+        "count": 6,
+        "fields": [
+          {
+            "field_id": "title",
+            "sample_text": "Data Visualisation Masterclass",
+            "max_chars": 30,
+            "min_chars": 15
+          },
+          {
+            "field_id": "handle",
+            "sample_text": "@viziongraphic",
+            "max_chars": 14,
+            "min_chars": 7
+          },
+          {
+            "field_id": "duration",
+            "sample_text": "7 hr",
+            "max_chars": 4,
+            "min_chars": 2
+          },
+          {
+            "field_id": "rating",
+            "sample_text": "4.6",
+            "max_chars": 3,
+            "min_chars": 2
+          },
+          {
+            "field_id": "category",
+            "sample_text": "Design",
+            "max_chars": 9,
+            "min_chars": 5
+          }
+        ]
+      }
+    ]
+  }
+]

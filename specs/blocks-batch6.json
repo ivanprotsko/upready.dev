@@ -1,0 +1,1522 @@
+[
+  {
+    "block_id": "about-us-02",
+    "block_title": "About Us 02 - Particle Sphere with Stats",
+    "category": "about-us",
+    "files": [
+      "components/shadcn-space/blocks/about-us-02/about-us.tsx",
+      "components/shadcn-space/blocks/about-us-02/particalsphear.tsx"
+    ],
+    "sections": [
+      {
+        "section": "hero",
+        "fields": [
+          {
+            "field_id": "tagline",
+            "element": "p",
+            "original_text": "faster, collaborate smarter, and scale confidently",
+            "max_chars": 50,
+            "min_chars": 25,
+            "type": "subheading",
+            "notes": "Muted text-sm tagline above main heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Building powerful, intuitive SaaS solutions that help teams to move faster, collaborate smarter, and scale confidently.",
+            "max_chars": 119,
+            "min_chars": 60,
+            "type": "heading",
+            "notes": "Main section heading, sm:text-4xl text-3xl font-medium"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Learn More",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "button",
+            "notes": "Animated pill button with ArrowUpRight icon, hover slides icon position"
+          }
+        ]
+      },
+      {
+        "section": "stats",
+        "fields": [
+          {
+            "field_id": "stat_1_label",
+            "element": "p",
+            "original_text": "People who have launched their websites",
+            "max_chars": 39,
+            "min_chars": 20,
+            "type": "stat_label",
+            "notes": "text-primary/50 text-base, inside rounded-3xl card with border"
+          },
+          {
+            "field_id": "stat_1_value",
+            "element": "h3",
+            "original_text": "40K+",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "stat_value",
+            "notes": "text-5xl font-medium, '+' rendered in blue-500 span"
+          },
+          {
+            "field_id": "stat_2_label",
+            "element": "p",
+            "original_text": "Experienced professionals ready to assist",
+            "max_chars": 41,
+            "min_chars": 21,
+            "type": "stat_label",
+            "notes": "text-primary/50 text-base, inside rounded-3xl card with border"
+          },
+          {
+            "field_id": "stat_2_value",
+            "element": "h3",
+            "original_text": "238+",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "stat_value",
+            "notes": "text-5xl font-medium, '+' rendered in blue-500 span"
+          },
+          {
+            "field_id": "stat_3_label",
+            "element": "p",
+            "original_text": "Average end users across all our products based on usage.",
+            "max_chars": 57,
+            "min_chars": 29,
+            "type": "stat_label",
+            "notes": "text-primary/50 text-base, inside rounded-3xl card with border"
+          },
+          {
+            "field_id": "stat_3_value",
+            "element": "h3",
+            "original_text": "485K+",
+            "max_chars": 5,
+            "min_chars": 3,
+            "type": "stat_value",
+            "notes": "text-5xl font-medium, '+' rendered in blue-500 span"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": []
+  },
+  {
+    "block_id": "about-us-03",
+    "block_title": "About Us 03 - Editorial Stats with Banner Image",
+    "category": "about-us",
+    "files": [
+      "components/shadcn-space/blocks/about-us-03/about-us.tsx",
+      "components/shadcn-space/blocks/about-us-03/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "label",
+            "element": "span",
+            "original_text": "Who we are",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "label",
+            "notes": "Muted text with dot indicator, text-base font-normal"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Experiences.",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "heading",
+            "notes": "Large display heading, text-5xl sm:text-6xl md:text-7xl font-semibold"
+          }
+        ]
+      },
+      {
+        "section": "banner",
+        "fields": [
+          {
+            "field_id": "banner_description",
+            "element": "p",
+            "original_text": "A creative video production studio creating cinematic visuals, meaningful stories, and impactful content that elevates brands and turns ideas into experiences.",
+            "max_chars": 159,
+            "min_chars": 80,
+            "type": "description",
+            "notes": "text-2xl md:text-3xl font-semibold text-white, on background image section"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "stats",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "stat_value",
+            "element": "h3",
+            "sample_text": "98%",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "stat_value",
+            "notes": "text-5xl md:text-6xl font-medium. Values: '98%', '87+', '50k+'"
+          },
+          {
+            "field_id": "stat_label",
+            "element": "p",
+            "sample_text": "Successful projects launched",
+            "max_chars": 28,
+            "min_chars": 14,
+            "type": "stat_label",
+            "notes": "text-base font-medium text-muted-foreground. Longest: 'Successful projects launched' (28 chars)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "about-us-04",
+    "block_title": "About Us 04 - Image Gallery with Stats",
+    "category": "about-us",
+    "files": [
+      "components/shadcn-space/blocks/about-us-04/about-us.tsx",
+      "components/shadcn-space/blocks/about-us-04/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "About us",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Badge component, text-sm font-normal"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Where living feels extraordinary",
+            "max_chars": 32,
+            "min_chars": 16,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl lg:text-5xl font-medium"
+          },
+          {
+            "field_id": "description_1",
+            "element": "p",
+            "original_text": "Designed for those who appreciate refined living, our residences blend modern architecture with thoughtful details to create spaces that inspire comfort, connection, and effortless luxury.",
+            "max_chars": 188,
+            "min_chars": 94,
+            "type": "description",
+            "notes": "First paragraph, text-base sm:text-lg text-muted-foreground"
+          },
+          {
+            "field_id": "description_2",
+            "element": "p",
+            "original_text": "Set in a well-connected neighborhood, the community offers seamless access to essentials while maintaining a peaceful atmosphere. Expansive views, curated amenities, and lush surroundings elevate your lifestyle.",
+            "max_chars": 211,
+            "min_chars": 106,
+            "type": "description",
+            "notes": "Second paragraph, text-base sm:text-lg text-muted-foreground"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Learn more",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "button",
+            "notes": "Ghost variant button with ArrowRight icon"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "stats",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "stat_value",
+            "element": "p",
+            "sample_text": "6.8k",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "stat_value",
+            "notes": "text-5xl md:text-6xl font-medium. Values: '236', '6.8k', '40+'"
+          },
+          {
+            "field_id": "stat_label",
+            "element": "p",
+            "sample_text": "Square feet of landscaped greens and open spaces",
+            "max_chars": 48,
+            "min_chars": 24,
+            "type": "stat_label",
+            "notes": "text-base md:text-lg font-normal. Longest: 'Square feet of landscaped greens and open spaces' (48 chars)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "about-us-05",
+    "block_title": "About Us 05 - Card Grid with Chart and Stats",
+    "category": "about-us",
+    "files": [
+      "components/shadcn-space/blocks/about-us-05/about-us.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "About Us",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Badge with bg-background border-border text-primary"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Powering the future of intelligent software product",
+            "max_chars": 51,
+            "min_chars": 26,
+            "type": "heading",
+            "notes": "sm:text-5xl text-3xl font-semibold text-center"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "We help organizations move faster with reliable, scalable technology built for modern teams. Our platform combines powerful automation, actionable insights, and enterprise-grade security to simplify complex workflows.",
+            "max_chars": 217,
+            "min_chars": 109,
+            "type": "description",
+            "notes": "text-center text-muted-foreground sm:text-xl text-base"
+          }
+        ]
+      },
+      {
+        "section": "card_chart",
+        "fields": [
+          {
+            "field_id": "chart_stat_value",
+            "element": "CardTitle",
+            "original_text": "3570+",
+            "max_chars": 5,
+            "min_chars": 3,
+            "type": "stat_value",
+            "notes": "sm:text-5xl text-4xl font-medium, card with BarChart visualization"
+          },
+          {
+            "field_id": "chart_stat_label",
+            "element": "CardDescription",
+            "original_text": "Businesses trust our platform to run mission-critical operations",
+            "max_chars": 64,
+            "min_chars": 32,
+            "type": "stat_label",
+            "notes": "text-muted-foreground text-lg"
+          }
+        ]
+      },
+      {
+        "section": "card_features",
+        "fields": [
+          {
+            "field_id": "feature_stat_value",
+            "element": "CardTitle",
+            "original_text": "650+",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "stat_value",
+            "notes": "sm:text-5xl text-4xl font-medium, appears in two cards (top with BadgeCheck animation, bottom with Bolt icon)"
+          },
+          {
+            "field_id": "feature_stat_label",
+            "element": "CardDescription",
+            "original_text": "Advanced features designed to streamline workflows",
+            "max_chars": 50,
+            "min_chars": 25,
+            "type": "stat_label",
+            "notes": "text-muted-foreground text-lg, same text in both feature cards"
+          }
+        ]
+      },
+      {
+        "section": "card_team",
+        "fields": [
+          {
+            "field_id": "team_stat_value",
+            "element": "CardTitle",
+            "original_text": "50+",
+            "max_chars": 3,
+            "min_chars": 2,
+            "type": "stat_value",
+            "notes": "sm:text-5xl text-4xl font-medium text-white, on dark bg with image above"
+          },
+          {
+            "field_id": "team_stat_label",
+            "element": "CardDescription",
+            "original_text": "Experts dedicated to security, performance, and innovation",
+            "max_chars": 58,
+            "min_chars": 29,
+            "type": "stat_label",
+            "notes": "text-white/50 text-lg"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": []
+  },
+  {
+    "block_id": "team-03",
+    "block_title": "Team 03 - Interactive Hover Gallery",
+    "category": "team",
+    "files": [
+      "components/shadcn-space/blocks/team-03/team.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "label",
+            "element": "p",
+            "original_text": "Who we are",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "label",
+            "notes": "Muted text with dot indicator, text-base text-muted-foreground"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Team.",
+            "max_chars": 5,
+            "min_chars": 3,
+            "type": "heading",
+            "notes": "Large display heading, text-5xl md:text-7xl font-semibold"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "team_members",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "member_name",
+            "element": "h3",
+            "sample_text": "Ronald Richards",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "heading",
+            "notes": "text-lg font-semibold. Longest: 'Ronald Richards' (15 chars)"
+          },
+          {
+            "field_id": "member_role",
+            "element": "p",
+            "sample_text": "Sales & Marketing",
+            "max_chars": 17,
+            "min_chars": 9,
+            "type": "label",
+            "notes": "text-base text-muted-foreground. Longest: 'Sales & Marketing' (17 chars)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "team-04",
+    "block_title": "Team 04 - Leadership Grid with Ripple Card",
+    "category": "team",
+    "files": [
+      "components/shadcn-space/blocks/team-04/team.tsx",
+      "components/shadcn-space/blocks/team-04/style.css"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "Our Leadership",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "label",
+            "notes": "Badge variant=outline, text-sm"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Meet the experts behind the Shadcn Space web",
+            "max_chars": 44,
+            "min_chars": 22,
+            "type": "heading",
+            "notes": "text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-semibold"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Our success is driven by a passionate team committed to building reliable, scalable solutions. Their expertise, innovation, and customer-first mindset help grow with confidence.",
+            "max_chars": 177,
+            "min_chars": 89,
+            "type": "description",
+            "notes": "text-base sm:text-lg text-muted-foreground"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Meet the Team",
+            "max_chars": 13,
+            "min_chars": 7,
+            "type": "button",
+            "notes": "Rounded-full button with ArrowRight icon, group hover translate"
+          }
+        ]
+      },
+      {
+        "section": "highlight_card",
+        "fields": [
+          {
+            "field_id": "card_heading",
+            "element": "h6",
+            "original_text": "A team you can always rely on",
+            "max_chars": 29,
+            "min_chars": 15,
+            "type": "heading",
+            "notes": "text-3xl font-bold, inside teal-tinted Card with ripple animation"
+          },
+          {
+            "field_id": "card_description",
+            "element": "p",
+            "original_text": "Experienced, proactive, and dedicated to delivering technology",
+            "max_chars": 62,
+            "min_chars": 31,
+            "type": "description",
+            "notes": "text-sm text-muted-foreground, centered in card"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": []
+  },
+  {
+    "block_id": "team-05",
+    "block_title": "Team 05 - Agent Cards with Stats",
+    "category": "team",
+    "files": [
+      "components/shadcn-space/blocks/team-05/team.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Our Agents",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl md:text-5xl font-medium"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "agent_cards",
+        "count": 0,
+        "fields": [
+          {
+            "field_id": "agent_since_badge",
+            "element": "Badge",
+            "sample_text": "Est. Since 2019",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Blue badge, pattern: 'Est. Since {year}'. Data from props (teamData)."
+          },
+          {
+            "field_id": "agent_name",
+            "element": "h3",
+            "sample_text": "Agent Name",
+            "max_chars": 20,
+            "min_chars": 10,
+            "type": "heading",
+            "notes": "text-xl font-semibold, with BadgeCheck verification icon. Data from props."
+          },
+          {
+            "field_id": "agent_position",
+            "element": "p",
+            "sample_text": "Real Estate Agent",
+            "max_chars": 30,
+            "min_chars": 15,
+            "type": "label",
+            "notes": "text-sm text-muted-foreground. Data from props."
+          },
+          {
+            "field_id": "sale_label",
+            "element": "span",
+            "original_text": "Sale",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "stat_label",
+            "notes": "Static label after sale count number with Tag icon"
+          },
+          {
+            "field_id": "rent_label",
+            "element": "span",
+            "original_text": "Rent",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "stat_label",
+            "notes": "Static label after rent count number with KeyRound icon"
+          },
+          {
+            "field_id": "contact_button",
+            "element": "Button",
+            "original_text": "Contact Agent",
+            "max_chars": 13,
+            "min_chars": 7,
+            "type": "button",
+            "notes": "Primary button with ArrowRight icon"
+          },
+          {
+            "field_id": "stat_item",
+            "element": "p",
+            "sample_text": "Stat description line",
+            "max_chars": 50,
+            "min_chars": 25,
+            "type": "list_item",
+            "notes": "Check icon + text-base text-muted-foreground. Array of strings from props."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "navbar-02",
+    "block_title": "Navbar 02 - Mega Menu with Sticky Scroll",
+    "category": "navbar",
+    "files": [
+      "components/shadcn-space/blocks/navbar-02/navbar.tsx"
+    ],
+    "sections": [
+      {
+        "section": "actions",
+        "fields": [
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Contact us",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "button",
+            "notes": "Primary CTA button, h-auto px-5 py-2.5 rounded-lg"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "nav_sections",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "section_title",
+            "element": "NavigationMenuTrigger|NavigationMenuLink",
+            "sample_text": "Products",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Top-level nav items. Values: 'Products' (8), 'Services' (8), 'Solution' (8), 'Support' (7), 'Career' (6)"
+          },
+          {
+            "field_id": "section_subtitle",
+            "element": "p",
+            "sample_text": "Features",
+            "max_chars": 9,
+            "min_chars": 5,
+            "type": "label",
+            "notes": "Optional dropdown subtitle. Values: 'Features' (8), 'Use cases' (9). Only on items with dropdown."
+          }
+        ]
+      },
+      {
+        "item_id": "nav_items_products",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "item_title",
+            "element": "p",
+            "sample_text": "Developer Tools",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "text-sm font-medium. Values: 'AI' (2), 'Developer Tools' (15), 'API Integration' (15), 'Cloud Sync' (10)"
+          },
+          {
+            "field_id": "item_description",
+            "element": "p",
+            "sample_text": "Integrate AI tools into your app",
+            "max_chars": 32,
+            "min_chars": 16,
+            "type": "description",
+            "notes": "text-xs text-muted-foreground. Longest: 'Integrate AI tools into your app' (32 chars)"
+          }
+        ]
+      },
+      {
+        "item_id": "nav_items_solution",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "item_title",
+            "element": "p",
+            "sample_text": "Marketplace",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "text-sm font-medium. Values: 'Marketplace' (11), 'Guides' (6), 'Backup' (6), 'API Integration' (15)"
+          },
+          {
+            "field_id": "item_description",
+            "element": "p",
+            "sample_text": "Learn how to use AI tools",
+            "max_chars": 32,
+            "min_chars": 16,
+            "type": "description",
+            "notes": "text-xs text-muted-foreground. Longest: 'Integrate AI tools into your app' (32 chars)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "cta-03",
+    "block_title": "CTA 03 - Split Layout with Image Grid",
+    "category": "cta",
+    "files": [
+      "components/shadcn-space/blocks/cta-03/cta.tsx"
+    ],
+    "sections": [
+      {
+        "section": "content",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "Get started today",
+            "max_chars": 17,
+            "min_chars": 9,
+            "type": "label",
+            "notes": "Badge with bg-background text-foreground, border-0"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Ready to transform the way you work?",
+            "max_chars": 36,
+            "min_chars": 18,
+            "type": "heading",
+            "notes": "sm:text-5xl text-3xl font-semibold"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Unlock powerful tools designed to streamline operations, boost productivity, and help your team scale faster. Join thousands of businesses already building smarter.",
+            "max_chars": 164,
+            "min_chars": 82,
+            "type": "description",
+            "notes": "sm:text-base text-sm text-muted-foreground"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Start Free Trial",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "button",
+            "notes": "Renders as anchor tag, rounded-lg"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": []
+  },
+  {
+    "block_id": "cta-04",
+    "block_title": "CTA 04 - Centered Animated Text with Features",
+    "category": "cta",
+    "files": [
+      "components/shadcn-space/blocks/cta-04/cta.tsx"
+    ],
+    "sections": [
+      {
+        "section": "content",
+        "fields": [
+          {
+            "field_id": "eyebrow",
+            "element": "p",
+            "original_text": "5 STAR CUSTOMER • SUPPORT",
+            "max_chars": 25,
+            "min_chars": 13,
+            "type": "label",
+            "notes": "text-sm font-medium text-blue-500, uppercase style"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Advertise smarter and win in today’s mobile-first world.",
+            "max_chars": 56,
+            "min_chars": 28,
+            "type": "heading",
+            "notes": "sm:text-5xl text-3xl font-semibold, character-by-character stagger animation"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Start my free 14-day trial",
+            "max_chars": 26,
+            "min_chars": 13,
+            "type": "button",
+            "notes": "bg-blue-500 text-white, with ArrowRight icon"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "features",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "feature_text",
+            "element": "p",
+            "sample_text": "Access to all content",
+            "max_chars": 21,
+            "min_chars": 11,
+            "type": "inline",
+            "notes": "text-base font-medium with Check icon. Values: 'Cancel anytime' (14), 'Access to all content' (21), 'Expert support' (14)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "cta-05",
+    "block_title": "CTA 05 - Video Production Studio with Dialog",
+    "category": "cta",
+    "files": [
+      "components/shadcn-space/blocks/cta-05/cta.tsx"
+    ],
+    "sections": [
+      {
+        "section": "content",
+        "fields": [
+          {
+            "field_id": "heading_line1",
+            "element": "h2 (span)",
+            "original_text": "A creative video",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "heading",
+            "notes": "First line of uppercase heading, lg:text-5xl text-3xl font-semibold tracking-tighter"
+          },
+          {
+            "field_id": "heading_line2_left",
+            "element": "span",
+            "original_text": "production",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "heading",
+            "notes": "Second line left part, with video thumbnail Dialog in between"
+          },
+          {
+            "field_id": "heading_line2_right",
+            "element": "span",
+            "original_text": "studio",
+            "max_chars": 6,
+            "min_chars": 3,
+            "type": "heading",
+            "notes": "Second line right part, after video thumbnail Dialog"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Get Started",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "Animated pill button with ArrowUpRight icon, same style as about-us-02"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": []
+  },
+  {
+    "block_id": "portfolio-02",
+    "block_title": "Portfolio 02 - Full-Width Carousel with Progress",
+    "category": "portfolio",
+    "files": [
+      "components/shadcn-space/blocks/portfolio-02/portfolio.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "label",
+            "element": "span",
+            "original_text": "Featured Projects",
+            "max_chars": 17,
+            "min_chars": 9,
+            "type": "label",
+            "notes": "Muted text with dot indicator, right-aligned on desktop"
+          }
+        ]
+      },
+      {
+        "section": "navigation",
+        "fields": [
+          {
+            "field_id": "prev_label",
+            "element": "span",
+            "original_text": "Previous",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "text-sm, hidden on mobile (sm:inline)"
+          },
+          {
+            "field_id": "next_label",
+            "element": "span",
+            "original_text": "Next",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "label",
+            "notes": "text-sm, hidden on mobile (sm:inline)"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "portfolio_slides",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "tag",
+            "element": "span",
+            "sample_text": "Crpyto Project",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "label",
+            "notes": "Muted text with dot indicator. Values: 'Crpyto Project' (14), 'Awake Project' (13), 'Optura Project' (14)"
+          },
+          {
+            "field_id": "title",
+            "element": "h2",
+            "sample_text": "Cypgo - Secure digital asset",
+            "max_chars": 28,
+            "min_chars": 14,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight. Longest: 'Cypgo - Secure digital asset' (28 chars)"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "sample_text": "Crypgo is a next-generation cryptocurrency platform designed for fast, secure, and transparent trading. With advanced encryption, real-time market data, and an intuitive interface, it empowers users to trade confidently.",
+            "max_chars": 220,
+            "min_chars": 110,
+            "type": "description",
+            "notes": "text-muted-foreground text-base leading-relaxed. Longest: Cypgo description (220 chars)"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "sample_text": "Learn More",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "button",
+            "notes": "Outline variant button, same text for all slides"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "portfolio-03",
+    "block_title": "Portfolio 03 - Grid Carousel with Hover Overlay",
+    "category": "portfolio",
+    "files": [
+      "components/shadcn-space/blocks/portfolio-03/portfolio.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "label",
+            "element": "span",
+            "original_text": "Projects",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Muted text with dot indicator"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Our Projects.",
+            "max_chars": 13,
+            "min_chars": 7,
+            "type": "heading",
+            "notes": "Large display heading, text-5xl sm:text-6xl md:text-7xl font-semibold"
+          }
+        ]
+      },
+      {
+        "section": "navigation",
+        "fields": [
+          {
+            "field_id": "prev_label",
+            "element": "span",
+            "original_text": "Previous",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "text-sm, hidden on mobile (sm:inline)"
+          },
+          {
+            "field_id": "next_label",
+            "element": "span",
+            "original_text": "Next",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "label",
+            "notes": "text-sm, hidden on mobile (sm:inline)"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "portfolio_items",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "description",
+            "element": "p",
+            "sample_text": "Building Smarter Digital Products",
+            "max_chars": 33,
+            "min_chars": 17,
+            "type": "label",
+            "notes": "text-base text-foreground below image. Longest: 'Building Smarter Digital Products' (33 chars)"
+          },
+          {
+            "field_id": "overlay_button",
+            "element": "Button",
+            "sample_text": "See Project",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "Hover overlay button, rounded-full, same text for all items"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "portfolio-04",
+    "block_title": "Portfolio 04 - Expanding Carousel with Metadata",
+    "category": "portfolio",
+    "files": [
+      "components/shadcn-space/blocks/portfolio-04/portfolio.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "We are making products for the real world use case",
+            "max_chars": 50,
+            "min_chars": 25,
+            "type": "heading",
+            "notes": "text-3xl md:text-4xl font-medium, max-w-xl"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "portfolio_slides",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "title",
+            "element": "h3",
+            "sample_text": "DigitalArc - Creative Production Studio",
+            "max_chars": 39,
+            "min_chars": 20,
+            "type": "heading",
+            "notes": "text-xl md:text-2xl font-semibold. Longest: 'DigitalArc - Creative Production Studio' (39 chars)"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "sample_text": "Built with flexibility in mind, it supports seamless collaboration, streamlined campaign management, and measurable performance — empowering teams to deliver impactful customer experiences.",
+            "max_chars": 189,
+            "min_chars": 95,
+            "type": "description",
+            "notes": "text-muted-foreground text-sm md:text-base. Longest: Studiova description (189 chars)"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "sample_text": "View Platform",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "button",
+            "notes": "Outline variant with ArrowRight. Values: 'View Platform' (13), 'Explore Studio' (14), 'View Dashboard' (14)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "portfolio-05",
+    "block_title": "Portfolio 05 - Property Listing Cards",
+    "category": "portfolio",
+    "files": [
+      "components/shadcn-space/blocks/portfolio-05/portfolio.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "Properties",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "label",
+            "notes": "Badge variant=outline, text-sm"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Discover inspiring designed homes.",
+            "max_chars": 34,
+            "min_chars": 17,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl md:text-5xl font-semibold, centered"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Curated homes where elegance, style, and comfort unite.",
+            "max_chars": 55,
+            "min_chars": 28,
+            "type": "description",
+            "notes": "text-base text-muted-foreground, centered"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "property_cards",
+        "count": 0,
+        "fields": [
+          {
+            "field_id": "title",
+            "element": "h3",
+            "sample_text": "Property Name",
+            "max_chars": 30,
+            "min_chars": 15,
+            "type": "heading",
+            "notes": "text-lg text-foreground font-medium. Data from props."
+          },
+          {
+            "field_id": "address",
+            "element": "p",
+            "sample_text": "123 Street, City",
+            "max_chars": 40,
+            "min_chars": 20,
+            "type": "description",
+            "notes": "text-sm text-muted-foreground. Data from props."
+          },
+          {
+            "field_id": "price",
+            "element": "Badge",
+            "sample_text": "$500,000",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Badge rounded-full bg-muted. Data from props."
+          },
+          {
+            "field_id": "beds_label",
+            "element": "span",
+            "original_text": "Beds",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "stat_label",
+            "notes": "Static suffix after beds count, with BedDouble icon"
+          },
+          {
+            "field_id": "baths_label",
+            "element": "span",
+            "original_text": "Baths",
+            "max_chars": 5,
+            "min_chars": 3,
+            "type": "stat_label",
+            "notes": "Static suffix after baths count, with Bath icon"
+          },
+          {
+            "field_id": "area_value",
+            "element": "span",
+            "sample_text": "1,200 sqft",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "stat_value",
+            "notes": "text-sm, with Move icon. Area value from props, no static suffix."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "services-03",
+    "block_title": "Services 03 - Horizontal Accordion with Image",
+    "category": "services",
+    "files": [
+      "components/shadcn-space/blocks/services-03/services.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "label",
+            "element": "p",
+            "original_text": "Projects",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Muted text with dot indicator"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Services.",
+            "max_chars": 9,
+            "min_chars": 5,
+            "type": "heading",
+            "notes": "Large display heading, text-5xl md:text-7xl font-semibold"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "service_rows",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "number",
+            "element": "span",
+            "sample_text": "01",
+            "max_chars": 2,
+            "min_chars": 1,
+            "type": "label",
+            "notes": "Displayed in parentheses like '(01)'. Values: '01', '02', '03', '04'"
+          },
+          {
+            "field_id": "title",
+            "element": "h3",
+            "sample_text": "product design",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "heading",
+            "notes": "text-3xl font-medium capitalize. Longest: 'product design' (14 chars)"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "sample_text": "Intuitive mobile app design focused on usability, performance, and seamless user journeys across iOS and Andronumber platforms.",
+            "max_chars": 127,
+            "min_chars": 64,
+            "type": "description",
+            "notes": "text-base text-primary/50. Longest: app design desc (127 chars)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "services-04",
+    "block_title": "Services 04 - Carousel with Gradient Background",
+    "category": "services",
+    "files": [
+      "components/shadcn-space/blocks/services-04/services.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "Services",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Badge variant=secondary, font-semibold text-base"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Our Professional Cleaning Services",
+            "max_chars": 34,
+            "min_chars": 17,
+            "type": "heading",
+            "notes": "text-primary-foreground text-3xl sm:text-5xl font-medium, on primary bg"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Explore our efficient cleaning services designed to maintain a neat and tidy home environment.",
+            "max_chars": 94,
+            "min_chars": 47,
+            "type": "description",
+            "notes": "text-primary-foreground text-lg. Contains bold span 'cleaning services' within the sentence."
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "service_cards",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "service_title",
+            "element": "h6",
+            "sample_text": "Move-in / Move-out",
+            "max_chars": 18,
+            "min_chars": 9,
+            "type": "heading",
+            "notes": "font-semibold text-primary. Longest: 'Move-in / Move-out' (18 chars)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "services-05",
+    "block_title": "Services 05 - Medical Services Carousel",
+    "category": "services",
+    "files": [
+      "components/shadcn-space/blocks/services-05/services.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Comprehensive care, designed for you",
+            "max_chars": 36,
+            "min_chars": 18,
+            "type": "heading",
+            "notes": "text-4xl md:text-5xl font-medium, max-w-xl"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "We deliver advanced medical services powered by modern technology and compassionate expertise.",
+            "max_chars": 94,
+            "min_chars": 47,
+            "type": "description",
+            "notes": "text-muted-foreground text-base, max-w-md"
+          },
+          {
+            "field_id": "link",
+            "element": "a",
+            "original_text": "Explore all services",
+            "max_chars": 20,
+            "min_chars": 10,
+            "type": "button",
+            "notes": "Underlined text link, text-foreground font-medium"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "service_cards",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h6",
+            "sample_text": "Fertility & reproductive Care",
+            "max_chars": 36,
+            "min_chars": 18,
+            "type": "heading",
+            "notes": "text-2xl md:text-3xl font-medium. Longest: 'Preserving a woman's eggs for future' (36 chars)"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "sample_text": "Preserving a woman's eggs offers the freedom to plan for the future with confidence.Using advanced medical techniques and personalized care",
+            "max_chars": 139,
+            "min_chars": 70,
+            "type": "description",
+            "notes": "text-muted-foreground text-base sm:text-lg. Longest: egg preservation desc (139 chars)"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "sample_text": "Learn more",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "button",
+            "notes": "rounded-full bg-black dark:bg-white, same text for all cards"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "services-06",
+    "block_title": "Services 06 - Tabbed Financial Services",
+    "category": "services",
+    "files": [
+      "components/shadcn-space/blocks/services-06/services.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "eyebrow",
+            "element": "p",
+            "original_text": "services",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Uppercase text-sm font-medium, centered"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Exceptional financial services with assurance of satisfaction",
+            "max_chars": 61,
+            "min_chars": 31,
+            "type": "heading",
+            "notes": "text-3xl md:text-5xl font-medium, centered, max-w-3xl"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "service_tabs",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "tab_label",
+            "element": "TabsTrigger",
+            "sample_text": "Tax Advisory",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "label",
+            "notes": "Tab trigger text. Values: 'Accounting' (10), 'Planning' (8), 'Consulting' (10), 'Tax Advisory' (12)"
+          },
+          {
+            "field_id": "caption",
+            "element": "p",
+            "sample_text": "01 - Accounting",
+            "max_chars": 17,
+            "min_chars": 9,
+            "type": "label",
+            "notes": "text-sm text-foreground font-medium. Longest: '04 - Tax Advisory' (17 chars)"
+          },
+          {
+            "field_id": "title",
+            "element": "h2",
+            "sample_text": "Accounting & Book keeping services for growth",
+            "max_chars": 45,
+            "min_chars": 23,
+            "type": "heading",
+            "notes": "md:text-3xl text-2xl font-medium. Longest: 'Accounting & Book keeping services for growth' (45 chars)"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "sample_text": "With deep industry expertise and a commitment to accuracy, we provide reliable accounting services that give businesses complete financial clarity.",
+            "max_chars": 147,
+            "min_chars": 74,
+            "type": "description",
+            "notes": "text-muted-foreground text-base. Longest: Accounting description (147 chars)"
+          },
+          {
+            "field_id": "departments_heading",
+            "element": "p",
+            "original_text": "The Departments",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Static label for departments section, text-sm text-foreground"
+          },
+          {
+            "field_id": "department_item_left",
+            "element": "li",
+            "sample_text": "General Ledger Management",
+            "max_chars": 29,
+            "min_chars": 15,
+            "type": "list_item",
+            "notes": "Left column list items. Longest: 'Accounts Payable & Receivable' (29 chars)"
+          },
+          {
+            "field_id": "department_item_right",
+            "element": "li",
+            "sample_text": "Bank & Credit Card",
+            "max_chars": 18,
+            "min_chars": 9,
+            "type": "list_item",
+            "notes": "Right column list items. Longest: 'Bank & Credit Card' (18 chars)"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Learn More",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "button",
+            "notes": "Primary button, same text for all tabs"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+.feature-10-micro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: #1f2937;
+  border-radius: 50%;
+}
+
+.feature-10-micro:before,
+.feature-10-micro:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 3px #1f2937;
+  border-radius: 50%;
+}
+
+.feature-10-micro:before {
+  animation: feature-10-ripple 2s linear infinite;
+}
+
+.feature-10-micro:after {
+  animation: feature-10-ripple 2s 1s linear infinite;
+}
+
+@keyframes feature-10-ripple {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 426px) {
+  .feature-10-micro {
+    width: 200px;
+    height: 200px;
+  }
+}

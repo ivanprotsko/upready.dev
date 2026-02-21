@@ -1,0 +1,1694 @@
+[
+  {
+    "block_id": "hero-04",
+    "block_title": "Hero 04 - Portfolio Hero Section",
+    "category": "hero",
+    "files": [
+      "components/shadcn-space/blocks/hero-04/hero.tsx",
+      "components/shadcn-space/blocks/hero-04/navbar.tsx",
+      "components/shadcn-space/blocks/hero-04/index.tsx",
+      "components/shadcn-space/blocks/hero-04/hero.css"
+    ],
+    "sections": [
+      {
+        "section": "hero",
+        "fields": [
+          {
+            "field_id": "hero04_badge",
+            "element": "span",
+            "original_text": "Available for a new project",
+            "max_chars": 27,
+            "min_chars": 14,
+            "type": "label",
+            "notes": "Badge with green dot indicator, teal border, rounded-full"
+          },
+          {
+            "field_id": "hero04_heading_line1",
+            "element": "motion.span",
+            "original_text": "I'm Sophia",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "heading",
+            "notes": "First line of h1, 5xl-7xl, font-semibold, with wave icon inline"
+          },
+          {
+            "field_id": "hero04_heading_line2",
+            "element": "motion.span",
+            "original_text": "UI/UX Designer",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "heading",
+            "notes": "Second line of h1, block display, animated reveal"
+          },
+          {
+            "field_id": "hero04_description",
+            "element": "p",
+            "original_text": "Digital designer crafting high-impact UI systems since 2008. Founder of SaaS Platform AB, Dashboard Product & Shadcn Library. I blend design precision with frontend performance.",
+            "max_chars": 177,
+            "min_chars": 89,
+            "type": "description",
+            "notes": "text-base, text-muted-foreground"
+          },
+          {
+            "field_id": "hero04_cta_button",
+            "element": "span",
+            "original_text": "See My Projects",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "button",
+            "notes": "Primary button with animated arrow icon, rounded-full"
+          },
+          {
+            "field_id": "hero04_call_text",
+            "element": "p",
+            "original_text": "A 30-minute call to clarify your next steps.",
+            "max_chars": 44,
+            "min_chars": 22,
+            "type": "inline",
+            "notes": "Small text next to avatar, text-xs, text-muted-foreground"
+          },
+          {
+            "field_id": "hero04_call_link",
+            "element": "strong",
+            "original_text": "Schedule now",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "Underlined link inside call text, font-medium"
+          }
+        ]
+      },
+      {
+        "section": "navbar",
+        "fields": [
+          {
+            "field_id": "hero04_nav_menu_label",
+            "element": "p",
+            "original_text": "Menu",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "label",
+            "notes": "Dropdown menu header, text-lg font-medium"
+          },
+          {
+            "field_id": "hero04_nav_copyright",
+            "element": "p",
+            "original_text": "© 2026 Shadcn Space",
+            "max_chars": 19,
+            "min_chars": 10,
+            "type": "inline",
+            "notes": "Footer copyright in dropdown menu"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "hero04_nav_items",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "name",
+            "sample_text": "Projects",
+            "max_chars": 8,
+            "min_chars": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "hero-05",
+    "block_title": "Hero 05 - Crypto Exchange Hero",
+    "category": "hero",
+    "files": [
+      "components/shadcn-space/blocks/hero-05/hero.tsx",
+      "components/shadcn-space/blocks/hero-05/navbar.tsx",
+      "components/shadcn-space/blocks/hero-05/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "hero",
+        "fields": [
+          {
+            "field_id": "hero05_badge",
+            "element": "Badge",
+            "original_text": "Future of crypto trading",
+            "max_chars": 24,
+            "min_chars": 12,
+            "type": "label",
+            "notes": "Badge, bg-teal-400/10, text-teal-400, text-sm"
+          },
+          {
+            "field_id": "hero05_heading",
+            "element": "motion.h1",
+            "original_text": "Fast and Secure Cryptocurrency Exchange",
+            "max_chars": 39,
+            "min_chars": 20,
+            "type": "heading",
+            "notes": "Animated character-by-character reveal, 4xl-7xl, font-medium"
+          },
+          {
+            "field_id": "hero05_description",
+            "element": "p",
+            "original_text": "Trade cryptocurrencies with ease, security, and advanced features on our cutting-edge platform.",
+            "max_chars": 95,
+            "min_chars": 48,
+            "type": "description",
+            "notes": "text-base, text-muted-foreground, max-w-md"
+          },
+          {
+            "field_id": "hero05_cta_button",
+            "element": "Button",
+            "original_text": "Explore more",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "bg-teal-400, with ArrowRight icon, rounded-lg"
+          },
+          {
+            "field_id": "hero05_rotating_text",
+            "element": "textPath",
+            "original_text": "JOIN CRYPTO TRENDS • EXPLORE • JOIN CRYPTO TRENDS • EXPLORE •",
+            "max_chars": 61,
+            "min_chars": 31,
+            "type": "label",
+            "notes": "Rotating circular SVG text badge, uppercase, tracking-widest"
+          }
+        ]
+      },
+      {
+        "section": "navbar",
+        "fields": [
+          {
+            "field_id": "hero05_nav_cta",
+            "element": "Button",
+            "original_text": "Register",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "button",
+            "notes": "Desktop and mobile CTA button in navbar"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "hero05_nav_items",
+        "count": 6,
+        "fields": [
+          {
+            "field_id": "title",
+            "sample_text": "Why Crypgo",
+            "max_chars": 10,
+            "min_chars": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "hero-06",
+    "block_title": "Hero 06 - Portfolio Hero with Announcement Bar",
+    "category": "hero",
+    "files": [
+      "components/shadcn-space/blocks/hero-06/hero.tsx",
+      "components/shadcn-space/blocks/hero-06/navbar.tsx",
+      "components/shadcn-space/blocks/hero-06/index.tsx",
+      "components/shadcn-space/blocks/hero-06/announcement.tsx",
+      "components/shadcn-space/blocks/hero-06/brand-slider.tsx"
+    ],
+    "sections": [
+      {
+        "section": "announcement",
+        "fields": [
+          {
+            "field_id": "hero06_announcement",
+            "element": "p",
+            "original_text": "My new tool is now available on Figma & Code — start customizing your personal site today.",
+            "max_chars": 90,
+            "min_chars": 45,
+            "type": "inline",
+            "notes": "Announcement bar, text-sm/text-base, white text on dark bg with background image"
+          }
+        ]
+      },
+      {
+        "section": "hero",
+        "fields": [
+          {
+            "field_id": "hero06_status_label",
+            "element": "p",
+            "original_text": "Available for hire",
+            "max_chars": 18,
+            "min_chars": 9,
+            "type": "label",
+            "notes": "With green dot indicator, text-base, text-muted-foreground"
+          },
+          {
+            "field_id": "hero06_heading",
+            "element": "motion.h1",
+            "original_text": "Hey there. I'm Elena — UX/UI designer based in Brooklyn, currently crafting digital products at Shadcn Space, a react blocks library.",
+            "max_chars": 133,
+            "min_chars": 67,
+            "type": "heading",
+            "notes": "Composite animated h1: char-by-char + highlighted span. 3xl-4xl, font-normal tracking-tight. 'currently crafting' has yellow highlight bg."
+          },
+          {
+            "field_id": "hero06_subtext",
+            "element": "p",
+            "original_text": "Previously at ABC Studio, and creator of Design Kit and Dashboard Kit.",
+            "max_chars": 70,
+            "min_chars": 35,
+            "type": "description",
+            "notes": "text-muted-foreground, font-normal"
+          },
+          {
+            "field_id": "hero06_cta_button",
+            "element": "Button",
+            "original_text": "See My Work",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "With Zap icon, rounded-full, px-6 py-3.5"
+          }
+        ]
+      },
+      {
+        "section": "navbar",
+        "fields": [
+          {
+            "field_id": "hero06_nav_button_label",
+            "element": "Button",
+            "original_text": "Menu",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "button",
+            "notes": "Navbar menu trigger button with Menu icon"
+          },
+          {
+            "field_id": "hero06_nav_menu_label",
+            "element": "p",
+            "original_text": "Menu",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "label",
+            "notes": "Dropdown menu header, text-lg font-medium"
+          },
+          {
+            "field_id": "hero06_nav_copyright",
+            "element": "p",
+            "original_text": "© 2026 Shadcn Space",
+            "max_chars": 19,
+            "min_chars": 10,
+            "type": "inline",
+            "notes": "Footer copyright in dropdown menu"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "hero06_nav_items",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "name",
+            "sample_text": "Projects",
+            "max_chars": 8,
+            "min_chars": 4
+          }
+        ]
+      },
+      {
+        "item_id": "hero06_brand_logos",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "name",
+            "sample_text": "Brand 1",
+            "max_chars": 7,
+            "min_chars": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "hero-07",
+    "block_title": "Hero 07 - SaaS Launch Hero with Background Beams",
+    "category": "hero",
+    "files": [
+      "components/shadcn-space/blocks/hero-07/hero.tsx",
+      "components/shadcn-space/blocks/hero-07/navbar.tsx",
+      "components/shadcn-space/blocks/hero-07/index.tsx",
+      "components/shadcn-space/blocks/hero-07/BackgroundBeams.tsx"
+    ],
+    "sections": [
+      {
+        "section": "hero",
+        "fields": [
+          {
+            "field_id": "hero07_pill_badge",
+            "element": "Badge",
+            "original_text": "New",
+            "max_chars": 3,
+            "min_chars": 2,
+            "type": "label",
+            "notes": "Small badge inside pill, bg-secondary, text-secondary-foreground"
+          },
+          {
+            "field_id": "hero07_pill_text",
+            "element": "p",
+            "original_text": "Announcing ShadcnSpace 1.0",
+            "max_chars": 26,
+            "min_chars": 13,
+            "type": "label",
+            "notes": "Text inside pill next to badge, text-sm, text-muted-foreground"
+          },
+          {
+            "field_id": "hero07_heading",
+            "element": "h1",
+            "original_text": "Launch SaaS website in a day. Fast. Beautiful. Focused.",
+            "max_chars": 55,
+            "min_chars": 28,
+            "type": "heading",
+            "notes": "4xl-6xl, font-semibold, text-center, max-w-4xl"
+          },
+          {
+            "field_id": "hero07_description",
+            "element": "p",
+            "original_text": "Launch is a modern, minimal, and highly customizable SaaS template for website projects, landings, tools, or libraries.",
+            "max_chars": 119,
+            "min_chars": 60,
+            "type": "description",
+            "notes": "text-base/text-lg, text-muted-foreground, text-center, max-w-lg"
+          },
+          {
+            "field_id": "hero07_cta_primary",
+            "element": "Button",
+            "original_text": "Start a Project",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "button",
+            "notes": "Primary button with ArrowRight icon, h-12, rounded-lg"
+          },
+          {
+            "field_id": "hero07_cta_secondary",
+            "element": "Button",
+            "original_text": "Learn More",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "button",
+            "notes": "Outline variant button with ArrowRight icon"
+          }
+        ]
+      },
+      {
+        "section": "navbar",
+        "fields": [
+          {
+            "field_id": "hero07_nav_cta",
+            "element": "Button",
+            "original_text": "Book a Demo",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "Desktop and mobile CTA, outline variant, rounded-lg"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "hero07_nav_items",
+        "count": 6,
+        "fields": [
+          {
+            "field_id": "title",
+            "sample_text": "Integration",
+            "max_chars": 11,
+            "min_chars": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "hero-08",
+    "block_title": "Hero 08 - Masterclass / Education Hero with Carousel",
+    "category": "hero",
+    "files": [
+      "components/shadcn-space/blocks/hero-08/hero.tsx",
+      "components/shadcn-space/blocks/hero-08/navbar.tsx",
+      "components/shadcn-space/blocks/hero-08/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "hero",
+        "fields": [
+          {
+            "field_id": "hero08_badge",
+            "element": "span",
+            "original_text": "Trusted by 20,000+ Happy Learners",
+            "max_chars": 33,
+            "min_chars": 17,
+            "type": "label",
+            "notes": "Badge-like span, bg-teal-400/10, rounded-lg, text-sm"
+          },
+          {
+            "field_id": "hero08_heading",
+            "element": "h1",
+            "original_text": "Rise to the Top 1% with Elite Masterclasses",
+            "max_chars": 43,
+            "min_chars": 22,
+            "type": "heading",
+            "notes": "4xl-6xl, font-medium, tracking-tight"
+          },
+          {
+            "field_id": "hero08_description",
+            "element": "p",
+            "original_text": "Learn from experts in product, growth, tech, data, expertly become top 1% fast, career-focused, and effectively.",
+            "max_chars": 112,
+            "min_chars": 56,
+            "type": "description",
+            "notes": "text-base, text-muted-foreground, max-w-md"
+          },
+          {
+            "field_id": "hero08_cta_primary",
+            "element": "span",
+            "original_text": "View Courses",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "Animated button with ArrowUpRight icon, rounded-full"
+          },
+          {
+            "field_id": "hero08_cta_secondary",
+            "element": "Button",
+            "original_text": "Schedule a call",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "button",
+            "notes": "Outline variant, rounded-full"
+          }
+        ]
+      },
+      {
+        "section": "navbar",
+        "fields": [
+          {
+            "field_id": "hero08_nav_cta",
+            "element": "Button",
+            "original_text": "Contact us",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "button",
+            "notes": "Primary button in navbar, rounded-full"
+          },
+          {
+            "field_id": "hero08_nav_contact_label",
+            "element": "p",
+            "original_text": "Contact",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Mobile sheet section label, text-lg, text-muted-foreground"
+          },
+          {
+            "field_id": "hero08_nav_contact_email",
+            "element": "a",
+            "original_text": "hello@shadcnspace.com",
+            "max_chars": 21,
+            "min_chars": 11,
+            "type": "inline",
+            "notes": "Contact email in mobile sheet"
+          },
+          {
+            "field_id": "hero08_nav_contact_phone",
+            "element": "a",
+            "original_text": "+1-212-456-7890",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "inline",
+            "notes": "Contact phone in mobile sheet"
+          },
+          {
+            "field_id": "hero08_nav_socials_label",
+            "element": "p",
+            "original_text": "Socials",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Mobile sheet section label"
+          },
+          {
+            "field_id": "hero08_nav_social_twitter",
+            "element": "a",
+            "original_text": "X / Twitter",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "inline",
+            "notes": "Social link in mobile sheet"
+          },
+          {
+            "field_id": "hero08_nav_social_facebook",
+            "element": "a",
+            "original_text": "Facebook",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "inline",
+            "notes": "Social link in mobile sheet"
+          },
+          {
+            "field_id": "hero08_nav_social_instagram",
+            "element": "a",
+            "original_text": "Instagram",
+            "max_chars": 9,
+            "min_chars": 5,
+            "type": "inline",
+            "notes": "Social link in mobile sheet"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "hero08_nav_items",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "name",
+            "sample_text": "About us",
+            "max_chars": 8,
+            "min_chars": 4
+          }
+        ]
+      },
+      {
+        "item_id": "hero08_masterclass_cards",
+        "count": 6,
+        "fields": [
+          {
+            "field_id": "title",
+            "sample_text": "Data Visualisation Masterclass",
+            "max_chars": 30,
+            "min_chars": 15
+          },
+          {
+            "field_id": "handle",
+            "sample_text": "@viziongraphic",
+            "max_chars": 14,
+            "min_chars": 7
+          },
+          {
+            "field_id": "duration",
+            "sample_text": "7 hr",
+            "max_chars": 4,
+            "min_chars": 2
+          },
+          {
+            "field_id": "rating",
+            "sample_text": "4.6",
+            "max_chars": 3,
+            "min_chars": 2
+          },
+          {
+            "field_id": "category",
+            "sample_text": "Marketing",
+            "max_chars": 9,
+            "min_chars": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "hero-09",
+    "block_title": "Hero 09 - Cleaning Services Hero with Floating Images",
+    "category": "hero",
+    "files": [
+      "components/shadcn-space/blocks/hero-09/hero.tsx",
+      "components/shadcn-space/blocks/hero-09/navbar.tsx",
+      "components/shadcn-space/blocks/hero-09/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "hero",
+        "fields": [
+          {
+            "field_id": "hero09_trust_number",
+            "element": "strong",
+            "original_text": "44,000+",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "stat_value",
+            "notes": "Inline strong element, text-foreground font-medium"
+          },
+          {
+            "field_id": "hero09_trust_text",
+            "element": "p",
+            "original_text": "Businesses trust",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "inline",
+            "notes": "After the number, text-base text-muted-foreground"
+          },
+          {
+            "field_id": "hero09_heading",
+            "element": "h1",
+            "original_text": "Professional cleaning services for every need.",
+            "max_chars": 46,
+            "min_chars": 23,
+            "type": "heading",
+            "notes": "4xl-6xl, font-medium. 'cleaning' has amber-300 bg highlight. 'every need.' has SVG underline decoration"
+          },
+          {
+            "field_id": "hero09_description",
+            "element": "p",
+            "original_text": "Regular cleaning of office spaces, including desks, floors, common areas, and restrooms.",
+            "max_chars": 88,
+            "min_chars": 44,
+            "type": "description",
+            "notes": "text-muted-foreground, text-base/text-lg, max-w-sm, centered"
+          },
+          {
+            "field_id": "hero09_cta_primary",
+            "element": "Button",
+            "original_text": "Book a Service",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "button",
+            "notes": "Primary button, rounded-lg"
+          },
+          {
+            "field_id": "hero09_cta_secondary",
+            "element": "Button",
+            "original_text": "Learn more",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "button",
+            "notes": "Outline variant, rounded-lg"
+          }
+        ]
+      },
+      {
+        "section": "navbar",
+        "fields": [
+          {
+            "field_id": "hero09_nav_email",
+            "element": "p",
+            "original_text": "support@gleamer.com",
+            "max_chars": 19,
+            "min_chars": 10,
+            "type": "inline",
+            "notes": "Announcement bar email with Mail icon"
+          },
+          {
+            "field_id": "hero09_nav_address",
+            "element": "p",
+            "original_text": "Blane Street, Manchester",
+            "max_chars": 24,
+            "min_chars": 12,
+            "type": "inline",
+            "notes": "Announcement bar address with MapPin icon"
+          },
+          {
+            "field_id": "hero09_nav_phone",
+            "element": "span",
+            "original_text": "+1 0239 0310",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "inline",
+            "notes": "Phone number link in navbar with Phone icon"
+          },
+          {
+            "field_id": "hero09_nav_cta",
+            "element": "Button",
+            "original_text": "Book a Service",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "button",
+            "notes": "bg-blue-500, rounded-lg, in navbar"
+          },
+          {
+            "field_id": "hero09_nav_contact_label",
+            "element": "p",
+            "original_text": "Contact",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Mobile sheet section label"
+          },
+          {
+            "field_id": "hero09_nav_contact_email",
+            "element": "a",
+            "original_text": "hello@shadcnspace.com",
+            "max_chars": 21,
+            "min_chars": 11,
+            "type": "inline",
+            "notes": "Contact email in mobile sheet"
+          },
+          {
+            "field_id": "hero09_nav_contact_phone",
+            "element": "a",
+            "original_text": "+1-212-456-7890",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "inline",
+            "notes": "Contact phone in mobile sheet"
+          },
+          {
+            "field_id": "hero09_nav_socials_label",
+            "element": "p",
+            "original_text": "Socials",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Mobile sheet section label"
+          },
+          {
+            "field_id": "hero09_nav_social_twitter",
+            "element": "a",
+            "original_text": "X / Twitter",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "inline",
+            "notes": "Social link in mobile sheet"
+          },
+          {
+            "field_id": "hero09_nav_social_facebook",
+            "element": "a",
+            "original_text": "Facebook",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "inline",
+            "notes": "Social link in mobile sheet"
+          },
+          {
+            "field_id": "hero09_nav_social_instagram",
+            "element": "a",
+            "original_text": "Instagram",
+            "max_chars": 9,
+            "min_chars": 5,
+            "type": "inline",
+            "notes": "Social link in mobile sheet"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "hero09_nav_items",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "name",
+            "sample_text": "Contacts us",
+            "max_chars": 11,
+            "min_chars": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "hero-10",
+    "block_title": "Hero 10 - Education / Courses Hero with Course Selector",
+    "category": "hero",
+    "files": [
+      "components/shadcn-space/blocks/hero-10/hero.tsx",
+      "components/shadcn-space/blocks/hero-10/navbar.tsx",
+      "components/shadcn-space/blocks/hero-10/index.tsx",
+      "components/shadcn-space/blocks/hero-10/tech-icons.tsx"
+    ],
+    "sections": [
+      {
+        "section": "hero",
+        "fields": [
+          {
+            "field_id": "hero10_heading",
+            "element": "motion.h1",
+            "original_text": "Advance your engineering skills with our courses",
+            "max_chars": 48,
+            "min_chars": 24,
+            "type": "heading",
+            "notes": "Animated char-by-char, 4xl-6xl, font-medium, text-center, max-w-3xl"
+          },
+          {
+            "field_id": "hero10_description",
+            "element": "p",
+            "original_text": "Learn from experts in product, growth, tech, data, expertly become top 1% fast, career-focused, and effectively.",
+            "max_chars": 112,
+            "min_chars": 56,
+            "type": "description",
+            "notes": "text-base, text-center, max-w-md, text-muted-foreground"
+          },
+          {
+            "field_id": "hero10_avatar_count",
+            "element": "AvatarGroupCount",
+            "original_text": "+4K",
+            "max_chars": 3,
+            "min_chars": 2,
+            "type": "stat_value",
+            "notes": "Avatar group count badge"
+          },
+          {
+            "field_id": "hero10_rating_value",
+            "element": "p",
+            "original_text": "4.6",
+            "max_chars": 3,
+            "min_chars": 2,
+            "type": "stat_value",
+            "notes": "Rating number, text-2xl font-semibold, next to 5 star icons"
+          },
+          {
+            "field_id": "hero10_rating_text",
+            "element": "p",
+            "original_text": "Rated by 25k on google.",
+            "max_chars": 23,
+            "min_chars": 12,
+            "type": "stat_label",
+            "notes": "text-sm, text-muted-foreground"
+          },
+          {
+            "field_id": "hero10_select_label_1",
+            "element": "span",
+            "original_text": "What do you want to learn?",
+            "max_chars": 26,
+            "min_chars": 13,
+            "type": "label",
+            "notes": "Select trigger label, text-base, text-muted-foreground"
+          },
+          {
+            "field_id": "hero10_select_label_2",
+            "element": "span",
+            "original_text": "Hours you going to invest",
+            "max_chars": 25,
+            "min_chars": 13,
+            "type": "label",
+            "notes": "Select trigger label, text-base, text-muted-foreground"
+          },
+          {
+            "field_id": "hero10_start_button",
+            "element": "Button",
+            "original_text": "Start",
+            "max_chars": 5,
+            "min_chars": 3,
+            "type": "button",
+            "notes": "Primary button in course selector form"
+          }
+        ]
+      },
+      {
+        "section": "navbar",
+        "fields": [
+          {
+            "field_id": "hero10_nav_signin",
+            "element": "Button",
+            "original_text": "Sign in",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "button",
+            "notes": "Outline variant, desktop and mobile"
+          },
+          {
+            "field_id": "hero10_nav_register",
+            "element": "Button",
+            "original_text": "Register",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "button",
+            "notes": "Primary variant, desktop and mobile"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "hero10_nav_items",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "title",
+            "sample_text": "Testimonial",
+            "max_chars": 11,
+            "min_chars": 6
+          }
+        ]
+      },
+      {
+        "item_id": "hero10_course_options",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "option",
+            "sample_text": "Fullstack Engineering",
+            "max_chars": 21,
+            "min_chars": 11
+          }
+        ]
+      },
+      {
+        "item_id": "hero10_hour_options",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "option",
+            "sample_text": "80hrs in a Month",
+            "max_chars": 16,
+            "min_chars": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "hero-11",
+    "block_title": "Hero 11 - CRM / Analytics Hero with Dashboard Image",
+    "category": "hero",
+    "files": [
+      "components/shadcn-space/blocks/hero-11/hero.tsx",
+      "components/shadcn-space/blocks/hero-11/navbar.tsx",
+      "components/shadcn-space/blocks/hero-11/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "hero",
+        "fields": [
+          {
+            "field_id": "hero11_pill_badge",
+            "element": "span",
+            "original_text": "Live",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "label",
+            "notes": "Small badge, bg-gray-50 text-gray-950, inside pill"
+          },
+          {
+            "field_id": "hero11_pill_text",
+            "element": "span",
+            "original_text": "Real-time data",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "label",
+            "notes": "Text next to badge inside pill, text-sm text-foreground"
+          },
+          {
+            "field_id": "hero11_heading",
+            "element": "motion.h1",
+            "original_text": "Build deeper connections with intelligent insights",
+            "max_chars": 50,
+            "min_chars": 25,
+            "type": "heading",
+            "notes": "Animated char-by-char, 4xl-6xl, font-medium"
+          },
+          {
+            "field_id": "hero11_description",
+            "element": "p",
+            "original_text": "Create stronger relationships with smarter Insights, Get started now.",
+            "max_chars": 69,
+            "min_chars": 35,
+            "type": "description",
+            "notes": "text-base/text-lg, text-muted-foreground, max-w-sm"
+          },
+          {
+            "field_id": "hero11_cta_primary",
+            "element": "Button",
+            "original_text": "Get Started",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "Primary button, rounded-full, inside button group"
+          },
+          {
+            "field_id": "hero11_cta_secondary",
+            "element": "Button",
+            "original_text": "How It Works",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "Dark button (bg-gray-950), rounded-full, with border"
+          }
+        ]
+      },
+      {
+        "section": "navbar",
+        "fields": [
+          {
+            "field_id": "hero11_nav_socials_btn",
+            "element": "Button",
+            "original_text": "Socials",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "button",
+            "notes": "Outline variant, rounded-full"
+          },
+          {
+            "field_id": "hero11_nav_cta",
+            "element": "Button",
+            "original_text": "Start Now",
+            "max_chars": 9,
+            "min_chars": 5,
+            "type": "button",
+            "notes": "Primary button, rounded-full"
+          },
+          {
+            "field_id": "hero11_nav_menu_label",
+            "element": "p",
+            "original_text": "Menu",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "label",
+            "notes": "Mobile dropdown menu header"
+          },
+          {
+            "field_id": "hero11_nav_copyright",
+            "element": "p",
+            "original_text": "© 2026 Shadcn Space",
+            "max_chars": 19,
+            "min_chars": 10,
+            "type": "inline",
+            "notes": "Footer in mobile dropdown menu"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "hero11_nav_items",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "name",
+            "sample_text": "Testimonials",
+            "max_chars": 12,
+            "min_chars": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "hero-12",
+    "block_title": "Hero 12 - Agency Hero with Animated Border Badge",
+    "category": "hero",
+    "files": [
+      "components/shadcn-space/blocks/hero-12/hero.tsx",
+      "components/shadcn-space/blocks/hero-12/navbar.tsx",
+      "components/shadcn-space/blocks/hero-12/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "hero",
+        "fields": [
+          {
+            "field_id": "hero12_badge_label",
+            "element": "Badge",
+            "original_text": "Top",
+            "max_chars": 3,
+            "min_chars": 2,
+            "type": "label",
+            "notes": "Small badge inside animated border pill, bg-blue-500, text-white"
+          },
+          {
+            "field_id": "hero12_badge_text",
+            "element": "span",
+            "original_text": "#1 Agency in New York",
+            "max_chars": 21,
+            "min_chars": 11,
+            "type": "label",
+            "notes": "Text next to badge, text-xs font-medium, inside animated conic-gradient border"
+          },
+          {
+            "field_id": "hero12_heading",
+            "element": "motion.h1",
+            "original_text": "We design powerful, high impact SaaS solutions",
+            "max_chars": 46,
+            "min_chars": 23,
+            "type": "heading",
+            "notes": "Animated char-by-char, 4xl-6xl, font-medium"
+          },
+          {
+            "field_id": "hero12_description",
+            "element": "p",
+            "original_text": "Where sleek design meets powerful SaaS innovation. Schedule a call with us now.",
+            "max_chars": 79,
+            "min_chars": 40,
+            "type": "description",
+            "notes": "text-base/text-lg, text-white/50, max-w-md"
+          },
+          {
+            "field_id": "hero12_cta_primary",
+            "element": "Button",
+            "original_text": "Book a call",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "bg-blue-500, with Phone icon, rounded-lg"
+          },
+          {
+            "field_id": "hero12_cta_secondary",
+            "element": "Button",
+            "original_text": "View Pricing",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "bg-white text-gray-950, rounded-lg"
+          }
+        ]
+      },
+      {
+        "section": "navbar",
+        "fields": [
+          {
+            "field_id": "hero12_nav_cta",
+            "element": "Button",
+            "original_text": "Book a call",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "bg-blue-500, with Phone icon, in navbar and mobile sheet"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "hero12_nav_items",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "name",
+            "sample_text": "Our projects",
+            "max_chars": 12,
+            "min_chars": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "pricing-03",
+    "block_title": "Pricing 03 - Three-Tier Pricing with Billing Toggle",
+    "category": "pricing",
+    "files": [
+      "components/shadcn-space/blocks/pricing-03/pricing.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "pricing03_label",
+            "element": "p",
+            "original_text": "Pricing plan",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "label",
+            "notes": "text-muted-foreground, sm:text-lg"
+          },
+          {
+            "field_id": "pricing03_heading",
+            "element": "h2",
+            "original_text": "Pricing made easy",
+            "max_chars": 17,
+            "min_chars": 9,
+            "type": "heading",
+            "notes": "sm:text-5xl text-4xl, font-semibold"
+          },
+          {
+            "field_id": "pricing03_subheading",
+            "element": "p",
+            "original_text": "Subheading description and information can be added here",
+            "max_chars": 56,
+            "min_chars": 28,
+            "type": "subheading",
+            "notes": "text-muted-foreground, sm:text-xl"
+          },
+          {
+            "field_id": "pricing03_tab_monthly",
+            "element": "TabsTrigger",
+            "original_text": "Monthly",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Tab trigger for monthly billing"
+          },
+          {
+            "field_id": "pricing03_tab_yearly",
+            "element": "TabsTrigger",
+            "original_text": "Yearly",
+            "max_chars": 6,
+            "min_chars": 3,
+            "type": "label",
+            "notes": "Tab trigger for yearly billing"
+          },
+          {
+            "field_id": "pricing03_discount_badge",
+            "element": "div",
+            "original_text": "15% OFF",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Discount badge inside yearly tab, text-orange-400, bg-orange-400/10"
+          }
+        ]
+      },
+      {
+        "section": "pricing_cards",
+        "fields": [
+          {
+            "field_id": "pricing03_cta_button",
+            "element": "Button",
+            "original_text": "Get Started",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "Per-card CTA button, rounded-full, full width"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "pricing03_plans",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "plan_name",
+            "sample_text": "Growth",
+            "max_chars": 6,
+            "min_chars": 3
+          },
+          {
+            "field_id": "plan_descp",
+            "sample_text": "Build foundational skills with 10 essential courses.",
+            "max_chars": 52,
+            "min_chars": 26
+          },
+          {
+            "field_id": "plan_price",
+            "sample_text": "29",
+            "max_chars": 2,
+            "min_chars": 1
+          }
+        ]
+      },
+      {
+        "item_id": "pricing03_plan_features",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "feature",
+            "sample_text": "Expert-Led Video Lessons",
+            "max_chars": 24,
+            "min_chars": 12
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "pricing-04",
+    "block_title": "Pricing 04 - Two-Tier Pricing with Promo Card",
+    "category": "pricing",
+    "files": [
+      "components/shadcn-space/blocks/pricing-04/pricing.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "pricing04_heading",
+            "element": "h2",
+            "original_text": "Choose your preferred plan",
+            "max_chars": 26,
+            "min_chars": 13,
+            "type": "heading",
+            "notes": "text-3xl/text-4xl, font-semibold"
+          },
+          {
+            "field_id": "pricing04_subheading",
+            "element": "p",
+            "original_text": "Simple pricing built for developers, offering lifetime access, premium shadcn components, updates, and priority support without hidden fees.",
+            "max_chars": 140,
+            "min_chars": 70,
+            "type": "subheading",
+            "notes": "text-muted-foreground, text-lg/text-xl, centered"
+          },
+          {
+            "field_id": "pricing04_tab_monthly",
+            "element": "TabsTrigger",
+            "original_text": "Monthly",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Tab trigger for monthly billing"
+          },
+          {
+            "field_id": "pricing04_tab_yearly",
+            "element": "TabsTrigger",
+            "original_text": "Yearly",
+            "max_chars": 6,
+            "min_chars": 3,
+            "type": "label",
+            "notes": "Tab trigger for yearly billing"
+          },
+          {
+            "field_id": "pricing04_discount_badge",
+            "element": "div",
+            "original_text": "35% OFF",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Discount badge inside yearly tab, bg-sky-400, text-white"
+          }
+        ]
+      },
+      {
+        "section": "promo_card",
+        "fields": [
+          {
+            "field_id": "pricing04_promo_label",
+            "element": "span",
+            "original_text": "PLUS",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "label",
+            "notes": "Next to Logo, bg-amber-300, rounded-full"
+          },
+          {
+            "field_id": "pricing04_promo_text",
+            "element": "p",
+            "original_text": "Choosing yearly plan gives you big 35% discount",
+            "max_chars": 47,
+            "min_chars": 24,
+            "type": "description",
+            "notes": "text-2xl, 'big 35% discount' is bold via <strong>"
+          },
+          {
+            "field_id": "pricing04_promo_cta",
+            "element": "Button",
+            "original_text": "Get a Demo",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "button",
+            "notes": "Full width, rounded-full"
+          },
+          {
+            "field_id": "pricing04_promo_refund",
+            "element": "span",
+            "original_text": "Get full refund no question asked.",
+            "max_chars": 34,
+            "min_chars": 17,
+            "type": "inline",
+            "notes": "text-muted-foreground, text-sm"
+          }
+        ]
+      },
+      {
+        "section": "pricing_cards",
+        "fields": [
+          {
+            "field_id": "pricing04_card_cta",
+            "element": "Button",
+            "original_text": "Get Started",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "Per-card CTA, rounded-full, full width"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "pricing04_plans",
+        "count": 2,
+        "fields": [
+          {
+            "field_id": "plan_name",
+            "sample_text": "Scale",
+            "max_chars": 5,
+            "min_chars": 3
+          },
+          {
+            "field_id": "plan_tag",
+            "sample_text": "Recommended",
+            "max_chars": 11,
+            "min_chars": 6
+          },
+          {
+            "field_id": "plan_descp",
+            "sample_text": "Start free, explore interests, learn essential skills.",
+            "max_chars": 54,
+            "min_chars": 27
+          },
+          {
+            "field_id": "plan_price",
+            "sample_text": "99",
+            "max_chars": 2,
+            "min_chars": 1
+          }
+        ]
+      },
+      {
+        "item_id": "pricing04_plan_features",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "feature",
+            "sample_text": "International transaction fees",
+            "max_chars": 30,
+            "min_chars": 15
+          },
+          {
+            "field_id": "check",
+            "sample_text": "true",
+            "max_chars": 4,
+            "min_chars": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "pricing-05",
+    "block_title": "Pricing 05 - Three-Tier Pricing with Brand Slider",
+    "category": "pricing",
+    "files": [
+      "components/shadcn-space/blocks/pricing-05/pricing.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "pricing05_badge",
+            "element": "Badge",
+            "original_text": "Pricing plan",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "label",
+            "notes": "bg-background border, text-foreground, text-sm"
+          },
+          {
+            "field_id": "pricing05_heading",
+            "element": "h2",
+            "original_text": "Affordable pricing",
+            "max_chars": 18,
+            "min_chars": 9,
+            "type": "heading",
+            "notes": "text-4xl/text-5xl, font-semibold, centered"
+          },
+          {
+            "field_id": "pricing05_subheading",
+            "element": "p",
+            "original_text": "A glimpse into our creativity—exploring innovative designs, successful collaborations, and transformative digital experiences.",
+            "max_chars": 126,
+            "min_chars": 63,
+            "type": "subheading",
+            "notes": "text-muted-foreground, text-lg/text-xl, centered"
+          }
+        ]
+      },
+      {
+        "section": "pricing_cards",
+        "fields": [
+          {
+            "field_id": "pricing05_price_suffix",
+            "element": "span",
+            "original_text": "/month",
+            "max_chars": 6,
+            "min_chars": 3,
+            "type": "inline",
+            "notes": "Price period text"
+          },
+          {
+            "field_id": "pricing05_cta_button",
+            "element": "span",
+            "original_text": "Subscribe now",
+            "max_chars": 13,
+            "min_chars": 7,
+            "type": "button",
+            "notes": "Animated button with ArrowUpRight icon, rounded-full, full width"
+          },
+          {
+            "field_id": "pricing05_features_label",
+            "element": "p",
+            "original_text": "What's Included:",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "text-base, text-muted-foreground, above features list"
+          }
+        ]
+      },
+      {
+        "section": "brand_slider",
+        "fields": [
+          {
+            "field_id": "pricing05_trust_text",
+            "element": "p",
+            "original_text": "More than 487 trusted partners & clients",
+            "max_chars": 40,
+            "min_chars": 20,
+            "type": "inline",
+            "notes": "text-muted-foreground, text-base, centered above marquee"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "pricing05_plans",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "plan_name",
+            "sample_text": "Elevate",
+            "max_chars": 7,
+            "min_chars": 4
+          },
+          {
+            "field_id": "plan_tag",
+            "sample_text": "Most popular",
+            "max_chars": 12,
+            "min_chars": 6
+          },
+          {
+            "field_id": "plan_descp",
+            "sample_text": "Best suited for established businesses wanting a fully tailored experience.",
+            "max_chars": 75,
+            "min_chars": 38
+          },
+          {
+            "field_id": "plan_price",
+            "sample_text": "3499",
+            "max_chars": 4,
+            "min_chars": 2
+          }
+        ]
+      },
+      {
+        "item_id": "pricing05_plan_features",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "feature",
+            "sample_text": "One-on-one implementation",
+            "max_chars": 25,
+            "min_chars": 13
+          }
+        ]
+      },
+      {
+        "item_id": "pricing05_brand_logos",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "name",
+            "sample_text": "Brand 1",
+            "max_chars": 7,
+            "min_chars": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "pricing-06",
+    "block_title": "Pricing 06 - Horizontal Row Pricing for Services",
+    "category": "pricing",
+    "files": [
+      "components/shadcn-space/blocks/pricing-06/pricing.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "pricing06_badge",
+            "element": "Badge",
+            "original_text": "Transparent pricing",
+            "max_chars": 19,
+            "min_chars": 10,
+            "type": "label",
+            "notes": "bg-teal-400, text-white, rounded-full"
+          },
+          {
+            "field_id": "pricing06_heading",
+            "element": "h2",
+            "original_text": "Budget-friendly options for a cleaner home",
+            "max_chars": 42,
+            "min_chars": 21,
+            "type": "heading",
+            "notes": "text-3xl/text-5xl, font-semibold, centered"
+          }
+        ]
+      },
+      {
+        "section": "pricing_rows",
+        "fields": [
+          {
+            "field_id": "pricing06_cta_button",
+            "element": "Button",
+            "original_text": "Book a Service",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "button",
+            "notes": "Per-row CTA button, default or outline variant based on active state"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "pricing06_plans",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "plan_name",
+            "sample_text": "Weekly refresh",
+            "max_chars": 14,
+            "min_chars": 7
+          },
+          {
+            "field_id": "plan_descp",
+            "sample_text": "Comprehensive cleaning for special occasions and seasonal refreshes.",
+            "max_chars": 68,
+            "min_chars": 34
+          },
+          {
+            "field_id": "plan_price",
+            "sample_text": "219",
+            "max_chars": 3,
+            "min_chars": 2
+          }
+        ]
+      }
+    ]
+  }
+]

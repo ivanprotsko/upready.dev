@@ -1,0 +1,1312 @@
+[
+  {
+    "block_id": "testimonial-03",
+    "block_title": "Testimonial 03 - Carousel with text/media cards",
+    "category": "testimonial",
+    "files": [
+      "components/shadcn-space/blocks/testimonial-03/testimonial.tsx",
+      "components/shadcn-space/blocks/testimonial-03/testimonial-card.tsx",
+      "components/shadcn-space/blocks/testimonial-03/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "Client Testimonials",
+            "max_chars": 19,
+            "min_chars": 10,
+            "type": "label",
+            "notes": "Outline badge, centered above heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "motion.h2",
+            "original_text": "See how teams are winning with our platform",
+            "max_chars": 43,
+            "min_chars": 22,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl lg:text-5xl, centered, max-w-2xl"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "testimonial_card_text",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "quote",
+            "sample_text": "Our workflow is finally streamlined. What used to take hours now happens automatically, giving our team more time to focus on strategic work.",
+            "max_chars": 141,
+            "min_chars": 71
+          },
+          {
+            "field_id": "name",
+            "sample_text": "Jessica Thompson",
+            "max_chars": 16,
+            "min_chars": 8
+          },
+          {
+            "field_id": "role",
+            "sample_text": "Head of Operations",
+            "max_chars": 24,
+            "min_chars": 12
+          }
+        ]
+      },
+      {
+        "item_id": "testimonial_card_media",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "name",
+            "sample_text": "Emily Davis",
+            "max_chars": 11,
+            "min_chars": 6
+          },
+          {
+            "field_id": "role",
+            "sample_text": "VP of Product",
+            "max_chars": 13,
+            "min_chars": 7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "testimonial-04",
+    "block_title": "Testimonial 04 - Carousel with stats cards",
+    "category": "testimonial",
+    "files": [
+      "components/shadcn-space/blocks/testimonial-04/testimonial.tsx",
+      "components/shadcn-space/blocks/testimonial-04/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "Testimonials",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "label",
+            "notes": "Outline badge, centered"
+          },
+          {
+            "field_id": "heading",
+            "element": "motion.h2",
+            "original_text": "Stories from clients",
+            "max_chars": 20,
+            "min_chars": 10,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl lg:text-5xl, centered"
+          },
+          {
+            "field_id": "description",
+            "element": "motion.p",
+            "original_text": "Discover how forward-thinking organizations use our platform",
+            "max_chars": 60,
+            "min_chars": 30,
+            "type": "description",
+            "notes": "text-lg sm:text-xl, muted-foreground, centered"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "testimonial_slide",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "quote",
+            "sample_text": "Our teams finally have a single source of truth. We’ve eliminated guesswork, improved collaboration, and can make faster decisions backed by real-time insights.",
+            "max_chars": 160,
+            "min_chars": 80
+          },
+          {
+            "field_id": "name",
+            "sample_text": "Jessica Thompson",
+            "max_chars": 16,
+            "min_chars": 8
+          },
+          {
+            "field_id": "role",
+            "sample_text": "Head of Operations",
+            "max_chars": 18,
+            "min_chars": 9
+          },
+          {
+            "field_id": "performance_value",
+            "sample_text": "42%",
+            "max_chars": 4,
+            "min_chars": 2
+          },
+          {
+            "field_id": "performance_label",
+            "sample_text": "Reduction in operational inefficiencies",
+            "max_chars": 39,
+            "min_chars": 20
+          },
+          {
+            "field_id": "performance2_value",
+            "sample_text": "3x",
+            "max_chars": 4,
+            "min_chars": 2
+          },
+          {
+            "field_id": "performance2_label",
+            "sample_text": "Faster cross-team decision-making",
+            "max_chars": 33,
+            "min_chars": 17
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "testimonial-05",
+    "block_title": "Testimonial 05 - Grid cards with mixed themes",
+    "category": "testimonial",
+    "files": [
+      "components/shadcn-space/blocks/testimonial-05/testimonial.tsx",
+      "components/shadcn-space/blocks/testimonial-05/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "Testimonials",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "label",
+            "notes": "Default badge (not outline), centered"
+          },
+          {
+            "field_id": "heading",
+            "element": "motion.h2",
+            "original_text": "Trusted by industry leaders",
+            "max_chars": 27,
+            "min_chars": 14,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl lg:text-5xl, centered"
+          },
+          {
+            "field_id": "description",
+            "element": "motion.p",
+            "original_text": "DReal experiences and measurable outcomes — see how our platform helps teams operate smarter, move faster.",
+            "max_chars": 106,
+            "min_chars": 53,
+            "type": "description",
+            "notes": "text-lg sm:text-xl, muted-foreground, centered, max-w-2xl. Note: starts with 'DReal' (likely typo in original)"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "testimonial_card",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "quote",
+            "sample_text": "This platform transformed how we operate. With complete visibility and smarter workflows, our teams execute faster and with far greater confidence.",
+            "max_chars": 147,
+            "min_chars": 74
+          },
+          {
+            "field_id": "name",
+            "sample_text": "Robert Fox",
+            "max_chars": 13,
+            "min_chars": 7
+          },
+          {
+            "field_id": "role",
+            "sample_text": "Mitsubishi",
+            "max_chars": 10,
+            "min_chars": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "testimonial-06",
+    "block_title": "Testimonial 06 - Horizontal carousel with cards",
+    "category": "testimonial",
+    "files": [
+      "components/shadcn-space/blocks/testimonial-06/testimonial.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Real stories. Real impact.",
+            "max_chars": 26,
+            "min_chars": 13,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl, font-semibold, left-aligned"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "See why high-performing teams rely on our platform to operate smarter and grow faster.",
+            "max_chars": 86,
+            "min_chars": 43,
+            "type": "description",
+            "notes": "text-lg, muted-foreground, left-aligned"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "testimonial_card",
+        "count": 12,
+        "fields": [
+          {
+            "field_id": "quote",
+            "sample_text": "Before switching, our team struggled with scattered tools and limited visibility. Now everything lives in one platform — collaboration is smoother, campaigns launch faster, and our productivity has noticeably improved.",
+            "max_chars": 218,
+            "min_chars": 109
+          },
+          {
+            "field_id": "author",
+            "sample_text": "Jessica Thompson",
+            "max_chars": 16,
+            "min_chars": 8
+          },
+          {
+            "field_id": "role",
+            "sample_text": "Director of Marketing at BL",
+            "max_chars": 27,
+            "min_chars": 14
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "testimonial-07",
+    "block_title": "Testimonial 07 - Vertical marquee review cards",
+    "category": "testimonial",
+    "files": [
+      "components/shadcn-space/blocks/testimonial-07/testimonial.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "Testimonials",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "label",
+            "notes": "Outline badge, centered"
+          },
+          {
+            "field_id": "heading",
+            "element": "motion.h2",
+            "original_text": "Real Stories.",
+            "max_chars": 13,
+            "min_chars": 7,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl lg:text-5xl, centered"
+          },
+          {
+            "field_id": "description",
+            "element": "motion.p",
+            "original_text": "Real experiences, genuine feedback—discover how our creative solutions",
+            "max_chars": 70,
+            "min_chars": 35,
+            "type": "description",
+            "notes": "text-lg sm:text-xl, muted-foreground, centered"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "review_card",
+        "count": 7,
+        "fields": [
+          {
+            "field_id": "name",
+            "sample_text": "Ken Masters",
+            "max_chars": 13,
+            "min_chars": 7
+          },
+          {
+            "field_id": "username",
+            "sample_text": "@kmasters",
+            "max_chars": 9,
+            "min_chars": 5
+          },
+          {
+            "field_id": "body",
+            "sample_text": "“Our productivity has nearly doubled since onboarding. Automation features removed repetitive tasks, allowing our team to focus on building instead of managing operations.”",
+            "max_chars": 191,
+            "min_chars": 96
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "feature-03",
+    "block_title": "Feature 03 - Image left, feature list card with brand slider",
+    "category": "feature",
+    "files": [
+      "components/shadcn-space/blocks/feature-03/feature.tsx",
+      "components/shadcn-space/blocks/feature-03/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "content",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "Features",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Outline badge"
+          },
+          {
+            "field_id": "heading",
+            "element": "motion.p",
+            "original_text": "Leading with innovative solution.",
+            "max_chars": 33,
+            "min_chars": 17,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl lg:text-5xl, font-semibold"
+          },
+          {
+            "field_id": "description",
+            "element": "motion.p",
+            "original_text": "We’re west coast change-makers in a complex world, crafting purposeful and powerful brands with fluidity",
+            "max_chars": 104,
+            "min_chars": 52,
+            "type": "description",
+            "notes": "text-lg, muted-foreground"
+          }
+        ]
+      },
+      {
+        "section": "brand_slider",
+        "fields": [
+          {
+            "field_id": "brand_text",
+            "element": "p",
+            "original_text": "We have 23k+ Satisfied & Trusted Customers",
+            "max_chars": 42,
+            "min_chars": 21,
+            "type": "inline",
+            "notes": "text-base, muted-foreground, centered above brand logos marquee"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "feature_item",
+        "count": 2,
+        "fields": [
+          {
+            "field_id": "title",
+            "sample_text": "Data Processing",
+            "max_chars": 21,
+            "min_chars": 11
+          },
+          {
+            "field_id": "content",
+            "sample_text": "Develop a unique and cohesive brand identity, including the design of logos, color schemes, typography.",
+            "max_chars": 103,
+            "min_chars": 52
+          }
+        ]
+      },
+      {
+        "item_id": "brand_logo",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "name",
+            "sample_text": "Brand 1",
+            "max_chars": 7,
+            "min_chars": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "feature-04",
+    "block_title": "Feature 04 - Card overlay on background image",
+    "category": "feature",
+    "files": [
+      "components/shadcn-space/blocks/feature-04/feature.tsx",
+      "components/shadcn-space/blocks/feature-04/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "content_card",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "Features",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Outline badge"
+          },
+          {
+            "field_id": "heading",
+            "element": "motion.p",
+            "original_text": "Leading with innovative solution.",
+            "max_chars": 33,
+            "min_chars": 17,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl, font-semibold"
+          },
+          {
+            "field_id": "description",
+            "element": "motion.p",
+            "original_text": "We’re west coast change-makers in a complex world, crafting purposeful and powerful brands with fluidity",
+            "max_chars": 104,
+            "min_chars": 52,
+            "type": "description",
+            "notes": "text-base, muted-foreground"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Get Started",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "Full width, rounded-full, h-12"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "feature_item",
+        "count": 2,
+        "fields": [
+          {
+            "field_id": "title",
+            "sample_text": "Data Processing",
+            "max_chars": 21,
+            "min_chars": 11
+          },
+          {
+            "field_id": "content",
+            "sample_text": "Develop a unique and cohesive brand identity, including the design.",
+            "max_chars": 67,
+            "min_chars": 34
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "feature-05",
+    "block_title": "Feature 05 - Circular image with floating cards and checklist",
+    "category": "feature",
+    "files": [
+      "components/shadcn-space/blocks/feature-05/feature.tsx",
+      "components/shadcn-space/blocks/feature-05/Sparkles.tsx",
+      "components/shadcn-space/blocks/feature-05/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "content",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "Improved quality",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Outline badge"
+          },
+          {
+            "field_id": "heading",
+            "element": "motion.p",
+            "original_text": "Leading the way with great innovative solution.",
+            "max_chars": 47,
+            "min_chars": 24,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl, font-semibold"
+          },
+          {
+            "field_id": "description",
+            "element": "motion.p",
+            "original_text": "Power your business with real-time analytics, seamless integrations, and cloud-ready architecture designed to reduce costs, boost productivity, and deliver exceptional user experiences at scale.",
+            "max_chars": 194,
+            "min_chars": 97,
+            "type": "description",
+            "notes": "text-base, muted-foreground"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Get Started",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "Rounded-full, size lg"
+          }
+        ]
+      },
+      {
+        "section": "floating_rating_card",
+        "fields": [
+          {
+            "field_id": "rating_text",
+            "element": "p",
+            "original_text": "20k+ reviews",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "inline",
+            "notes": "text-xs, muted-foreground, inside floating card top-left"
+          }
+        ]
+      },
+      {
+        "section": "floating_book_card",
+        "fields": [
+          {
+            "field_id": "card_title",
+            "element": "p",
+            "original_text": "Get consultancy",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "inline",
+            "notes": "text-xs, inside floating card top-right"
+          },
+          {
+            "field_id": "card_description",
+            "element": "p",
+            "original_text": "Get in touch with best SEO experts",
+            "max_chars": 34,
+            "min_chars": 17,
+            "type": "inline",
+            "notes": "text-xs, muted-foreground, max-w-32"
+          },
+          {
+            "field_id": "card_button",
+            "element": "Button",
+            "original_text": "Book a slot",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "size xs, rounded-full"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "feature_checklist_item",
+        "count": 2,
+        "fields": [
+          {
+            "field_id": "text",
+            "sample_text": "Built with responsiveness in mind, ensuring your app looks great on all devices with RTL language support.",
+            "max_chars": 106,
+            "min_chars": 53
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "feature-06",
+    "block_title": "Feature 06 - Image left with stats counters",
+    "category": "feature",
+    "files": [
+      "components/shadcn-space/blocks/feature-06/feature.tsx",
+      "components/shadcn-space/blocks/feature-06/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "content",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "Features",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Outline badge"
+          },
+          {
+            "field_id": "heading",
+            "element": "motion.p",
+            "original_text": "Leading the way with innovative solutions.",
+            "max_chars": 42,
+            "min_chars": 21,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl lg:text-5xl, font-semibold"
+          },
+          {
+            "field_id": "description",
+            "element": "motion.p",
+            "original_text": "Power your business with real-time analytics, seamless integrations, and cloud-ready architecture designed to reduce costs, boost productivity, and deliver exceptional user experiences.",
+            "max_chars": 185,
+            "min_chars": 93,
+            "type": "description",
+            "notes": "text-lg, muted-foreground"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Get Started",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "Rounded-full, size lg"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "stat_counter",
+        "count": 2,
+        "fields": [
+          {
+            "field_id": "record",
+            "sample_text": "35",
+            "max_chars": 3,
+            "min_chars": 2
+          },
+          {
+            "field_id": "suffix",
+            "sample_text": "M+",
+            "max_chars": 2,
+            "min_chars": 1
+          },
+          {
+            "field_id": "title",
+            "sample_text": "Users impacted",
+            "max_chars": 18,
+            "min_chars": 9
+          },
+          {
+            "field_id": "description",
+            "sample_text": "with our work",
+            "max_chars": 15,
+            "min_chars": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "feature-07",
+    "block_title": "Feature 07 - Tabbed feature showcase with image",
+    "category": "feature",
+    "files": [
+      "components/shadcn-space/blocks/feature-07/feature.tsx",
+      "components/shadcn-space/blocks/feature-07/index.tsx",
+      "components/shadcn-space/blocks/feature-07/style.css"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Designed to perform at scale",
+            "max_chars": 28,
+            "min_chars": 14,
+            "type": "heading",
+            "notes": "text-3xl md:text-5xl, font-semibold, centered"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Crafted for exceptional performance, made to deliver superior performance at larger scale",
+            "max_chars": 89,
+            "min_chars": 45,
+            "type": "description",
+            "notes": "text-base md:text-lg, muted-foreground, centered, max-w-xl"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "tab_feature",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "tab_name",
+            "sample_text": "Performance Tracking",
+            "max_chars": 20,
+            "min_chars": 10
+          },
+          {
+            "field_id": "tab_badge",
+            "sample_text": "Live analytics",
+            "max_chars": 20,
+            "min_chars": 10
+          },
+          {
+            "field_id": "tab_title",
+            "sample_text": "Performance Tracking",
+            "max_chars": 20,
+            "min_chars": 10
+          },
+          {
+            "field_id": "tab_description",
+            "sample_text": "Monitor KPIs, revenue trends, and team output with live dashboards that update as your data changes. Stay informed, spot issues early, and make confident decisions backed by real numbers.",
+            "max_chars": 234,
+            "min_chars": 117
+          },
+          {
+            "field_id": "tab_button",
+            "sample_text": "Learn More",
+            "max_chars": 10,
+            "min_chars": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "feature-08",
+    "block_title": "Feature 08 - Carousel with content and stat cards",
+    "category": "feature",
+    "files": [
+      "components/shadcn-space/blocks/feature-08/feature.tsx",
+      "components/shadcn-space/blocks/feature-08/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge",
+            "element": "Badge",
+            "original_text": "Why Choose Our Platform",
+            "max_chars": 23,
+            "min_chars": 12,
+            "type": "label",
+            "notes": "Custom badge with teal bg, rounded-lg"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Discover the core advantages of our SaaS platform",
+            "max_chars": 49,
+            "min_chars": 25,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl lg:text-5xl, font-semibold"
+          }
+        ]
+      },
+      {
+        "section": "stat_card_static",
+        "fields": [
+          {
+            "field_id": "card_footer_label",
+            "element": "p",
+            "original_text": "Product Team",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "label",
+            "notes": "text-base, in CardFooter left side"
+          },
+          {
+            "field_id": "card_footer_link",
+            "element": "a",
+            "original_text": "More",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "button",
+            "notes": "text-base, in CardFooter right side, link"
+          },
+          {
+            "field_id": "satisfaction_label",
+            "element": "p",
+            "original_text": "Customer Satisfaction",
+            "max_chars": 21,
+            "min_chars": 11,
+            "type": "label",
+            "notes": "text-lg, font-medium, on teal-400 background"
+          },
+          {
+            "field_id": "success_rate_label",
+            "element": "span",
+            "original_text": "Success Rate",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "stat_label",
+            "notes": "text-sm, muted-foreground, displayed as 'Success' + line break + 'Rate'"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "feature_slide",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "tab_title",
+            "sample_text": "Real time collaboration",
+            "max_chars": 23,
+            "min_chars": 12
+          },
+          {
+            "field_id": "tab_description",
+            "sample_text": "Work together seamlessly with shared workflows, instant updates, and full visibility across projects.",
+            "max_chars": 101,
+            "min_chars": 51
+          },
+          {
+            "field_id": "content",
+            "sample_text": "Our platform helps teams simplify operations, improve visibility, and unlock smarter decision-making.",
+            "max_chars": 101,
+            "min_chars": 51
+          },
+          {
+            "field_id": "percentage",
+            "sample_text": "95",
+            "max_chars": 2,
+            "min_chars": 1
+          },
+          {
+            "field_id": "cta_button",
+            "sample_text": "Learn More",
+            "max_chars": 10,
+            "min_chars": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "feature-09",
+    "block_title": "Feature 09 - Crypto theme with portfolio card (dark section)",
+    "category": "feature",
+    "files": [
+      "components/shadcn-space/blocks/feature-09/feature.tsx",
+      "components/shadcn-space/blocks/feature-09/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "content",
+        "fields": [
+          {
+            "field_id": "subtitle",
+            "element": "p",
+            "original_text": "Why choose shadcnspace.",
+            "max_chars": 23,
+            "min_chars": 12,
+            "type": "inline",
+            "notes": "text-base, 'shadcnspace.' part is teal-400 colored. Rendered as 'Why choose ' + teal span"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Features of the crypto framer mobile application",
+            "max_chars": 48,
+            "min_chars": 24,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl lg:text-5xl, font-medium"
+          }
+        ]
+      },
+      {
+        "section": "portfolio_card",
+        "fields": [
+          {
+            "field_id": "card_title",
+            "element": "p",
+            "original_text": "Your portfolio is up 2.31%",
+            "max_chars": 26,
+            "min_chars": 13,
+            "type": "inline",
+            "notes": "text-base, '2.31%' part is teal-400 colored"
+          },
+          {
+            "field_id": "pair_label",
+            "element": "span",
+            "original_text": "BTC/USD",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "text-xs, muted-foreground, repeated per portfolio item"
+          },
+          {
+            "field_id": "change_value",
+            "element": "p",
+            "original_text": "1.05%",
+            "max_chars": 5,
+            "min_chars": 3,
+            "type": "stat_value",
+            "notes": "text-xs sm:text-base, teal-400, repeated per portfolio item"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "feature_bullet",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "content",
+            "sample_text": "Designed for crypto trading platforms",
+            "max_chars": 37,
+            "min_chars": 19
+          }
+        ]
+      },
+      {
+        "item_id": "portfolio_item",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "name",
+            "sample_text": "Bitcoin",
+            "max_chars": 7,
+            "min_chars": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "feature-10",
+    "block_title": "Feature 10 - Central image with surrounding feature points (dark section)",
+    "category": "feature",
+    "files": [
+      "components/shadcn-space/blocks/feature-10/feature.tsx",
+      "components/shadcn-space/blocks/feature-10/index.tsx",
+      "components/shadcn-space/blocks/feature-10/style.css"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "subtitle",
+            "element": "p",
+            "original_text": "We deliver best solution.",
+            "max_chars": 25,
+            "min_chars": 13,
+            "type": "inline",
+            "notes": "text-foreground, 'best solution.' part is teal-400 colored"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "One application with multiple options to give you freedom of buying & selling",
+            "max_chars": 77,
+            "min_chars": 39,
+            "type": "heading",
+            "notes": "text-3xl sm:text-4xl lg:text-5xl, font-medium, centered"
+          }
+        ]
+      },
+      {
+        "section": "feature_points",
+        "fields": [
+          {
+            "field_id": "planning_title",
+            "element": "p",
+            "original_text": "Planning",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "subheading",
+            "notes": "text-xs sm:text-xl, font-medium, top-left position"
+          },
+          {
+            "field_id": "planning_desc",
+            "element": "p",
+            "original_text": "Map the crypto projects scope with framer template",
+            "max_chars": 50,
+            "min_chars": 25,
+            "type": "description",
+            "notes": "text-xs sm:text-base, muted-foreground, max-w-52"
+          },
+          {
+            "field_id": "refinement_title",
+            "element": "p",
+            "original_text": "Refinement",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "subheading",
+            "notes": "text-xs sm:text-xl, font-medium, top-right position"
+          },
+          {
+            "field_id": "refinement_desc",
+            "element": "p",
+            "original_text": "Refine & improve your crypto landing page",
+            "max_chars": 41,
+            "min_chars": 21,
+            "type": "description",
+            "notes": "text-xs sm:text-base, muted-foreground, max-w-52"
+          },
+          {
+            "field_id": "prototype_title",
+            "element": "p",
+            "original_text": "Prototype",
+            "max_chars": 9,
+            "min_chars": 5,
+            "type": "subheading",
+            "notes": "text-xs sm:text-xl, font-medium, bottom-left position"
+          },
+          {
+            "field_id": "prototype_desc",
+            "element": "p",
+            "original_text": "Build crypto website test for your product",
+            "max_chars": 42,
+            "min_chars": 21,
+            "type": "description",
+            "notes": "text-xs sm:text-base, muted-foreground, max-w-52"
+          },
+          {
+            "field_id": "scale_title",
+            "element": "p",
+            "original_text": "Scale and support",
+            "max_chars": 17,
+            "min_chars": 9,
+            "type": "subheading",
+            "notes": "text-xs sm:text-xl, font-medium, bottom-right position"
+          },
+          {
+            "field_id": "scale_desc",
+            "element": "p",
+            "original_text": "Deploy product live and ensure expert support",
+            "max_chars": 45,
+            "min_chars": 23,
+            "type": "description",
+            "notes": "text-xs sm:text-base, muted-foreground, max-w-52"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": []
+  },
+  {
+    "block_id": "feature-11",
+    "block_title": "Feature 11 - Crypto portfolio with feature list (dark section)",
+    "category": "feature",
+    "files": [
+      "components/shadcn-space/blocks/feature-11/feature.tsx",
+      "components/shadcn-space/blocks/feature-11/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "content",
+        "fields": [
+          {
+            "field_id": "label",
+            "element": "p",
+            "original_text": "Crypto landing page",
+            "max_chars": 19,
+            "min_chars": 10,
+            "type": "label",
+            "notes": "text-xs, foreground color. Followed by teal-400 colored ' template' span"
+          },
+          {
+            "field_id": "label_accent",
+            "element": "span",
+            "original_text": "template",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "text-xs, teal-400 color, appended to label"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Create your crypto currency portfolio today",
+            "max_chars": 43,
+            "min_chars": 22,
+            "type": "heading",
+            "notes": "text-4xl, font-medium"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Coinbase has a variety of features that make it the best place to start trading.",
+            "max_chars": 80,
+            "min_chars": 40,
+            "type": "description",
+            "notes": "text-base, muted-foreground"
+          }
+        ]
+      },
+      {
+        "section": "feature_list",
+        "fields": [
+          {
+            "field_id": "item_1",
+            "element": "p",
+            "original_text": "Manage your portfolio",
+            "max_chars": 21,
+            "min_chars": 11,
+            "type": "list_item",
+            "notes": "text-sm, with ChartPie icon, separated by dividers"
+          },
+          {
+            "field_id": "item_2",
+            "element": "p",
+            "original_text": "Vault protection",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "list_item",
+            "notes": "text-sm, with ShieldCheck icon, separated by dividers"
+          },
+          {
+            "field_id": "item_3",
+            "element": "p",
+            "original_text": "Mobile apps",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "list_item",
+            "notes": "text-sm, with Smartphone icon, last item"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": []
+  },
+  {
+    "block_id": "feature-12",
+    "block_title": "Feature 12 - Developer feature cards with badge grid",
+    "category": "feature",
+    "files": [
+      "components/shadcn-space/blocks/feature-12/feature.tsx",
+      "components/shadcn-space/blocks/feature-12/index.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "motion.h2",
+            "original_text": "Designed for developer flow",
+            "max_chars": 27,
+            "min_chars": 14,
+            "type": "heading",
+            "notes": "text-3xl md:text-4xl, font-semibold, centered"
+          }
+        ]
+      },
+      {
+        "section": "card_tailwind",
+        "fields": [
+          {
+            "field_id": "title",
+            "element": "p",
+            "original_text": "Built with Tailwind",
+            "max_chars": 19,
+            "min_chars": 10,
+            "type": "subheading",
+            "notes": "text-xl, font-semibold, in top-left card"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Fully customizable styling with utility-first CSS.",
+            "max_chars": 50,
+            "min_chars": 25,
+            "type": "description",
+            "notes": "text-sm sm:text-lg, muted-foreground"
+          }
+        ]
+      },
+      {
+        "section": "card_mdx",
+        "fields": [
+          {
+            "field_id": "title",
+            "element": "p",
+            "original_text": "Write in MDX",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "subheading",
+            "notes": "text-xl, font-semibold, in bottom-left card"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Mix Markdown and JSX for expressive documentation.",
+            "max_chars": 50,
+            "min_chars": 25,
+            "type": "description",
+            "notes": "text-sm sm:text-lg, muted-foreground"
+          }
+        ]
+      },
+      {
+        "section": "card_setup",
+        "fields": [
+          {
+            "field_id": "title",
+            "element": "p",
+            "original_text": "Fast Setup",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "subheading",
+            "notes": "text-xl, font-semibold, in right card below badge grid"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Get up and running in minutes with built-in routing, layouts, SEO, and styling—all preconfigured and ready.",
+            "max_chars": 107,
+            "min_chars": 54,
+            "type": "description",
+            "notes": "text-sm sm:text-lg, muted-foreground"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "feature_badge",
+        "count": 10,
+        "fields": [
+          {
+            "field_id": "label",
+            "sample_text": "Routing Setup",
+            "max_chars": 16,
+            "min_chars": 8
+          }
+        ]
+      }
+    ]
+  }
+]

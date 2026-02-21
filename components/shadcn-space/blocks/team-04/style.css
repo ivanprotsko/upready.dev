@@ -1,0 +1,41 @@
+.team-04-micro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.team-04-micro:before,
+.team-04-micro:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: solid 1px var(--border);
+  border-radius: 50%;
+}
+
+.team-04-micro:before {
+  animation: team-04-ripple 2s linear infinite;
+}
+
+.team-04-micro:after {
+  animation: team-04-ripple 2s 1s linear infinite;
+}
+
+@keyframes team-04-ripple {
+  to {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+}

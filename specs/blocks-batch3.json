@@ -1,0 +1,789 @@
+[
+  {
+    "block_id": "team-01",
+    "block_title": "Team 01 - Creative Team Grid",
+    "category": "team",
+    "files": [
+      "components/shadcn-space/blocks/team-01/team.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge_text",
+            "element": "Badge",
+            "original_text": "Team",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "label",
+            "notes": "Badge above section heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Meet the creative minds behind our success",
+            "max_chars": 42,
+            "min_chars": 21,
+            "type": "heading",
+            "notes": "Main section heading"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "team_members",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "member_name",
+            "element": "h3",
+            "sample_text": "Logan Dang",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "heading",
+            "notes": "Team member name. Longest: 'Darko Stanković' (15 chars)"
+          },
+          {
+            "field_id": "member_role",
+            "element": "p",
+            "sample_text": "WordPress Developer",
+            "max_chars": 23,
+            "min_chars": 12,
+            "type": "label",
+            "notes": "Team member role. Longest: 'Social Media Specialist' (23 chars)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "team-02",
+    "block_title": "Team 02 - Team Grid with Hover Social Links",
+    "category": "team",
+    "files": [
+      "components/shadcn-space/blocks/team-02/team.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge_text",
+            "element": "Badge",
+            "original_text": "Team",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "label",
+            "notes": "Badge above section heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Meet our team",
+            "max_chars": 13,
+            "min_chars": 7,
+            "type": "heading",
+            "notes": "Main section heading"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Our team is committed to redefining digital experiences through innovative web solutions while fostering a diverse and collaborative environment.",
+            "max_chars": 145,
+            "min_chars": 73,
+            "type": "description",
+            "notes": "Section description below heading"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "team_members",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "member_name",
+            "element": "h3",
+            "sample_text": "Martha Finley",
+            "max_chars": 13,
+            "min_chars": 7,
+            "type": "heading",
+            "notes": "Team member name. All names are 11-13 chars"
+          },
+          {
+            "field_id": "member_role",
+            "element": "p",
+            "sample_text": "Creative Director",
+            "max_chars": 20,
+            "min_chars": 10,
+            "type": "label",
+            "notes": "Team member role. Longest: 'Marketing Strategist' (20 chars)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "portfolio-01",
+    "block_title": "Portfolio 01 - Project Cards with Tags",
+    "category": "portfolio",
+    "files": [
+      "components/shadcn-space/blocks/portfolio-01/portfolio.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge_text",
+            "element": "Badge",
+            "original_text": "Portfolio",
+            "max_chars": 9,
+            "min_chars": 5,
+            "type": "label",
+            "notes": "Badge above section heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "How we transformed a small business's online presence",
+            "max_chars": 53,
+            "min_chars": 27,
+            "type": "heading",
+            "notes": "Main section heading"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "portfolio_items",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "portfolio_title",
+            "element": "a",
+            "sample_text": "Flowbank",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "heading",
+            "notes": "Project title as link. Longest: 'Academy.co' (10 chars)"
+          },
+          {
+            "field_id": "portfolio_tags",
+            "element": "Badge",
+            "sample_text": "UX Research",
+            "max_chars": 21,
+            "min_chars": 11,
+            "type": "label",
+            "notes": "Tag badges per item (2 per item). Longest: 'Brand identity design' (21 chars)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "services-01",
+    "block_title": "Services 01 - Service Cards with CTA Banner",
+    "category": "services",
+    "files": [
+      "components/shadcn-space/blocks/services-01/services.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge_text",
+            "element": "Badge",
+            "original_text": "Services",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Badge above section heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Where innovation meets aesthetics",
+            "max_chars": 33,
+            "min_chars": 17,
+            "type": "heading",
+            "notes": "Main section heading"
+          }
+        ]
+      },
+      {
+        "section": "cta_banner",
+        "fields": [
+          {
+            "field_id": "cta_line_1",
+            "element": "p",
+            "original_text": "See Our Work in Action.",
+            "max_chars": 23,
+            "min_chars": 12,
+            "type": "heading",
+            "notes": "First line of CTA banner text (dark bg)"
+          },
+          {
+            "field_id": "cta_line_2",
+            "element": "p",
+            "original_text": "Start Your Creative Journey with Us!",
+            "max_chars": 36,
+            "min_chars": 18,
+            "type": "heading",
+            "notes": "Second line of CTA banner text (dark bg)"
+          },
+          {
+            "field_id": "cta_button_primary",
+            "element": "Button > span",
+            "original_text": "Let's Collaborate",
+            "max_chars": 17,
+            "min_chars": 9,
+            "type": "button",
+            "notes": "Primary CTA button (white bg, black text)"
+          },
+          {
+            "field_id": "cta_button_secondary",
+            "element": "Button > span",
+            "original_text": "View Portfolio",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "button",
+            "notes": "Secondary CTA button (outlined)"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "service_cards",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "service_title",
+            "element": "p",
+            "sample_text": "Brand Strategy",
+            "max_chars": 21,
+            "min_chars": 11,
+            "type": "label",
+            "notes": "Service card title. Longest: 'Analytics & Reporting' (21 chars)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "services-02",
+    "block_title": "Services 02 - Expandable Service List with Image",
+    "category": "services",
+    "files": [
+      "components/shadcn-space/blocks/services-02/services.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge_text",
+            "element": "Badge",
+            "original_text": "Services",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Badge above section heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "What we do",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "heading",
+            "notes": "Main section heading"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "A glimpse into our creativity—exploring innovative designs, successful collaborations, and transformative digital experiences.",
+            "max_chars": 126,
+            "min_chars": 63,
+            "type": "description",
+            "notes": "Section description below heading"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button > a",
+            "original_text": "Let's Collaborate",
+            "max_chars": 17,
+            "min_chars": 9,
+            "type": "button",
+            "notes": "CTA button with arrow icon, aligned right of header"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "service_items",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "service_heading",
+            "element": "h3",
+            "sample_text": "Brand Strategy",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "heading",
+            "notes": "Service name in accordion list. Longest: 'Content creation' (16 chars)"
+          },
+          {
+            "field_id": "service_description",
+            "element": "p",
+            "sample_text": "We craft unique brand stories and visual identities that resonate with your audience and build long-lasting trust and recognition.",
+            "max_chars": 146,
+            "min_chars": 73,
+            "type": "description",
+            "notes": "Shown when service is active/hovered. Longest: Motion graphics desc (146 chars)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "footer-01",
+    "block_title": "Footer 01 - Multi-column Footer with Contact Details",
+    "category": "footer",
+    "files": [
+      "components/shadcn-space/blocks/footer-01/footer.tsx"
+    ],
+    "sections": [
+      {
+        "section": "brand",
+        "fields": [
+          {
+            "field_id": "tagline",
+            "element": "p",
+            "original_text": "Empowering businesses with innovative solutions. Let's create something amazing together.",
+            "max_chars": 89,
+            "min_chars": 45,
+            "type": "description",
+            "notes": "Brand description below logo"
+          }
+        ]
+      },
+      {
+        "section": "contact_details",
+        "fields": [
+          {
+            "field_id": "contact_section_title",
+            "element": "p",
+            "original_text": "Contact Details",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Contact section column heading"
+          },
+          {
+            "field_id": "address",
+            "element": "p",
+            "original_text": "81 Rivington Street London EC2A 3AY",
+            "max_chars": 35,
+            "min_chars": 18,
+            "type": "inline",
+            "notes": "Physical address"
+          },
+          {
+            "field_id": "email",
+            "element": "a",
+            "original_text": "hello@shadcnspace.com",
+            "max_chars": 21,
+            "min_chars": 11,
+            "type": "inline",
+            "notes": "Email link (mailto:)"
+          },
+          {
+            "field_id": "phone",
+            "element": "a",
+            "original_text": "0105 192 3556",
+            "max_chars": 13,
+            "min_chars": 7,
+            "type": "inline",
+            "notes": "Phone link (tel:)"
+          }
+        ]
+      },
+      {
+        "section": "bottom_bar",
+        "fields": [
+          {
+            "field_id": "copyright",
+            "element": "p",
+            "original_text": "©2026 Shadcn Space. All Rights Reserved",
+            "max_chars": 39,
+            "min_chars": 20,
+            "type": "inline",
+            "notes": "Copyright text in bottom bar"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "footer_link_sections",
+        "count": 2,
+        "fields": [
+          {
+            "field_id": "section_title",
+            "element": "p",
+            "sample_text": "Sitemap",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "label",
+            "notes": "Column heading. Values: 'Sitemap' (7), 'Other Pages' (11)"
+          }
+        ]
+      },
+      {
+        "item_id": "sitemap_links",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "link_label",
+            "element": "a",
+            "sample_text": "Contact us",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "list_item",
+            "notes": "Sitemap section links. Values: 'Contact us' (10), 'About us' (8), 'Work' (4), 'Services' (8), 'Pricing' (7)"
+          }
+        ]
+      },
+      {
+        "item_id": "other_pages_links",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "link_label",
+            "element": "a",
+            "sample_text": "Error 404",
+            "max_chars": 18,
+            "min_chars": 9,
+            "type": "list_item",
+            "notes": "Other Pages section links. Values: 'Error 404' (9), 'Terms & Conditions' (18), 'Privacy Policy' (14)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "footer-02",
+    "block_title": "Footer 02 - Newsletter CTA Footer with Links",
+    "category": "footer",
+    "files": [
+      "components/shadcn-space/blocks/footer-02/footer.tsx"
+    ],
+    "sections": [
+      {
+        "section": "newsletter",
+        "fields": [
+          {
+            "field_id": "newsletter_description",
+            "element": "p",
+            "original_text": "Stay updated with the latest news, promotions, and exclusive offers.",
+            "max_chars": 68,
+            "min_chars": 34,
+            "type": "description",
+            "notes": "Newsletter section description"
+          },
+          {
+            "field_id": "email_placeholder",
+            "element": "Input[placeholder]",
+            "original_text": "enter your email",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Email input placeholder text"
+          },
+          {
+            "field_id": "subscribe_button",
+            "element": "Button",
+            "original_text": "Subscribe",
+            "max_chars": 9,
+            "min_chars": 5,
+            "type": "button",
+            "notes": "Subscribe button"
+          },
+          {
+            "field_id": "disclaimer",
+            "element": "p",
+            "original_text": "By subscribing, you agree to receive our promotional emails. You can unsubscribe at any time.",
+            "max_chars": 93,
+            "min_chars": 47,
+            "type": "description",
+            "notes": "Privacy disclaimer text next to email form"
+          }
+        ]
+      },
+      {
+        "section": "cta",
+        "fields": [
+          {
+            "field_id": "cta_heading",
+            "element": "h2",
+            "original_text": "Begin your path to success contact us today.",
+            "max_chars": 44,
+            "min_chars": 22,
+            "type": "heading",
+            "notes": "Main CTA heading"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Get in touch",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "CTA button with teal background"
+          }
+        ]
+      },
+      {
+        "section": "bottom_bar",
+        "fields": [
+          {
+            "field_id": "copyright",
+            "element": "p",
+            "original_text": "©2026 Shadcn Space. All Rights Reserved",
+            "max_chars": 39,
+            "min_chars": 20,
+            "type": "inline",
+            "notes": "Copyright text at bottom"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "footer_links",
+        "count": 8,
+        "fields": [
+          {
+            "field_id": "link_label",
+            "element": "a",
+            "sample_text": "Home",
+            "max_chars": 17,
+            "min_chars": 9,
+            "type": "list_item",
+            "notes": "Footer nav links split into 2 columns (4+4). Longest: 'Featured property' (17). Values: 'Home' (4), 'Categories' (10), 'Properties' (10), 'Featured property' (17), 'Testimonials' (12), 'Blog' (4), 'FAQs' (4), '404 page' (8)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "gallery-01",
+    "block_title": "Gallery 01 - Destination Image Grid",
+    "category": "gallery",
+    "files": [
+      "components/shadcn-space/blocks/gallery-01/gallery.tsx"
+    ],
+    "sections": [],
+    "repeatable_items": [
+      {
+        "item_id": "gallery_cards",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "card_title",
+            "element": "h3",
+            "sample_text": "Hiking Adventure",
+            "max_chars": 22,
+            "min_chars": 11,
+            "type": "heading",
+            "notes": "Gallery card title overlaid on image. Longest: 'Pilgrimage Destination' (22). Values: 'Hiking Adventure' (16), 'Outdoor Adventure' (17), 'Beach Adventure' (15), 'Pilgrimage Destination' (22)"
+          },
+          {
+            "field_id": "card_subtitle",
+            "element": "p",
+            "sample_text": "306 Destinations",
+            "max_chars": 16,
+            "min_chars": 8,
+            "type": "inline",
+            "notes": "Destination count below title. Values: '306 Destinations' (16), '418 Destinations' (16), '85 Destinations' (15), '29 Destinations' (15)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "bento-grid-01",
+    "block_title": "Bento Grid 01 - Feature Showcase with Animated Illustrations",
+    "category": "bento-grid",
+    "files": [
+      "components/shadcn-space/blocks/bento-grid-01/bentogrid.tsx",
+      "components/shadcn-space/blocks/bento-grid-01/AnimatedUiBlock.tsx",
+      "components/shadcn-space/blocks/bento-grid-01/ReminderAnimation.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge_text",
+            "element": "Badge",
+            "original_text": "Bento Grid Features",
+            "max_chars": 19,
+            "min_chars": 10,
+            "type": "label",
+            "notes": "Badge above section heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Beautifully and well balanced bento grid design section",
+            "max_chars": 55,
+            "min_chars": 28,
+            "type": "heading",
+            "notes": "Main section heading"
+          }
+        ]
+      },
+      {
+        "section": "card_1_tailwind_components",
+        "fields": [
+          {
+            "field_id": "card_1_title",
+            "element": "h3",
+            "original_text": "Awesome tailwind components",
+            "max_chars": 27,
+            "min_chars": 14,
+            "type": "subheading",
+            "notes": "First bento card title (left, small)"
+          },
+          {
+            "field_id": "card_1_description",
+            "element": "p",
+            "original_text": "A collection of custom-built, highly flexible Tailwind CSS components",
+            "max_chars": 69,
+            "min_chars": 35,
+            "type": "description",
+            "notes": "First bento card description"
+          }
+        ]
+      },
+      {
+        "section": "card_2_ui_blocks",
+        "fields": [
+          {
+            "field_id": "card_2_title",
+            "element": "h3",
+            "original_text": "Beautifully crafted ui blocks",
+            "max_chars": 29,
+            "min_chars": 15,
+            "type": "subheading",
+            "notes": "Second bento card title (right, wide)"
+          },
+          {
+            "field_id": "card_2_description",
+            "element": "p",
+            "original_text": "Build powerful dashboards in no time with per-built Tailwind components and layouts. Whether you're creating admin panels, analytics dashboards, or SaaS back-ends.",
+            "max_chars": 163,
+            "min_chars": 82,
+            "type": "description",
+            "notes": "Second bento card description"
+          }
+        ]
+      },
+      {
+        "section": "card_3_layout_options",
+        "fields": [
+          {
+            "field_id": "card_3_title",
+            "element": "h3",
+            "original_text": "Multiple layout options",
+            "max_chars": 23,
+            "min_chars": 12,
+            "type": "subheading",
+            "notes": "Third bento card title (bottom-left)"
+          },
+          {
+            "field_id": "card_3_description",
+            "element": "p",
+            "original_text": "We have LTR and RTL options along with different layout options as well.",
+            "max_chars": 72,
+            "min_chars": 36,
+            "type": "description",
+            "notes": "Third bento card description"
+          }
+        ]
+      },
+      {
+        "section": "card_4_documentation",
+        "fields": [
+          {
+            "field_id": "card_4_title",
+            "element": "h3",
+            "original_text": "Well documented",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "subheading",
+            "notes": "Fourth bento card title (bottom-center)"
+          },
+          {
+            "field_id": "card_4_description",
+            "element": "p",
+            "original_text": "A well-structured and easy-to-follow documentation for your development journey.",
+            "max_chars": 80,
+            "min_chars": 40,
+            "type": "description",
+            "notes": "Fourth bento card description"
+          }
+        ]
+      },
+      {
+        "section": "card_5_color_options",
+        "fields": [
+          {
+            "field_id": "card_5_title",
+            "element": "h3",
+            "original_text": "Multiple color options",
+            "max_chars": 22,
+            "min_chars": 11,
+            "type": "subheading",
+            "notes": "Fifth bento card title (bottom-right)"
+          },
+          {
+            "field_id": "card_5_description",
+            "element": "p",
+            "original_text": "Unlimited color options to match with your brand instantly and easily.",
+            "max_chars": 70,
+            "min_chars": 35,
+            "type": "description",
+            "notes": "Fifth bento card description"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "reminder_carousel_items",
+        "count": 7,
+        "fields": [
+          {
+            "field_id": "item_title",
+            "element": "span",
+            "sample_text": "Breadcrumb component",
+            "max_chars": 20,
+            "min_chars": 10,
+            "type": "label",
+            "notes": "Animated carousel item titles in ReminderAnimation. Values: 'Breadcrumb component' (20), 'Animated component' (18), 'UI components' (13), 'Form components' (15), 'Chart components' (16), 'Layout components' (17), 'Area Chart' (10)"
+          }
+        ]
+      }
+    ]
+  }
+]

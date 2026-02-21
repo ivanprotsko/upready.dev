@@ -1,0 +1,792 @@
+[
+  {
+    "block_id": "testimonial-02",
+    "block_title": "Testimonial 02 - Success Stories Carousel with Brand Slider",
+    "category": "testimonial",
+    "files": [
+      "components/shadcn-space/blocks/testimonial-02/index.tsx",
+      "components/shadcn-space/blocks/testimonial-02/testimonial.tsx",
+      "components/shadcn-space/blocks/testimonial-02/brand-slider.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge_text",
+            "element": "Badge",
+            "original_text": "Testimonials",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "label",
+            "notes": "Badge above section heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Success Stories",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "heading",
+            "notes": "Section heading"
+          }
+        ]
+      },
+      {
+        "section": "brand_slider",
+        "fields": [
+          {
+            "field_id": "brand_slider_text",
+            "element": "p",
+            "original_text": "More than 12,000 businesses delight their customers with Shadcn Space",
+            "max_chars": 69,
+            "min_chars": 35,
+            "type": "description",
+            "notes": "Text above brand logo marquee"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "testimonials",
+        "count": 2,
+        "fields": [
+          {
+            "field_id": "quote",
+            "sample_text": "Shadcn Space replaced messy UI kits and half-baked templates. Today our dashboards look premium, scale beautifully, and our team focuses on real features instead of design debt.",
+            "max_chars": 177,
+            "min_chars": 89,
+            "type": "description",
+            "notes": "Testimonial quote text"
+          },
+          {
+            "field_id": "author",
+            "sample_text": "Walter Dutcher",
+            "max_chars": 15,
+            "min_chars": 8,
+            "type": "label",
+            "notes": "Author name. Second item is 'Errica Mcdowell' (15 chars)"
+          },
+          {
+            "field_id": "role",
+            "sample_text": "CEO",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "label",
+            "notes": "Author role. Values: 'CEO' (3), 'Marketing Head' (14)"
+          }
+        ]
+      },
+      {
+        "item_id": "brands",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "brand_name",
+            "sample_text": "Brand 1",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Brand name used as alt text for logo images"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "pricing-01",
+    "block_title": "Pricing 01 - Two-Column Startup Pricing Plans",
+    "category": "pricing",
+    "files": [
+      "components/shadcn-space/blocks/pricing-01/pricing.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge_text",
+            "element": "Badge",
+            "original_text": "Pricing",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Badge above section heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Pick the plan that fits your start-up",
+            "max_chars": 37,
+            "min_chars": 19,
+            "type": "heading",
+            "notes": "Section heading"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "pricing_plans",
+        "count": 2,
+        "fields": [
+          {
+            "field_id": "plan_name",
+            "sample_text": "Starter",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Plan name in Badge. Values: 'Starter' (7), 'Pro' (3)"
+          },
+          {
+            "field_id": "plan_description",
+            "sample_text": "For companies who need design support. One request at a time",
+            "max_chars": 60,
+            "min_chars": 30,
+            "type": "description",
+            "notes": "Plan description. Second: '2x the speed. Great for an MVP, Web App or complex problem' (58)"
+          },
+          {
+            "field_id": "price_suffix",
+            "sample_text": "/month",
+            "max_chars": 6,
+            "min_chars": 3,
+            "type": "label",
+            "notes": "Price period suffix shown after dollar amount"
+          },
+          {
+            "field_id": "cta_button",
+            "sample_text": "Let's Collaborate",
+            "max_chars": 17,
+            "min_chars": 9,
+            "type": "button",
+            "notes": "CTA button with animated arrow icon"
+          },
+          {
+            "field_id": "features_label",
+            "sample_text": "Features",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "subheading",
+            "notes": "Label above feature list in each plan"
+          }
+        ]
+      },
+      {
+        "item_id": "plan_features_starter",
+        "count": 6,
+        "fields": [
+          {
+            "field_id": "feature_text",
+            "sample_text": "Design Updates",
+            "max_chars": 19,
+            "min_chars": 10,
+            "type": "list_item",
+            "notes": "Feature list items with check icon. Values: 'Design Updates' (14), 'Mid-level Designer' (18), 'SEO Optimization' (16), 'Monthly Analytics' (17), '2x Calls Per Month' (18), 'License free Assets' (19)"
+          }
+        ]
+      },
+      {
+        "item_id": "plan_features_pro",
+        "count": 6,
+        "fields": [
+          {
+            "field_id": "feature_text",
+            "sample_text": "Everything on Starter",
+            "max_chars": 21,
+            "min_chars": 11,
+            "type": "list_item",
+            "notes": "Feature list items with check icon. Values: 'Everything on Starter' (21), 'Developer Updates' (17), 'Digital Marketing' (17), 'Weekly Analytics' (16), '8x Calls Per Month' (18), 'Premium Assets' (14)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "pricing-02",
+    "block_title": "Pricing 02 - Three-Column Pricing with Recommended Badge",
+    "category": "pricing",
+    "files": [
+      "components/shadcn-space/blocks/pricing-02/pricing.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge_text",
+            "element": "Badge",
+            "original_text": "Pricing",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Badge above section heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Pick the plan that fits your start-up",
+            "max_chars": 37,
+            "min_chars": 19,
+            "type": "heading",
+            "notes": "Section heading"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "pricing_plans",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "plan_name",
+            "sample_text": "Pro",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "label",
+            "notes": "Plan name as CardTitle. Values: 'Pro' (3), 'Pro Plus' (8), 'Enterprise' (10)"
+          },
+          {
+            "field_id": "plan_description",
+            "sample_text": "Launch your website faster with ready-to-use components, blocks and zero setup friction with us.",
+            "max_chars": 96,
+            "min_chars": 48,
+            "type": "description",
+            "notes": "Plan description as CardDescription. Longest: 96 chars (Pro). Others: 86 (Pro Plus), 91 (Enterprise)"
+          },
+          {
+            "field_id": "price_suffix",
+            "sample_text": "/month",
+            "max_chars": 6,
+            "min_chars": 3,
+            "type": "label",
+            "notes": "Price period suffix shown after dollar amount"
+          },
+          {
+            "field_id": "recommend_badge",
+            "sample_text": "Recommend",
+            "max_chars": 9,
+            "min_chars": 5,
+            "type": "label",
+            "notes": "Badge with flame icon shown on recommended plan only"
+          },
+          {
+            "field_id": "cta_button",
+            "sample_text": "Get started",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "CTA button at bottom of each plan card"
+          }
+        ]
+      },
+      {
+        "item_id": "plan_features_pro",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "feature_text",
+            "sample_text": "Access to all core Shadcn UI blocks",
+            "max_chars": 35,
+            "min_chars": 18,
+            "type": "list_item",
+            "notes": "Feature list items with check icon. Values: 'Access to all core Shadcn UI blocks' (35), 'Copy-paste ready React code' (27), 'Regular library updates' (23), 'Commercial use license' (22), 'Community support & documentation' (33)"
+          }
+        ]
+      },
+      {
+        "item_id": "plan_features_pro_plus",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "feature_text",
+            "sample_text": "Everything in Pro",
+            "max_chars": 34,
+            "min_chars": 17,
+            "type": "list_item",
+            "notes": "Feature list items with check icon. Values: 'Everything in Pro' (17), 'Premium templates & more sections' (33), 'Early access to new components' (30), 'Private Discord & priority support' (34), 'Monthly strategy & growth sessions' (34)"
+          }
+        ]
+      },
+      {
+        "item_id": "plan_features_enterprise",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "feature_text",
+            "sample_text": "Everything in Pro Plus",
+            "max_chars": 34,
+            "min_chars": 17,
+            "type": "list_item",
+            "notes": "Feature list items with check icon. Values: 'Everything in Pro Plus' (22), 'Unlimited team seats' (20), 'Dedicated UI & integration support' (34), 'Custom component requests' (25), 'One-on-one implementation' (25)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "blog-01",
+    "block_title": "Blog 01 - Recent News Grid with Cover Images",
+    "category": "blog",
+    "files": [
+      "components/shadcn-space/blocks/blog-01/blog.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge_text",
+            "element": "Badge",
+            "original_text": "Resources",
+            "max_chars": 9,
+            "min_chars": 5,
+            "type": "label",
+            "notes": "Badge above section heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Recent news",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "heading",
+            "notes": "Section heading"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Explore the latest trends, bold projects, and creative insights from our agency shaping the future of branding, digital experiences, and storytelling.",
+            "max_chars": 150,
+            "min_chars": 75,
+            "type": "description",
+            "notes": "Section description text on the right side"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "blog_posts",
+        "count": 3,
+        "fields": [
+          {
+            "field_id": "title",
+            "sample_text": "Our latest brand redesign",
+            "max_chars": 25,
+            "min_chars": 13,
+            "type": "subheading",
+            "notes": "Blog post title. Values: 'Our latest brand redesign' (25), 'Recognized for design' (21), 'Journey of footballer' (21)"
+          },
+          {
+            "field_id": "date",
+            "sample_text": "2026-01-01",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "label",
+            "notes": "Blog post date in YYYY-MM-DD format, rendered as 'January 01, 2026' via toLocaleDateString"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "faq-01",
+    "block_title": "FAQ 01 - Accordion Questions and Answers",
+    "category": "faq",
+    "files": [
+      "components/shadcn-space/blocks/faq-01/faq.tsx"
+    ],
+    "sections": [
+      {
+        "section": "header",
+        "fields": [
+          {
+            "field_id": "badge_text",
+            "element": "Badge",
+            "original_text": "FAQs",
+            "max_chars": 4,
+            "min_chars": 2,
+            "type": "label",
+            "notes": "Badge above section heading"
+          },
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Got questions? We've got answers ready",
+            "max_chars": 38,
+            "min_chars": 19,
+            "type": "heading",
+            "notes": "Section heading"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "faq_items",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "question",
+            "sample_text": "What services does Shadcn Space offer?",
+            "max_chars": 54,
+            "min_chars": 27,
+            "type": "subheading",
+            "notes": "FAQ question as AccordionTrigger. Longest: 'Do you offer ongoing support after project completion?' (54)"
+          },
+          {
+            "field_id": "answer",
+            "sample_text": "We offer a wide range of services including web development, app development, and digital marketing.",
+            "max_chars": 286,
+            "min_chars": 143,
+            "type": "description",
+            "notes": "FAQ answer as AccordionContent. Shortest: 76 chars. Longest: 286 chars"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "contact-01",
+    "block_title": "Contact 01 - Contact Info with Form and Brand Slider",
+    "category": "contact",
+    "files": [
+      "components/shadcn-space/blocks/contact-01/index.tsx",
+      "components/shadcn-space/blocks/contact-01/contact-info.tsx",
+      "components/shadcn-space/blocks/contact-01/contact-form.tsx"
+    ],
+    "sections": [
+      {
+        "section": "contact_info",
+        "fields": [
+          {
+            "field_id": "status_label",
+            "element": "p",
+            "original_text": "We can help",
+            "max_chars": 11,
+            "min_chars": 6,
+            "type": "label",
+            "notes": "Status text next to green dot indicator"
+          },
+          {
+            "field_id": "heading",
+            "element": "p",
+            "original_text": "Let's discuss about your project and take it the next level.",
+            "max_chars": 60,
+            "min_chars": 30,
+            "type": "heading",
+            "notes": "Main heading text in contact info section"
+          },
+          {
+            "field_id": "phone_label",
+            "element": "p",
+            "original_text": "Phone",
+            "max_chars": 5,
+            "min_chars": 3,
+            "type": "label",
+            "notes": "Label above phone number"
+          },
+          {
+            "field_id": "phone_value",
+            "element": "a",
+            "original_text": "+323-25-8964",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "inline",
+            "notes": "Phone number link"
+          },
+          {
+            "field_id": "email_label",
+            "element": "p",
+            "original_text": "Email",
+            "max_chars": 5,
+            "min_chars": 3,
+            "type": "label",
+            "notes": "Label above email address"
+          },
+          {
+            "field_id": "email_value",
+            "element": "a",
+            "original_text": "me@shadcnspace.com",
+            "max_chars": 18,
+            "min_chars": 9,
+            "type": "inline",
+            "notes": "Email address link"
+          },
+          {
+            "field_id": "location_label",
+            "element": "p",
+            "original_text": "Location",
+            "max_chars": 8,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Label above address"
+          },
+          {
+            "field_id": "location_value",
+            "element": "p",
+            "original_text": "Mark Avenue, Dalls Road, New York",
+            "max_chars": 33,
+            "min_chars": 17,
+            "type": "inline",
+            "notes": "Physical address text"
+          },
+          {
+            "field_id": "trusted_by_label",
+            "element": "p",
+            "original_text": "Trusted by",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "label",
+            "notes": "Label above brand logo marquee"
+          }
+        ]
+      },
+      {
+        "section": "contact_form",
+        "fields": [
+          {
+            "field_id": "form_title",
+            "element": "CardTitle",
+            "original_text": "Start the project",
+            "max_chars": 17,
+            "min_chars": 9,
+            "type": "heading",
+            "notes": "Form card title"
+          },
+          {
+            "field_id": "first_name_placeholder",
+            "element": "Input",
+            "original_text": "First name",
+            "max_chars": 10,
+            "min_chars": 5,
+            "type": "label",
+            "notes": "Placeholder for first name input"
+          },
+          {
+            "field_id": "last_name_placeholder",
+            "element": "Input",
+            "original_text": "Last name",
+            "max_chars": 9,
+            "min_chars": 5,
+            "type": "label",
+            "notes": "Placeholder for last name input"
+          },
+          {
+            "field_id": "email_placeholder",
+            "element": "Input",
+            "original_text": "youremail@website.com",
+            "max_chars": 21,
+            "min_chars": 11,
+            "type": "label",
+            "notes": "Placeholder for email input"
+          },
+          {
+            "field_id": "message_placeholder",
+            "element": "Textarea",
+            "original_text": "Let us know about your project",
+            "max_chars": 30,
+            "min_chars": 15,
+            "type": "label",
+            "notes": "Placeholder for message textarea"
+          },
+          {
+            "field_id": "terms_label",
+            "element": "Label",
+            "original_text": "I have read and acknowledge the Terms and Conditions",
+            "max_chars": 52,
+            "min_chars": 26,
+            "type": "label",
+            "notes": "Checkbox label for terms acceptance"
+          },
+          {
+            "field_id": "submit_button",
+            "element": "Button",
+            "original_text": "Submit Inquiry",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "button",
+            "notes": "Form submit button"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "brands",
+        "count": 5,
+        "fields": [
+          {
+            "field_id": "brand_name",
+            "sample_text": "Brand 1",
+            "max_chars": 7,
+            "min_chars": 4,
+            "type": "label",
+            "notes": "Brand name used as alt text for logo images in marquee"
+          }
+        ]
+      },
+      {
+        "item_id": "country_options",
+        "count": 7,
+        "fields": [
+          {
+            "field_id": "country_name",
+            "sample_text": "United States",
+            "max_chars": 14,
+            "min_chars": 7,
+            "type": "label",
+            "notes": "Country select option. Values: 'United States' (13), 'United Kingdom' (14), 'Canada' (6), 'Australia' (9), 'Germany' (7), 'France' (6), 'India' (5)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "block_id": "newsletter-01",
+    "block_title": "Newsletter 01 - Subscribe to Newsletter with Email Input",
+    "category": "newsletter",
+    "files": [
+      "components/shadcn-space/blocks/newsletter-01/newsletter.tsx"
+    ],
+    "sections": [
+      {
+        "section": "content",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Subscribe to Newsletter",
+            "max_chars": 23,
+            "min_chars": 12,
+            "type": "heading",
+            "notes": "Main section heading"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Join 1,000,000+ subscribers receiving expert tips on earning more, investing smarter and living better, all in our free newsletter.",
+            "max_chars": 131,
+            "min_chars": 66,
+            "type": "description",
+            "notes": "Section description text below heading"
+          },
+          {
+            "field_id": "email_placeholder",
+            "element": "InputGroupInput",
+            "original_text": "Email address",
+            "max_chars": 13,
+            "min_chars": 7,
+            "type": "label",
+            "notes": "Placeholder for email input field"
+          },
+          {
+            "field_id": "subscribe_button",
+            "element": "InputGroupButton",
+            "original_text": "Subscribe",
+            "max_chars": 9,
+            "min_chars": 5,
+            "type": "button",
+            "notes": "Subscribe button with arrow icon"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": []
+  },
+  {
+    "block_id": "cta-01",
+    "block_title": "CTA 01 - Innovative Solutions Call to Action with Gradient Background",
+    "category": "cta",
+    "files": [
+      "components/shadcn-space/blocks/cta-01/cta.tsx"
+    ],
+    "sections": [
+      {
+        "section": "content",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Innovative solutions for bold brands",
+            "max_chars": 36,
+            "min_chars": 18,
+            "type": "heading",
+            "notes": "Main CTA heading"
+          },
+          {
+            "field_id": "description",
+            "element": "p",
+            "original_text": "Looking to elevate your brand? We craft immersive experiences that captivate, engage, and make your business unforgettable in every interaction.",
+            "max_chars": 144,
+            "min_chars": 72,
+            "type": "description",
+            "notes": "CTA description text below heading"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "Button",
+            "original_text": "Let's craft together",
+            "max_chars": 20,
+            "min_chars": 10,
+            "type": "button",
+            "notes": "CTA button with animated arrow icon"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": []
+  },
+  {
+    "block_id": "cta-02",
+    "block_title": "CTA 02 - Video Background CTA with Marquee Banner",
+    "category": "cta",
+    "files": [
+      "components/shadcn-space/blocks/cta-02/cta.tsx"
+    ],
+    "sections": [
+      {
+        "section": "content",
+        "fields": [
+          {
+            "field_id": "heading",
+            "element": "h2",
+            "original_text": "Enter a realm where exquisite design and timeless luxury come together.",
+            "max_chars": 71,
+            "min_chars": 36,
+            "type": "heading",
+            "notes": "Main CTA heading over video background"
+          },
+          {
+            "field_id": "cta_button",
+            "element": "a",
+            "original_text": "Get In Touch",
+            "max_chars": 12,
+            "min_chars": 6,
+            "type": "button",
+            "notes": "CTA link styled as button"
+          }
+        ]
+      }
+    ],
+    "repeatable_items": [
+      {
+        "item_id": "marquee_items",
+        "count": 4,
+        "fields": [
+          {
+            "field_id": "marquee_text",
+            "sample_text": "Find your dream home with our expert real estate agents!",
+            "max_chars": 64,
+            "min_chars": 32,
+            "type": "inline",
+            "notes": "Scrolling marquee text items in teal banner. Values: 'Find your dream home with our expert real estate agents!' (56), 'Browse thousands of listings in prime locations at great prices!' (64), 'Get a free property valuation—sell your home with confidence!' (61), 'Secure the best mortgage rates with our trusted loan partners!' (62)"
+          }
+        ]
+      }
+    ]
+  }
+]
