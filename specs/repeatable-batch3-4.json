@@ -1,0 +1,257 @@
+{
+  "team-01": {
+    "team_members": [
+      {"member_name": "Logan Dang", "member_role": "WordPress Developer"},
+      {"member_name": "Ana Belić", "member_role": "Social Media Specialist"},
+      {"member_name": "Brian Hanley", "member_role": "Product Designer"},
+      {"member_name": "Darko Stanković", "member_role": "UI Designer"}
+    ]
+  },
+  "team-02": {
+    "team_members": [
+      {"member_name": "Martha Finley", "member_role": "Creative Director"},
+      {"member_name": "Floyd Miles", "member_role": "Marketing Strategist"},
+      {"member_name": "Glenna Snyder", "member_role": "Lead Designer"},
+      {"member_name": "Albert Flores", "member_role": "UX/UI Developer"}
+    ]
+  },
+  "portfolio-01": {
+    "portfolio_items": [
+      {"portfolio_title": "Flowbank", "portfolio_tags": ["UX Research", "Interface Design"]},
+      {"portfolio_title": "Academy.co", "portfolio_tags": ["Product Design", "Interection Design"]},
+      {"portfolio_title": "Genome", "portfolio_tags": ["Brand identity design", "UX Research"]},
+      {"portfolio_title": "Hotto", "portfolio_tags": ["Visual Storytelling", "Web & Mobile Design"]}
+    ]
+  },
+  "services-01": {
+    "service_cards": [
+      {"service_title": "Brand Strategy"},
+      {"service_title": "UX/UI Design"},
+      {"service_title": "Analytics & Reporting"},
+      {"service_title": "Digital Marketing"},
+      {"service_title": "Web Development"}
+    ]
+  },
+  "services-02": {
+    "service_items": [
+      {"service_heading": "Brand Strategy", "service_description": "We craft unique brand stories and visual identities that resonate with your audience and build long-lasting trust and recognition."},
+      {"service_heading": "Web development", "service_description": "Build stunning, user-friendly websites that not only look great but also perform seamlessly across all devices."},
+      {"service_heading": "Content creation", "service_description": "We create engaging, high-quality content that resonates with your audience and helps you connect with them on a deeper level."},
+      {"service_heading": "Motion graphics", "service_description": "We create engaging, high-quality motion graphics that capture the essence of your brand and help you connect with your audience on a deeper level."}
+    ]
+  },
+  "footer-01": {
+    "footer_link_sections": [
+      {"section_title": "Sitemap"},
+      {"section_title": "Other Pages"}
+    ],
+    "sitemap_links": [
+      {"link_label": "Contact us"},
+      {"link_label": "About us"},
+      {"link_label": "Work"},
+      {"link_label": "Services"},
+      {"link_label": "Pricing"}
+    ],
+    "other_pages_links": [
+      {"link_label": "Error 404"},
+      {"link_label": "Terms & Conditions"},
+      {"link_label": "Privacy Policy"}
+    ]
+  },
+  "footer-02": {
+    "footer_links": [
+      {"link_label": "Home"},
+      {"link_label": "Categories"},
+      {"link_label": "Properties"},
+      {"link_label": "Featured property"},
+      {"link_label": "Testimonials"},
+      {"link_label": "Blog"},
+      {"link_label": "FAQs"},
+      {"link_label": "404 page"}
+    ]
+  },
+  "gallery-01": {
+    "gallery_cards": [
+      {"card_title": "Hiking Adventure", "card_subtitle": "306 Destinations"},
+      {"card_title": "Outdoor Adventure", "card_subtitle": "418 Destinations"},
+      {"card_title": "Beach Adventure", "card_subtitle": "85 Destinations"},
+      {"card_title": "Pilgrimage Destination", "card_subtitle": "29 Destinations"}
+    ]
+  },
+  "bento-grid-01": {
+    "reminder_carousel_items": [
+      {"item_title": "Breadcrumb component"},
+      {"item_title": "Animated component"},
+      {"item_title": "UI components"},
+      {"item_title": "Form components"},
+      {"item_title": "Chart components"},
+      {"item_title": "Layout components"},
+      {"item_title": "Area Chart"}
+    ]
+  },
+  "hero-04": {
+    "hero04_nav_items": [
+      {"name": "Home"},
+      {"name": "About"},
+      {"name": "Projects"},
+      {"name": "Service"},
+      {"name": "Contact"}
+    ]
+  },
+  "hero-05": {
+    "hero05_nav_items": [
+      {"title": "Home"},
+      {"title": "Features"},
+      {"title": "Benefits"},
+      {"title": "Services"},
+      {"title": "Team"},
+      {"title": "Why Crypgo"}
+    ]
+  },
+  "hero-06": {
+    "hero06_nav_items": [
+      {"name": "Home"},
+      {"name": "About"},
+      {"name": "Projects"},
+      {"name": "Service"},
+      {"name": "Contact"}
+    ],
+    "hero06_brand_logos": [
+      {"name": "Brand 1"},
+      {"name": "Brand 2"},
+      {"name": "Brand 3"},
+      {"name": "Brand 4"},
+      {"name": "Brand 5"}
+    ]
+  },
+  "hero-07": {
+    "hero07_nav_items": [
+      {"title": "Home"},
+      {"title": "About us"},
+      {"title": "Integration"},
+      {"title": "Pricing"},
+      {"title": "Blog"},
+      {"title": "Roadmap"}
+    ]
+  },
+  "hero-08": {
+    "hero08_nav_items": [
+      {"name": "Home"},
+      {"name": "About us"},
+      {"name": "Courses"},
+      {"name": "Reviews"},
+      {"name": "Pricing"}
+    ],
+    "hero08_masterclass_cards": [
+      {"title": "Framer Masterclass", "handle": "@frameabotkins", "duration": "7 hr", "rating": "4.6", "category": "Design"},
+      {"title": "Growth Masterclass", "handle": "@novascaflow", "duration": "7 hr", "rating": "4.6", "category": "Marketing"},
+      {"title": "Data Visualisation Masterclass", "handle": "@viziongraphic", "duration": "7 hr", "rating": "4.6", "category": "Data"},
+      {"title": "UI/UX Design Masterclass", "handle": "@lucaycrafton", "duration": "7 hr", "rating": "4.6", "category": "Design"},
+      {"title": "UI/UX Design Masterclass", "handle": "@lucaycrafton", "duration": "7 hr", "rating": "4.6", "category": "Design"},
+      {"title": "Data Visualisation Masterclass", "handle": "@viziongraphic", "duration": "7 hr", "rating": "4.6", "category": "Data"}
+    ]
+  },
+  "hero-09": {
+    "hero09_nav_items": [
+      {"name": "Home"},
+      {"name": "Services"},
+      {"name": "Pricing"},
+      {"name": "Blog"},
+      {"name": "Contacts us"}
+    ]
+  },
+  "hero-10": {
+    "hero10_nav_items": [
+      {"title": "Home"},
+      {"title": "Courses"},
+      {"title": "Mentor"},
+      {"title": "Group"},
+      {"title": "Testimonial"}
+    ],
+    "hero10_course_options": [
+      {"option": "Ux and UI Design"},
+      {"option": "Frontend Development"},
+      {"option": "Backend Development"},
+      {"option": "Fullstack Engineering"}
+    ],
+    "hero10_hour_options": [
+      {"option": "20hrs in a Month"},
+      {"option": "40hrs in a Month"},
+      {"option": "60hrs in a Month"},
+      {"option": "80hrs in a Month"}
+    ]
+  },
+  "hero-11": {
+    "hero11_nav_items": [
+      {"name": "Home"},
+      {"name": "Features"},
+      {"name": "Testimonials"},
+      {"name": "Newsletter"},
+      {"name": "Contact"}
+    ]
+  },
+  "hero-12": {
+    "hero12_nav_items": [
+      {"name": "Home"},
+      {"name": "About us"},
+      {"name": "Service"},
+      {"name": "Our projects"},
+      {"name": "Contact us"}
+    ]
+  },
+  "pricing-03": {
+    "pricing03_plans": [
+      {"plan_name": "Basic", "plan_descp": "Build foundational skills with 10 essential courses.", "plan_price": "19"},
+      {"plan_name": "Growth", "plan_descp": "Build foundational skills with 10 essential courses.", "plan_price": "29"},
+      {"plan_name": "Scale", "plan_descp": "Build foundational skills with 10 essential courses.", "plan_price": "99"}
+    ],
+    "pricing03_plan_features": [
+      {"feature": "Expert-Led Video Lessons"},
+      {"feature": "Downloadable Resources"},
+      {"feature": "Community Support"},
+      {"feature": "Completion Certificate"}
+    ]
+  },
+  "pricing-04": {
+    "pricing04_plans": [
+      {"plan_name": "Basic", "plan_tag": "", "plan_descp": "Best for people who have the startup / freelancing", "plan_price": "9"},
+      {"plan_name": "Scale", "plan_tag": "Recommended", "plan_descp": "Start free, explore interests, learn essential skills.", "plan_price": "99"}
+    ],
+    "pricing04_plan_features": [
+      {"feature": "Monthly service fee", "check": "true"},
+      {"feature": "Direct debits", "check": "true"},
+      {"feature": "Online payments", "check": "true"},
+      {"feature": "Deposits to Savers", "check": "true"},
+      {"feature": "International transaction fees", "check": "false"}
+    ]
+  },
+  "pricing-05": {
+    "pricing05_plans": [
+      {"plan_name": "Launch", "plan_tag": "", "plan_descp": "Ideal for startups and small businesses taking their first steps online.", "plan_price": "699"},
+      {"plan_name": "Scale", "plan_tag": "Most popular", "plan_descp": "Perfect for growing brands needing more customization and flexibility.", "plan_price": "1699"},
+      {"plan_name": "Elevate", "plan_tag": "", "plan_descp": "Best suited for established businesses wanting a fully tailored experience.", "plan_price": "3499"}
+    ],
+    "pricing05_plan_features": [
+      {"feature": "Access to all core Shadcn UI blocks"},
+      {"feature": "Copy-paste ready React Tailwind code"},
+      {"feature": "Regular library updates"},
+      {"feature": "Commercial use license"},
+      {"feature": "Community support & documentation"}
+    ],
+    "pricing05_brand_logos": [
+      {"name": "Brand 1"},
+      {"name": "Brand 2"},
+      {"name": "Brand 3"},
+      {"name": "Brand 4"},
+      {"name": "Brand 5"}
+    ]
+  },
+  "pricing-06": {
+    "pricing06_plans": [
+      {"plan_name": "Basic clean", "plan_descp": "Essential cleaning to keep your home fresh, tidy, and inviting.", "plan_price": "99"},
+      {"plan_name": "Deep clean", "plan_descp": "Thorough cleaning for a spotless, sparkling home for a cleaning sparkling", "plan_price": "149"},
+      {"plan_name": "Weekly refresh", "plan_descp": "Consistent cleaning to maintain a pristine, comfortable home.", "plan_price": "129"},
+      {"plan_name": "Deluxe clean", "plan_descp": "Comprehensive cleaning for special occasions and seasonal refreshes.", "plan_price": "219"}
+    ]
+  }
+}

@@ -129,6 +129,17 @@
             "max_chars": 10,
             "min_chars": 5
           }
+        ],
+        "original_items": [
+          {
+            "social_name": "Dribble"
+          },
+          {
+            "social_name": "X/ Twitter"
+          },
+          {
+            "social_name": "LinkedIn"
+          }
         ]
       }
     ]
@@ -239,6 +250,17 @@
             "sample_text": "Access to all core Shadcn UI blocks",
             "max_chars": 36,
             "min_chars": 18
+          }
+        ],
+        "original_items": [
+          {
+            "item_text": "Access to all core Shadcn UI blocks"
+          },
+          {
+            "item_text": "Copy-paste ready React Tailwind code"
+          },
+          {
+            "item_text": "Regular library updates"
           }
         ]
       }
@@ -458,6 +480,24 @@
             "max_chars": 179,
             "min_chars": 90
           }
+        ],
+        "original_items": [
+          {
+            "question": "1. What services does your web agency offer?",
+            "answer": "We provide end-to-end digital solutions including website design, development, branding, UI/UX, eCommerce platforms, and ongoing optimization to help businesses scale effectively."
+          },
+          {
+            "question": "2. How long does it take to build a website?",
+            "answer": "Project timelines typically range from 4–8 weeks depending on complexity, features, and feedback cycles. We prioritize both speed and quality to ensure exceptional results."
+          },
+          {
+            "question": "3. Do you create custom designs or use templates?",
+            "answer": "Every brand is unique, which is why we primarily design custom experiences tailored to your goals, audience, and identity — ensuring your website stands out."
+          },
+          {
+            "question": "4. Can you help maintain and update our website?",
+            "answer": "Yes — we offer ongoing support, security updates, performance monitoring, and feature enhancements so your website continues to evolve with your business."
+          }
         ]
       }
     ]
@@ -511,6 +551,32 @@
             "max_chars": 286,
             "min_chars": 143
           }
+        ],
+        "original_items": [
+          {
+            "question": "What services do you offer?",
+            "answer": "We offer a wide range of services including web development, app development, and digital marketing."
+          },
+          {
+            "question": "How long does a typical project take?",
+            "answer": "The time it takes to complete a project depends on the complexity of the project and the scope of the work."
+          },
+          {
+            "question": "What industries do you work with?",
+            "answer": "We work with startups, e-commerce brands, tech companies, real estate, healthcare, creators, and corporate clients. If you have a business, we can design for it."
+          },
+          {
+            "question": "Do you offer custom designs or use templates?",
+            "answer": "Absolutely! We offer comprehensive post-launch support to ensure a seamless implementation and provide ongoing maintenance packages tailored to clients who need regular updates or technical assistance. Our commitment doesn't end at launch — we're here to help you every step of the way."
+          },
+          {
+            "question": "How much do your services cost?",
+            "answer": "We provide updates on a regular basis to ensure that your project is running smoothly and that you are aware of any changes or updates to the project."
+          },
+          {
+            "question": "Can I request revisions?",
+            "answer": "Yes, we offer post-launch support and maintenance packages to help you with ongoing updates, technical assistance, and any modifications you may need after your website or app goes live."
+          }
         ]
       },
       {
@@ -528,6 +594,24 @@
             "sample_text": "Agencies approved",
             "max_chars": 19,
             "min_chars": 10
+          }
+        ],
+        "original_items": [
+          {
+            "count": "38+",
+            "title": "Agencies approved"
+          },
+          {
+            "count": "256+",
+            "title": "Successful projects"
+          },
+          {
+            "count": "06+",
+            "title": "Team members"
+          },
+          {
+            "count": "98%",
+            "title": "Clients satisfied"
           }
         ]
       }
@@ -613,6 +697,28 @@
             "sample_text": "Pricing varies based on scope and requirements, but we focus on delivering measurable value. After understanding your needs, we provide transparent, tailored proposals.",
             "max_chars": 286,
             "min_chars": 143
+          }
+        ],
+        "original_items": [
+          {
+            "question": "How much does a typical project cost?",
+            "answer": "Pricing varies based on scope and requirements, but we focus on delivering measurable value. After understanding your needs, we provide transparent, tailored proposals."
+          },
+          {
+            "question": "Do you work with startups or only established companies?",
+            "answer": "The time it takes to complete a project depends on the complexity of the project and the scope of the work."
+          },
+          {
+            "question": "What makes your agency different?",
+            "answer": "Pricing is based on the complexity of the project and the scope of the work."
+          },
+          {
+            "question": "Will my website be optimized for SEO and performance?",
+            "answer": "Absolutely! We offer comprehensive post-launch support to ensure a seamless implementation and provide ongoing maintenance packages tailored to clients who need regular updates or technical assistance. Our commitment doesn't end at launch — we're here to help you every step of the way."
+          },
+          {
+            "question": "How long does it take to build a website?",
+            "answer": "We provide updates on a regular basis to ensure that your project is running smoothly and that you are aware of any changes or updates to the project."
           }
         ]
       }
@@ -700,6 +806,23 @@
             "max_chars": 10,
             "min_chars": 5
           }
+        ],
+        "original_items": [
+          {
+            "title": "How SaaS companies can scale faster with smart design and development",
+            "category": "Insights",
+            "date": "2026-10-21"
+          },
+          {
+            "title": "The ultimate guide to build SaaS app",
+            "category": "News",
+            "date": "2026-10-24"
+          },
+          {
+            "title": "From idea to launch - learn how to do it",
+            "category": "Insights",
+            "date": "2026-10-26"
+          }
         ]
       }
     ]
@@ -752,6 +875,24 @@
             "sample_text": "We create conversion-driven layouts and visual structures that turn visitors into customers while keeping your brand visually powerful.",
             "max_chars": 135,
             "min_chars": 68
+          }
+        ],
+        "original_items": [
+          {
+            "title": "Digital Strategy & Layouts",
+            "description": "We create conversion-driven layouts and visual structures that turn visitors into customers while keeping your brand visually powerful."
+          },
+          {
+            "title": "The ultimate guide to build SaaS app",
+            "description": "We create conversion-driven layouts and visual structures that turn visitors into customers while keeping your brand visually powerful."
+          },
+          {
+            "title": "Digital Strategy & Layouts",
+            "description": "We create conversion-driven layouts and visual structures that turn visitors into customers while keeping your brand visually powerful."
+          },
+          {
+            "title": "The ultimate guide to build SaaS app",
+            "description": "We create conversion-driven layouts and visual structures that turn visitors into customers while keeping your brand visually powerful."
           }
         ]
       }
@@ -868,6 +1009,32 @@
             "max_chars": 8,
             "min_chars": 4
           }
+        ],
+        "original_items": [
+          {
+            "title": "Travel trends shift globally",
+            "author": "Elias Thorne",
+            "date": "2026-12-12",
+            "category": "Trends"
+          },
+          {
+            "title": "Healthcare innovation accelerates patient care",
+            "author": "Ava Sterling",
+            "date": "2026-11-29",
+            "category": "Updates"
+          },
+          {
+            "title": "Sustainable energy investments sky high",
+            "author": "Zander Stone",
+            "date": "2026-12-03",
+            "category": "Articles"
+          },
+          {
+            "title": "AI continues to transform industries",
+            "author": "Elowen Hayes",
+            "date": "2026-11-22",
+            "category": "Reports"
+          }
         ]
       }
     ]
@@ -947,6 +1114,29 @@
             "sample_text": "2026-01-15",
             "max_chars": 10,
             "min_chars": 5
+          }
+        ],
+        "original_items": [
+          {
+            "title": "How AI is reshaping the future of SaaS platforms",
+            "badge": "AI",
+            "date": "2026-02-13",
+            "author_name": "Evelyn Hayes",
+            "published_date": "2026-01-15"
+          },
+          {
+            "title": "Scaling from startup to enterprise the Founder's view",
+            "badge": "Startup",
+            "date": "2026-02-20",
+            "author_name": "Elias Thorne",
+            "published_date": "2026-01-20"
+          },
+          {
+            "title": "Product-led growth: Why It's dominating SaaS",
+            "badge": "Strategy",
+            "date": "2026-02-22",
+            "author_name": "Zander Stone",
+            "published_date": "2026-01-25"
           }
         ]
       }
@@ -1055,6 +1245,26 @@
             "max_chars": 12,
             "min_chars": 6
           }
+        ],
+        "original_items": [
+          {
+            "link_title": "Landing page"
+          },
+          {
+            "link_title": "Website"
+          },
+          {
+            "link_title": "E-commerce"
+          },
+          {
+            "link_title": "Portfolio"
+          },
+          {
+            "link_title": "Personal"
+          },
+          {
+            "link_title": "SaaS"
+          }
         ]
       },
       {
@@ -1066,6 +1276,23 @@
             "sample_text": "Startup",
             "max_chars": 11,
             "min_chars": 6
+          }
+        ],
+        "original_items": [
+          {
+            "link_title": "Startup"
+          },
+          {
+            "link_title": "Business"
+          },
+          {
+            "link_title": "Corporate"
+          },
+          {
+            "link_title": "Agency"
+          },
+          {
+            "link_title": "Real estate"
           }
         ]
       }
@@ -1171,6 +1398,28 @@
             "max_chars": 28,
             "min_chars": 14
           }
+        ],
+        "original_items": [
+          {
+            "section_title": "Quick Links",
+            "link_title": "Shadcn UI Blocks & Templates"
+          },
+          {
+            "section_title": "Quick Links",
+            "link_title": "React Templates"
+          },
+          {
+            "section_title": "Quick Links",
+            "link_title": "Leadership Team"
+          },
+          {
+            "section_title": "Quick Links",
+            "link_title": "Our Vision & Mission"
+          },
+          {
+            "section_title": "Quick Links",
+            "link_title": "Shadcn Premium Components"
+          }
         ]
       },
       {
@@ -1188,6 +1437,28 @@
             "sample_text": "News / Press Release",
             "max_chars": 20,
             "min_chars": 10
+          }
+        ],
+        "original_items": [
+          {
+            "section_title": "Media & Resources",
+            "link_title": "News / Press Release"
+          },
+          {
+            "section_title": "Media & Resources",
+            "link_title": "Insights & Blogs"
+          },
+          {
+            "section_title": "Media & Resources",
+            "link_title": "Media"
+          },
+          {
+            "section_title": "Media & Resources",
+            "link_title": "Case Studies"
+          },
+          {
+            "section_title": "Media & Resources",
+            "link_title": "Press Kit"
           }
         ]
       },
@@ -1207,6 +1478,28 @@
             "max_chars": 32,
             "min_chars": 16
           }
+        ],
+        "original_items": [
+          {
+            "section_title": "Our Services",
+            "link_title": "Web Design & Development"
+          },
+          {
+            "section_title": "Our Services",
+            "link_title": "Search Engine Optimization & SEM"
+          },
+          {
+            "section_title": "Our Services",
+            "link_title": "Mobile & Web Application"
+          },
+          {
+            "section_title": "Our Services",
+            "link_title": "Branding & Identity"
+          },
+          {
+            "section_title": "Our Services",
+            "link_title": "Digital Marketing"
+          }
         ]
       },
       {
@@ -1224,6 +1517,20 @@
             "sample_text": "Contact us",
             "max_chars": 10,
             "min_chars": 5
+          }
+        ],
+        "original_items": [
+          {
+            "section_title": "Other",
+            "link_title": "Contact us"
+          },
+          {
+            "section_title": "Other",
+            "link_title": "Careers"
+          },
+          {
+            "section_title": "Other",
+            "link_title": "Events"
           }
         ]
       }
@@ -1280,6 +1587,26 @@
             "sample_text": "Services",
             "max_chars": 8,
             "min_chars": 4
+          }
+        ],
+        "original_items": [
+          {
+            "label": "Home"
+          },
+          {
+            "label": "Services"
+          },
+          {
+            "label": "Project"
+          },
+          {
+            "label": "About"
+          },
+          {
+            "label": "Blog"
+          },
+          {
+            "label": "Contact"
           }
         ]
       }
@@ -1459,6 +1786,28 @@
             "max_chars": 2,
             "min_chars": 1
           }
+        ],
+        "original_items": [
+          {
+            "category": "Traveling",
+            "count": "08"
+          },
+          {
+            "category": "Photography",
+            "count": "65"
+          },
+          {
+            "category": "Food",
+            "count": "30"
+          },
+          {
+            "category": "Ideas",
+            "count": "08"
+          },
+          {
+            "category": "Vlog",
+            "count": "06"
+          }
         ]
       }
     ]
@@ -1488,6 +1837,52 @@
             "max_chars": 32,
             "min_chars": 16
           }
+        ],
+        "original_items": [
+          {
+            "hover_title": "Shadcn Space",
+            "hover_description": "dummy text lorem ipsum logo text"
+          },
+          {
+            "hover_title": "Shadcn Space",
+            "hover_description": "dummy text lorem ipsum logo text"
+          },
+          {
+            "hover_title": "Shadcn Space",
+            "hover_description": "dummy text lorem ipsum logo text"
+          },
+          {
+            "hover_title": "Shadcn Space",
+            "hover_description": "dummy text lorem ipsum logo text"
+          },
+          {
+            "hover_title": "Shadcn Space",
+            "hover_description": "dummy text lorem ipsum logo text"
+          },
+          {
+            "hover_title": "Shadcn Space",
+            "hover_description": "dummy text lorem ipsum logo text"
+          },
+          {
+            "hover_title": "Shadcn Space",
+            "hover_description": "dummy text lorem ipsum logo text"
+          },
+          {
+            "hover_title": "Shadcn Space",
+            "hover_description": "dummy text lorem ipsum logo text"
+          },
+          {
+            "hover_title": "Shadcn Space",
+            "hover_description": "dummy text lorem ipsum logo text"
+          },
+          {
+            "hover_title": "Shadcn Space",
+            "hover_description": "dummy text lorem ipsum logo text"
+          },
+          {
+            "hover_title": "Shadcn Space",
+            "hover_description": "dummy text lorem ipsum logo text"
+          }
         ]
       }
     ]
@@ -1510,6 +1905,26 @@
             "sample_text": "Brand 1",
             "max_chars": 7,
             "min_chars": 4
+          }
+        ],
+        "original_items": [
+          {
+            "name": "Brand 1"
+          },
+          {
+            "name": "Brand 2"
+          },
+          {
+            "name": "Brand 3"
+          },
+          {
+            "name": "Brand 4"
+          },
+          {
+            "name": "Brand 5"
+          },
+          {
+            "name": "Brand 6"
           }
         ]
       }
@@ -1558,6 +1973,38 @@
             "max_chars": 7,
             "min_chars": 4
           }
+        ],
+        "original_items": [
+          {
+            "alt": "Logo 1"
+          },
+          {
+            "alt": "Logo 2"
+          },
+          {
+            "alt": "Logo 3"
+          },
+          {
+            "alt": "Logo 4"
+          },
+          {
+            "alt": "Logo 5"
+          },
+          {
+            "alt": "Logo 5"
+          },
+          {
+            "alt": "Logo 8"
+          },
+          {
+            "alt": "Logo 6"
+          },
+          {
+            "alt": "Logo 9"
+          },
+          {
+            "alt": "Logo 10"
+          }
         ]
       }
     ]
@@ -1604,6 +2051,50 @@
             "sample_text": "Design",
             "max_chars": 9,
             "min_chars": 5
+          }
+        ],
+        "original_items": [
+          {
+            "title": "Framer Masterclass",
+            "handle": "@frameabotkins",
+            "duration": "7 hr",
+            "rating": "4.6",
+            "category": "Design"
+          },
+          {
+            "title": "Growth Masterclass",
+            "handle": "@novascaflow",
+            "duration": "7 hr",
+            "rating": "4.6",
+            "category": "Marketing"
+          },
+          {
+            "title": "Data Visualisation Masterclass",
+            "handle": "@viziongraphic",
+            "duration": "7 hr",
+            "rating": "4.6",
+            "category": "Data"
+          },
+          {
+            "title": "UI/UX Design Masterclass",
+            "handle": "@lucaycrafton",
+            "duration": "7 hr",
+            "rating": "4.6",
+            "category": "Design"
+          },
+          {
+            "title": "UI/UX Design Masterclass",
+            "handle": "@lucaycrafton",
+            "duration": "7 hr",
+            "rating": "4.6",
+            "category": "Design"
+          },
+          {
+            "title": "Data Visualisation Masterclass",
+            "handle": "@viziongraphic",
+            "duration": "7 hr",
+            "rating": "4.6",
+            "category": "Data"
           }
         ]
       }

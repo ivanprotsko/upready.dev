@@ -54,6 +54,24 @@
             "type": "label",
             "notes": "Team member role. Longest: 'Social Media Specialist' (23 chars)"
           }
+        ],
+        "original_items": [
+          {
+            "member_name": "Logan Dang",
+            "member_role": "WordPress Developer"
+          },
+          {
+            "member_name": "Ana Belić",
+            "member_role": "Social Media Specialist"
+          },
+          {
+            "member_name": "Brian Hanley",
+            "member_role": "Product Designer"
+          },
+          {
+            "member_name": "Darko Stanković",
+            "member_role": "UI Designer"
+          }
         ]
       }
     ]
@@ -122,6 +140,24 @@
             "type": "label",
             "notes": "Team member role. Longest: 'Marketing Strategist' (20 chars)"
           }
+        ],
+        "original_items": [
+          {
+            "member_name": "Martha Finley",
+            "member_role": "Creative Director"
+          },
+          {
+            "member_name": "Floyd Miles",
+            "member_role": "Marketing Strategist"
+          },
+          {
+            "member_name": "Glenna Snyder",
+            "member_role": "Lead Designer"
+          },
+          {
+            "member_name": "Albert Flores",
+            "member_role": "UX/UI Developer"
+          }
         ]
       }
     ]
@@ -180,6 +216,36 @@
             "min_chars": 11,
             "type": "label",
             "notes": "Tag badges per item (2 per item). Longest: 'Brand identity design' (21 chars)"
+          }
+        ],
+        "original_items": [
+          {
+            "portfolio_title": "Flowbank",
+            "portfolio_tags": [
+              "UX Research",
+              "Interface Design"
+            ]
+          },
+          {
+            "portfolio_title": "Academy.co",
+            "portfolio_tags": [
+              "Product Design",
+              "Interection Design"
+            ]
+          },
+          {
+            "portfolio_title": "Genome",
+            "portfolio_tags": [
+              "Brand identity design",
+              "UX Research"
+            ]
+          },
+          {
+            "portfolio_title": "Hotto",
+            "portfolio_tags": [
+              "Visual Storytelling",
+              "Web & Mobile Design"
+            ]
           }
         ]
       }
@@ -272,6 +338,23 @@
             "type": "label",
             "notes": "Service card title. Longest: 'Analytics & Reporting' (21 chars)"
           }
+        ],
+        "original_items": [
+          {
+            "service_title": "Brand Strategy"
+          },
+          {
+            "service_title": "UX/UI Design"
+          },
+          {
+            "service_title": "Analytics & Reporting"
+          },
+          {
+            "service_title": "Digital Marketing"
+          },
+          {
+            "service_title": "Web Development"
+          }
         ]
       }
     ]
@@ -348,6 +431,24 @@
             "min_chars": 73,
             "type": "description",
             "notes": "Shown when service is active/hovered. Longest: Motion graphics desc (146 chars)"
+          }
+        ],
+        "original_items": [
+          {
+            "service_heading": "Brand Strategy",
+            "service_description": "We craft unique brand stories and visual identities that resonate with your audience and build long-lasting trust and recognition."
+          },
+          {
+            "service_heading": "Web development",
+            "service_description": "Build stunning, user-friendly websites that not only look great but also perform seamlessly across all devices."
+          },
+          {
+            "service_heading": "Content creation",
+            "service_description": "We create engaging, high-quality content that resonates with your audience and helps you connect with them on a deeper level."
+          },
+          {
+            "service_heading": "Motion graphics",
+            "service_description": "We create engaging, high-quality motion graphics that capture the essence of your brand and help you connect with your audience on a deeper level."
           }
         ]
       }
@@ -445,6 +546,14 @@
             "type": "label",
             "notes": "Column heading. Values: 'Sitemap' (7), 'Other Pages' (11)"
           }
+        ],
+        "original_items": [
+          {
+            "section_title": "Sitemap"
+          },
+          {
+            "section_title": "Other Pages"
+          }
         ]
       },
       {
@@ -460,6 +569,23 @@
             "type": "list_item",
             "notes": "Sitemap section links. Values: 'Contact us' (10), 'About us' (8), 'Work' (4), 'Services' (8), 'Pricing' (7)"
           }
+        ],
+        "original_items": [
+          {
+            "link_label": "Contact us"
+          },
+          {
+            "link_label": "About us"
+          },
+          {
+            "link_label": "Work"
+          },
+          {
+            "link_label": "Services"
+          },
+          {
+            "link_label": "Pricing"
+          }
         ]
       },
       {
@@ -474,6 +600,17 @@
             "min_chars": 9,
             "type": "list_item",
             "notes": "Other Pages section links. Values: 'Error 404' (9), 'Terms & Conditions' (18), 'Privacy Policy' (14)"
+          }
+        ],
+        "original_items": [
+          {
+            "link_label": "Error 404"
+          },
+          {
+            "link_label": "Terms & Conditions"
+          },
+          {
+            "link_label": "Privacy Policy"
           }
         ]
       }
@@ -580,6 +717,32 @@
             "type": "list_item",
             "notes": "Footer nav links split into 2 columns (4+4). Longest: 'Featured property' (17). Values: 'Home' (4), 'Categories' (10), 'Properties' (10), 'Featured property' (17), 'Testimonials' (12), 'Blog' (4), 'FAQs' (4), '404 page' (8)"
           }
+        ],
+        "original_items": [
+          {
+            "link_label": "Home"
+          },
+          {
+            "link_label": "Categories"
+          },
+          {
+            "link_label": "Properties"
+          },
+          {
+            "link_label": "Featured property"
+          },
+          {
+            "link_label": "Testimonials"
+          },
+          {
+            "link_label": "Blog"
+          },
+          {
+            "link_label": "FAQs"
+          },
+          {
+            "link_label": "404 page"
+          }
         ]
       }
     ]
@@ -614,6 +777,24 @@
             "min_chars": 8,
             "type": "inline",
             "notes": "Destination count below title. Values: '306 Destinations' (16), '418 Destinations' (16), '85 Destinations' (15), '29 Destinations' (15)"
+          }
+        ],
+        "original_items": [
+          {
+            "card_title": "Hiking Adventure",
+            "card_subtitle": "306 Destinations"
+          },
+          {
+            "card_title": "Outdoor Adventure",
+            "card_subtitle": "418 Destinations"
+          },
+          {
+            "card_title": "Beach Adventure",
+            "card_subtitle": "85 Destinations"
+          },
+          {
+            "card_title": "Pilgrimage Destination",
+            "card_subtitle": "29 Destinations"
           }
         ]
       }
@@ -781,6 +962,29 @@
             "min_chars": 10,
             "type": "label",
             "notes": "Animated carousel item titles in ReminderAnimation. Values: 'Breadcrumb component' (20), 'Animated component' (18), 'UI components' (13), 'Form components' (15), 'Chart components' (16), 'Layout components' (17), 'Area Chart' (10)"
+          }
+        ],
+        "original_items": [
+          {
+            "item_title": "Breadcrumb component"
+          },
+          {
+            "item_title": "Animated component"
+          },
+          {
+            "item_title": "UI components"
+          },
+          {
+            "item_title": "Form components"
+          },
+          {
+            "item_title": "Chart components"
+          },
+          {
+            "item_title": "Layout components"
+          },
+          {
+            "item_title": "Area Chart"
           }
         ]
       }

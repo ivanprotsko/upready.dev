@@ -1,0 +1,184 @@
+{
+  "hero-01": {
+    "brand_logos": [
+      { "brand_name": "Brand 1" },
+      { "brand_name": "Brand 2" },
+      { "brand_name": "Brand 3" },
+      { "brand_name": "Brand 4" },
+      { "brand_name": "Brand 5" }
+    ]
+  },
+  "logo-cloud-01": {
+    "brand_logos": [
+      { "brand_name": "Brand 1" },
+      { "brand_name": "Brand 2" },
+      { "brand_name": "Brand 3" },
+      { "brand_name": "Brand 4" },
+      { "brand_name": "Brand 5" }
+    ]
+  },
+  "testimonial-02": {
+    "testimonials": [
+      {
+        "quote": "Shadcn Space replaced messy UI kits and half-baked templates. Today our dashboards look premium, scale beautifully, and our team focuses on real features instead of design debt.",
+        "author": "Walter Dutcher",
+        "role": "CEO"
+      },
+      {
+        "quote": "Shadcn Space replaced messy UI kits and half-baked templates. Today our dashboards look premium, scale beautifully, and our team focuses on real features instead of design debt.",
+        "author": "Errica Mcdowell",
+        "role": "Marketing Head"
+      }
+    ],
+    "brands": [
+      { "brand_name": "Brand 1" },
+      { "brand_name": "Brand 2" },
+      { "brand_name": "Brand 3" },
+      { "brand_name": "Brand 4" },
+      { "brand_name": "Brand 5" }
+    ]
+  },
+  "pricing-01": {
+    "pricing_plans": [
+      {
+        "plan_name": "Starter",
+        "plan_description": "For companies who need design support. One request at a time",
+        "plan_price": 2500,
+        "price_suffix": "/month",
+        "cta_button": "Let's Collaborate",
+        "features_label": "Features"
+      },
+      {
+        "plan_name": "Pro",
+        "plan_description": "2x the speed. Great for an MVP, Web App or complex problem",
+        "plan_price": 3800,
+        "price_suffix": "/month",
+        "cta_button": "Let's Collaborate",
+        "features_label": "Features"
+      }
+    ],
+    "plan_features_starter": [
+      { "feature_text": "Design Updates" },
+      { "feature_text": "Mid-level Designer" },
+      { "feature_text": "SEO Optimization" },
+      { "feature_text": "Monthly Analytics" },
+      { "feature_text": "2x Calls Per Month" },
+      { "feature_text": "License free Assets" }
+    ],
+    "plan_features_pro": [
+      { "feature_text": "Everything on Starter" },
+      { "feature_text": "Developer Updates" },
+      { "feature_text": "Digital Marketing" },
+      { "feature_text": "Weekly Analytics" },
+      { "feature_text": "8x Calls Per Month" },
+      { "feature_text": "Premium Assets" }
+    ]
+  },
+  "pricing-02": {
+    "pricing_plans": [
+      {
+        "plan_name": "Pro",
+        "plan_description": "Launch your website faster with ready-to-use components, blocks and zero setup friction with us.",
+        "plan_price": 2500,
+        "price_suffix": "/month",
+        "plan_recommended": false,
+        "cta_button": "Get started"
+      },
+      {
+        "plan_name": "Pro Plus",
+        "plan_description": "Scale with confidence using premium blocks, templates, and included strategy guidance.",
+        "plan_price": 3800,
+        "price_suffix": "/month",
+        "plan_recommended": true,
+        "recommend_badge": "Recommend",
+        "cta_button": "Get started"
+      },
+      {
+        "plan_name": "Enterprise",
+        "plan_description": "Build at scale with full access, priority support, and dedicated one-on-one strategy calls.",
+        "plan_price": 5000,
+        "price_suffix": "/month",
+        "plan_recommended": false,
+        "cta_button": "Get started"
+      }
+    ],
+    "plan_features_pro": [
+      { "feature_text": "Access to all core Shadcn UI blocks" },
+      { "feature_text": "Copy-paste ready React code" },
+      { "feature_text": "Regular library updates" },
+      { "feature_text": "Commercial use license" },
+      { "feature_text": "Community support & documentation" }
+    ],
+    "plan_features_pro_plus": [
+      { "feature_text": "Everything in Pro" },
+      { "feature_text": "Premium templates & more sections" },
+      { "feature_text": "Early access to new components" },
+      { "feature_text": "Private Discord & priority support" },
+      { "feature_text": "Monthly strategy & growth sessions" }
+    ],
+    "plan_features_enterprise": [
+      { "feature_text": "Everything in Pro Plus" },
+      { "feature_text": "Unlimited team seats" },
+      { "feature_text": "Dedicated UI & integration support" },
+      { "feature_text": "Custom component requests" },
+      { "feature_text": "One-on-one implementation" }
+    ]
+  },
+  "blog-01": {
+    "blog_posts": [
+      { "title": "Our latest brand redesign", "date": "2026-01-01" },
+      { "title": "Recognized for design", "date": "2026-01-03" },
+      { "title": "Journey of footballer", "date": "2026-01-05" }
+    ]
+  },
+  "faq-01": {
+    "faq_items": [
+      {
+        "question": "What services does Shadcn Space offer?",
+        "answer": "We offer a wide range of services including web development, app development, and digital marketing."
+      },
+      {
+        "question": "How long does a typical project take?",
+        "answer": "The time it takes to complete a project depends on the complexity of the project and the scope of the work."
+      },
+      {
+        "question": "How is pricing structured at Awake Agency?",
+        "answer": "Pricing is based on the complexity of the project and the scope of the work."
+      },
+      {
+        "question": "Do you offer ongoing support after project completion?",
+        "answer": "Absolutely! We offer comprehensive post-launch support to ensure a seamless implementation and provide ongoing maintenance packages tailored to clients who need regular updates or technical assistance. Our commitment doesn't end at launch — we're here to help you every step of the way."
+      },
+      {
+        "question": "How often will I receive updates on my project?",
+        "answer": "We provide updates on a regular basis to ensure that your project is running smoothly and that you are aware of any changes or updates to the project."
+      }
+    ]
+  },
+  "contact-01": {
+    "brands": [
+      { "brand_name": "Brand 1" },
+      { "brand_name": "Brand 2" },
+      { "brand_name": "Brand 3" },
+      { "brand_name": "Brand 4" },
+      { "brand_name": "Brand 5" }
+    ],
+    "country_options": [
+      { "country_name": "United States" },
+      { "country_name": "United Kingdom" },
+      { "country_name": "Canada" },
+      { "country_name": "Australia" },
+      { "country_name": "Germany" },
+      { "country_name": "France" },
+      { "country_name": "India" }
+    ]
+  },
+  "cta-02": {
+    "marquee_items": [
+      { "marquee_text": "Find your dream home with our expert real estate agents!" },
+      { "marquee_text": "Browse thousands of listings in prime locations at great prices!" },
+      { "marquee_text": "Get a free property valuation\u2014sell your home with confidence!" },
+      { "marquee_text": "Secure the best mortgage rates with our trusted loan partners!" }
+    ]
+  }
+}

@@ -1,0 +1,627 @@
+{
+  "testimonial-03": {
+    "testimonial_card_text": [
+      {
+        "quote": "Our workflow is finally streamlined. What used to take hours now happens automatically, giving our team more time to focus on strategic work.",
+        "name": "Jessica Thompson",
+        "role": "Head of Operations"
+      },
+      {
+        "quote": "This platform replaced multiple tools for us. The visibility, speed, and control we now have across projects is a game changer.",
+        "name": "Linda Brown",
+        "role": "Chief Technology Officer"
+      },
+      {
+        "quote": "Our workflow is finally streamlined. What used to take hours now happens automatically, giving our team more time to focus on strategic work.",
+        "name": "Jessica Thompson",
+        "role": "Head of Operations"
+      }
+    ],
+    "testimonial_card_media": [
+      {
+        "name": "Emily Davis",
+        "role": "VP of Product"
+      },
+      {
+        "name": "Davis Tom",
+        "role": "Engineer"
+      },
+      {
+        "name": "Emily Davis",
+        "role": "VP of Product"
+      }
+    ]
+  },
+  "testimonial-04": {
+    "testimonial_slide": [
+      {
+        "quote": "Our teams finally have a single source of truth. We've eliminated guesswork, improved collaboration, and can make faster decisions backed by real-time insights.",
+        "name": "Jessica Thompson",
+        "role": "Head of Operations",
+        "performance_value": "42%",
+        "performance_label": "Reduction in operational inefficiencies",
+        "performance2_value": "3x",
+        "performance2_label": "Faster cross-team decision-making"
+      },
+      {
+        "quote": "Our workflow is finally streamlined. What used to take hours now happens automatically, giving our team more time to focus on strategic work.",
+        "name": "Jenny Wilson",
+        "role": "VP of Product",
+        "performance_value": "32%",
+        "performance_label": "Reduction in operational inefficiencies",
+        "performance2_value": "2x",
+        "performance2_label": "Faster cross-team decision-making"
+      },
+      {
+        "quote": "This platform replaced multiple tools for us. The visibility, speed, and control we now have across projects is a game changer.",
+        "name": "Linda Brown",
+        "role": "Chief Technology Officer",
+        "performance_value": "25%",
+        "performance_label": "Reduction in operational inefficiencies",
+        "performance2_value": "1.5x",
+        "performance2_label": "Faster cross-team decision-making"
+      }
+    ]
+  },
+  "testimonial-05": {
+    "testimonial_card": [
+      {
+        "quote": "Our website redesign was flawless. They understood our vision perfectly!",
+        "name": "Albert Flores",
+        "role": "MasterCard"
+      },
+      {
+        "quote": "This platform transformed how we operate. With complete visibility and smarter workflows, our teams execute faster and with far greater confidence.",
+        "name": "Robert Fox",
+        "role": "Mitsubishi"
+      },
+      {
+        "quote": "Super smooth process with incredible results. highly recommend!",
+        "name": "Jenny Wilson",
+        "role": "Pizza Hut"
+      }
+    ]
+  },
+  "testimonial-06": {
+    "testimonial_card": [
+      {
+        "quote": "Before switching, our team struggled with scattered tools and limited visibility. Now everything lives in one platform — collaboration is smoother, campaigns launch faster, and our productivity has noticeably improved.",
+        "author": "Jessica Thompson",
+        "role": "Director of Marketing at BL"
+      },
+      {
+        "quote": "Implementation was surprisingly fast, and the impact was immediate. We gained real-time insight into our workflows and eliminated bottlenecks that had slowed us down for years.",
+        "author": "Linda Brown",
+        "role": "VP of Operations at NT"
+      },
+      {
+        "quote": "What stood out instantly was the simplicity. The platform is powerful without being complicated, which made adoption across our teams effortless.",
+        "author": "Albert Flores",
+        "role": "Head of Product at SF"
+      },
+      {
+        "quote": "Security, reliability, and performance were our top priorities — and this platform delivered on all three. It has become a critical part of our daily operations.",
+        "author": "Robert Fox",
+        "role": "Chief Technology Officer"
+      },
+      {
+        "quote": "This is more than just software — it's an operational advantage. We're making faster decisions, aligning teams better, and scaling without the growing pains.",
+        "author": "Jenny Wilson",
+        "role": "Marketing Manager "
+      },
+      {
+        "quote": "Implementation was surprisingly fast, and the impact was immediate. We gained real-time insight into our workflows and eliminated bottlenecks that had slowed us down for years.",
+        "author": "Linda Brown",
+        "role": "VP of Operations at NT"
+      },
+      {
+        "quote": "Before switching, our team struggled with scattered tools and limited visibility. Now everything lives in one platform — collaboration is smoother, campaigns launch faster, and our productivity has noticeably improved.",
+        "author": "Jessica Thompson",
+        "role": "Director of Marketing at BL"
+      },
+      {
+        "quote": "Implementation was surprisingly fast, and the impact was immediate. We gained real-time insight into our workflows and eliminated bottlenecks that had slowed us down for years.",
+        "author": "Linda Brown",
+        "role": "VP of Operations at NT"
+      },
+      {
+        "quote": "What stood out instantly was the simplicity. The platform is powerful without being complicated, which made adoption across our teams effortless.",
+        "author": "Albert Flores",
+        "role": "Head of Product at SF"
+      },
+      {
+        "quote": "Security, reliability, and performance were our top priorities — and this platform delivered on all three. It has become a critical part of our daily operations.",
+        "author": "Robert Fox",
+        "role": "Chief Technology Officer"
+      },
+      {
+        "quote": "This is more than just software — it's an operational advantage. We're making faster decisions, aligning teams better, and scaling without the growing pains.",
+        "author": "Jenny Wilson",
+        "role": "Marketing Manager "
+      },
+      {
+        "quote": "Implementation was surprisingly fast, and the impact was immediate. We gained real-time insight into our workflows and eliminated bottlenecks that had slowed us down for years.",
+        "author": "Linda Brown",
+        "role": "VP of Operations at NT"
+      }
+    ]
+  },
+  "testimonial-07": {
+    "review_card": [
+      {
+        "name": "Ken Masters",
+        "username": "@kmasters",
+        "body": "\u201cOur productivity has nearly doubled since onboarding. Automation features removed repetitive tasks, allowing our team to focus on building instead of managing operations.\u201d"
+      },
+      {
+        "name": "Kira Athrun",
+        "username": "@kathrun",
+        "body": "\u201cWhat surprised us most was how quickly our team adapted. Minimal learning curve, excellent documentation, and powerful features make it a must-have for modern SaaS companies.\u201d"
+      },
+      {
+        "name": "Lirael Nassun",
+        "username": "@lnassun",
+        "body": "\u201cThis is easily one of the most reliable SaaS tools we\u2019ve adopted. The UI is intuitive, integrations are seamless, and it saves us countless hours every week.\u201d"
+      },
+      {
+        "name": "Jessica",
+        "username": "@jessica",
+        "body": "Switching to this platform streamlined our entire workflow. Setup was effortless, performance improved instantly, and our team now ships features faster without worrying about infrastructure."
+      },
+      {
+        "name": "Jenny",
+        "username": "@jenny",
+        "body": "\u201cWe evaluated multiple solutions, but this stood out immediately. It\u2019s fast, scalable, and thoughtfully designed for growing teams that need stability without added complexity.\u201d"
+      },
+      {
+        "name": "Kira Athrun",
+        "username": "@kathrun",
+        "body": "\u201cWhat surprised us most was how quickly our team adapted. Minimal learning curve, excellent documentation, and powerful features make it a must-have for modern SaaS companies.\u201d"
+      },
+      {
+        "name": "Ken Masters",
+        "username": "@kmasters",
+        "body": "\u201cOur productivity has nearly doubled since onboarding. Automation features removed repetitive tasks, allowing our team to focus on building instead of managing operations.\u201d"
+      }
+    ]
+  },
+  "feature-03": {
+    "feature_item": [
+      {
+        "title": "Data Processing",
+        "content": "Develop a unique and cohesive brand identity, including the design of logos, color schemes, typography."
+      },
+      {
+        "title": "Generating a response",
+        "content": "Develop a unique and cohesive brand identity, including the design of logos, color schemes, typography."
+      }
+    ],
+    "brand_logo": [
+      {"name": "Brand 1"},
+      {"name": "Brand 2"},
+      {"name": "Brand 3"},
+      {"name": "Brand 4"},
+      {"name": "Brand 5"}
+    ]
+  },
+  "feature-04": {
+    "feature_item": [
+      {
+        "title": "Data Processing",
+        "content": "Develop a unique and cohesive brand identity, including the design."
+      },
+      {
+        "title": "Generating a response",
+        "content": "Develop a unique and cohesive brand identity, including the design."
+      }
+    ]
+  },
+  "feature-05": {
+    "feature_checklist_item": [
+      {
+        "text": "Built with responsiveness in mind, ensuring your app looks great on all devices with RTL language support."
+      },
+      {
+        "text": "Apply your design decisions with unlimited themes, all without adding new class names."
+      }
+    ]
+  },
+  "feature-06": {
+    "stat_counter": [
+      {
+        "record": "35",
+        "suffix": "M+",
+        "title": "Users impacted",
+        "description": "with our work"
+      },
+      {
+        "record": "278",
+        "suffix": "+",
+        "title": "Projects completed",
+        "description": "in last 5 years"
+      }
+    ]
+  },
+  "feature-07": {
+    "tab_feature": [
+      {
+        "tab_name": "Performance Tracking",
+        "tab_badge": "Live analytics",
+        "tab_title": "Performance Tracking",
+        "tab_description": "Monitor KPIs, revenue trends, and team output with live dashboards that update as your data changes. Stay informed, spot issues early, and make confident decisions backed by real numbers.",
+        "tab_button": "Learn More"
+      },
+      {
+        "tab_name": "Sales Reporting",
+        "tab_badge": "Year to year reports",
+        "tab_title": "Sales Reporting",
+        "tab_description": "Shadcn Space equips your team with everything needed to stay aligned, monitor performance, and scale with confidence — all from a single platform. Move faster, collaborate smarter, and build without friction. Get started now for free.",
+        "tab_button": "Learn More"
+      },
+      {
+        "tab_name": "Email Automation",
+        "tab_badge": "Smart workflows",
+        "tab_title": "Email Automation",
+        "tab_description": "Design intelligent email workflows that engage users at the right moment. Automate follow-ups, onboarding, and campaigns while maintaining a personal touch.",
+        "tab_button": "Learn More"
+      },
+      {
+        "tab_name": "Powerful Integration",
+        "tab_badge": "Connect your tools",
+        "tab_title": "Powerful Integration",
+        "tab_description": "Integrate effortlessly with the tools your team already uses. Sync data across platforms, reduce manual work, and create a unified workflow without complexity.",
+        "tab_button": "Learn More"
+      }
+    ]
+  },
+  "feature-08": {
+    "feature_slide": [
+      {
+        "tab_title": "Real time collaboration",
+        "tab_description": "Work together seamlessly with shared workflows, instant updates, and full visibility across projects.",
+        "content": "Our platform helps teams simplify operations, improve visibility, and unlock smarter decision-making.",
+        "percentage": "95",
+        "cta_button": "Learn More"
+      },
+      {
+        "tab_title": "Task automation",
+        "tab_description": "Automate repetitive workflows to reduce manual effort, eliminate errors, and save valuable time.",
+        "content": "Smart automation keeps work moving faster while your team focuses on higher-impact initiatives.",
+        "percentage": "98",
+        "cta_button": "Learn More"
+      },
+      {
+        "tab_title": "Centralized workspace",
+        "tab_description": "Manage files, conversations, and tasks in one unified workspace with complete project visibility.",
+        "content": "A single source of truth helps teams stay organized and collaborate without friction.",
+        "percentage": "99",
+        "cta_button": "Learn More"
+      },
+      {
+        "tab_title": "Secure access control",
+        "tab_description": "Control permissions with role-based access to keep data secure and collaboration intentional.",
+        "content": "Built-in security ensures the right people have the right access at every stage of work.",
+        "percentage": "94",
+        "cta_button": "Learn More"
+      }
+    ]
+  },
+  "feature-09": {
+    "feature_bullet": [
+      {
+        "content": "Designed for crypto trading platforms"
+      },
+      {
+        "content": "Kickstart your crypto website today"
+      },
+      {
+        "content": "Launch your blockchain platform today"
+      }
+    ],
+    "portfolio_item": [
+      {"name": "Bitcoin"},
+      {"name": "Bitcoin"},
+      {"name": "Bitcoin"},
+      {"name": "Bitcoin"}
+    ]
+  },
+  "feature-12": {
+    "feature_badge": [
+      {"label": "Routing Setup"},
+      {"label": "Layout System"},
+      {"label": "Markdown Support"},
+      {"label": "Dark Mode"},
+      {"label": "Utility Styling"},
+      {"label": "SEO Defaults"},
+      {"label": "404 page"},
+      {"label": "GitHub Links"},
+      {"label": "Custom 404 Page"},
+      {"label": "Deployment"}
+    ]
+  },
+  "about-us-03": {
+    "stats": [
+      {
+        "stat_value": "98%",
+        "stat_label": "Client satisfaction rate"
+      },
+      {
+        "stat_value": "87+",
+        "stat_label": "Successful projects launched"
+      },
+      {
+        "stat_value": "50k+",
+        "stat_label": "Monthly visitors"
+      }
+    ]
+  },
+  "about-us-04": {
+    "stats": [
+      {
+        "stat_value": "236",
+        "stat_label": "Residences designed for modern families"
+      },
+      {
+        "stat_value": "6.8k",
+        "stat_label": "Square feet of landscaped greens and open spaces"
+      },
+      {
+        "stat_value": "40+",
+        "stat_label": "Secure parking spaces for residents and visitors"
+      }
+    ]
+  },
+  "team-03": {
+    "team_members": [
+      {
+        "member_name": "Courtney Henry",
+        "member_role": "Business Growth"
+      },
+      {
+        "member_name": "Guy Hawkins",
+        "member_role": "Product Designer"
+      },
+      {
+        "member_name": "Ronald Richards",
+        "member_role": "Graphic Designer"
+      },
+      {
+        "member_name": "Jane Cooper",
+        "member_role": "Sales & Marketing"
+      }
+    ]
+  },
+  "navbar-02": {
+    "nav_sections": [
+      {
+        "section_title": "Products",
+        "section_subtitle": "Features"
+      },
+      {
+        "section_title": "Services",
+        "section_subtitle": ""
+      },
+      {
+        "section_title": "Solution",
+        "section_subtitle": "Use cases"
+      },
+      {
+        "section_title": "Support",
+        "section_subtitle": ""
+      },
+      {
+        "section_title": "Career",
+        "section_subtitle": ""
+      }
+    ],
+    "nav_items_products": [
+      {
+        "item_title": "AI",
+        "item_description": "Genrate Insights"
+      },
+      {
+        "item_title": "Developer Tools",
+        "item_description": "Build with powerful AI"
+      },
+      {
+        "item_title": "API Integration",
+        "item_description": "Integrate AI tools into your app"
+      },
+      {
+        "item_title": "Cloud Sync",
+        "item_description": "Sync data across devices"
+      }
+    ],
+    "nav_items_solution": [
+      {
+        "item_title": "Marketplace",
+        "item_description": "Find and buy AI tools"
+      },
+      {
+        "item_title": "Guides",
+        "item_description": "Learn how to use AI tools"
+      },
+      {
+        "item_title": "Backup",
+        "item_description": "Keep your data backed up"
+      },
+      {
+        "item_title": "API Integration",
+        "item_description": "Integrate AI tools into your app"
+      }
+    ]
+  },
+  "cta-04": {
+    "features": [
+      {"feature_text": "Cancel anytime"},
+      {"feature_text": "Access to all content"},
+      {"feature_text": "Expert support"}
+    ]
+  },
+  "portfolio-02": {
+    "portfolio_slides": [
+      {
+        "tag": "Crpyto Project",
+        "title": "Cypgo - Secure digital asset",
+        "description": "Crypgo is a next-generation cryptocurrency platform designed for fast, secure, and transparent trading. With advanced encryption, real-time market data, and an intuitive interface, it empowers users to trade confidently.",
+        "cta_button": "Learn More"
+      },
+      {
+        "tag": "Awake Project",
+        "title": "Awake - Agency template",
+        "description": "Awake is a modern agency template designed to help you showcase your agency's work and services. With a clean and professional design, it's perfect for any agency looking to make a strong impression.",
+        "cta_button": "Learn More"
+      },
+      {
+        "tag": "Optura Project",
+        "title": "Optura - Agency template",
+        "description": "Optura is a modern agency template designed to help you showcase your agency's work and services. With a clean and professional design, it's perfect for any agency looking to make a strong impression.",
+        "cta_button": "Learn More"
+      }
+    ]
+  },
+  "portfolio-03": {
+    "portfolio_items": [
+      {
+        "description": "Marketing Business Website",
+        "overlay_button": "See Project"
+      },
+      {
+        "description": "Web Application Project",
+        "overlay_button": "See Project"
+      },
+      {
+        "description": "Branding for an Agency",
+        "overlay_button": "See Project"
+      },
+      {
+        "description": "Building Smarter Digital Products",
+        "overlay_button": "See Project"
+      }
+    ]
+  },
+  "portfolio-04": {
+    "portfolio_slides": [
+      {
+        "title": "Studiova - Digital Growth Platform",
+        "description": "Built with flexibility in mind, it supports seamless collaboration, streamlined campaign management, and measurable performance — empowering teams to deliver impactful customer experiences.",
+        "cta_button": "View Platform"
+      },
+      {
+        "title": "DigitalArc - Creative Production Studio",
+        "description": "A comprehensive solution for creative teams to manage assets, timelines, and client feedback in one place. Designed for efficiency and high-end output.",
+        "cta_button": "Explore Studio"
+      },
+      {
+        "title": "EcoSphere - Sustainability Dashboard",
+        "description": "Monitor and analyze environmental impact in real-time. Our dashboard provides actionable insights to help organizations achieve their sustainability goals.",
+        "cta_button": "View Dashboard"
+      },
+      {
+        "title": "EcoSphere - Sustainability Dashboard",
+        "description": "Monitor and analyze environmental impact in real-time. Our dashboard provides actionable insights to help organizations achieve their sustainability goals.",
+        "cta_button": "View Dashboard"
+      }
+    ]
+  },
+  "services-03": {
+    "service_rows": [
+      {
+        "number": "01",
+        "title": "app design",
+        "description": "Intuitive mobile app design focused on usability, performance, and seamless user journeys across iOS and Andronumber platforms."
+      },
+      {
+        "number": "02",
+        "title": "web design",
+        "description": "Modern dark-mode web design delivering sleek visuals, responsive layouts, and conversion-focused interfaces."
+      },
+      {
+        "number": "03",
+        "title": "product design",
+        "description": "End-to-end product design combining UX research, wireframing, prototyping, and scalable design systems."
+      },
+      {
+        "number": "04",
+        "title": "brand design",
+        "description": "Strategic brand identity design including logo systems, typography, color palettes, and visual storytelling."
+      }
+    ]
+  },
+  "services-04": {
+    "service_cards": [
+      {"service_title": "Regular Cleaning"},
+      {"service_title": "Deep Cleaning"},
+      {"service_title": "Move-in / Move-out"},
+      {"service_title": "Removal & Storage"}
+    ]
+  },
+  "services-05": {
+    "service_cards": [
+      {
+        "heading": "Genetic screening",
+        "description": "Identify potential health risks early with precise genetic testing. Our advanced diagnostics help clinicians create personalized.",
+        "cta_button": "Learn more"
+      },
+      {
+        "heading": "Laboratory diagnostics",
+        "description": "Our state-of-the-art laboratories deliver fast, accurate results to support timely medical decisions, improving patient.",
+        "cta_button": "Learn more"
+      },
+      {
+        "heading": "Fertility & reproductive Care",
+        "description": "Combining innovative technology with compassionate care, we support individuals and families throughout their fertility.",
+        "cta_button": "Learn more"
+      },
+      {
+        "heading": "Preserving a woman\u2019s eggs for future",
+        "description": "Preserving a woman\u2019s eggs offers the freedom to plan for the future with confidence.Using advanced medical techniques and personalized care",
+        "cta_button": "Learn more"
+      }
+    ]
+  },
+  "services-06": {
+    "service_tabs": [
+      {
+        "tab_label": "Accounting",
+        "caption": "01 - Accounting",
+        "title": "Accounting & Book keeping services for growth",
+        "description": "With deep industry expertise and a commitment to accuracy, we provide reliable accounting services that give businesses complete financial clarity.",
+        "departments_heading": "The Departments",
+        "department_item_left": ["General Ledger Management", "Accounts Payable & Receivable", "Revenue"],
+        "department_item_right": ["Bank & Credit Card", "Budget Preparation", "Expense Tracking"],
+        "cta_button": "Learn More"
+      },
+      {
+        "tab_label": "Planning",
+        "caption": "02 - Planning",
+        "title": "Strategic financial planning",
+        "description": "Plan confidently with tailored strategies designed to support long-term financial stability and growth.",
+        "departments_heading": "The Departments",
+        "department_item_left": ["Forecasting", "Cash Flow Planning"],
+        "department_item_right": ["Risk Analysis", "Scenario Modeling"],
+        "cta_button": "Learn More"
+      },
+      {
+        "tab_label": "Consulting",
+        "caption": "03 - Consulting",
+        "title": "Business consulting services",
+        "description": "Expert guidance to help organizations optimize operations and scale effectively.",
+        "departments_heading": "The Departments",
+        "department_item_left": ["Process Optimization", "Growth Strategy"],
+        "department_item_right": ["Cost Reduction", "Performance Review"],
+        "cta_button": "Learn More"
+      },
+      {
+        "tab_label": "Tax Advisory",
+        "caption": "04 - Tax Advisory",
+        "title": "Smart tax advisory services",
+        "description": "Navigate complex tax regulations with confidence and clarity.",
+        "departments_heading": "The Departments",
+        "department_item_left": ["Tax Planning", "Compliance"],
+        "department_item_right": ["Audit Support", "Advisory Services"],
+        "cta_button": "Learn More"
+      }
+    ]
+  }
+}

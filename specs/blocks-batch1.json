@@ -121,7 +121,24 @@
             "min_chars": 4
           }
         ],
-        "notes": "Brand logo images in marquee slider. Each has dark/light image variants and a name for alt text."
+        "notes": "Brand logo images in marquee slider. Each has dark/light image variants and a name for alt text.",
+        "original_items": [
+          {
+            "brand_name": "Brand 1"
+          },
+          {
+            "brand_name": "Brand 2"
+          },
+          {
+            "brand_name": "Brand 3"
+          },
+          {
+            "brand_name": "Brand 4"
+          },
+          {
+            "brand_name": "Brand 5"
+          }
+        ]
       },
       {
         "item_id": "social_icons",
@@ -462,7 +479,24 @@
             "min_chars": 4
           }
         ],
-        "notes": "Marquee of brand logos with left/right gradient blur. Each brand has dark/light image variants and a name for alt text. No visible text on screen -- only images."
+        "notes": "Marquee of brand logos with left/right gradient blur. Each brand has dark/light image variants and a name for alt text. No visible text on screen -- only images.",
+        "original_items": [
+          {
+            "brand_name": "Brand 1"
+          },
+          {
+            "brand_name": "Brand 2"
+          },
+          {
+            "brand_name": "Brand 3"
+          },
+          {
+            "brand_name": "Brand 4"
+          },
+          {
+            "brand_name": "Brand 5"
+          }
+        ]
       }
     ]
   },

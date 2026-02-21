@@ -172,6 +172,20 @@
             "type": "stat_label",
             "notes": "text-base font-medium text-muted-foreground. Longest: 'Successful projects launched' (28 chars)"
           }
+        ],
+        "original_items": [
+          {
+            "stat_value": "98%",
+            "stat_label": "Client satisfaction rate"
+          },
+          {
+            "stat_value": "87+",
+            "stat_label": "Successful projects launched"
+          },
+          {
+            "stat_value": "50k+",
+            "stat_label": "Monthly visitors"
+          }
         ]
       }
     ]
@@ -258,6 +272,20 @@
             "min_chars": 24,
             "type": "stat_label",
             "notes": "text-base md:text-lg font-normal. Longest: 'Square feet of landscaped greens and open spaces' (48 chars)"
+          }
+        ],
+        "original_items": [
+          {
+            "stat_value": "236",
+            "stat_label": "Residences designed for modern families"
+          },
+          {
+            "stat_value": "6.8k",
+            "stat_label": "Square feet of landscaped greens and open spaces"
+          },
+          {
+            "stat_value": "40+",
+            "stat_label": "Secure parking spaces for residents and visitors"
           }
         ]
       }
@@ -429,6 +457,24 @@
             "min_chars": 9,
             "type": "label",
             "notes": "text-base text-muted-foreground. Longest: 'Sales & Marketing' (17 chars)"
+          }
+        ],
+        "original_items": [
+          {
+            "member_name": "Courtney Henry",
+            "member_role": "Business Growth"
+          },
+          {
+            "member_name": "Guy Hawkins",
+            "member_role": "Product Designer"
+          },
+          {
+            "member_name": "Ronald Richards",
+            "member_role": "Graphic Designer"
+          },
+          {
+            "member_name": "Jane Cooper",
+            "member_role": "Sales & Marketing"
           }
         ]
       }
@@ -651,6 +697,28 @@
             "type": "label",
             "notes": "Optional dropdown subtitle. Values: 'Features' (8), 'Use cases' (9). Only on items with dropdown."
           }
+        ],
+        "original_items": [
+          {
+            "section_title": "Products",
+            "section_subtitle": "Features"
+          },
+          {
+            "section_title": "Services",
+            "section_subtitle": ""
+          },
+          {
+            "section_title": "Solution",
+            "section_subtitle": "Use cases"
+          },
+          {
+            "section_title": "Support",
+            "section_subtitle": ""
+          },
+          {
+            "section_title": "Career",
+            "section_subtitle": ""
+          }
         ]
       },
       {
@@ -675,6 +743,24 @@
             "type": "description",
             "notes": "text-xs text-muted-foreground. Longest: 'Integrate AI tools into your app' (32 chars)"
           }
+        ],
+        "original_items": [
+          {
+            "item_title": "AI",
+            "item_description": "Genrate Insights"
+          },
+          {
+            "item_title": "Developer Tools",
+            "item_description": "Build with powerful AI"
+          },
+          {
+            "item_title": "API Integration",
+            "item_description": "Integrate AI tools into your app"
+          },
+          {
+            "item_title": "Cloud Sync",
+            "item_description": "Sync data across devices"
+          }
         ]
       },
       {
@@ -698,6 +784,24 @@
             "min_chars": 16,
             "type": "description",
             "notes": "text-xs text-muted-foreground. Longest: 'Integrate AI tools into your app' (32 chars)"
+          }
+        ],
+        "original_items": [
+          {
+            "item_title": "Marketplace",
+            "item_description": "Find and buy AI tools"
+          },
+          {
+            "item_title": "Guides",
+            "item_description": "Learn how to use AI tools"
+          },
+          {
+            "item_title": "Backup",
+            "item_description": "Keep your data backed up"
+          },
+          {
+            "item_title": "API Integration",
+            "item_description": "Integrate AI tools into your app"
           }
         ]
       }
@@ -809,6 +913,17 @@
             "min_chars": 11,
             "type": "inline",
             "notes": "text-base font-medium with Check icon. Values: 'Cancel anytime' (14), 'Access to all content' (21), 'Expert support' (14)"
+          }
+        ],
+        "original_items": [
+          {
+            "feature_text": "Cancel anytime"
+          },
+          {
+            "feature_text": "Access to all content"
+          },
+          {
+            "feature_text": "Expert support"
           }
         ]
       }
@@ -953,6 +1068,26 @@
             "type": "button",
             "notes": "Outline variant button, same text for all slides"
           }
+        ],
+        "original_items": [
+          {
+            "tag": "Crpyto Project",
+            "title": "Cypgo - Secure digital asset",
+            "description": "Crypgo is a next-generation cryptocurrency platform designed for fast, secure, and transparent trading. With advanced encryption, real-time market data, and an intuitive interface, it empowers users to trade confidently.",
+            "cta_button": "Learn More"
+          },
+          {
+            "tag": "Awake Project",
+            "title": "Awake - Agency template",
+            "description": "Awake is a modern agency template designed to help you showcase your agency's work and services. With a clean and professional design, it's perfect for any agency looking to make a strong impression.",
+            "cta_button": "Learn More"
+          },
+          {
+            "tag": "Optura Project",
+            "title": "Optura - Agency template",
+            "description": "Optura is a modern agency template designed to help you showcase your agency's work and services. With a clean and professional design, it's perfect for any agency looking to make a strong impression.",
+            "cta_button": "Learn More"
+          }
         ]
       }
     ]
@@ -1035,6 +1170,24 @@
             "type": "button",
             "notes": "Hover overlay button, rounded-full, same text for all items"
           }
+        ],
+        "original_items": [
+          {
+            "description": "Marketing Business Website",
+            "overlay_button": "See Project"
+          },
+          {
+            "description": "Web Application Project",
+            "overlay_button": "See Project"
+          },
+          {
+            "description": "Branding for an Agency",
+            "overlay_button": "See Project"
+          },
+          {
+            "description": "Building Smarter Digital Products",
+            "overlay_button": "See Project"
+          }
         ]
       }
     ]
@@ -1093,6 +1246,28 @@
             "min_chars": 7,
             "type": "button",
             "notes": "Outline variant with ArrowRight. Values: 'View Platform' (13), 'Explore Studio' (14), 'View Dashboard' (14)"
+          }
+        ],
+        "original_items": [
+          {
+            "title": "Studiova - Digital Growth Platform",
+            "description": "Built with flexibility in mind, it supports seamless collaboration, streamlined campaign management, and measurable performance — empowering teams to deliver impactful customer experiences.",
+            "cta_button": "View Platform"
+          },
+          {
+            "title": "DigitalArc - Creative Production Studio",
+            "description": "A comprehensive solution for creative teams to manage assets, timelines, and client feedback in one place. Designed for efficiency and high-end output.",
+            "cta_button": "Explore Studio"
+          },
+          {
+            "title": "EcoSphere - Sustainability Dashboard",
+            "description": "Monitor and analyze environmental impact in real-time. Our dashboard provides actionable insights to help organizations achieve their sustainability goals.",
+            "cta_button": "View Dashboard"
+          },
+          {
+            "title": "EcoSphere - Sustainability Dashboard",
+            "description": "Monitor and analyze environmental impact in real-time. Our dashboard provides actionable insights to help organizations achieve their sustainability goals.",
+            "cta_button": "View Dashboard"
           }
         ]
       }
@@ -1266,6 +1441,28 @@
             "type": "description",
             "notes": "text-base text-primary/50. Longest: app design desc (127 chars)"
           }
+        ],
+        "original_items": [
+          {
+            "number": "01",
+            "title": "app design",
+            "description": "Intuitive mobile app design focused on usability, performance, and seamless user journeys across iOS and Andronumber platforms."
+          },
+          {
+            "number": "02",
+            "title": "web design",
+            "description": "Modern dark-mode web design delivering sleek visuals, responsive layouts, and conversion-focused interfaces."
+          },
+          {
+            "number": "03",
+            "title": "product design",
+            "description": "End-to-end product design combining UX research, wireframing, prototyping, and scalable design systems."
+          },
+          {
+            "number": "04",
+            "title": "brand design",
+            "description": "Strategic brand identity design including logo systems, typography, color palettes, and visual storytelling."
+          }
         ]
       }
     ]
@@ -1324,6 +1521,20 @@
             "min_chars": 9,
             "type": "heading",
             "notes": "font-semibold text-primary. Longest: 'Move-in / Move-out' (18 chars)"
+          }
+        ],
+        "original_items": [
+          {
+            "service_title": "Regular Cleaning"
+          },
+          {
+            "service_title": "Deep Cleaning"
+          },
+          {
+            "service_title": "Move-in / Move-out"
+          },
+          {
+            "service_title": "Removal & Storage"
           }
         ]
       }
@@ -1401,6 +1612,28 @@
             "min_chars": 5,
             "type": "button",
             "notes": "rounded-full bg-black dark:bg-white, same text for all cards"
+          }
+        ],
+        "original_items": [
+          {
+            "heading": "Genetic screening",
+            "description": "Identify potential health risks early with precise genetic testing. Our advanced diagnostics help clinicians create personalized.",
+            "cta_button": "Learn more"
+          },
+          {
+            "heading": "Laboratory diagnostics",
+            "description": "Our state-of-the-art laboratories deliver fast, accurate results to support timely medical decisions, improving patient.",
+            "cta_button": "Learn more"
+          },
+          {
+            "heading": "Fertility & reproductive Care",
+            "description": "Combining innovative technology with compassionate care, we support individuals and families throughout their fertility.",
+            "cta_button": "Learn more"
+          },
+          {
+            "heading": "Preserving a woman’s eggs for future",
+            "description": "Preserving a woman’s eggs offers the freedom to plan for the future with confidence.Using advanced medical techniques and personalized care",
+            "cta_button": "Learn more"
           }
         ]
       }
@@ -1514,6 +1747,74 @@
             "min_chars": 5,
             "type": "button",
             "notes": "Primary button, same text for all tabs"
+          }
+        ],
+        "original_items": [
+          {
+            "tab_label": "Accounting",
+            "caption": "01 - Accounting",
+            "title": "Accounting & Book keeping services for growth",
+            "description": "With deep industry expertise and a commitment to accuracy, we provide reliable accounting services that give businesses complete financial clarity.",
+            "departments_heading": "The Departments",
+            "department_item_left": [
+              "General Ledger Management",
+              "Accounts Payable & Receivable",
+              "Revenue"
+            ],
+            "department_item_right": [
+              "Bank & Credit Card",
+              "Budget Preparation",
+              "Expense Tracking"
+            ],
+            "cta_button": "Learn More"
+          },
+          {
+            "tab_label": "Planning",
+            "caption": "02 - Planning",
+            "title": "Strategic financial planning",
+            "description": "Plan confidently with tailored strategies designed to support long-term financial stability and growth.",
+            "departments_heading": "The Departments",
+            "department_item_left": [
+              "Forecasting",
+              "Cash Flow Planning"
+            ],
+            "department_item_right": [
+              "Risk Analysis",
+              "Scenario Modeling"
+            ],
+            "cta_button": "Learn More"
+          },
+          {
+            "tab_label": "Consulting",
+            "caption": "03 - Consulting",
+            "title": "Business consulting services",
+            "description": "Expert guidance to help organizations optimize operations and scale effectively.",
+            "departments_heading": "The Departments",
+            "department_item_left": [
+              "Process Optimization",
+              "Growth Strategy"
+            ],
+            "department_item_right": [
+              "Cost Reduction",
+              "Performance Review"
+            ],
+            "cta_button": "Learn More"
+          },
+          {
+            "tab_label": "Tax Advisory",
+            "caption": "04 - Tax Advisory",
+            "title": "Smart tax advisory services",
+            "description": "Navigate complex tax regulations with confidence and clarity.",
+            "departments_heading": "The Departments",
+            "department_item_left": [
+              "Tax Planning",
+              "Compliance"
+            ],
+            "department_item_right": [
+              "Audit Support",
+              "Advisory Services"
+            ],
+            "cta_button": "Learn More"
           }
         ]
       }
