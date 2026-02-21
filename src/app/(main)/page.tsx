@@ -89,7 +89,7 @@ export default function HomePage() {
           id="services"
           badge="Services"
           headline="Two ways we help"
-          featuresLabel="What\u2019s included"
+          featuresLabel="What's included"
           plans={[
             {
               name: "Rescue",
@@ -123,7 +123,7 @@ export default function HomePage() {
                 "2 weeks post-launch support",
                 "Full source code ownership",
               ],
-              bgColor: "bg-accent/10",
+              bgColor: "bg-teal-400/10",
               cta: "Book a Discovery Call",
               href: "/build",
             },

@@ -121,7 +121,7 @@ export default function HomePageRu() {
                 "2 недели пост-запуск поддержки",
                 "Полное владение исходным кодом",
               ],
-              bgColor: "bg-accent/10",
+              bgColor: "bg-teal-400/10",
               cta: "Забронировать discovery-звонок",
               href: "/ru/build",
             },
