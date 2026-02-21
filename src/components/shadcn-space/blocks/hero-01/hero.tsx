@@ -1,9 +1,17 @@
 "use client";
 
+import { Instrument_Serif } from "next/font/google";
+import SplashCursor from "@/components/shadcn-space/animations/splash-cursor";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["italic"],
+});
 
 export interface HeroProps {
   badge: string;
@@ -26,8 +34,21 @@ export default function HeroSection({
 }: HeroProps) {
   return (
     <section>
-      <div className="w-full relative">
-        <div className="relative w-full pt-8 md:pt-20 pb-6 md:pb-10 before:absolute before:w-full before:h-full before:bg-linear-to-r before:from-accent/10 before:via-background before:to-accent/5 before:rounded-full before:top-24 before:blur-3xl before:-z-10">
+      <div className="w-full h-full relative">
+        <div className="absolute inset-0 -z-1 pointer-events-none">
+          <SplashCursor
+            SIM_RESOLUTION={128}
+            DYE_RESOLUTION={1440}
+            DENSITY_DISSIPATION={3.5}
+            VELOCITY_DISSIPATION={2}
+            PRESSURE={0.1}
+            CURL={3}
+            SPLAT_RADIUS={0.2}
+            SPLAT_FORCE={6000}
+            COLOR_UPDATE_SPEED={10}
+          />
+        </div>
+        <div className="relative w-full pt-0 md:pt-20 pb-6 md:pb-10 before:absolute before:w-full before:h-full before:bg-linear-to-r dark:before:from-slate-800 dark:before:via-black dark:before:to-stone-700 before:rounded-full before:top-24 before:blur-3xl before:-z-10">
           <div className="container mx-auto relative z-10">
             <div className="flex flex-col max-w-5xl mx-auto gap-8">
               <div className="relative flex flex-col text-center items-center sm:gap-6 gap-4">
@@ -43,14 +64,13 @@ export default function HeroSection({
                   initial={{ opacity: 0, y: 32 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 }}
-                  className="lg:text-7xl md:text-6xl text-4xl font-semibold leading-tight md:leading-tight lg:leading-tight"
+                  className="lg:text-8xl md:text-7xl text-5xl font-medium leading-14 md:leading-20 lg:leading-24"
                 >
-                  {headline}
+                  {headline}{" "}
                   {headlineAccent && (
-                    <>
-                      {" "}
-                      <span className="text-accent">{headlineAccent}</span>
-                    </>
+                    <span className={`${instrumentSerif.className} tracking-tight`}>
+                      {headlineAccent}
+                    </span>
                   )}
                 </motion.h1>
                 <motion.p

@@ -54,8 +54,8 @@ export default function Navbar({
   }, [handleScroll, handleResize]);
 
   return (
-    <header className="sticky top-0 z-40 bg-background/80 backdrop-blur-lg">
-      <div className="max-w-7xl mx-auto w-full px-4 py-3 sm:px-6">
+    <header className="bg-background">
+      <div className="max-w-7xl mx-auto w-full px-4 py-4 sm:px-6">
         <nav
           className={cn(
             "w-full flex items-center h-fit justify-between gap-3.5 lg:gap-6 transition-all duration-500",

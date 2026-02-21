@@ -13,7 +13,7 @@ export default function LogoCloud03({ items }: LogoCloud03Props) {
             {items.map((label, index) => (
               <div
                 key={index}
-                className="w-48 shrink-0 h-24 flex items-center justify-center border-r px-8"
+                className="w-48 shrink-0 h-40 flex items-center justify-center border-r px-8"
               >
                 <span className="text-sm font-medium text-muted-foreground whitespace-nowrap">
                   {label}

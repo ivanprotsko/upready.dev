@@ -25,7 +25,7 @@ export default function Cta01({
     <section>
       <div className="sm:py-20 py-8">
         <div className="max-w-7xl mx-auto sm:px-16 px-4">
-          <div className="relative overflow-hidden min-h-96 flex items-center justify-center px-6 border border-border rounded-3xl before:absolute before:w-full before:h-4/5 before:from-accent/10 before:from-40% before:via-background before:via-55% before:to-accent/5 before:to-60% before:bg-linear-to-r before:rounded-full before:-z-10">
+          <div className="relative overflow-hidden min-h-96 flex items-center justify-center px-6 border border-border rounded-3xl before:absolute before:w-full before:h-4/5 dark:before:from-sky-400/10 dark:before:from-40% dark:before:via-black dark:before:via-55% dark:before:to-amber-300/10 dark:before:to-60% before:bg-linear-to-r before:rounded-full before:-z-10">
             <motion.div
               initial={{ y: "5%", opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
