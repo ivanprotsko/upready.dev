@@ -253,7 +253,7 @@ function Hero() {
                     className="text-sm h-auto py-1.5 px-4 border-0 outline outline-border gap-2"
                   >
                     <AlertTriangle className="size-4 text-amber-500" />
-                    Спасение AI-приложений
+                    Сервис спасения AI-приложений
                   </Badge>
                 </motion.div>
                 <motion.h1
@@ -694,7 +694,7 @@ const pricingPlans = [
     description: "Один баг, проблема конфигурации, ошибка деплоя.",
     features: [
       "Одна конкретная проблема",
-      "24–48 часов",
+      "24–48 часов на починку",
       "14-дневная гарантия",
       "Полная документация",
     ],
@@ -705,13 +705,13 @@ const pricingPlans = [
   },
   {
     name: "Глубокое спасение",
-    price: "$1 500",
+    price: "$1,500",
     period: "от",
     description: "Несколько связанных проблем. Рефакторинг кода. Переделка авторизации.",
     features: [
       "Решение нескольких проблем",
-      "Рефакторинг кода включён",
-      "48–72 часа",
+      "Рефакторинг кода",
+      "48–72 часа на починку",
       "14-дневная гарантия",
       "Полная документация",
       "Приоритетная поддержка",
@@ -723,11 +723,11 @@ const pricingPlans = [
   },
   {
     name: "Полная пересборка",
-    price: "По запросу",
+    price: "Custom",
     period: "",
     description: "Код не подлежит ремонту. Пересобираем ядро с нуля.",
     features: [
-      "Полная переписка кода",
+      "Полный рерайт кода",
       "Современная архитектура",
       "Деплой в продакшен",
       "14-дневная гарантия",
@@ -735,7 +735,7 @@ const pricingPlans = [
       "Постоянная поддержка",
     ],
     featured: false,
-    cta: "Узнать про Build",
+    cta: "Узнать о Build",
     href: "/ru/build",
     external: false,
   },
@@ -914,7 +914,7 @@ function FAQ() {
             variant="outline"
             className="text-sm h-auto py-1 px-3 border-0 outline outline-border"
           >
-            FAQ
+            Вопросы
           </Badge>
           <h2 className="text-5xl font-medium text-center max-w-lg">
             Частые вопросы
@@ -1014,7 +1014,7 @@ function Footer() {
                   UpReady
                 </Link>
                 <p className="text-base font-normal text-muted-foreground max-w-sm">
-                  Спасаем AI-приложения и строим production-ready софт.
+                  Спасаем AI-приложения и строим production-ready продукты.
                 </p>
                 <a
                   href={CALENDLY_URL}
@@ -1055,7 +1055,7 @@ function Footer() {
             <div className="col-span-3">
               <div className="flex flex-col gap-4">
                 <p className="text-base font-medium text-foreground">
-                  Контакт
+                  Контакты
                 </p>
                 <ul className="flex flex-col gap-3">
                   <li>
@@ -1065,7 +1065,7 @@ function Footer() {
                       rel="noopener noreferrer"
                       className="text-base font-normal text-muted-foreground hover:text-foreground transition-colors"
                     >
-                      Забронировать звонок
+                      Записаться на звонок
                     </a>
                   </li>
                 </ul>

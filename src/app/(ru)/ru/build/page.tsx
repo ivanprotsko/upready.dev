@@ -987,7 +987,7 @@ function FooterSection() {
             <div className="col-span-2">
               <div className="flex flex-col gap-4">
                 <p className="text-base font-medium text-foreground">
-                  Sitemap
+                  Навигация
                 </p>
                 <ul className="flex flex-col gap-3">
                   {footerNavItems.map((item) => (
@@ -1006,7 +1006,7 @@ function FooterSection() {
             <div className="col-span-3">
               <div className="flex flex-col gap-4">
                 <p className="text-base font-medium text-foreground">
-                  Contact
+                  Контакты
                 </p>
                 <ul className="flex flex-col gap-3">
                   <li>
