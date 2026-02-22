@@ -30,5 +30,10 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "components/shadcn-space-original",
+    "components/shadcn-space/animated-text",
+    "components/shadcn-space/animations"
+  ]
 }
