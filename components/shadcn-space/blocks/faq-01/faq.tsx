@@ -10,29 +10,34 @@ import { cn } from "@/lib/utils";
 
 const FAQ_DATA = [
   {
-    question: "What services does Shadcn Space offer?",
+    question: "Is this really done by one person?",
     answer:
-      "We offer a wide range of services including web development, app development, and digital marketing.",
+      "Yes. AI tools (Cursor, Claude, v0) allow one experienced engineer to work at the speed of a 3-5 person team. Pieter Levels earns $250K/mo solo. DesignJoy is $1M+ ARR with one designer. This is a proven model.",
   },
   {
-    question: "How long does a typical project take?",
+    question: "What about quality? Isn’t AI code buggy?",
     answer:
-      "The time it takes to complete a project depends on the complexity of the project and the scope of the work.",
+      "AI generates ~46% of the code, but every line goes through manual review by an experienced engineer. I don’t blindly vibe-code — I use AI as an acceleration tool while maintaining control over architecture and security.",
   },
   {
-    question: "How is pricing structured at Awake Agency?",
+    question: "What if I need to scale after MVP?",
     answer:
-      "Pricing is based on the complexity of the project and the scope of the work.",
+      "The MVP is built on a modern stack (Next.js + Supabase/Postgres + Vercel) that handles thousands of users. When it’s time to scale, I can help plan the transition to a full team or continue on the subscription plan.",
   },
   {
-    question: "Do you offer ongoing support after project completion?",
+    question: "Why no meetings?",
     answer:
-      "Absolutely! We offer comprehensive post-launch support to ensure a seamless implementation and provide ongoing maintenance packages tailored to clients who need regular updates or technical assistance. Our commitment doesn’t end at launch — we’re here to help you every step of the way.",
+      "Because meetings are an illusion of progress. An hour in a meeting = an hour NOT coding. Text + Loom videos = same information, but you can consume it when convenient, re-read it, forward to investors.",
   },
   {
-    question: "How often will I receive updates on my project?",
+    question: "Is it safe to pay in crypto?",
     answer:
-      "We provide updates on a regular basis to ensure that your project is running smoothly and that you are aware of any changes or updates to the project.",
+      "Payment via Request Finance — a professional crypto invoicing platform with transparent transaction history. USDT/USDC are stablecoins pegged to USD. Fee: $0.01-2.00 instead of $25-50 bank wire.",
+  },
+  {
+    question: "What if I’m not happy with the result?",
+    answer:
+      "You see progress every 2-3 days via Loom videos and can adjust direction at any point. The prototype is approved BEFORE development. If after the prototype we realize we’re not aligned — full refund of the deposit.",
   },
 ];
 
@@ -48,7 +53,7 @@ export default function Faq() {
             FAQs
           </Badge>
           <h2 className="text-5xl font-medium text-center max-w-lg">
-            Got questions? We’ve got answers ready
+            Frequently asked questions
           </h2>
         </div>
         <div>

@@ -27,10 +27,10 @@ const Feature = ({ featureData }: { featureData: Features }) => {
               className="flex flex-col items-center justify-center gap-4 max-w-lg mx-auto"
             >
               <Badge variant={"outline"} className="px-3 py-1 h-auto text-sm">
-                Features
+                The Problem
               </Badge>
               <h1 className="text-3xl md:text-4xl font-semibold text-center tracking-[-1px]">
-                Designed for Developer Flow Helping them to Get Started
+                Building an MVP shouldn't cost a fortune
               </h1>
             </motion.div>
             <motion.div
@@ -46,7 +46,7 @@ const Feature = ({ featureData }: { featureData: Features }) => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+              className="grid grid-cols-1 sm:grid-cols-2 gap-6"
             >
               {featureData.map((value, index) => {
                 return (
@@ -94,11 +94,11 @@ const Feature = ({ featureData }: { featureData: Features }) => {
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Asterisk size={16} />
                 <p className="font-normal text-sm">
-                  Launch faster with modular designs by Shadcn Space now
+                  There's a better way — one AI-powered product engineer
                 </p>
               </div>
               <Button className="rounded-full px-5 py-2.5 shadow-xs h-full">
-                <a href="#">Browse more block</a>
+                <a href="#pricing">See Pricing</a>
               </Button>
             </motion.div>
           </div>

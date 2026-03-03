@@ -19,30 +19,30 @@ type PricingPlan = {
 const pricingData: PricingPlan[] = [
   {
     plan_bg_color: "bg-blue-500/10",
-    plan_name: "Starter",
-    plan_descp: "For companies who need design support. One request at a time",
-    plan_price: 2500,
+    plan_name: "Growth Support",
+    plan_descp: "Ongoing development and product support after launch.",
+    plan_price: 3000,
     plan_feature: [
-      "Design Updates",
-      "Mid-level Designer",
-      "SEO Optimization",
-      "Monthly Analytics",
-      "2x Calls Per Month",
-      "License free Assets",
+      "Unlimited feature requests",
+      "72-hour turnaround",
+      "Bug fixes & optimization",
+      "Priority async support",
+      "Monthly strategy review",
+      "Pause or cancel anytime",
     ],
   },
   {
     plan_bg_color: "bg-teal-400/20",
-    plan_name: "Pro",
-    plan_descp: "2x the speed. Great for an MVP, Web App or complex problem",
-    plan_price: 3800,
+    plan_name: "Viral Video",
+    plan_descp: "Viral content for Reels, Shorts and TikTok.",
+    plan_price: 5000,
     plan_feature: [
-      "Everything on Starter",
-      "Developer Updates",
-      "Digital Marketing",
-      "Weekly Analytics",
-      "8x Calls Per Month",
-      "Premium Assets",
+      "Reels, Shorts & TikTok",
+      "Scripting & storyboarding",
+      "Professional editing",
+      "Trend-driven content",
+      "Up to 15 videos/month",
+      "Revisions included",
     ],
   },
 ];
@@ -75,12 +75,12 @@ const Pricing = () => {
               variant={"outline"}
               className="py-1 px-3 text-sm font-normal leading-5 w-fit h-7"
             >
-              Pricing
+              Subscriptions
             </Badge>
             {/* Heading */}
             <div className="max-w-3xs sm:max-w-md mx-auto text-center">
               <h2 className="text-foreground text-3xl sm:text-5xl font-medium">
-                Pick the plan that fits your start-up
+                Scale and grow after launch
               </h2>
             </div>
           </div>
@@ -122,7 +122,7 @@ const Pricing = () => {
                         </p>
                         <Button className="relative bg-white hover:bg-white hover:text-black dark:hover:text-black text-black text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
                           <span className="relative z-10 transition-all duration-500">
-                            Let's Collaborate
+                            Get Started
                           </span>
                           <div className="absolute right-1 w-10 h-10 bg-black text-white rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
                             <ArrowUpRight size={16} />

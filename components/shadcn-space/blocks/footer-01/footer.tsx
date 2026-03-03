@@ -18,41 +18,33 @@ const footerSections: FooterData[] = [
     title: "Sitemap",
     links: [
       {
-        title: "Contact us",
-        href: "#",
+        title: "Problem",
+        href: "#problem",
       },
       {
-        title: "About us",
-        href: "#",
-      },
-      {
-        title: "Work",
-        href: "#",
-      },
-      {
-        title: "Services",
-        href: "#",
+        title: "How It Works",
+        href: "#how-it-works",
       },
       {
         title: "Pricing",
-        href: "#",
+        href: "#pricing",
+      },
+      {
+        title: "Portfolio",
+        href: "#portfolio",
+      },
+      {
+        title: "FAQ",
+        href: "#faq",
       },
     ],
   },
   {
-    title: "Other Pages",
+    title: "Contact",
     links: [
       {
-        title: "Error 404",
-        href: "#",
-      },
-      {
-        title: "Terms & Conditions",
-        href: "#",
-      },
-      {
-        title: "Privacy Policy",
-        href: "#",
+        title: "Telegram",
+        href: "https://t.me/zenodev",
       },
     ],
   },
@@ -74,8 +66,8 @@ const Footer = () => {
                 </a>
 
                 <p className="text-base font-normal text-muted-foreground">
-                  Empowering businesses with innovative solutions. Let's create
-                  something amazing together.
+                  Solo AI product engineer. Production-ready MVP from idea to
+                  launch in 2-4 weeks.
                 </p>
 
                 {/* social links */}
@@ -140,23 +132,15 @@ const Footer = () => {
                 <ul className="flex flex-col gap-3">
                   <li>
                     <p className="text-base font-normal text-muted-foreground">
-                      81 Rivington Street London EC2A 3AY
+                      Solo AI Product Engineer
                     </p>
                   </li>
                   <li>
                     <a
-                      href="mailto:contact@example.com"
+                      href="https://t.me/zenodev"
                       className="text-base font-normal text-muted-foreground hover:text-foreground"
                     >
-                      hello@shadcnspace.com
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="tel:+01051923556"
-                      className="text-base font-normal text-muted-foreground hover:text-foreground"
-                    >
-                      0105 192 3556
+                      Telegram: @zenodev
                     </a>
                   </li>
                 </ul>
@@ -166,7 +150,7 @@ const Footer = () => {
           <Separator orientation="horizontal" />
           <div className="flex items-center justify-between animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-100 ease-in-out fill-mode-both">
             <p className="text-sm font-normal text-muted-foreground">
-              ©2026 Shadcn Space. All Rights Reserved
+              ©2026 zeno.team. All Rights Reserved
             </p>
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}

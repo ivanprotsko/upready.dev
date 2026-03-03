@@ -24,44 +24,47 @@ type PricingPlan = {
 
 const pricingData: PricingPlan[] = [
   {
-    plan_name: "Pro",
+    plan_name: "Fast MVP",
     plan_descp:
-      "Launch your website faster with ready-to-use components, blocks and zero setup friction with us.",
-    plan_price: 2500,
+      "Validate your idea fast with a focused, production-ready MVP.",
+    plan_price: 5000,
     plan_feature: [
-      "Access to all core Shadcn UI blocks",
-      "Copy-paste ready React code",
-      "Regular library updates",
-      "Commercial use license",
-      "Community support & documentation",
+      "Landing page + auth",
+      "3-5 core features",
+      "Stripe payments integration",
+      "Deployment to production",
+      "1-2 weeks delivery",
+      "Source code ownership",
     ],
     plan_recommended: false,
   },
   {
-    plan_name: "Pro Plus",
+    plan_name: "MVP + AI",
     plan_descp:
-      "Scale with confidence using premium blocks, templates, and included strategy guidance.",
-    plan_price: 3800,
+      "Smart MVP with AI-powered features for a competitive edge.",
+    plan_price: 8000,
     plan_feature: [
-      "Everything in Pro",
-      "Premium templates & more sections",
-      "Early access to new components",
-      "Private Discord & priority support",
-      "Monthly strategy & growth sessions",
+      "Everything in Fast MVP",
+      "AI-powered functionality",
+      "Custom AI integrations",
+      "Advanced business logic",
+      "2-3 weeks delivery",
+      "Post-launch support (1 week)",
     ],
     plan_recommended: true,
   },
   {
-    plan_name: "Enterprise",
+    plan_name: "MVP + Dashboard",
     plan_descp:
-      "Build at scale with full access, priority support, and dedicated one-on-one strategy calls.",
-    plan_price: 5000,
+      "Full product with admin panel, analytics, and AI features.",
+    plan_price: 12000,
     plan_feature: [
-      "Everything in Pro Plus",
-      "Unlimited team seats",
-      "Dedicated UI & integration support",
-      "Custom component requests",
-      "One-on-one implementation",
+      "Everything in MVP + AI",
+      "Admin dashboard",
+      "Analytics & reporting",
+      "Role-based access control",
+      "3-4 weeks delivery",
+      "Post-launch support (2 weeks)",
     ],
     plan_recommended: false,
   },
@@ -100,7 +103,7 @@ const Pricing = () => {
             {/* Heading */}
             <div className="max-w-3xs sm:max-w-md mx-auto text-center">
               <h2 className="text-foreground text-3xl sm:text-5xl font-medium">
-                Pick the plan that fits your start-up
+                Pick the plan that fits your startup
               </h2>
             </div>
           </div>
@@ -148,7 +151,7 @@ const Pricing = () => {
                           </CardTitle>
                           {isFeatured && (
                             <Badge className="py-1 px-3 text-sm font-medium leading-5 w-fit h-7 flex items-center gap-1.5 [&>svg]:size-4!">
-                              <Flame size={16} /> Recommend
+                              <Flame size={16} /> Most Popular
                             </Badge>
                           )}
                         </div>
@@ -164,7 +167,7 @@ const Pricing = () => {
                           ${plan.plan_price}
                         </span>
                         <span className="text-muted-foreground text-base font-normal">
-                          /month
+                          {" "}one-time
                         </span>
                       </div>
 

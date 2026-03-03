@@ -14,26 +14,20 @@ const portfolioData: PortfolioData[] = [
   {
     portfolio_image:
       "https://images.shadcnspace.com/assets/portfolio/flowbank.webp",
-    portfolio_title: "Flowbank",
-    portfolio_tags: ["UX Research", "Interface Design"],
+    portfolio_title: "SaaS Analytics Dashboard",
+    portfolio_tags: ["MVP Pro", "3 weeks"],
   },
   {
     portfolio_image:
       "https://images.shadcnspace.com/assets/portfolio/academy.webp",
-    portfolio_title: "Academy.co",
-    portfolio_tags: ["Product Design", "Interection Design"],
+    portfolio_title: "AI Recruitment Tool",
+    portfolio_tags: ["AI Integration", "2 weeks"],
   },
   {
     portfolio_image:
       "https://images.shadcnspace.com/assets/portfolio/genome.webp",
-    portfolio_title: "Genome",
-    portfolio_tags: ["Brand identity design", "UX Research"],
-  },
-  {
-    portfolio_image:
-      "https://images.shadcnspace.com/assets/portfolio/hotto.webp",
-    portfolio_title: "Hotto",
-    portfolio_tags: ["Visual Storytelling", "Web & Mobile Design"],
+    portfolio_title: "Marketplace Platform",
+    portfolio_tags: ["MVP Starter", "2 weeks"],
   },
 ];
 
@@ -70,7 +64,7 @@ const Portfolio = () => {
             {/* Heading */}
             <div className="max-w-xs sm:max-w-2xl mx-auto text-center">
               <h2 className="text-foreground text-3xl sm:text-5xl font-semibold">
-                How we transformed a small business’s online presence
+                Recent projects
               </h2>
             </div>
           </div>

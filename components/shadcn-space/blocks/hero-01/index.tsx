@@ -22,29 +22,24 @@ export default function AgencyHeroSection() {
 
   const navigationData: NavigationSection[] = [
     {
-      title: "Home",
-      href: "#",
-      isActive: true,
+      title: "Problem",
+      href: "#problem",
     },
     {
-      title: "About us",
-      href: "#",
-    },
-    {
-      title: "Services",
-      href: "#",
-    },    
-    {
-      title: "Team",
-      href: "#",
+      title: "How It Works",
+      href: "#how-it-works",
     },
     {
       title: "Pricing",
-      href: "#",
+      href: "#pricing",
     },
     {
-      title: "Awards",
-      href: "#",
+      title: "Portfolio",
+      href: "#portfolio",
+    },
+    {
+      title: "FAQ",
+      href: "#faq",
     },
   ];
 

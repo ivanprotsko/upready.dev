@@ -84,21 +84,20 @@ const Feature = ({
                       variant={"outline"}
                       className="px-3 py-1 h-7 text-sm font-normal"
                     >
-                      Features
+                      Process
                     </Badge>
                   </motion.div>
                   <motion.p
                     variants={itemVariants}
                     className="text-3xl sm:text-4xl lg:text-5xl font-semibold"
                   >
-                    Leading with innovative solution.
+                    From idea to production in 4 steps
                   </motion.p>
                   <motion.p
                     variants={itemVariants}
                     className="text-lg font-normal text-muted-foreground"
                   >
-                    We're west coast change-makers in a complex world, crafting
-                    purposeful and powerful brands with fluidity
+                    A streamlined process designed for speed and clarity
                   </motion.p>
                 </div>
 
@@ -141,7 +140,7 @@ const Feature = ({
               className="flex flex-col gap-3 items-center overflow-hidden"
             >
               <p className="text-base font-normal text-muted-foreground text-center">
-                We have 23k+ Satisfied & Trusted Customers
+                Trusted by founders building their first product
               </p>
               {brandList && (
                 <Marquee pauseOnHover className="[--duration:20s] py-3 sm:py-4">
