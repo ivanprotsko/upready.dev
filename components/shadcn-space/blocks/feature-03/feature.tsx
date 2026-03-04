@@ -23,9 +23,17 @@ export type BrandList = {
 const Feature = ({
   featureData,
   brandList,
+  badgeText = "Process",
+  heading = "From idea to production in 4 steps",
+  description = "A streamlined process designed for speed and clarity",
+  trustText = "Trusted by founders building their first product",
 }: {
   featureData: Features;
   brandList: BrandList;
+  badgeText?: string;
+  heading?: string;
+  description?: string;
+  trustText?: string;
 }) => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -84,20 +92,20 @@ const Feature = ({
                       variant={"outline"}
                       className="px-3 py-1 h-7 text-sm font-normal"
                     >
-                      Process
+                      {badgeText}
                     </Badge>
                   </motion.div>
                   <motion.p
                     variants={itemVariants}
                     className="text-3xl sm:text-4xl lg:text-5xl font-semibold"
                   >
-                    From idea to production in 4 steps
+                    {heading}
                   </motion.p>
                   <motion.p
                     variants={itemVariants}
                     className="text-lg font-normal text-muted-foreground"
                   >
-                    A streamlined process designed for speed and clarity
+                    {description}
                   </motion.p>
                 </div>
 
@@ -140,7 +148,7 @@ const Feature = ({
               className="flex flex-col gap-3 items-center overflow-hidden"
             >
               <p className="text-base font-normal text-muted-foreground text-center">
-                Trusted by founders building their first product
+                {trustText}
               </p>
               {brandList && (
                 <Marquee pauseOnHover className="[--duration:20s] py-3 sm:py-4">
