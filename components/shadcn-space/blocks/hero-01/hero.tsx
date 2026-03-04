@@ -18,9 +18,21 @@ export type AvatarList = {
 
 type HeroSectionProps = {
   avatarList: AvatarList[];
+  headingMain?: string;
+  headingItalic?: string;
+  subheading?: string;
+  buttonText?: string;
+  bottomText?: string;
 };
 
-function HeroSection({ avatarList }: HeroSectionProps) {
+function HeroSection({
+  avatarList,
+  headingMain = "Your MVP. Production-ready.",
+  headingItalic = "In weeks, not months.",
+  subheading = "One AI-powered product engineer combines PM, design, and development. From idea to deployed product in 2-4 weeks — 10x cheaper than an agency.",
+  buttonText = "Discuss Your Idea",
+  bottomText = "USDT/USDC payments · Zero meetings · Async",
+}: HeroSectionProps) {
   return (
     <section>
       <div className="w-full h-full relative">
@@ -47,11 +59,11 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                   transition={{ duration: 1, ease: "easeInOut" }}
                   className="lg:text-8xl md:text-7xl text-5xl font-medium leading-14 md:leading-20 lg:leading-24"
                 >
-                  Your MVP. Production-ready.{" "}
+                  {headingMain}{" "}
                   <span
                     className={`${instrumentSerif.className} tracking-tight`}
                   >
-                    In weeks, not months.
+                    {headingItalic}
                   </span>
                 </motion.h1>
                 <motion.p
@@ -60,9 +72,7 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                   transition={{ duration: 1, delay: 0.1, ease: "easeInOut" }}
                   className="text-base font-normal max-w-2xl text-muted-foreground"
                 >
-                  One AI-powered product engineer combines PM, design, and
-                  development. From idea to deployed product in 2-4 weeks —
-                  10x cheaper than an agency.
+                  {subheading}
                 </motion.p>
               </div>
               <motion.div
@@ -73,7 +83,7 @@ function HeroSection({ avatarList }: HeroSectionProps) {
               >
                 <Button className="relative text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
                   <span className="relative z-10 transition-all duration-500">
-                    Discuss Your Idea
+                    {buttonText}
                   </span>
                   <span className="absolute right-1 w-10 h-10 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
                     <ArrowUpRight size={16} />
@@ -105,7 +115,7 @@ function HeroSection({ avatarList }: HeroSectionProps) {
                       ))}
                     </div>
                     <p className="sm:text-sm text-xs font-normal text-muted-foreground">
-                      USDT/USDC payments · Zero meetings · Async
+                      {bottomText}
                     </p>
                   </div>
                 </div>
