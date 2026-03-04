@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import { ArrowUpRight, Check } from "lucide-react";
 import { motion } from "motion/react";
 
-type PricingPlan = {
+export type PricingPlan = {
   plan_bg_color: string;
   plan_name: string;
   plan_descp: string;
@@ -47,7 +47,21 @@ const pricingData: PricingPlan[] = [
   },
 ];
 
-const Pricing = () => {
+const Pricing = ({
+  plans = pricingData,
+  badgeText = "Subscriptions",
+  heading = "Scale and grow after launch",
+  priceLabel = "/month",
+  ctaText = "Get Started",
+  featuresLabel = "Features",
+}: {
+  plans?: PricingPlan[];
+  badgeText?: string;
+  heading?: string;
+  priceLabel?: string;
+  ctaText?: string;
+  featuresLabel?: string;
+} = {}) => {
   const cardVariants = {
     hidden: {
       opacity: 0,
@@ -75,18 +89,18 @@ const Pricing = () => {
               variant={"outline"}
               className="py-1 px-3 text-sm font-normal leading-5 w-fit h-7"
             >
-              Subscriptions
+              {badgeText}
             </Badge>
             {/* Heading */}
             <div className="max-w-3xs sm:max-w-md mx-auto text-center">
               <h2 className="text-foreground text-3xl sm:text-5xl font-medium">
-                Scale and grow after launch
+                {heading}
               </h2>
             </div>
           </div>
           {/* Pricing Plans */}
           <div className="flex flex-col lg:flex-row items-center justify-center grow gap-6 w-full">
-            {pricingData?.map((items: PricingPlan, index: number) => (
+            {plans?.map((items: PricingPlan, index: number) => (
               <motion.div
                 key={index}
                 variants={cardVariants}
@@ -117,12 +131,12 @@ const Pricing = () => {
                         <p className="text-4xl sm:text-5xl font-semibold text-card-foreground flex items-end">
                           ${items.plan_price}
                           <span className="text-base font-normal text-muted-foreground">
-                            /month
+                            {priceLabel}
                           </span>
                         </p>
                         <Button className="relative bg-white hover:bg-white hover:text-black dark:hover:text-black text-black text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
                           <span className="relative z-10 transition-all duration-500">
-                            Get Started
+                            {ctaText}
                           </span>
                           <div className="absolute right-1 w-10 h-10 bg-black text-white rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
                             <ArrowUpRight size={16} />
@@ -140,7 +154,7 @@ const Pricing = () => {
                     />
                     <div className="flex flex-col items-start gap-3 grow">
                       <p className="text-card-foreground text-base sm:text-xl font-normal sm:font-medium">
-                        Features
+                        {featuresLabel}
                       </p>
                       <ul className="flex flex-col items-start self-stretch gap-3">
                         {items.plan_feature?.map(
