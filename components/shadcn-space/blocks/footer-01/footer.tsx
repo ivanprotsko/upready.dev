@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator";
 import { Twitter, Linkedin, Instagram, Dribbble, Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes";
 
-type FooterData = {
+export type FooterData = {
   title: string;
   links: {
     title: string;
@@ -50,7 +50,24 @@ const footerSections: FooterData[] = [
   },
 ];
 
-const Footer = () => {
+const defaultContactLines = [
+  { text: "Solo AI Product Engineer" },
+  { text: "Telegram: @zenodev", href: "https://t.me/zenodev" },
+];
+
+const Footer = ({
+  sections = footerSections,
+  tagline = "Solo AI product engineer. Production-ready MVP from idea to launch in 2-4 weeks.",
+  contactTitle = "Contact Details",
+  contactLines = defaultContactLines,
+  copyright = "©2026 zeno.team. All Rights Reserved",
+}: {
+  sections?: FooterData[];
+  tagline?: string;
+  contactTitle?: string;
+  contactLines?: { text: string; href?: string }[];
+  copyright?: string;
+} = {}) => {
   const { theme, setTheme } = useTheme();
 
   return (
@@ -66,8 +83,7 @@ const Footer = () => {
                 </a>
 
                 <p className="text-base font-normal text-muted-foreground">
-                  Solo AI product engineer. Production-ready MVP from idea to
-                  launch in 2-4 weeks.
+                  {tagline}
                 </p>
 
                 {/* social links */}
@@ -102,7 +118,7 @@ const Footer = () => {
 
             <div className="col-span-1 lg:block hidden"></div>
 
-            {footerSections.map(({ title, links }, index) => (
+            {sections.map(({ title, links }, index) => (
               <div key={index} className="col-span-2">
                 <div className="flex flex-col gap-4 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-100 ease-in-out fill-mode-both">
                   <p className="text-base font-medium text-foreground">
@@ -127,22 +143,25 @@ const Footer = () => {
             <div className="col-span-3">
               <div className="flex flex-col gap-4 animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-100 ease-in-out fill-mode-both">
                 <p className="text-base font-medium text-foreground">
-                  Contact Details
+                  {contactTitle}
                 </p>
                 <ul className="flex flex-col gap-3">
-                  <li>
-                    <p className="text-base font-normal text-muted-foreground">
-                      Solo AI Product Engineer
-                    </p>
-                  </li>
-                  <li>
-                    <a
-                      href="https://t.me/zenodev"
-                      className="text-base font-normal text-muted-foreground hover:text-foreground"
-                    >
-                      Telegram: @zenodev
-                    </a>
-                  </li>
+                  {contactLines.map((line, idx) => (
+                    <li key={idx}>
+                      {line.href ? (
+                        <a
+                          href={line.href}
+                          className="text-base font-normal text-muted-foreground hover:text-foreground"
+                        >
+                          {line.text}
+                        </a>
+                      ) : (
+                        <p className="text-base font-normal text-muted-foreground">
+                          {line.text}
+                        </p>
+                      )}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -150,7 +169,7 @@ const Footer = () => {
           <Separator orientation="horizontal" />
           <div className="flex items-center justify-between animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-100 ease-in-out fill-mode-both">
             <p className="text-sm font-normal text-muted-foreground">
-              ©2026 zeno.team. All Rights Reserved
+              {copyright}
             </p>
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
