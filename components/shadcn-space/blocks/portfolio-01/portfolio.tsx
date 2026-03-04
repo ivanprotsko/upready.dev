@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "motion/react";
 
-type PortfolioData = {
+export type PortfolioData = {
   portfolio_image: string;
   portfolio_title: string;
   portfolio_tags: string[];
@@ -31,7 +31,15 @@ const portfolioData: PortfolioData[] = [
   },
 ];
 
-const Portfolio = () => {
+const Portfolio = ({
+  items = portfolioData,
+  badgeText = "Portfolio",
+  heading = "Recent projects",
+}: {
+  items?: PortfolioData[];
+  badgeText?: string;
+  heading?: string;
+} = {}) => {
   const cardVariants = {
     hidden: {
       opacity: 0,
@@ -59,18 +67,18 @@ const Portfolio = () => {
               variant={"outline"}
               className="py-1 px-3 text-sm font-normal h-7"
             >
-              Portfolio
+              {badgeText}
             </Badge>
             {/* Heading */}
             <div className="max-w-xs sm:max-w-2xl mx-auto text-center">
               <h2 className="text-foreground text-3xl sm:text-5xl font-semibold">
-                Recent projects
+                {heading}
               </h2>
             </div>
           </div>
           {/* portfolio */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-x-7 md:gap-y-8 w-full">
-            {portfolioData.map((item, index) => (
+            {items.map((item, index) => (
               <motion.div
                 key={index}
                 initial="hidden"
