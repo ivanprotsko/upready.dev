@@ -41,7 +41,20 @@ const FAQ_DATA = [
   },
 ];
 
-export default function Faq() {
+export type FaqItem = {
+  question: string;
+  answer: string;
+};
+
+export default function Faq({
+  items = FAQ_DATA,
+  badgeText = "FAQs",
+  heading = "Frequently asked questions",
+}: {
+  items?: FaqItem[];
+  badgeText?: string;
+  heading?: string;
+} = {}) {
   return (
     <section>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:py-24 py-8 flex flex-col gap-16">
@@ -50,15 +63,15 @@ export default function Faq() {
             variant="outline"
             className="text-sm h-auto py-1 px-3 border-0 outline outline-border"
           >
-            FAQs
+            {badgeText}
           </Badge>
           <h2 className="text-5xl font-medium text-center max-w-lg">
-            Frequently asked questions
+            {heading}
           </h2>
         </div>
         <div>
           <Accordion className="w-full flex flex-col gap-6">
-            {FAQ_DATA.map((faq, index) => (
+            {items.map((faq, index) => (
               <AccordionItem
                 key={`item-${index}`}
                 value={`item-${index}`}
