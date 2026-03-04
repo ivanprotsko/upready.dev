@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 import { Check, Flame } from "lucide-react";
 import { motion } from "motion/react";
 
-type PricingPlan = {
+export type PricingPlan = {
   plan_name: string;
   plan_descp: string;
   plan_price: number;
@@ -70,7 +70,21 @@ const pricingData: PricingPlan[] = [
   },
 ];
 
-const Pricing = () => {
+const Pricing = ({
+  plans = pricingData,
+  badgeText = "Pricing",
+  heading = "Pick the plan that fits your startup",
+  priceLabel = "one-time",
+  ctaText = "Get started",
+  popularLabel = "Most Popular",
+}: {
+  plans?: PricingPlan[];
+  badgeText?: string;
+  heading?: string;
+  priceLabel?: string;
+  ctaText?: string;
+  popularLabel?: string;
+} = {}) => {
   const pricingCardVariants = {
     hidden: {
       opacity: 0,
@@ -98,18 +112,18 @@ const Pricing = () => {
               variant={"outline"}
               className="py-1 px-3 text-sm font-normal leading-5 w-fit h-7"
             >
-              Pricing
+              {badgeText}
             </Badge>
             {/* Heading */}
             <div className="max-w-3xs sm:max-w-md mx-auto text-center">
               <h2 className="text-foreground text-3xl sm:text-5xl font-medium">
-                Pick the plan that fits your startup
+                {heading}
               </h2>
             </div>
           </div>
           {/*  */}
           <div className="flex flex-col lg:flex-row gap-6 items-stretch w-full">
-            {pricingData.map((plan: PricingPlan, index: number) => {
+            {plans.map((plan: PricingPlan, index: number) => {
               const isFeatured = plan.plan_recommended;
 
               return (
@@ -151,7 +165,7 @@ const Pricing = () => {
                           </CardTitle>
                           {isFeatured && (
                             <Badge className="py-1 px-3 text-sm font-medium leading-5 w-fit h-7 flex items-center gap-1.5 [&>svg]:size-4!">
-                              <Flame size={16} /> Most Popular
+                              <Flame size={16} /> {popularLabel}
                             </Badge>
                           )}
                         </div>
@@ -167,7 +181,7 @@ const Pricing = () => {
                           ${plan.plan_price}
                         </span>
                         <span className="text-muted-foreground text-base font-normal">
-                          {" "}one-time
+                          {" "}{priceLabel}
                         </span>
                       </div>
 
@@ -189,7 +203,7 @@ const Pricing = () => {
                         className="w-full h-12"
                         variant={isFeatured ? "default" : "outline"}
                       >
-                        Get started
+                        {ctaText}
                       </Button>
                     </CardContent>
                   </Card>
