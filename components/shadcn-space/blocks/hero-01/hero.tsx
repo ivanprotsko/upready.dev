@@ -27,7 +27,7 @@ type HeroSectionProps = {
 
 function HeroSection({
   avatarList,
-  headingMain = "Production-ready.",
+  headingMain = "Production-ready MVP.",
   headingItalic = "In weeks, not months.",
   subheading = "One AI-powered product engineer combines PM, design, and development. From idea to deployed product in 2-4 weeks — 10x cheaper than an agency.",
   buttonText = "Discuss Your Idea",
