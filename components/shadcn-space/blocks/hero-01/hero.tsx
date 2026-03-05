@@ -27,7 +27,7 @@ type HeroSectionProps = {
 
 function HeroSection({
   avatarList,
-  headingMain = "Your MVP. Production-ready.",
+  headingMain = "Production-ready.",
   headingItalic = "In weeks, not months.",
   subheading = "One AI-powered product engineer combines PM, design, and development. From idea to deployed product in 2-4 weeks — 10x cheaper than an agency.",
   buttonText = "Discuss Your Idea",
@@ -59,7 +59,8 @@ function HeroSection({
                   transition={{ duration: 1, ease: "easeInOut" }}
                   className="lg:text-8xl md:text-7xl text-5xl font-medium leading-14 md:leading-20 lg:leading-24"
                 >
-                  {headingMain}{" "}
+                  {headingMain}
+                  <br />
                   <span
                     className={`${instrumentSerif.className} tracking-tight`}
                   >
