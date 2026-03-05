@@ -24,7 +24,7 @@ type HeaderProps = {
 
 const CollaborateButton = ({ className, buttonText = "Book a Call" }: { className?: string; buttonText?: string }) => (
   <Button asChild className={cn("relative text-sm font-medium rounded-full h-10 p-1 ps-4 pe-12 group transition-all duration-500 hover:ps-12 hover:pe-4 w-fit overflow-hidden", className)}>
-    <a href="https://calendly.com/val-upready/30min" target="_blank" rel="noopener noreferrer">
+    <a href="https://calendly.com/val-upready/30min" target="_blank" rel="noopener noreferrer" className="flex items-center">
       <span className="relative z-10 transition-all duration-500">
         {buttonText}
       </span>

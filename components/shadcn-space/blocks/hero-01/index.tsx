@@ -18,10 +18,6 @@ export default function AgencyHeroSection({ hero }: { hero?: HeroContent }) {
       href: "#pricing",
     },
     {
-      title: "Portfolio",
-      href: "#portfolio",
-    },
-    {
       title: "FAQ",
       href: "#faq",
     },
