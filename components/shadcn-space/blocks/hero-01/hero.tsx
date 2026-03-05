@@ -19,6 +19,7 @@ export type AvatarList = {
 type HeroSectionProps = {
   avatarList: AvatarList[];
   headingMain?: string;
+  headingSecond?: string;
   headingItalic?: string;
   subheading?: string;
   buttonText?: string;
@@ -27,8 +28,10 @@ type HeroSectionProps = {
 
 function HeroSection({
   avatarList,
-  headingMain = "Your MVP. Production-ready.",
+  headingMain = "Your MVP.",
+  headingSecond = "Production-ready.",
   headingItalic = "In weeks, not months.",
+
   subheading = "One AI-powered product engineer combines PM, design, and development. From idea to deployed product in 2-4 weeks — 10x cheaper than an agency.",
   buttonText = "Discuss Your Idea",
   bottomText = "USDT/USDC payments · Zero meetings · Async",
@@ -60,6 +63,8 @@ function HeroSection({
                   className="lg:text-7xl md:text-6xl text-4xl font-medium leading-12 md:leading-18 lg:leading-22"
                 >
                   {headingMain}
+                  <br />
+                  {headingSecond}
                   <br />
                   <span
                     className={`${instrumentSerif.className} tracking-tight`}
