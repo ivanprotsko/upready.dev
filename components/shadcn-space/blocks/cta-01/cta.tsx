@@ -14,7 +14,7 @@ type CTAProps = {
 const CTA = ({
   className,
   heading = "Describe your idea — I'll estimate it in 24 hours",
-  description = "Send a message with your idea in any format. Get a timeline and cost estimate within a day.",
+  description = "On the call, describe your idea — and we'll estimate the cost and timeline within a day.",
   buttonText = "Book a Call",
 }: CTAProps) => {
   const ref = useRef(null);
