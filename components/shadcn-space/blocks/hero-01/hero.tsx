@@ -32,7 +32,7 @@ function HeroSection({
   headingSecond = "Production-ready.",
   headingItalic = "In weeks, not months.",
 
-  subheading = "One AI-powered product engineer combines PM, design, and development. From idea to deployed product in 2-4 weeks — 10x cheaper than an agency.",
+  subheading = "Your Minimum Value Product will be ready to use in weeks, not months.",
   buttonText = "Discuss Your Idea",
   bottomText = "USDT/USDC payments · Zero meetings · Async",
 }: HeroSectionProps) {
