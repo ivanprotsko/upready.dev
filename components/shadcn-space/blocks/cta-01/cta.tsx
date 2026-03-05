@@ -15,7 +15,7 @@ const CTA = ({
   className,
   heading = "Describe your idea — I'll estimate it in 24 hours",
   description = "Send a message with your idea in any format. Get a timeline and cost estimate within a day.",
-  buttonText = "Message on Telegram",
+  buttonText = "Book a Call",
 }: CTAProps) => {
   const ref = useRef(null);
 
@@ -45,13 +45,15 @@ const CTA = ({
                   {description}
                 </p>
               </div>
-              <Button className="relative text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
-                <span className="relative z-10 transition-all duration-500">
-                  {buttonText}
-                </span>
-                <div className="absolute right-1 w-10 h-10 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
-                  <ArrowUpRight size={16} />
-                </div>
+              <Button asChild className="relative text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
+                <a href="https://calendly.com/val-upready/30min" target="_blank" rel="noopener noreferrer">
+                  <span className="relative z-10 transition-all duration-500">
+                    {buttonText}
+                  </span>
+                  <div className="absolute right-1 w-10 h-10 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
+                    <ArrowUpRight size={16} />
+                  </div>
+                </a>
               </Button>
             </motion.div>
           </div>

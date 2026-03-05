@@ -1,175 +1,119 @@
 "use client";
 
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { motion } from "motion/react";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import { Marquee } from "@/components/shadcn-space/animations/marquee";
+import { ArrowUpRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
-export type Features = {
+export type FeatureCard = {
   icon: LucideIcon;
   title: string;
-  content: ReactNode;
-}[];
-
-export type BrandList = {
-  image: string;
-  name: string;
-  lightimg: string;
-}[];
+  description: ReactNode;
+};
 
 const Feature = ({
-  featureData,
-  brandList,
-  badgeText = "Process",
-  heading = "From idea to production in 4 steps",
-  description = "A streamlined process designed for speed and clarity",
-  trustText = "Trusted by founders building their first product",
+  cards,
+  badgeText = "Why Us",
+  heading = "Everything you need to ship without the friction",
+  description = "We've eliminated every obstacle that slows down traditional agencies. No endless meetings, no payment hassle, no waiting. Just fast, focused delivery.",
+  footnote = "All projects start with a fixed-price estimate. No hidden costs, no surprise invoices — what you see is what you pay.",
+  buttonText = "Get in Touch",
 }: {
-  featureData: Features;
-  brandList: BrandList;
+  cards: FeatureCard[];
   badgeText?: string;
   heading?: string;
   description?: string;
-  trustText?: string;
+  footnote?: string;
+  buttonText?: string;
 }) => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-      },
+      transition: { staggerChildren: 0.15 },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 24 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut",
-      },
+      transition: { duration: 0.5, ease: "easeOut" },
     },
   };
 
   return (
     <section>
       <div className="lg:py-20 sm:py-16 py-8">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8 xl:px-16 py-10 sm:py-20 overflow-hidden">
-          <div className="flex flex-col gap-12 sm:gap-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-6">
-              {/* Image Section */}
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                className="w-full h-full"
-              >
-                <img
-                  src="https://images.shadcnspace.com/assets/feature/feature-03.webp"
-                  alt="feature-img"
-                  className="rounded-2xl w-full h-full object-top object-cover aspect-video lg:aspect-auto"
-                />
+        <div className="max-w-7xl mx-auto px-4 lg:px-8 xl:px-16 py-10 sm:py-20">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="flex flex-col gap-12 sm:gap-16"
+          >
+            {/* Header */}
+            <div className="flex flex-col items-center text-center gap-4 max-w-2xl mx-auto">
+              <motion.div variants={itemVariants}>
+                <Badge variant="outline" className="px-3 py-1 h-7 text-sm font-normal">
+                  {badgeText}
+                </Badge>
               </motion.div>
-
-              {/* Content Section */}
-              <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                className="lg:ps-8 place-self-center flex flex-col gap-8 sm:gap-10"
+              <motion.h2
+                variants={itemVariants}
+                className="text-3xl sm:text-4xl lg:text-5xl font-semibold"
               >
-                <div className="flex flex-col gap-4">
-                  <motion.div variants={itemVariants}>
-                    <Badge
-                      variant={"outline"}
-                      className="px-3 py-1 h-7 text-sm font-normal"
-                    >
-                      {badgeText}
-                    </Badge>
-                  </motion.div>
-                  <motion.p
-                    variants={itemVariants}
-                    className="text-3xl sm:text-4xl lg:text-5xl font-semibold"
-                  >
-                    {heading}
-                  </motion.p>
-                  <motion.p
-                    variants={itemVariants}
-                    className="text-lg font-normal text-muted-foreground"
-                  >
-                    {description}
-                  </motion.p>
-                </div>
+                {heading}
+              </motion.h2>
+              <motion.p
+                variants={itemVariants}
+                className="text-lg font-normal text-muted-foreground"
+              >
+                {description}
+              </motion.p>
+            </div>
 
-                <motion.div variants={itemVariants}>
-                  <Card className="p-6 sm:p-8 shadow-none rounded-2xl">
-                    <CardContent className="p-0 flex flex-col gap-6 sm:gap-8">
-                      {featureData &&
-                        featureData.map((feature, index) => (
-                          <React.Fragment key={index}>
-                            <div className="flex gap-5">
-                              {feature.icon && (
-                                <feature.icon size={30} className="shrink-0" />
-                              )}
-                              <div className="flex flex-col gap-2">
-                                <p className="text-xl font-semibold">
-                                  {feature.title}
-                                </p>
-                                <p className="text-base text-muted-foreground">
-                                  {feature.content}
-                                </p>
-                              </div>
-                            </div>
-                            {index !== featureData.length - 1 && (
-                              <Separator orientation="horizontal" />
-                            )}
-                          </React.Fragment>
-                        ))}
+            {/* Cards */}
+            <motion.div
+              variants={containerVariants}
+              className="grid grid-cols-1 md:grid-cols-3 gap-6"
+            >
+              {cards.map((card, index) => (
+                <motion.div key={index} variants={itemVariants}>
+                  <Card className="h-full p-6 sm:p-8 shadow-none rounded-2xl">
+                    <CardContent className="p-0 flex flex-col gap-4">
+                      <card.icon size={28} className="shrink-0" />
+                      <p className="text-xl font-semibold">{card.title}</p>
+                      <p className="text-base text-muted-foreground">{card.description}</p>
                     </CardContent>
                   </Card>
                 </motion.div>
-              </motion.div>
-            </div>
-
-            {/* brand slider */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
-              className="flex flex-col gap-3 items-center overflow-hidden"
-            >
-              <p className="text-base font-normal text-muted-foreground text-center">
-                {trustText}
-              </p>
-              {brandList && (
-                <Marquee pauseOnHover className="[--duration:20s] py-3 sm:py-4">
-                  {brandList.map((brand, index) => (
-                    <div key={index}>
-                      <img
-                        src={brand.image}
-                        alt={brand.name}
-                        className="w-36 h-8 mr-6 lg:mr-20 dark:hidden"
-                      />
-                      <img
-                        src={brand.lightimg}
-                        alt={brand.name}
-                        className="hidden dark:block w-36 h-8 mr-12 lg:mr-20"
-                      />
-                    </div>
-                  ))}
-                </Marquee>
-              )}
+              ))}
             </motion.div>
-          </div>
+
+            {/* Footer */}
+            <motion.div
+              variants={itemVariants}
+              className="flex flex-col items-center gap-6"
+            >
+              <p className="text-sm text-muted-foreground text-center max-w-lg">
+                * {footnote}
+              </p>
+              <Button className="relative text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
+                <span className="relative z-10 transition-all duration-500">
+                  {buttonText}
+                </span>
+                <span className="absolute right-1 w-10 h-10 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
+                  <ArrowUpRight size={16} />
+                </span>
+              </Button>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>

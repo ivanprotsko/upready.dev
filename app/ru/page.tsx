@@ -301,7 +301,7 @@ export default function HomeRu() {
       {/* How It Works Section */}
       <div id="how-it-works">
         <FeatureProcess
-          featureData={featureProcessData}
+          cards={featureProcessData}
           brandList={processBrandList}
           badgeText="Процесс"
           heading="От идеи до продакшена за 4 шага"
@@ -361,7 +361,7 @@ export default function HomeRu() {
         tagline="Solo AI-инженер продукта. Готовый к продакшену MVP от идеи до запуска за 2-4 недели."
         contactTitle="Контакты"
         contactLines={footerContactLines}
-        copyright="©2026 zeno.team. Все права защищены"
+        copyright="©2026 upready. Все права защищены"
       />
     </div>
   );

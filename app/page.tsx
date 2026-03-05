@@ -7,11 +7,19 @@ import Portfolio from "@/components/shadcn-space/blocks/portfolio-01/portfolio";
 import Faq from "@/components/shadcn-space/blocks/faq-01/faq";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 import Footer from "@/components/shadcn-space/blocks/footer-01/footer";
+import { resolveHeroContent } from "@/lib/utm-content";
 
-export default function Home() {
+type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
+
+export default async function Home({ searchParams }: { searchParams: SearchParams }) {
+  const params = await searchParams;
+  const utmSource = typeof params.utm_source === "string" ? params.utm_source : undefined;
+  const utmCampaign = typeof params.utm_campaign === "string" ? params.utm_campaign : undefined;
+  const hero = resolveHeroContent(utmSource, utmCampaign);
+
   return (
     <div className="relative">
-      <AgencyHeroSection />
+      <AgencyHeroSection hero={hero} />
       <div id="problem">
         <Feature02 />
       </div>
@@ -22,9 +30,9 @@ export default function Home() {
         <Pricing />
         <PricingSubscriptions />
       </div>
-      <div id="portfolio">
+      {/* <div id="portfolio">
         <Portfolio />
-      </div>
+      </div> */}
       <div id="faq">
         <Faq />
       </div>

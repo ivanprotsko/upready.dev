@@ -1,6 +1,6 @@
 "use client";
 
-import { Instrument_Serif } from "next/font/google";
+import { Instrument_Serif, Google_Sans } from "next/font/google";
 import SplashCursor from "@/components/shadcn-space/animations/splash-cursor";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
@@ -12,29 +12,26 @@ const instrumentSerif = Instrument_Serif({
   style: ["italic"],
 });
 
-export type AvatarList = {
-  image: string;
-};
+const googleSans = Google_Sans({
+  subsets: ["latin"],
+  weight: ["700"],
+});
+
 
 type HeroSectionProps = {
-  avatarList: AvatarList[];
-  headingMain?: string;
-  headingSecond?: string;
+  headingLine1?: string;
+  headingLine2?: string;
   headingItalic?: string;
   subheading?: string;
   buttonText?: string;
-  bottomText?: string;
 };
 
 function HeroSection({
-  avatarList,
-  headingMain = "Your MVP.",
-  headingSecond = "Production-ready.",
-  headingItalic = "In weeks, not months.",
-
-  subheading = "Your Minimum Value Product will be ready to use in weeks, not months.",
+  headingLine1 = "Your MVP",
+  headingLine2 = "will be ready",
+  headingItalic = "in weeks, not months.",
+  subheading = "Your Minimum Value Product will be ready for customers to use in weeks, not months.",
   buttonText = "Discuss Your Idea",
-  bottomText = "USDT/USDC payments · Zero meetings · Async",
 }: HeroSectionProps) {
   return (
     <section>
@@ -60,11 +57,11 @@ function HeroSection({
                   initial={{ opacity: 0, y: 32 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
-                  className="lg:text-7xl md:text-6xl text-4xl font-medium leading-12 md:leading-18 lg:leading-22"
+                  className="lg:text-8xl md:text-7xl text-5xl font-medium leading-14 md:leading-20 lg:leading-24"
                 >
-                  {headingMain}
+                  <span className={`${googleSans.className} tracking-tight`}>{headingLine1}</span>
                   <br />
-                  {headingSecond}
+                  <span className={`${googleSans.className} tracking-tight`}>{headingLine2}</span>
                   <br />
                   <span
                     className={`${instrumentSerif.className} tracking-tight`}
@@ -85,46 +82,18 @@ function HeroSection({
                 initial={{ opacity: 0, y: 32 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
-                className="flex items-center flex-col md:flex-row justify-center gap-8"
+                className="flex items-center justify-center"
               >
-                <Button className="relative text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
-                  <span className="relative z-10 transition-all duration-500">
-                    {buttonText}
-                  </span>
-                  <span className="absolute right-1 w-10 h-10 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
-                    <ArrowUpRight size={16} />
-                  </span>
+                <Button asChild className="relative text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
+                  <a href="https://calendly.com/val-upready/30min" target="_blank" rel="noopener noreferrer">
+                    <span className="relative z-10 transition-all duration-500">
+                      {buttonText}
+                    </span>
+                    <span className="absolute right-1 w-10 h-10 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
+                      <ArrowUpRight size={16} />
+                    </span>
+                  </a>
                 </Button>
-                <div className="flex items-center sm:gap-7 gap-3">
-                  <ul className="avatar flex flex-row items-center">
-                    {avatarList.map((avatar, index) => (
-                      <li key={index} className="-mr-2 z-1 avatar-hover:ml-2">
-                        <img
-                          src={avatar.image}
-                          alt="Avatar"
-                          width={40}
-                          height={40}
-                          className="rounded-full border-2 border-white"
-                        />
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="gap-1 flex flex-col items-start">
-                    <div className="flex gap-1">
-                      {Array.from({ length: 5 }).map((_, index) => (
-                        <img
-                          key={index}
-                          src="https://images.shadcnspace.com/assets/svgs/icon-star.svg"
-                          alt="star"
-                          className="h-4 w-4"
-                        />
-                      ))}
-                    </div>
-                    <p className="sm:text-sm text-xs font-normal text-muted-foreground">
-                      {bottomText}
-                    </p>
-                  </div>
-                </div>
               </motion.div>
             </div>
           </div>
