@@ -71,7 +71,7 @@ const featureProcessData: Features = [
     title: "01 — Опишите идею",
     content: (
       <>
-        Отправьте через Telegram, Notion или любой мессенджер. Текст, голосовые,
+        Отправьте через Book a Call, Notion или любой мессенджер. Текст, голосовые,
         референсы — <strong className="text-foreground">как удобно. Созвоны не нужны.</strong>
       </>
     ),
@@ -254,14 +254,14 @@ const footerSections = [
   {
     title: "Контакты",
     links: [
-      { title: "Telegram", href: "https://t.me/zenodev" },
+      { title: "Book a Call", href: "https://calendly.com/val-upready/30min" },
     ],
   },
 ];
 
 const footerContactLines = [
   { text: "Solo AI-инженер продукта" },
-  { text: "Telegram: @zenodev", href: "https://t.me/zenodev" },
+  { text: "Book a Call", href: "https://calendly.com/val-upready/30min" },
 ];
 
 export default function HomeRu() {
@@ -352,7 +352,7 @@ export default function HomeRu() {
       <CTA
         heading="Опишите вашу идею — оценю за 24 часа"
         description="Отправьте сообщение с вашей идеей в любом формате. Получите оценку сроков и стоимости в течение дня."
-        buttonText="Написать в Telegram"
+        buttonText="Написать в Book a Call"
       />
 
       {/* Footer */}
