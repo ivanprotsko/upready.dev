@@ -200,10 +200,13 @@ const Pricing = ({
                       </ul>
 
                       <Button
+                        asChild
                         className="w-full h-12"
                         variant={isFeatured ? "default" : "outline"}
                       >
-                        {ctaText}
+                        <a href="https://calendly.com/val-upready/30min" target="_blank" rel="noopener noreferrer">
+                          {ctaText}
+                        </a>
                       </Button>
                     </CardContent>
                   </Card>

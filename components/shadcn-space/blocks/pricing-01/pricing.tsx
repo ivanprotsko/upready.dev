@@ -134,13 +134,15 @@ const Pricing = ({
                             {priceLabel}
                           </span>
                         </p>
-                        <Button className="relative bg-white hover:bg-white hover:text-black dark:hover:text-black text-black text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
-                          <span className="relative z-10 transition-all duration-500">
-                            {ctaText}
-                          </span>
-                          <div className="absolute right-1 w-10 h-10 bg-black text-white rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
-                            <ArrowUpRight size={16} />
-                          </div>
+                        <Button asChild className="relative bg-white hover:bg-white hover:text-black dark:hover:text-black text-black text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
+                          <a href="https://calendly.com/val-upready/30min" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                            <span className="relative z-10 transition-all duration-500">
+                              {ctaText}
+                            </span>
+                            <div className="absolute right-1 w-10 h-10 bg-black text-white rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
+                              <ArrowUpRight size={16} />
+                            </div>
+                          </a>
                         </Button>
                       </div>
                     </div>

@@ -30,7 +30,7 @@ function HeroSection({
   headingLine1 = "Your MVP",
   headingLine2 = "will be ready",
   headingItalic = "in weeks, not months.",
-  subheading = "Your Minimum Value Product will be ready for customers to use in weeks, not months.",
+  subheading = "Build your idea 10× faster and cheaper than a traditional agency — with minimal involvement from your side.",
   buttonText = "Discuss Your Idea",
 }: HeroSectionProps) {
   return (
@@ -75,7 +75,9 @@ function HeroSection({
                   transition={{ duration: 1, delay: 0.1, ease: "easeInOut" }}
                   className="text-base font-normal max-w-2xl text-muted-foreground"
                 >
+                  <span className="flex  text-balance">
                   {subheading}
+                  </span>
                 </motion.p>
               </div>
               <motion.div
