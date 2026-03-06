@@ -102,7 +102,7 @@ const Pricing = ({
   };
 
   return (
-    <section className="bg-background py-10 lg:py-0">
+    <section className="py-10 lg:py-0">
       <div className="max-w-7xl mx-auto px-4 xl:px-16 lg:py-20 sm:py-16 py-8">
         <div className="flex flex-col gap-8 md:gap-12 items-center justify-center w-full">
           {/* Heading */}
