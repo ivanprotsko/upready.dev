@@ -19,8 +19,8 @@ export default function CTA() {
                             <p className="sm:text-base text-sm text-muted-foreground">
                                 Unlock powerful tools designed to streamline operations, boost productivity, and help your team scale faster. Join thousands of businesses already building smarter.
                             </p>
-                            <Button render={<a href="#" />} nativeButton={false} className="w-fit text-sm font-medium py-3.5 px-6 rounded-lg h-auto border-0 hover:cursor-pointer">
-                                Start Free Trial
+                            <Button asChild className="w-fit text-sm font-medium py-3.5 px-6 rounded-lg h-auto border-0 hover:cursor-pointer">
+                                <a href="#">Start Free Trial</a>
                             </Button>
                         </motion.div>
                     </div>
