@@ -18,8 +18,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "upready.dev — Production-Ready MVP in Weeks",
-  description: "We build your MVP from idea to launch in 2–4 weeks. Fixed price, no meetings, real code.",
+  metadataBase: new URL("https://upready.dev"),
+  title: {
+    default: "upready.dev — Production-Ready Business Tools on Your Server",
+    template: "%s | upready.dev",
+  },
+  description:
+    "Deploy self-hosted CRM, AI assistants, analytics, email marketing, and more. Managed setup, your server, your data. From $997.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://upready.dev",
+    siteName: "upready.dev",
+    title: "upready.dev — Production-Ready Business Tools on Your Server",
+    description:
+      "Deploy self-hosted CRM, AI assistants, analytics, email marketing, and more. Managed setup, your server, your data.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "upready.dev — Production-Ready Business Tools on Your Server",
+    description:
+      "Deploy self-hosted CRM, AI assistants, analytics, email marketing, and more. Managed setup, your server, your data.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
