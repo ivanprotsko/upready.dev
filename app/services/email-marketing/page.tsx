@@ -109,8 +109,7 @@ const comparisonRows = [
 const plans = [
   {
     name: "Starter",
-    description:
-      "Self-hosted email marketing for growing businesses.",
+    description: "Self-hosted email marketing for growing businesses.",
     setupPrice: 1497,
     monthlyPrice: 99,
     features: [
@@ -124,8 +123,7 @@ const plans = [
   },
   {
     name: "Professional",
-    description:
-      "Advanced email platform with automation and testing.",
+    description: "Advanced email platform with automation and testing.",
     setupPrice: 2497,
     monthlyPrice: 149,
     recommended: true,
