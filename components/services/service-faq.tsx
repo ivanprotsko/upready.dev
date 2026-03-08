@@ -1,12 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export type FaqItem = {
   question: string;
@@ -30,19 +25,12 @@ const ServiceFaq = ({ title = "FAQ", items }: ServiceFaqProps) => {
             transition={{ duration: 0.6 }}
             className="flex flex-col gap-8"
           >
-            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-center">
-              {title}
-            </h2>
-
-            <Accordion className="w-full">
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-center">{title}</h2>
+            <Accordion className="w-full flex flex-col gap-2">
               {items.map((item, index) => (
-                <AccordionItem key={index} value={`item-${index}`}>
-                  <AccordionTrigger className="text-left text-base font-medium">
-                    {item.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-base text-muted-foreground">
-                    {item.answer}
-                  </AccordionContent>
+                <AccordionItem key={index} value={"item-" + index}>
+                  <AccordionTrigger className="text-left text-base font-medium">{item.question}</AccordionTrigger>
+                  <AccordionContent className="text-base text-muted-foreground">{item.answer}</AccordionContent>
                 </AccordionItem>
               ))}
             </Accordion>
