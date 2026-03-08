@@ -1,40 +1,12 @@
 "use client";
 import Logo from "@/assets/logo/logo";
 import { Button } from "@/components/ui/button";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, } from "@/components/ui/navigation-menu";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, } from "@/components/ui/sheet";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger, } from "@/components/ui/collapsible";
 import { cn } from "@/lib/utils";
-import {
-  ArrowRight,
-  ArrowRightLeft,
-  Bot,
-  ChevronDown,
-  ClipboardList,
-  CloudUpload,
-  CodeXml,
-  RefreshCw,
-  Store,
-  TextAlignJustify,
-} from "lucide-react";
+import { ArrowRight, ArrowUpRight, Bot, BarChart3, BookOpen, Calendar, ChevronDown, FileText, Kanban, Mail, PenTool, ShieldCheck, ShoppingCart, TrendingUp, Users, TextAlignJustify, } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 
 export type NavigationItem = {
@@ -55,86 +27,108 @@ export type NavigationSection = {
 
 const navigationData: NavigationSection[] = [
   {
-    title: "Products",
-    subtitle: "Features",
-    layout: "list",
-    items: [
-      {
-        title: "AI",
-        description: "Genrate Insights",
-        icon: Bot,
-        href: "#",
-      },
-      {
-        title: "Developer Tools",
-        description: "Build with powerful AI",
-        icon: CodeXml,
-        showArrow: true,
-        href: "#",
-      },
-      {
-        title: "API Integration",
-        description: "Integrate AI tools into your app",
-        icon: ArrowRightLeft,
-        href: "#",
-      },
-      {
-        title: "Cloud Sync",
-        description: "Sync data across devices",
-        icon: CloudUpload,
-        href: "#",
-      },
-    ],
-  },
-  {
     title: "Services",
-    href: "#",
-  },
-  {
-    title: "Solution",
-    subtitle: "Use cases",
+    subtitle: "Self-hosted tools deployed on your server",
     layout: "grid",
     items: [
       {
-        title: "Marketplace",
-        description: "Find and buy AI tools",
-        icon: Store,
-        showArrow: true,
-        href: "#",
+        title: "AI Assistant",
+        description: "Your own ChatGPT trained on your data",
+        icon: Bot,
+        href: "/services/ai-assistant",
       },
       {
-        title: "Guides",
-        description: "Learn how to use AI tools",
-        icon: ClipboardList,
-        href: "#",
+        title: "CRM",
+        description: "Customer relationship management",
+        icon: Users,
+        href: "/services/crm",
       },
       {
-        title: "Backup",
-        description: "Keep your data backed up",
-        icon: RefreshCw,
-        href: "#",
+        title: "Dashboards",
+        description: "Business intelligence & analytics",
+        icon: BarChart3,
+        href: "/services/dashboards",
       },
       {
-        title: "API Integration",
-        description: "Integrate AI tools into your app",
-        icon: ArrowRightLeft,
-        href: "#",
+        title: "Booking",
+        description: "Scheduling & appointments",
+        icon: Calendar,
+        href: "/services/booking",
+      },
+      {
+        title: "E-Commerce",
+        description: "Headless online store",
+        icon: ShoppingCart,
+        href: "/services/ecommerce",
+      },
+      {
+        title: "Email Marketing",
+        description: "Newsletters & campaigns",
+        icon: Mail,
+        href: "/services/email-marketing",
+      },
+      {
+        title: "Client Portal",
+        description: "Branded client workspace",
+        icon: ShieldCheck,
+        href: "/services/client-portal",
+      },
+      {
+        title: "Knowledge Base",
+        description: "Internal docs & wiki",
+        icon: BookOpen,
+        href: "/services/knowledge-base",
+      },
+      {
+        title: "Analytics",
+        description: "Privacy-first web analytics",
+        icon: TrendingUp,
+        href: "/services/analytics",
+      },
+      {
+        title: "E-Signature",
+        description: "Document signing platform",
+        icon: PenTool,
+        href: "/services/e-signature",
+      },
+      {
+        title: "Forms",
+        description: "Surveys & data collection",
+        icon: FileText,
+        href: "/services/forms",
+      },
+      {
+        title: "Project Management",
+        description: "Tasks, sprints & roadmaps",
+        icon: Kanban,
+        href: "/services/project-management",
       },
     ],
   },
   {
-    title: "Support",
-    href: "#",
+    title: "How It Works",
+    href: "/#how-it-works",
   },
   {
-    title: "Career",
-    href: "#",
+    title: "Pricing",
+    href: "/#pricing",
+  },
+  {
+    title: "FAQ",
+    href: "/#faq",
   },
 ];
 
 const CollaborateButton = ({ className }: { className?: string }) => (
-  <Button className={`${className} h-auto px-5 py-2.5 rounded-lg`}>
-    Contact us
+  <Button asChild className={cn("relative text-sm font-medium rounded-full h-10 p-1 ps-4 pe-12 group transition-all duration-500 hover:ps-12 hover:pe-4 w-fit overflow-hidden", className)}>
+    <a href="https://calendly.com/val-upready/30min" target="_blank" rel="noopener noreferrer" className="flex items-center">
+      <span className="relative z-10 transition-all duration-500">
+        Book a Call
+      </span>
+      <span className="absolute right-1 w-8 h-8 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-36px)] group-hover:rotate-45">
+        <ArrowUpRight size={16} />
+      </span>
+    </a>
   </Button>
 );
 
@@ -161,7 +155,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <header className="bg-background">
+      <header className="sticky top-0 z-50 bg-background">
         <div className="max-w-7xl mx-auto w-full px-4 py-4 sm:px-6">
           <nav
             className={cn(
@@ -171,7 +165,7 @@ const Navbar = () => {
                 : "bg-transparent border-transparent",
             )}
           >
-            <a href="#">
+            <a href="/">
               <Logo />
             </a>
             <div>
@@ -181,13 +175,13 @@ const Navbar = () => {
                     <NavigationMenuItem key={section.title}>
                       {section.items ? (
                         <>
-                          <NavigationMenuTrigger className="py-1.5 text-base font-medium rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted hover:shadow-xs transition tracking-normal data-[state=open]:bg-muted data-[state=open]:text-foreground border-none shadow-none focus:bg-muted h-auto bg-transparent">
+                          <NavigationMenuTrigger className="py-1.5 text-base font-medium rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted hover:shadow-xs transition tracking-normal data-[state=open]:bg-muted data-[state=open]:text-foreground border-none shadow-none focus:bg-muted h-auto bg-transparent cursor-pointer">
                             {section.title}
                           </NavigationMenuTrigger>
                           <NavigationMenuContent
                             className={cn(
                               "p-2 pt-4 rounded-xl",
-                              section.layout === "grid" ? "w-md" : "w-fit",
+                              section.layout === "grid" ? "w-[640px]" : "w-fit",
                             )}
                           >
                             {section.subtitle && (
@@ -246,15 +240,17 @@ const Navbar = () => {
 
             <div className="lg:hidden">
               <Sheet open={isOpen} onOpenChange={setIsOpen}>
-                <SheetTrigger>
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="rounded-full border border-border p-2 outline-none flex items-center justify-center cursor-pointer hover:bg-muted transition-colors h-10 w-10"
-                  >
-                    <TextAlignJustify size={20} />
-                    <span className="sr-only">Toggle Menu</span>
-                  </Button>
+                <SheetTrigger
+                  render={
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      className="rounded-full border border-border p-2 outline-none flex items-center justify-center cursor-pointer hover:bg-muted transition-colors h-10 w-10"
+                    />
+                  }
+                >
+                  <TextAlignJustify size={20} />
+                  <span className="sr-only">Toggle Menu</span>
                 </SheetTrigger>
                 <SheetContent side="right" className="w-xs p-0">
                   <ScrollArea className="h-full px-6 py-6">

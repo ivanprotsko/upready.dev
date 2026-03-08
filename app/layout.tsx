@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import Navbar from "@/components/shadcn-space/blocks/navbar-02/navbar";
 import Script from "next/script";
 import "./globals.css";
 
@@ -41,6 +42,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>
