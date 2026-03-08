@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  turbopack: {
+    root: "/Users/ivanprotsko/upready/projects/upready.dev",
+  },
   typescript: {
     // Pre-existing TS errors in shadcnspace demo/template blocks (chart-04, animated-text-05, etc.)
     // are not caused by production code and do not affect the pages that are built and deployed.
