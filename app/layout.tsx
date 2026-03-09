@@ -46,6 +46,47 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "upready.dev",
+  url: "https://upready.dev",
+  logo: "https://upready.dev/logo.png",
+  description:
+    "AI-powered product studio deploying self-hosted open-source tools for businesses. Managed setup, your server, your data. From $997.",
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer support",
+    email: "hello@upready.dev",
+    availableLanguage: ["English"],
+  },
+  areaServed: "Worldwide",
+  knowsAbout: [
+    "Self-hosted software deployment",
+    "Open-source business tools",
+    "CRM setup and configuration",
+    "Email marketing infrastructure",
+    "E-commerce platform deployment",
+    "AI assistant deployment",
+    "Project management tools",
+  ],
+};
+
+const webSiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "upready.dev",
+  url: "https://upready.dev",
+  description:
+    "Deploy self-hosted CRM, AI assistants, analytics, email marketing, and more. Managed setup, your server, your data.",
+  publisher: { "@type": "Organization", name: "upready.dev" },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://upready.dev/search?q={search_term_string}",
+    "query-input": "required name=search_term_string",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -54,6 +95,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable} suppressHydrationWarning>
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
+        />
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0TY2WLM3Q" strategy="afterInteractive" />
         <Script id="gtag-init" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
