@@ -593,31 +593,13 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Testimonial placeholders */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {[
-              {
-                quote:
-                  "Replaced HubSpot — saves $741/month. Setup took 10 days. Zero downtime on migration.",
-                attr: "Alex Chen, VP Operations · 35-person fintech",
-              },
-              {
-                quote:
-                  "AI-built app fixed in 4 days. Launched to 200+ users the next week. Fixed price, no surprises.",
-                attr: "Founder · SaaS app built on Lovable",
-              },
-            ].map((testimonial, i) => (
-              <Card key={i} className="border-border/50 bg-background">
-                <CardContent className="p-8">
-                  <p className="text-base italic text-foreground/80 mb-4">
-                    &ldquo;{testimonial.quote}&rdquo;
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    — {testimonial.attr}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+          {/* Trust signals */}
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-sm text-muted-foreground">
+              All tools are open-source, actively maintained, and backed by
+              millions in VC funding. We deploy, configure, and maintain them
+              on your own server — so your data never leaves your control.
+            </p>
           </div>
         </div>
       </section>

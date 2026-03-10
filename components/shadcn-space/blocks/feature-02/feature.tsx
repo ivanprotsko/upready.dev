@@ -112,7 +112,7 @@ const Feature = ({
                 </p>
               </div>
               <Button asChild className="rounded-full px-5 py-2.5 shadow-xs h-full">
-                <a href="https://calendly.com/val-upready/30min" target="_blank" rel="noopener noreferrer">{ctaText}</a>
+                <a href="/contacts" target="_blank" rel="noopener noreferrer">{ctaText}</a>
               </Button>
             </motion.div>
           </div>

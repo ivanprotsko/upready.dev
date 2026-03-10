@@ -254,14 +254,14 @@ const footerSections = [
   {
     title: "Контакты",
     links: [
-      { title: "Book a Call", href: "https://calendly.com/val-upready/30min" },
+      { title: "Book a Call", href: "/contacts" },
     ],
   },
 ];
 
 const footerContactLines = [
   { text: "Solo AI-инженер продукта" },
-  { text: "Book a Call", href: "https://calendly.com/val-upready/30min" },
+  { text: "Book a Call", href: "/contacts" },
 ];
 
 export default function HomeRu() {

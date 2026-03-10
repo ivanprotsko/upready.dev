@@ -204,7 +204,7 @@ const Pricing = ({
                         className="w-full h-12"
                         variant={isFeatured ? "default" : "outline"}
                       >
-                        <a href="https://calendly.com/val-upready/30min" target="_blank" rel="noopener noreferrer">
+                        <a href="/contacts" target="_blank" rel="noopener noreferrer">
                           {ctaText}
                         </a>
                       </Button>

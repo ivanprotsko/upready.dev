@@ -135,7 +135,7 @@ const Pricing = ({
                           </span>
                         </p>
                         <Button asChild className="relative bg-white hover:bg-white hover:text-black dark:hover:text-black text-black text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
-                          <a href="https://calendly.com/val-upready/30min" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                          <a href="/contacts" target="_blank" rel="noopener noreferrer" className="flex items-center">
                             <span className="relative z-10 transition-all duration-500">
                               {ctaText}
                             </span>

@@ -87,7 +87,7 @@ function HeroSection({
                 className="flex items-center justify-center"
               >
                 <Button asChild className="relative text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
-                  <a href="https://calendly.com/val-upready/30min" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  <a href="/contacts" target="_blank" rel="noopener noreferrer" className="flex items-center">
                     <span className="relative z-10 transition-all duration-500">
                       {buttonText}
                     </span>
