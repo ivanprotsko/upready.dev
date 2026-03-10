@@ -15,7 +15,7 @@ const CTA = ({
   className,
   heading = "Describe your idea — I'll estimate it in 24 hours",
   description = "On the call, describe your idea — and we'll estimate the cost and timeline within a day.",
-  buttonText = "Book a Call",
+  buttonText = "Get Started",
 }: CTAProps) => {
   const ref = useRef(null);
 
@@ -46,7 +46,7 @@ const CTA = ({
                 </p>
               </div>
               <Button asChild className="relative text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
-                <a href="https://calendly.com/val-upready/30min" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                <a href="/contacts" className="flex items-center">
                   <span className="relative z-10 transition-all duration-500">
                     {buttonText}
                   </span>

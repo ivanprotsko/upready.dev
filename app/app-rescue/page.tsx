@@ -130,7 +130,7 @@ const faqItems = [
   {
     question: "What if the app needs to be rebuilt from scratch?",
     answer:
-      "The written assessment (Audit) tells you exactly that. Most apps don't need a rebuild — they need 3–5 targeted fixes. If your app genuinely needs a rebuild, we'll tell you that in the diagnosis, not after billing you for rescue work. And if you want to build from scratch, we do that too — see our MVP Build service at /build.",
+      "The written assessment (Audit) tells you exactly that. Most apps don't need a rebuild — they need 3–5 targeted fixes. If your app genuinely needs a rebuild, we'll tell you that in the diagnosis, not after billing you for rescue work. And if you want to build from scratch, we do that too — see our MVP Build service.",
   },
   {
     question: "What does \"you own the code\" actually mean?",
@@ -551,14 +551,14 @@ export default function RescuePage() {
           <p className="text-sm text-muted-foreground">
             You might also need:{" "}
             <Link
-              href="/audit"
+              href="/tech-audit"
               className="text-foreground hover:text-primary transition-colors"
             >
               Tech Audit →
             </Link>{" "}
             ·{" "}
             <Link
-              href="/build"
+              href="/mvp-build"
               className="text-foreground hover:text-primary transition-colors"
             >
               MVP Build →

@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Project Management for Dev Teams — Self-Hosted Plane",
+  title: "Self-Hosted Project Management — Plane, Open Source Jira Alternative",
   description:
-    "Jira alternative with issues, sprints, and docs. Simple, fast, self-hosted. Import from Jira, Asana, Linear. Setup from $2,497.",
+    "Jira Cloud charges per user. Plane on your server: unlimited members, sprints, roadmaps, no per-seat pricing. Your data, your control. Setup from $1,497.",
   openGraph: {
-    title: "Self-Hosted Project Management — Open Source Jira Alternative",
+    title: "Self-Hosted Project Management — Plane vs Jira Alternative",
     description:
-      "Project management built on Plane. Kanban, cycles, modules, wiki, time tracking. Used by 50K+ teams.",
+      "Plane deployed on your server: issues, sprints, roadmaps, cycles — unlimited members at a flat fee. Migrate from Jira or Linear.",
     url: "https://upready.dev/services/project-management",
+    images: [{ url: "/api/og?title=Self-Hosted+Project+Management&description=Jira+alternative.+Unlimited+members,+flat+fee.&service=project-management", width: 1200, height: 630, alt: "Self-Hosted Project Management — Plane" }],
   },
-  alternates: {
-    canonical: "https://upready.dev/services/project-management",
+  twitter: {
+    card: "summary_large_image",
+    title: "Replace Jira — Self-Hosted Project Management, Unlimited Members",
+    description: "Plane on your server: issues, sprints, roadmaps. No Jira per-user fees. Setup from $1,497.",
+    images: ["/api/og?title=Self-Hosted+Project+Management&description=Jira+alternative.&service=project-management"],
   },
+  alternates: { canonical: "https://upready.dev/services/project-management" },
 };
 
 const serviceSchema = {

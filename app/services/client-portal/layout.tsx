@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Secure Client Portal — Built on Directus",
+  title: "Self-Hosted Client Portal — Branded, Secure, Unlimited Clients",
   description:
-    "Branded document sharing, project status, and file exchange. For agencies, law firms, and consulting. Setup from $2,997.",
+    "Give clients their own branded portal for files, projects, and communication. Deployed on your server — your brand, your domain, no platform fees. Setup from $2,497.",
   openGraph: {
-    title: "Client Portal for Professional Services — Self-Hosted",
+    title: "Self-Hosted Client Portal — White-Label, Unlimited Clients",
     description:
-      "Secure portal built on Directus. Granular permissions, REST+GraphQL API, custom dashboards. Used by Bose, Copa Airlines.",
+      "Your own client portal on your server. File sharing, project updates, messaging — all under your brand with your domain.",
     url: "https://upready.dev/services/client-portal",
+    images: [{ url: "/api/og?title=Self-Hosted+Client+Portal&description=White-label,+unlimited+clients,+your+domain.&service=client-portal", width: 1200, height: 630, alt: "Self-Hosted Client Portal" }],
   },
-  alternates: {
-    canonical: "https://upready.dev/services/client-portal",
+  twitter: {
+    card: "summary_large_image",
+    title: "Self-Hosted Client Portal — Branded, Unlimited Clients",
+    description: "Deploy your own client portal. Files, projects, messaging — under your brand, on your server.",
+    images: ["/api/og?title=Self-Hosted+Client+Portal&description=White-label,+unlimited+clients.&service=client-portal"],
   },
+  alternates: { canonical: "https://upready.dev/services/client-portal" },
 };
 
 const serviceSchema = {

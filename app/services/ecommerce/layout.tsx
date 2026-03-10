@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Headless E-Commerce — Built on Medusa",
+  title: "Open Source Shopify Alternative — Medusa E-Commerce, Zero Transaction Fees",
   description:
-    "Open-source Shopify alternative. Zero transaction fees, full customization, multi-region support. Setup from $4,997.",
+    "Stop paying Shopify's 2% transaction fee. Medusa deployed on your server: 0% platform fees, full customization, Shopify migration included. Setup from $4,997.",
   openGraph: {
-    title: "Self-Hosted E-Commerce — Open Source Shopify Alternative",
+    title: "Self-Hosted E-Commerce — Medusa vs Shopify, Zero Fees",
     description:
-      "Headless commerce built on Medusa. 0% GMV fees, multi-currency, pluggable architecture. Own your store.",
+      "Shopify charges 2% transaction fees. Medusa doesn't. We deploy your own e-commerce platform with full product, order, and customer data migration from Shopify.",
     url: "https://upready.dev/services/ecommerce",
+    images: [{ url: "/api/og?title=Open+Source+Shopify+Alternative&description=Zero+transaction+fees.+Medusa+on+your+server.&service=ecommerce", width: 1200, height: 630, alt: "Open Source Shopify Alternative — Medusa E-Commerce" }],
   },
-  alternates: {
-    canonical: "https://upready.dev/services/ecommerce",
+  twitter: {
+    card: "summary_large_image",
+    title: "Replace Shopify — Zero Transaction Fees, Self-Hosted Medusa",
+    description: "We deploy Medusa on your server. 0% platform fees, Shopify migration included. Setup from $4,997.",
+    images: ["/api/og?title=Open+Source+Shopify+Alternative&description=Zero+transaction+fees.+Medusa.&service=ecommerce"],
   },
+  alternates: { canonical: "https://upready.dev/services/ecommerce" },
 };
 
 const serviceSchema = {

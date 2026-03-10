@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy-First Web Analytics — Self-Hosted Umami",
+  title: "GDPR-Compliant Analytics — Self-Hosted Umami, No Cookie Banner",
   description:
-    "GDPR-compliant, cookie-free analytics. No consent banners needed. Replace Google Analytics. Setup from $997.",
+    "Cookieless analytics on your server. No consent popups, no Google data sharing. Real-time dashboard, funnels, custom events. Setup from $997.",
   openGraph: {
-    title: "Self-Hosted Analytics — No Cookies, No Consent Banners",
+    title: "Self-Hosted GDPR Analytics — No Cookie Banner Required",
     description:
-      "Privacy-first analytics built on Umami. Real-time dashboard, funnels, user journeys. GDPR compliant out of the box.",
+      "Umami deployed on your server: privacy-first analytics with no cookies, no consent required under GDPR. Used by AMD, ESPN, Siemens. 35K+ GitHub stars.",
     url: "https://upready.dev/services/analytics",
+    images: [{ url: "/api/og?title=GDPR-Compliant+Analytics&description=No+cookie+banner.+Self-hosted+Umami.&service=analytics", width: 1200, height: 630, alt: "GDPR-Compliant Self-Hosted Analytics — Umami" }],
   },
-  alternates: {
-    canonical: "https://upready.dev/services/analytics",
+  twitter: {
+    card: "summary_large_image",
+    title: "GDPR Analytics — No Cookies, No Consent Banner, Self-Hosted",
+    description: "Deploy Umami on your server. Cookieless tracking, GDPR compliant, no cookie banner needed. Setup from $997.",
+    images: ["/api/og?title=GDPR-Compliant+Analytics&description=No+cookie+banner.+Umami.&service=analytics"],
   },
+  alternates: { canonical: "https://upready.dev/services/analytics" },
 };
 
 const serviceSchema = {

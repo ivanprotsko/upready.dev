@@ -1,14 +1,21 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Self-Hosted CRM for Growing Teams — Built on Twenty",
+  title: "Open Source CRM — Self-Hosted Twenty CRM Setup & Managed Hosting",
   description:
-    "Open-source CRM with unlimited contacts, custom fields, REST+GraphQL API. Replace HubSpot at 90% less cost. Setup from $3,497.",
+    "Replace HubSpot at 90% less cost. Twenty CRM deployed on your server — unlimited contacts, no per-user fees, full data ownership. Setup from $3,497.",
   openGraph: {
-    title: "Self-Hosted CRM — Open Source Alternative to HubSpot",
+    title: "Self-Hosted Open Source CRM — Twenty CRM by upready.dev",
     description:
-      "Modern CRM built on Twenty. Custom objects, workflow automation, email sync. Your data stays on your server.",
+      "Twenty CRM: Y Combinator-backed, 40K+ GitHub stars. We deploy and manage it on your server. Unlimited contacts, custom objects, email sync. No per-user fees.",
     url: "https://upready.dev/services/crm",
+    images: [{ url: "/api/og?title=Open+Source+CRM+Setup&description=Replace+HubSpot+at+90%25+less+cost.+Unlimited+contacts,+no+per-user+fees.&service=crm", width: 1200, height: 630, alt: "Self-Hosted CRM — Twenty CRM Managed Deployment" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Open Source CRM — Self-Hosted, Unlimited Contacts, No Per-User Fees",
+    description: "We deploy Twenty CRM on your server. Replace HubSpot. Save $4,892+ in year one.",
+    images: ["/api/og?title=Open+Source+CRM+Setup&description=Replace+HubSpot+at+90%25+less+cost.&service=crm"],
   },
   alternates: { canonical: "https://upready.dev/services/crm" },
 };
@@ -117,6 +124,22 @@ const faqSchema = {
       "@type": "Question",
       name: "What integrations are available?",
       acceptedAnswer: { "@type": "Answer", text: "Native Gmail and Outlook email sync, Zapier for no-code automations, Chrome extension for LinkedIn capture, webhooks for event-driven flows, and full REST + GraphQL APIs for custom integrations." },
+    },
+    {
+      "@type": "Question",
+      name: "Is Twenty CRM the best self-hosted CRM?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Twenty CRM is Y Combinator-backed (S23), has $5.5M in funding from the HubSpot co-founder, and is the fastest-growing open-source CRM with 40K+ GitHub stars. For businesses wanting a self-hosted alternative to HubSpot or Salesforce with full data control, it's the leading choice.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What does managed self-hosted CRM setup cost?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "upready.dev charges a one-time setup fee ($3,497–$8,997 depending on team size) plus monthly hosting ($199–$499/month). Compare this to HubSpot at $890/month: you break even in 5–11 months and save $10,000–$30,000 over 3 years.",
+      },
     },
   ],
 };

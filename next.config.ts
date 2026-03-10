@@ -4,6 +4,12 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: "/Users/ivanprotsko/upready/projects/upready.dev",
   },
+  async redirects() {
+    return [
+      { source: "/mvp", destination: "/mvp-build", permanent: true },
+      { source: "/build", destination: "/mvp-build", permanent: true },
+    ];
+  },
   typescript: {
     // Pre-existing TS errors in shadcnspace demo/template blocks (chart-04, animated-text-05, etc.)
     // are not caused by production code and do not affect the pages that are built and deployed.

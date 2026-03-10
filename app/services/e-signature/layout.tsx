@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Unlimited E-Signatures — Self-Hosted Documenso",
+  title: "Documenso vs DocuSign — Unlimited E-Signatures, No Per-Envelope Fees",
   description:
-    "No per-envelope limits. Unlimited document signing for your team. Replace DocuSign at 90% less cost. Setup from $1,997.",
+    "DocuSign costs $25–$40/envelope. Documenso deployed on your server: unlimited signatures for a flat fee. Legally binding, ESIGN/eIDAS compliant. Setup from $1,997.",
   openGraph: {
-    title: "Self-Hosted E-Signature — Open Source DocuSign Alternative",
+    title: "Self-Hosted E-Signature — Documenso vs DocuSign Alternative",
     description:
-      "Document signing built on Documenso. Unlimited envelopes, API access included, custom branding. SOC 2 compliant.",
+      "Replace DocuSign with Documenso: unlimited envelopes, no per-signature pricing, API included at no extra cost. Your data, your server.",
     url: "https://upready.dev/services/e-signature",
+    images: [{ url: "/api/og?title=Documenso+vs+DocuSign&description=Unlimited+e-signatures,+no+per-envelope+fees.&service=e-signature", width: 1200, height: 630, alt: "Documenso — Open Source DocuSign Alternative" }],
   },
-  alternates: {
-    canonical: "https://upready.dev/services/e-signature",
+  twitter: {
+    card: "summary_large_image",
+    title: "Replace DocuSign With Unlimited E-Signatures — Documenso Setup",
+    description: "DocuSign charges per envelope. Documenso doesn't. We deploy it on your server for a flat fee.",
+    images: ["/api/og?title=Documenso+vs+DocuSign&description=Unlimited+e-signatures,+flat+fee.&service=e-signature"],
   },
+  alternates: { canonical: "https://upready.dev/services/e-signature" },
 };
 
 const serviceSchema = {
@@ -115,6 +120,22 @@ const faqSchema = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "5-7 business days from kickoff to a working platform. Includes server deployment, custom branding, domain setup, template creation, and team onboarding.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Documenso vs DocuSign — which is better for small business?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "DocuSign charges $25–$40 per envelope on business plans. Documenso deployed on your own server has no per-envelope fees — you pay a flat monthly cost regardless of how many documents you sign. For businesses sending 20+ documents per month, self-hosted Documenso pays back within 6 months.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How secure is self-hosted e-signature vs DocuSign?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Self-hosted Documenso is more secure for sensitive industries: your documents never transit third-party servers. DocuSign stores your documents on their infrastructure. Documenso uses PAdES digital signatures with full cryptographic audit trail — the same standard used in EU eIDAS-compliant workflows.",
       },
     },
   ],

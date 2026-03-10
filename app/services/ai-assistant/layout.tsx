@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Assistant for Business — Private, Self-Hosted, Built on AnythingLLM",
+  title: "HIPAA-Compliant AI Chatbot — Private AI Assistant, Self-Hosted",
   description:
-    "Deploy a private AI assistant that answers from your documents. HIPAA-ready, 30+ LLM providers, embeddable chat widget. Setup from $1,997. Your server, your data.",
+    "AI chatbot that answers from your documents — patient records, contracts, internal policies. Data never leaves your server. 30+ LLM providers. Setup from $1,997.",
   openGraph: {
-    title: "AI Assistant for Business — Self-Hosted on Your Server",
+    title: "Private AI Assistant for Business — HIPAA-Ready, Self-Hosted",
     description:
-      "Private AI chatbot built on AnythingLLM. Chat with your documents, automate support, keep data on your infrastructure.",
+      "AnythingLLM deployed on your infrastructure. Chat with your documents, automate support — without sending data to OpenAI or any third party.",
     url: "https://upready.dev/services/ai-assistant",
+    images: [{ url: "/api/og?title=HIPAA-Compliant+AI+Chatbot&description=Private+AI+assistant,+data+never+leaves+your+server.&service=ai-assistant", width: 1200, height: 630, alt: "HIPAA-Compliant Private AI Assistant" }],
   },
-  alternates: {
-    canonical: "https://upready.dev/services/ai-assistant",
+  twitter: {
+    card: "summary_large_image",
+    title: "HIPAA-Compliant AI Chatbot — Private, Self-Hosted, Your Data",
+    description: "Deploy an AI assistant that never sends your data to third parties. HIPAA-ready. Setup from $1,997.",
+    images: ["/api/og?title=HIPAA-Compliant+AI+Chatbot&description=Private+AI+assistant,+self-hosted.&service=ai-assistant"],
   },
+  alternates: { canonical: "https://upready.dev/services/ai-assistant" },
 };
 
 const serviceSchema = {
@@ -123,6 +128,22 @@ const faqSchema = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "You own your data and your server. Since the software is open-source (MIT license), you can continue running it independently. There is no vendor lock-in.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What makes this a HIPAA-compliant AI chatbot?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "HIPAA compliance requires that patient data never leaves your controlled infrastructure. We configure AnythingLLM with a local LLM (via Ollama) so no data is sent to OpenAI, Anthropic, or any external service. The entire AI stack — model, inference, and data — runs on your server. We configure encryption at rest, access controls, and audit logging.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I build a HIPAA-compliant AI chatbot without technical staff?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We handle the entire setup: server provisioning, LLM configuration, HIPAA-aligned access controls, and team training. Your staff uses a browser-based interface — no technical knowledge required to add documents, create workspaces, or chat with the assistant.",
       },
     },
   ],

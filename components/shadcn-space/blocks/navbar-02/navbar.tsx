@@ -1,12 +1,13 @@
 "use client";
 import Logo from "@/assets/logo/logo";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, } from "@/components/ui/sheet";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger, } from "@/components/ui/collapsible";
 import { cn } from "@/lib/utils";
-import { ArrowRight, ArrowUpRight, Bot, BarChart3, BookOpen, Calendar, ChevronDown, FileText, Kanban, Mail, PenTool, ShieldCheck, ShoppingCart, TrendingUp, Users, TextAlignJustify, } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Bot, BarChart3, BookOpen, Calendar, ChevronDown, ClipboardCheck, FileText, Kanban, Mail, PenTool, Rocket, ShieldCheck, ShoppingCart, TrendingUp, Users, Wrench, TextAlignJustify, } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 
 export type NavigationItem = {
@@ -28,7 +29,32 @@ export type NavigationSection = {
 const navigationData: NavigationSection[] = [
   {
     title: "Services",
-    subtitle: "Self-hosted tools deployed on your server",
+    subtitle: "What we do for you",
+    layout: "list",
+    items: [
+      {
+        title: "MVP Build",
+        description: "From idea to working product in 2-4 weeks",
+        icon: Rocket,
+        href: "/mvp-build",
+      },
+      {
+        title: "App Rescue",
+        description: "Fix your broken AI-generated app in days",
+        icon: Wrench,
+        href: "/app-rescue",
+      },
+      {
+        title: "Tech Audit",
+        description: "Know what's wrong before spending a dollar fixing it",
+        icon: ClipboardCheck,
+        href: "/tech-audit",
+      },
+    ],
+  },
+  {
+    title: "Products",
+    subtitle: "Self-hosted tools we deploy on your server",
     layout: "grid",
     items: [
       {
@@ -106,10 +132,6 @@ const navigationData: NavigationSection[] = [
     ],
   },
   {
-    title: "How It Works",
-    href: "/#how-it-works",
-  },
-  {
     title: "Pricing",
     href: "/#pricing",
   },
@@ -121,14 +143,14 @@ const navigationData: NavigationSection[] = [
 
 const CollaborateButton = ({ className }: { className?: string }) => (
   <Button asChild className={cn("relative text-sm font-medium rounded-full h-10 p-1 ps-4 pe-12 group transition-all duration-500 hover:ps-12 hover:pe-4 w-fit overflow-hidden", className)}>
-    <a href="https://calendly.com/val-upready/30min" target="_blank" rel="noopener noreferrer" className="flex items-center">
+    <Link href="/contacts" className="flex items-center">
       <span className="relative z-10 transition-all duration-500">
-        Book a Call
+        Get Started
       </span>
       <span className="absolute right-1 w-8 h-8 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-36px)] group-hover:rotate-45">
         <ArrowUpRight size={16} />
       </span>
-    </a>
+    </Link>
   </Button>
 );
 
@@ -165,9 +187,9 @@ const Navbar = () => {
                 : "bg-transparent border-transparent",
             )}
           >
-            <a href="/">
+            <Link href="/">
               <Logo />
-            </a>
+            </Link>
             <div>
               <NavigationMenu className="max-lg:hidden p-0.5 rounded-full">
                 <NavigationMenuList className="flex gap-0.5">
@@ -201,7 +223,7 @@ const Navbar = () => {
                               {section.items.map((item) => (
                                 <NavigationMenuLink
                                   key={item.title}
-                                  href={item.href || "#"}
+                                  render={<Link href={item.href || "#"} />}
                                   className="flex items-center gap-3 rounded-lg hover:bg-muted/80 transition-all group mb-0 p-2"
                                 >
                                   <div className="flex items-center justify-center p-3 rounded-lg bg-muted group-hover:bg-background transition-colors min-w-10 h-10">
@@ -225,7 +247,7 @@ const Navbar = () => {
                         </>
                       ) : (
                         <NavigationMenuLink
-                          href={section.href}
+                          render={<Link href={section.href || "#"} />}
                           className="px-2 lg:px-4 py-1.5 text-base font-medium rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted hover:shadow-xs transition tracking-normal"
                         >
                           {section.title}
@@ -270,7 +292,7 @@ const Navbar = () => {
                             <CollapsibleContent>
                               <div className="flex flex-col">
                                 {section.items.map((item) => (
-                                  <a
+                                  <Link
                                     key={item.title}
                                     href={item.href || "#"}
                                     className="flex items-center gap-3 p-2 rounded-lg hover:bg-muted transition-colors group"
@@ -287,20 +309,20 @@ const Navbar = () => {
                                         {item.description}
                                       </span>
                                     </div>
-                                  </a>
+                                  </Link>
                                 ))}
                               </div>
                             </CollapsibleContent>
                           </Collapsible>
                         ) : (
-                          <a
+                          <Link
                             key={section.title}
-                            href={section.href}
+                            href={section.href || "#"}
                             className="text-base font-medium text-muted-foreground hover:text-foreground py-2 transition-colors"
                             onClick={() => setIsOpen(false)}
                           >
                             {section.title}
-                          </a>
+                          </Link>
                         ),
                       )}
                     </div>

@@ -20,25 +20,36 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://upready.dev"),
   title: {
-    default: "upready.dev — Production-Ready Business Tools on Your Server",
+    default: "upready.dev — Fix Your App. Cut Your SaaS Bill. Fixed Prices.",
     template: "%s | upready.dev",
   },
   description:
-    "Deploy self-hosted CRM, AI assistants, analytics, email marketing, and more. Managed setup, your server, your data. From $997.",
+    "We rescue AI-built apps, build MVPs, and replace expensive SaaS with managed open-source alternatives. Senior developers. Fixed prices. You own everything.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://upready.dev",
     siteName: "upready.dev",
-    title: "upready.dev — Production-Ready Business Tools on Your Server",
+    title: "Fix Your App. Cut Your SaaS Bill. Fixed Prices. — upready.dev",
     description:
-      "Deploy self-hosted CRM, AI assistants, analytics, email marketing, and more. Managed setup, your server, your data.",
+      "We rescue broken AI-built apps and replace expensive SaaS with open-source alternatives you control. Fixed prices, 48-hour turnaround, full ownership.",
+    images: [
+      {
+        url: "/api/og?title=Fix+Your+App.+Cut+Your+SaaS+Bill.&description=Senior+developers.+Fixed+prices.+You+own+everything.",
+        width: 1200,
+        height: 630,
+        alt: "upready.dev — Fix Your App. Cut Your SaaS Bill.",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "upready.dev — Production-Ready Business Tools on Your Server",
+    title: "Fix Your App. Cut Your SaaS Bill. — upready.dev",
     description:
-      "Deploy self-hosted CRM, AI assistants, analytics, email marketing, and more. Managed setup, your server, your data.",
+      "We rescue AI-built apps and replace expensive SaaS with open-source alternatives. Fixed prices, fast turnaround, full ownership.",
+    images: [
+      "/api/og?title=Fix+Your+App.+Cut+Your+SaaS+Bill.&description=Senior+developers.+Fixed+prices.+You+own+everything.",
+    ],
   },
   robots: {
     index: true,
@@ -53,22 +64,23 @@ const organizationSchema = {
   url: "https://upready.dev",
   logo: "https://upready.dev/logo.png",
   description:
-    "AI-powered product studio deploying self-hosted open-source tools for businesses. Managed setup, your server, your data. From $997.",
+    "Deployment agency that rescues AI-built apps, builds MVPs from scratch, and deploys managed open-source alternatives to HubSpot, DocuSign, Mailchimp, and Shopify — at transparent fixed prices.",
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer support",
     email: "hello@upready.dev",
     availableLanguage: ["English"],
   },
-  areaServed: "Worldwide",
+  areaServed: ["US", "GB", "EU"],
   knowsAbout: [
-    "Self-hosted software deployment",
-    "Open-source business tools",
-    "CRM setup and configuration",
-    "Email marketing infrastructure",
-    "E-commerce platform deployment",
-    "AI assistant deployment",
-    "Project management tools",
+    "AI app rescue and repair",
+    "MVP development",
+    "Managed open-source software deployment",
+    "Self-hosted CRM setup",
+    "Self-hosted email marketing",
+    "Open-source e-signature platforms",
+    "HIPAA-compliant AI assistants",
+    "Privacy-first web analytics",
   ],
 };
 
@@ -78,13 +90,8 @@ const webSiteSchema = {
   name: "upready.dev",
   url: "https://upready.dev",
   description:
-    "Deploy self-hosted CRM, AI assistants, analytics, email marketing, and more. Managed setup, your server, your data.",
+    "We rescue AI-built apps, build MVPs, and replace expensive SaaS with managed open-source alternatives. Senior developers. Fixed prices. You own everything.",
   publisher: { "@type": "Organization", name: "upready.dev" },
-  potentialAction: {
-    "@type": "SearchAction",
-    target: "https://upready.dev/search?q={search_term_string}",
-    "query-input": "required name=search_term_string",
-  },
 };
 
 export default function RootLayout({

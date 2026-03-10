@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Company Wiki & Knowledge Base — Built on BookStack",
+  title: "Self-Hosted Knowledge Base — BookStack, Confluence Alternative",
   description:
-    "Internal documentation, SOPs, and onboarding materials. Replace Confluence at a fraction of the cost. Setup from $1,497.",
+    "Confluence Cloud costs $10/user/month. BookStack on your server: unlimited users, flat fee, full data control. Migrate from Confluence. Setup from $997.",
   openGraph: {
-    title: "Self-Hosted Knowledge Base — Open Source Confluence Alternative",
+    title: "Self-Hosted Knowledge Base — Confluence Alternative, No Per-User Cost",
     description:
-      "Documentation platform built on BookStack. WYSIWYG editor, full-text search, role-based access. Your server, your data.",
+      "BookStack deployed on your server. Organize team documentation, wiki, and SOPs — unlimited users, no Atlassian pricing.",
     url: "https://upready.dev/services/knowledge-base",
+    images: [{ url: "/api/og?title=Self-Hosted+Knowledge+Base&description=Confluence+alternative.+Unlimited+users,+flat+fee.&service=knowledge-base", width: 1200, height: 630, alt: "Self-Hosted Knowledge Base — BookStack" }],
   },
-  alternates: {
-    canonical: "https://upready.dev/services/knowledge-base",
+  twitter: {
+    card: "summary_large_image",
+    title: "Replace Confluence — Self-Hosted Knowledge Base, Unlimited Users",
+    description: "BookStack on your server. Unlimited users, flat fee. Leave Atlassian's per-user pricing behind.",
+    images: ["/api/og?title=Self-Hosted+Knowledge+Base&description=Confluence+alternative.&service=knowledge-base"],
   },
+  alternates: { canonical: "https://upready.dev/services/knowledge-base" },
 };
 
 const serviceSchema = {

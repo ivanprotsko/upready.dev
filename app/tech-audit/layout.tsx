@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: "App Audit — $500 Written Report in 48 Hours | upready.dev",
     description:
       "A senior developer reviews your AI-built app and delivers a written report of every vulnerability, deployment risk, and code issue. $500. 48-hour turnaround. Plain English.",
-    url: "https://upready.dev/audit",
+    url: "https://upready.dev/tech-audit",
     images: [
       {
         url: "/api/og?title=App+Audit+%E2%80%94+%24500+Written+Report+in+48+Hours&description=Senior+developer+reviews+your+AI-built+app.+Every+vulnerability+documented.+Plain+English.",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  alternates: { canonical: "https://upready.dev/audit" },
+  alternates: { canonical: "https://upready.dev/tech-audit" },
 };
 
 const serviceSchema = {
@@ -27,7 +27,7 @@ const serviceSchema = {
   name: "App Audit — AI-Built App Technical Review",
   description:
     "Senior developer manually reviews your AI-built app (Lovable, Bolt, Cursor, Replit, v0) and delivers a written report of every security vulnerability, deployment blocker, and code quality issue. $500, 48-hour turnaround.",
-  url: "https://upready.dev/audit",
+  url: "https://upready.dev/tech-audit",
   serviceType: "Software Audit and Code Review",
   category: "AI App Technical Audit",
   areaServed: "Worldwide",
@@ -108,7 +108,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 2,
       name: "App Audit",
-      item: "https://upready.dev/audit",
+      item: "https://upready.dev/tech-audit",
     },
   ],
 };

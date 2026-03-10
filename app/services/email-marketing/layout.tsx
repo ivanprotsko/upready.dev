@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Email Marketing Without Per-Subscriber Fees — Listmonk",
+  title: "Self-Hosted Email Marketing — Listmonk Setup, Unlimited Subscribers",
   description:
-    "Send to unlimited subscribers for a flat fee. No per-contact pricing. Self-hosted email marketing. Setup from $1,497.",
+    "Stop paying per subscriber. Listmonk deployed on your server: send to unlimited contacts for a flat fee. Amazon SES integration included. Setup from $1,497.",
   openGraph: {
-    title: "Self-Hosted Email Marketing — Open Source Mailchimp Alternative",
+    title: "Self-Hosted Email Marketing Without Per-Subscriber Fees — Listmonk",
     description:
-      "Newsletter platform built on Listmonk. Unlimited subscribers, SQL segmentation, multi-channel sending. No vendor lock-in.",
+      "Mailchimp charges per subscriber. Listmonk doesn't. We deploy and manage your own email marketing platform — unlimited lists, SQL segmentation, zero per-send fees.",
     url: "https://upready.dev/services/email-marketing",
+    images: [{ url: "/api/og?title=Self-Hosted+Email+Marketing&description=Unlimited+subscribers.+Flat+fee.+No+Mailchimp+pricing.&service=email-marketing", width: 1200, height: 630, alt: "Self-Hosted Email Marketing — Listmonk by upready.dev" }],
   },
-  alternates: {
-    canonical: "https://upready.dev/services/email-marketing",
+  twitter: {
+    card: "summary_large_image",
+    title: "Self-Hosted Email Marketing — Unlimited Subscribers, Flat Fee",
+    description: "We deploy Listmonk on your server. Send to your entire list for $99/mo — no per-subscriber pricing ever.",
+    images: ["/api/og?title=Self-Hosted+Email+Marketing&description=Unlimited+subscribers,+flat+fee.&service=email-marketing"],
   },
+  alternates: { canonical: "https://upready.dev/services/email-marketing" },
 };
 
 const serviceSchema = {

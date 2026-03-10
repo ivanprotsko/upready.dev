@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Beautiful Form Builder — Self-Hosted HeyForm",
+  title: "Self-Hosted Form Builder — HeyForm, GDPR Compliant, No Response Limits",
   description:
-    "Typeform-quality forms with unlimited responses. Lead capture, surveys, payments. No per-response fees. Setup from $1,497.",
+    "Typeform alternative on your server. Unlimited responses, no per-submission fees, GDPR compliant. Collect leads, surveys, payments. Setup from $997.",
   openGraph: {
-    title: "Self-Hosted Form Builder — Open Source Typeform Alternative",
+    title: "Self-Hosted Form Builder — No Response Limits, GDPR Ready",
     description:
-      "Form builder with conditional logic, file uploads, Stripe payments. Built on HeyForm. Your data, your server.",
+      "HeyForm deployed on your server: unlimited forms, unlimited responses, custom branding. No per-response pricing ever.",
     url: "https://upready.dev/services/forms",
+    images: [{ url: "/api/og?title=Self-Hosted+Form+Builder&description=No+response+limits.+GDPR+compliant.&service=forms", width: 1200, height: 630, alt: "Self-Hosted Form Builder — HeyForm" }],
   },
-  alternates: {
-    canonical: "https://upready.dev/services/forms",
+  twitter: {
+    card: "summary_large_image",
+    title: "Self-Hosted Forms — Unlimited Responses, No Typeform Fees",
+    description: "Deploy HeyForm on your server. Unlimited responses, custom branding, no per-submission fees.",
+    images: ["/api/og?title=Self-Hosted+Form+Builder&description=No+response+limits.&service=forms"],
   },
+  alternates: { canonical: "https://upready.dev/services/forms" },
 };
 
 const serviceSchema = {

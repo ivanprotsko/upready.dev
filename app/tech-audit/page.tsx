@@ -470,7 +470,7 @@ APPENDIX: ISSUE PRIORITY LIST
                 <div className="rounded-xl border border-primary/20 bg-primary/5 p-4 mb-8">
                   <p className="text-sm text-foreground/80 leading-relaxed">
                     If you proceed to{" "}
-                    <Link href="/rescue" className="text-primary hover:underline">
+                    <Link href="/app-rescue" className="text-primary hover:underline">
                       App Rescue
                     </Link>
                     , the full $500 audit fee is credited toward your rescue quote. You&apos;re
@@ -542,14 +542,14 @@ APPENDIX: ISSUE PRIORITY LIST
           <p className="text-sm text-muted-foreground">
             You might also need:{" "}
             <Link
-              href="/rescue"
+              href="/app-rescue"
               className="text-foreground hover:text-primary transition-colors"
             >
               App Rescue →
             </Link>{" "}
             ·{" "}
             <Link
-              href="/build"
+              href="/mvp-build"
               className="text-foreground hover:text-primary transition-colors"
             >
               MVP Build →

@@ -18,10 +18,9 @@ export const upreadyData: Footer03Data = {
   linkColumns: [
     {
       links: [
-        { title: "MVP Studio", href: "/mvp" },
-        { title: "MVP Build", href: "/build" },
+        { title: "MVP Build", href: "/mvp-build" },
         { title: "App Rescue", href: "/app-rescue" },
-        { title: "App Audit", href: "/app-audit" },
+        { title: "Tech Audit", href: "/tech-audit" },
         { title: "Pricing", href: "/pricing" },
         { title: "Our Work", href: "/our-work" },
       ],

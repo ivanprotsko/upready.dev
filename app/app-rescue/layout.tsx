@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: "App Rescue — We Fix AI-Built Apps | upready.dev",
     description:
       "Works locally, breaks in production? AI keeps going in circles? A senior developer diagnoses your app for free in 48 hours. Fixed price, no judgment.",
-    url: "https://upready.dev/rescue",
+    url: "https://upready.dev/app-rescue",
     images: [
       {
         url: "/api/og?title=App+Rescue+%E2%80%94+We+Fix+AI-Built+Apps&description=Senior+developer+diagnoses+your+broken+app+for+free+in+48+hours.+Fixed+price,+no+judgment.",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  alternates: { canonical: "https://upready.dev/rescue" },
+  alternates: { canonical: "https://upready.dev/app-rescue" },
 };
 
 const serviceSchema = {
@@ -27,7 +27,7 @@ const serviceSchema = {
   name: "App Rescue — AI-Built App Repair",
   description:
     "Senior developer fixes broken AI-generated apps (Lovable, Bolt, Cursor, Replit, v0) in 3–7 business days. Free diagnosis, fixed price, full code ownership.",
-  url: "https://upready.dev/rescue",
+  url: "https://upready.dev/app-rescue",
   serviceType: "Software Development and Repair",
   category: "AI App Repair",
   areaServed: "Worldwide",
@@ -121,7 +121,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 2,
       name: "App Rescue",
-      item: "https://upready.dev/rescue",
+      item: "https://upready.dev/app-rescue",
     },
   ],
 };

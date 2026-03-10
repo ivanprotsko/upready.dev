@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Online Booking System — Self-Hosted Cal.com",
+  title: "Self-Hosted Booking System — Cal.com Setup, No Per-Seat Fees",
   description:
-    "Appointment scheduling with custom branding, payments, and round-robin. Replace Calendly with unlimited seats. Setup from $997.",
+    "Replace Calendly with your own booking platform. Cal.com deployed on your server: unlimited seats, Stripe payments, custom branding. Setup from $2,997.",
   openGraph: {
-    title: "Self-Hosted Booking System — Open Source Calendly Alternative",
+    title: "Self-Hosted Cal.com — Unlimited Seats, No Per-Seat Pricing",
     description:
-      "Scheduling built on Cal.com. Embeddable widgets, routing forms, 65+ languages. No per-seat fees.",
+      "Calendly charges per seat. Cal.com doesn't. We deploy and manage your own scheduling system — custom branding, payments at booking, 65+ language support.",
     url: "https://upready.dev/services/booking",
+    images: [{ url: "/api/og?title=Self-Hosted+Booking+System&description=No+per-seat+fees.+Cal.com+on+your+server.&service=booking", width: 1200, height: 630, alt: "Self-Hosted Booking System — Cal.com" }],
   },
-  alternates: {
-    canonical: "https://upready.dev/services/booking",
+  twitter: {
+    card: "summary_large_image",
+    title: "Self-Hosted Booking System — No Per-Seat Fees, Cal.com Setup",
+    description: "We deploy Cal.com on your server. Unlimited seats, custom branding, Stripe payments. Setup from $2,997.",
+    images: ["/api/og?title=Self-Hosted+Booking+System&description=No+per-seat+fees.+Cal.com.&service=booking"],
   },
+  alternates: { canonical: "https://upready.dev/services/booking" },
 };
 
 const serviceSchema = {

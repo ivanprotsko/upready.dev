@@ -18,9 +18,9 @@ export const upreadyData: Footer01Data = {
     {
       title: "Services",
       links: [
-        { title: "App Rescue", href: "/rescue" },
-        { title: "MVP Build", href: "/build" },
-        { title: "App Audit", href: "/audit" },
+        { title: "App Rescue", href: "/app-rescue" },
+        { title: "MVP Build", href: "/mvp-build" },
+        { title: "Tech Audit", href: "/tech-audit" },
         { title: "Retainer", href: "/retainer" },
       ],
     },

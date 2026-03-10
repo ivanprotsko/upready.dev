@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Business Dashboards Without Code — Built on Budibase",
+  title: "Business Intelligence Dashboard — Self-Hosted, No Per-Seat Fees",
   description:
-    "Build KPI dashboards, admin panels, and internal tools without developers. Connect any database. Setup from $2,497.",
+    "Deploy your own BI platform. Connect databases, build dashboards, automate reports — without paying per user. Setup from $1,997.",
   openGraph: {
-    title: "No-Code Business Dashboards — Self-Hosted on Your Server",
+    title: "Self-Hosted Business Dashboards — No Per-Seat BI Pricing",
     description:
-      "Internal tools and dashboards built on Budibase. 30+ data connectors, role-based access, enterprise security.",
+      "Your own analytics dashboard platform. Connect any database, build interactive reports, control access by role. Fixed monthly cost, unlimited users.",
     url: "https://upready.dev/services/dashboards",
+    images: [{ url: "/api/og?title=Self-Hosted+Business+Dashboards&description=No+per-seat+BI+pricing.&service=dashboards", width: 1200, height: 630, alt: "Self-Hosted Business Intelligence Dashboards" }],
   },
-  alternates: {
-    canonical: "https://upready.dev/services/dashboards",
+  twitter: {
+    card: "summary_large_image",
+    title: "Self-Hosted Business Dashboards — Unlimited Users, Fixed Price",
+    description: "Deploy your own BI platform with unlimited users and no per-seat fees.",
+    images: ["/api/og?title=Self-Hosted+Business+Dashboards&description=No+per-seat+fees.&service=dashboards"],
   },
+  alternates: { canonical: "https://upready.dev/services/dashboards" },
 };
 
 const serviceSchema = {

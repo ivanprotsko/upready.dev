@@ -221,23 +221,6 @@ const pricingTiers = [
 export default function BuildPage() {
   return (
     <main>
-      {/* Navbar */}
-      <nav className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-lg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between h-16">
-          <Link
-            href="/"
-            className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <ArrowLeft size={16} />
-            <span className="text-sm">Back to Home</span>
-          </Link>
-          <Logo />
-          <Button asChild size="sm" className="rounded-full">
-            <Link href="/contacts">Describe Your Product</Link>
-          </Button>
-        </div>
-      </nav>
-
       {/* Hero */}
       <section className="py-20 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-8 text-center">
