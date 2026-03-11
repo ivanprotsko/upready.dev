@@ -28,120 +28,16 @@ export type NavigationSection = {
 
 const navigationData: NavigationSection[] = [
   {
-    title: "Services",
-    subtitle: "What we do for you",
-    layout: "list",
-    items: [
-      {
-        title: "MVP Build",
-        description: "From idea to working product in 1-4 weeks",
-        icon: Rocket,
-        href: "/mvp-build",
-      },
-      {
-        title: "App Rescue",
-        description: "Fix your broken AI-generated app in days",
-        icon: Wrench,
-        href: "/app-rescue",
-      },
-      {
-        title: "Tech Audit",
-        description: "Know what's wrong before spending a dollar fixing it",
-        icon: ClipboardCheck,
-        href: "/tech-audit",
-      },
-    ],
+    title: "Launch MVP from scratch",
+    href: "/mvp-build",
   },
   {
-    title: "Products",
-    subtitle: "Private tools deployed on your infrastructure",
-    layout: "grid",
-    items: [
-      {
-        title: "AI Assistant",
-        description: "Your own ChatGPT trained on your data",
-        icon: Bot,
-        href: "/services/ai-assistant",
-      },
-      {
-        title: "CRM",
-        description: "Customer relationship management",
-        icon: Users,
-        href: "/services/crm",
-      },
-      {
-        title: "Dashboards",
-        description: "Business intelligence & analytics",
-        icon: BarChart3,
-        href: "/services/dashboards",
-      },
-      {
-        title: "Booking",
-        description: "Scheduling & appointments",
-        icon: Calendar,
-        href: "/services/booking",
-      },
-      {
-        title: "E-Commerce",
-        description: "Headless online store",
-        icon: ShoppingCart,
-        href: "/services/ecommerce",
-      },
-      {
-        title: "Email Marketing",
-        description: "Newsletters & campaigns",
-        icon: Mail,
-        href: "/services/email-marketing",
-      },
-      {
-        title: "Client Portal",
-        description: "Branded client workspace",
-        icon: ShieldCheck,
-        href: "/services/client-portal",
-      },
-      {
-        title: "Knowledge Base",
-        description: "Internal docs & wiki",
-        icon: BookOpen,
-        href: "/services/knowledge-base",
-      },
-      {
-        title: "Analytics",
-        description: "Privacy-first web analytics",
-        icon: TrendingUp,
-        href: "/services/analytics",
-      },
-      {
-        title: "E-Signature",
-        description: "Document signing platform",
-        icon: PenTool,
-        href: "/services/e-signature",
-      },
-      {
-        title: "Forms",
-        description: "Surveys & data collection",
-        icon: FileText,
-        href: "/services/forms",
-      },
-      {
-        title: "Project Management",
-        description: "Tasks, sprints & roadmaps",
-        icon: Kanban,
-        href: "/services/project-management",
-      },
-    ],
+    title: "Rescue AI-built app",
+    href: "/app-rescue",
   },
   {
-    title: "Pricing",
-    href: "/#pricing",
-  },
-  {
-    title: "FAQ",
-    href: "/#faq",
-  },
-  {
-    title: "About",
-    href: "/about",
+    title: "Cure SaaS Addiction",
+    href: "/services",
   },
 ];
 
@@ -149,7 +45,7 @@ const CollaborateButton = ({ className }: { className?: string }) => (
   <Button asChild className={cn("relative text-sm font-medium rounded-full h-10 p-1 ps-4 pe-12 group transition-all duration-500 hover:ps-12 hover:pe-4 w-fit overflow-hidden", className)}>
     <Link href="/contacts" className="flex items-center">
       <span className="relative z-10 transition-all duration-500">
-        Get Started
+        Get in touch
       </span>
       <span className="absolute right-1 w-8 h-8 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-36px)] group-hover:rotate-45">
         <ArrowUpRight size={16} />

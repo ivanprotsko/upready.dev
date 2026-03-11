@@ -30,7 +30,13 @@ import {
   Rocket,
 } from "lucide-react";
 
+import { motion } from "motion/react";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import HeroSection from "@/components/shadcn-space/blocks/hero-01/hero";
+import Pricing06 from "@/components/shadcn-space/blocks/pricing-06/pricing";
 import Feature from "@/components/shadcn-space/blocks/feature-02/feature";
 import Statistic from "@/components/shadcn-space/blocks/statistics-06/statistics";
 import Pricing from "@/components/shadcn-space/blocks/pricing-02/pricing";
@@ -38,7 +44,11 @@ import AboutUs from "@/components/shadcn-space/blocks/about-us-01/about-us";
 import SocialProof from "@/components/shadcn-space/blocks/testimonial-01/testimonial";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 import ServiceFaq from "@/components/services/service-faq";
-import Footer from "@/components/shadcn-space/blocks/footer-03/footer";
+import Footer05 from "@/components/shadcn-space/blocks/footer-05/footer-upready";
+import Feature03 from "@/components/shadcn-space/blocks/feature-03/feature";
+import ProblemSection from "@/components/shadcn-space/blocks/feature-02-problem/feature";
+import LogoCloudUpready from "@/components/shadcn-space/blocks/logo-cloud-01/logo-cloud-upready";
+import { Video, Zap, CreditCard, Banknote, UserX, Clock, GitBranch, Blocks } from "lucide-react";
 
 /* ─── Data ──────────────────────────────────────────────── */
 
@@ -433,95 +443,167 @@ export default function HomePage() {
     <main>
       {/* Hero */}
       <HeroSection
-        heading="We fix AI-built apps, build MVPs from scratch, and replace expensive SaaS with open-source alternatives you control."
-        subheading="Senior developers. Fixed prices. You own everything."
-        primaryCta={{ label: "Fix my app", href: "/app-rescue" }}
-        secondaryCta={{ label: "Cut my SaaS bill", href: "#products" }}
-        socialProof="50+ founders helped · Fixed price, no surprises · Full repo ownership guaranteed"
+        headingLine1={"Your\u00a0app will\u00a0be\u00a0ready."}
+        headingLine2=""
+        headingItalic="In weeks, not months."
+        subheading="We rescue AI-built apps, launch MVPs from scratch, and cure SaaS addiction. Fixed pricing. No hidden costs. You own everything."
+        buttonText=""
       />
 
-      {/* Services Overview */}
-      <Feature
-        featureData={services}
-        badgeText="Three Ways We Help"
-        heading="What do you need fixed?"
-        columns={3}
+      {/* The Problem — Feature 02 (from bf35ad1) */}
+      <ProblemSection
+        featureData={[
+          {
+            icon: Banknote,
+            title: "Agencies charge\n$25K–150K",
+            content: "3-6 months timeline burns through your pre-seed. You spend your entire runway on v1 that might not even find market fit.",
+          },
+          {
+            icon: UserX,
+            title: "Freelancers\ndisappear",
+            content: "No unified vision \u2014 designer doesn\u2019t talk to developer, nobody understands the business. 30-40% of time wasted on coordination.",
+          },
+          {
+            icon: Bug,
+            title: "Vibe-coded apps\nbreak",
+            content: "25% of YC W2025 startups with 95% AI code hit a wall: works locally, won\u2019t deploy, security holes everywhere.",
+          },
+          {
+            icon: Rocket,
+            title: "MVPs take too long\nto launch",
+            content: "By the time your product is ready, the market has moved on. Slow iteration kills startups faster than bad ideas.",
+          },
+          {
+            icon: Wrench,
+            title: "Broken apps\nwith no one to fix",
+            content: "The original developer is gone, the codebase is a mess, and every new fix introduces two new bugs. You need a rescue, not a rewrite.",
+          },
+          {
+            icon: Lock,
+            title: "SaaS subscriptions\ndrain your budget",
+            content: "You\u2019re paying $2K\u2013$10K/month for tools you could self-host. Vendor lock-in means you can\u2019t leave without rebuilding everything.",
+          },
+        ]}
+        heading="Building and running IT products shouldn't cost a fortune"
       />
 
-      {/* Problem Section — Wall 1: Vibe Coding */}
-      <Feature
-        featureData={problemsVibeCoding}
-        badgeText="Why Founders Get Stuck"
-        heading="AI coding gets you to 80%. The last 20% is where it stops."
-        columns={4}
+      {/* The Solution — Feature 03 */}
+      <Feature03
+        cards={[
+          {
+            icon: Zap,
+            title: "AI-Powered Engineer",
+            description:
+              "A senior engineer with AI tools, UX sense, and product thinking replaces an entire team \u2014 designer, developer, PM. One person, full ownership.",
+          },
+          {
+            icon: Video,
+            title: "Zero Meetings",
+            description:
+              "No kickoff calls, no status syncs, no scheduling nightmares. Share your idea via text, voice note, or doc \u2014 we take it from there.",
+          },
+          {
+            icon: Clock,
+            title: "Async by Default",
+            description:
+              "We work across time zones and deliver progress updates every 2\u20133 days via video. You review on your schedule, not ours.",
+          },
+          {
+            icon: CreditCard,
+            title: "USDT / USDC Payments",
+            description:
+              "Pay in stablecoins \u2014 no wire transfers, no banking delays, no currency conversion fees. Fast, borderless, hassle-free.",
+          },
+          {
+            icon: Blocks,
+            title: "Open-Source Stack",
+            description:
+              "We build on open-source \u2014 no vendor lock-in, no recurring SaaS fees. You own the code, the infrastructure, and the data.",
+          },
+          {
+            icon: GitBranch,
+            title: "Automated Dev & Deploy",
+            description:
+              "CI/CD pipelines, infrastructure as code, one-click deploys. From first commit to production \u2014 fully automated, no manual steps.",
+          },
+        ]}
+        badgeText="The Solution"
+        heading={"We\u2019ve cut out every obstacle that slows down traditional agencies."}
+        description={"No endless meetings, no\u00a0payment hassle, no waiting. Just fast, focused delivery."}
+        footnote=""
+        buttonText=""
       />
 
-      {/* Problem Section — Wall 2: SaaS Trap */}
-      <Feature
-        featureData={problemsSaasTrap}
-        badgeText="The SaaS Trap"
-        heading="Per-user pricing. Annual increases. Vendor lock-in."
-        columns={3}
-      />
+      {/* The Promise */}
+      <section>
+        <div className="max-w-7xl mx-auto px-4 lg:px-8 xl:px-16 py-16 sm:py-24 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] }}
+            className="flex flex-col items-center gap-6"
+          >
+            <Badge variant="outline" className="px-3 py-1 h-7 text-sm font-normal">The Promise</Badge>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight">
+              {"Over 90% of dev agencies hide their prices. We\u00a0don\u2019t."}
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-xl">
+              {"Fixed-price estimate before we start. No\u00a0hidden costs, no\u00a0surprise invoices\u00a0\u2014 what you see is what you\u00a0pay."}
+            </p>
+          </motion.div>
 
-      {/* Products — 12 Tools */}
-      <Statistic
-        data={products}
-        badgeText="12 Tools. No Per-User Fees. Ever."
-        heading="Replace your most expensive SaaS — on your own private instance."
-        subtitle="Fully deployed, configured, and migrated by us. You get all the features, none of the recurring SaaS bill."
-      />
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.21, 0.47, 0.32, 0.98] }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 w-full"
+          >
+            <Card className="p-6 sm:p-8 shadow-none rounded-2xl text-left bg-transparent h-full">
+              <CardContent className="p-0 flex flex-col gap-4 h-full">
+                <Wrench className="w-7 h-7 text-primary" strokeWidth={1.5} />
+                <p className="text-xl font-semibold">Rescue AI-built app</p>
+                <p className="text-base italic text-muted-foreground">Your app works locally but breaks in production.</p>
+                <p className="text-base text-muted-foreground">
+                  Starts $500 to $2499. Fixed price for the repair based on scope assessment.
+                </p>
+                <Button asChild className="rounded-lg w-fit mt-auto">
+                  <Link href="/app-rescue">Continue</Link>
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="p-6 sm:p-8 shadow-none rounded-2xl text-left bg-transparent h-full">
+              <CardContent className="p-0 flex flex-col gap-4 h-full">
+                <Rocket className="w-7 h-7 text-primary" strokeWidth={1.5} />
+                <p className="text-xl font-semibold">Launch MVPs from scratch</p>
+                <p className="text-base italic text-muted-foreground">{"From spec to launch in 1\u20133 weeks. 3 fixed tiers."}</p>
+                <p className="text-base text-muted-foreground">
+                  $2500, $5000 or $7500. From scratch to launch. All infrastructure costs are included in the price.
+                </p>
+                <Button asChild className="rounded-lg w-fit mt-auto">
+                  <Link href="/mvp-build">Continue</Link>
+                </Button>
+              </CardContent>
+            </Card>
+            <Card className="p-6 sm:p-8 shadow-none rounded-2xl text-left bg-transparent h-full">
+              <CardContent className="p-0 flex flex-col gap-4 h-full">
+                <Blocks className="w-7 h-7 text-primary" strokeWidth={1.5} />
+                <p className="text-xl font-semibold">Cure SaaS Addiction</p>
+                <p className="text-base italic text-muted-foreground">Replace with an open-source alternative app.</p>
+                <p className="text-base text-muted-foreground">
+                  Price depends on the product or package to install, plus migration scope and data source.
+                </p>
+                <Button asChild className="rounded-lg w-fit mt-auto">
+                  <Link href="/services">Continue</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </motion.div>
+        </div>
+      </section>
 
-      {/* Bundles */}
-      <Pricing
-        plans={bundlePlans}
-        badgeText="Bundles"
-        heading="Or get the whole stack at once"
-        subtitle="We bundle related tools to reduce setup cost and make migration simpler."
-        popularLabel="Best Value"
-      />
-
-      {/* How It Works */}
-      <AboutUs
-        aboutusData={aboutUsData}
-        statisticsCounter={processSteps}
-      />
-
-      {/* Social Proof */}
-      <SocialProof
-        badgeText="Built on Battle-Tested Open Source"
-        heading="The tools we deploy are trusted by millions."
-        cards={socialProofCards}
-        footnote="All tools are open-source, actively maintained, and backed by millions in VC funding. We deploy, configure, and maintain them on your own server — so your data never leaves your control."
-      />
-
-      {/* Pricing */}
-      <Pricing
-        plans={pricingPlans}
-        badgeText="Pricing"
-        heading={'Fixed prices. Published. No \u201ccontact us for pricing.\u201d'}
-        subtitle="31 of our competitors hide their prices. We don't."
-        footnote="All prices in USD. We estimate hours upfront and hold to the quote. Not sure where to start? The $500 Audit is the lowest-risk first step."
-      />
-
-      {/* FAQ */}
-      <ServiceFaq title="Questions before you book" items={faqItems} />
-
-      {/* Final CTA — Two Paths */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-        <CTA
-          heading="Your app is stuck. Let's unblock it."
-          description="Describe your problem. A senior developer responds within 24 hours with a real diagnosis. No commitment, no sales pitch."
-          buttonText="Get a free diagnosis"
-        />
-        <CTA
-          heading="You're overpaying for SaaS. Let's calculate."
-          description="Tell us which tools you're using and how many users. We'll show you what the open-source equivalent costs on your own instance."
-          buttonText="See the savings"
-        />
-      </div>
-
-      <Footer />
+      <Footer05 />
     </main>
   );
 }

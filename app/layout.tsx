@@ -1,15 +1,8 @@
 import type { Metadata } from "next";
-import { Google_Sans } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/shadcn-space/blocks/navbar-02/navbar";
 import Script from "next/script";
 import "./globals.css";
-
-const googleSans = Google_Sans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  weight: ["400", "500", "700"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://upready.dev"),
@@ -83,7 +76,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={googleSans.variable} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
@@ -102,7 +95,7 @@ export default function RootLayout({
         `}</Script>
       </head>
       <body
-        className={`${googleSans.className} antialiased`}
+        className="subpixel-antialiased"
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} forcedTheme="light">
           <Navbar />

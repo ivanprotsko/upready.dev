@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowUpRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import Link from "next/link";
 
 export type FeatureCard = {
   icon: LucideIcon;
@@ -21,6 +22,7 @@ const Feature = ({
   description = "We've eliminated every obstacle that slows down traditional agencies. No endless meetings, no payment hassle, no waiting. Just fast, focused delivery.",
   footnote = "All projects start with a fixed-price estimate. No hidden costs, no surprise invoices — what you see is what you pay.",
   buttonText = "Get in Touch",
+  buttonHref = "/contacts",
 }: {
   cards: FeatureCard[];
   badgeText?: string;
@@ -28,6 +30,7 @@ const Feature = ({
   description?: string;
   footnote?: string;
   buttonText?: string;
+  buttonHref?: string;
 }) => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -85,7 +88,7 @@ const Feature = ({
             >
               {cards.map((card, index) => (
                 <motion.div key={index} variants={itemVariants}>
-                  <Card className="h-full p-6 sm:p-8 shadow-none rounded-2xl">
+                  <Card className="h-full p-6 sm:p-8 shadow-none rounded-2xl bg-transparent">
                     <CardContent className="p-0 flex flex-col gap-4">
                       <card.icon size={28} className="shrink-0" />
                       <p className="text-xl font-semibold">{card.title}</p>
@@ -97,24 +100,30 @@ const Feature = ({
             </motion.div>
 
             {/* Footer */}
-            <motion.div
-              variants={itemVariants}
-              className="flex flex-col items-center gap-6"
-            >
-              <p className="text-sm text-muted-foreground text-center max-w-lg">
-                * {footnote}
-              </p>
-              <Button asChild className="relative text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
-                <a href="/contacts" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                  <span className="relative z-10 transition-all duration-500">
-                    {buttonText}
-                  </span>
-                  <span className="absolute right-1 w-10 h-10 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
-                    <ArrowUpRight size={16} />
-                  </span>
-                </a>
-              </Button>
-            </motion.div>
+            {(footnote || buttonText) && (
+              <motion.div
+                variants={itemVariants}
+                className="flex flex-col items-center gap-6"
+              >
+                {footnote && (
+                  <p className="text-sm text-muted-foreground text-center max-w-lg">
+                    * {footnote}
+                  </p>
+                )}
+                {buttonText && (
+                  <Button asChild className="relative text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
+                    <Link href={buttonHref} className="flex items-center">
+                      <span className="relative z-10 transition-all duration-500">
+                        {buttonText}
+                      </span>
+                      <span className="absolute right-1 w-10 h-10 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
+                        <ArrowUpRight size={16} />
+                      </span>
+                    </Link>
+                  </Button>
+                )}
+              </motion.div>
+            )}
           </motion.div>
         </div>
       </div>
