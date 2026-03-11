@@ -1,24 +1,37 @@
 "use client";
 
+import { Instrument_Serif, Google_Sans } from "next/font/google";
 import SplashCursor from "@/components/shadcn-space/animations/splash-cursor";
 import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["italic"],
+});
+
+const googleSans = Google_Sans({
+  subsets: ["latin"],
+  weight: ["700"],
+});
+
+
 type HeroSectionProps = {
-  heading: string;
-  subheading: string;
-  primaryCta: { label: string; href: string };
-  secondaryCta?: { label: string; href: string };
-  socialProof?: string;
+  headingLine1?: string;
+  headingLine2?: string;
+  headingItalic?: string;
+  subheading?: string;
+  buttonText?: string;
 };
 
 function HeroSection({
-  heading,
-  subheading,
-  primaryCta,
-  secondaryCta,
-  socialProof,
+  headingLine1 = "Your MVP",
+  headingLine2 = "will be ready",
+  headingItalic = "in weeks, not months.",
+  subheading = "Build your idea 10× faster and cheaper than a traditional agency — with minimal involvement from your side.",
+  buttonText = "Discuss Your Idea",
 }: HeroSectionProps) {
   return (
     <section>
@@ -44,58 +57,46 @@ function HeroSection({
                   initial={{ opacity: 0, y: 32 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
-                  className="lg:text-7xl md:text-6xl text-4xl font-medium leading-12 md:leading-18 lg:leading-22 tracking-tight"
+                  className="lg:text-8xl md:text-7xl text-5xl font-medium leading-14 md:leading-20 lg:leading-24"
                 >
-                  {heading}
+                  <span className={`${googleSans.className} tracking-tight`}>{headingLine1}</span>
+                  <br />
+                  <span className={`${googleSans.className} tracking-tight`}>{headingLine2}</span>
+                  <br />
+                  <span
+                    className={`${instrumentSerif.className} tracking-tight`}
+                  >
+                    {headingItalic}
+                  </span>
                 </motion.h1>
                 <motion.p
                   initial={{ opacity: 0, y: 32 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 0.1, ease: "easeInOut" }}
-                  className="text-lg font-normal max-w-2xl text-muted-foreground text-balance"
+                  className="text-base font-normal max-w-2xl text-muted-foreground"
                 >
+                  <span className="flex  text-balance">
                   {subheading}
+                  </span>
                 </motion.p>
               </div>
               <motion.div
                 initial={{ opacity: 0, y: 32 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
-                className="flex items-center justify-center gap-3"
+                className="flex items-center justify-center"
               >
-                <Button
-                  asChild
-                  className="relative text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden"
-                >
-                  <a href={primaryCta.href} className="flex items-center">
+                <Button asChild className="relative text-sm font-medium rounded-full h-12 p-1 ps-6 pe-14 group transition-all duration-500 hover:ps-14 hover:pe-6 w-fit overflow-hidden">
+                  <a href="/contacts" target="_blank" rel="noopener noreferrer" className="flex items-center">
                     <span className="relative z-10 transition-all duration-500">
-                      {primaryCta.label}
+                      {buttonText}
                     </span>
                     <span className="absolute right-1 w-10 h-10 bg-background text-foreground rounded-full flex items-center justify-center transition-all duration-500 group-hover:right-[calc(100%-44px)] group-hover:rotate-45">
                       <ArrowUpRight size={16} />
                     </span>
                   </a>
                 </Button>
-                {secondaryCta && (
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="h-12 px-6 rounded-full text-sm font-medium"
-                  >
-                    <a href={secondaryCta.href}>{secondaryCta.label}</a>
-                  </Button>
-                )}
               </motion.div>
-              {socialProof && (
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 1, delay: 0.4, ease: "easeInOut" }}
-                  className="text-sm text-muted-foreground text-center"
-                >
-                  {socialProof}
-                </motion.p>
-              )}
             </div>
           </div>
         </div>
