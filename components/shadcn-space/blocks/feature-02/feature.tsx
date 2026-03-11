@@ -1,30 +1,39 @@
+"use client";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Asterisk, LucideIcon } from "lucide-react";
+import { LucideIcon } from "lucide-react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
-type Features = {
+type FeatureItem = {
   icon: LucideIcon;
   title: string;
   content: string;
-}[];
+  stat?: string;
+  cta?: string;
+  href?: string;
+};
 
 const Feature = ({
   featureData,
-  badgeText = "The Problem",
-  heading = "Building an MVP shouldn't cost a fortune",
-  bottomNote = "There's a better way — one AI-powered product engineer",
-  ctaText = "See Pricing",
-  ctaHref = "#pricing",
+  badgeText = "Features",
+  heading = "Why choose us",
+  columns = 2,
 }: {
-  featureData: Features;
+  featureData: FeatureItem[];
   badgeText?: string;
   heading?: string;
-  bottomNote?: string;
-  ctaText?: string;
-  ctaHref?: string;
+  columns?: 2 | 3 | 4;
 }) => {
+  const gridClass =
+    columns === 4
+      ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+      : columns === 3
+        ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        : "grid grid-cols-1 sm:grid-cols-2 gap-6";
+
   return (
     <section>
       <div className="lg:py-20 sm:py-16 py-8">
@@ -43,9 +52,9 @@ const Feature = ({
               <Badge variant={"outline"} className="px-3 py-1 h-auto text-sm">
                 {badgeText}
               </Badge>
-              <h1 className="text-3xl md:text-4xl font-semibold text-center tracking-[-1px]">
+              <h2 className="text-3xl md:text-4xl font-semibold text-center tracking-[-1px]">
                 {heading}
-              </h1>
+              </h2>
             </motion.div>
             <motion.div
               variants={{
@@ -60,9 +69,42 @@ const Feature = ({
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+              className={gridClass}
             >
               {featureData.map((value, index) => {
+                const cardContent = (
+                  <Card className="py-10 h-full border-t-4 border-t-transparent transition-all duration-300 hover:border-t-primary hover:shadow-lg">
+                    <CardContent className="px-8 flex flex-col gap-6 h-full">
+                      <value.icon
+                        className="w-8 h-8 text-primary"
+                        strokeWidth={1.2}
+                      />
+                      <div className="flex flex-col gap-3 flex-1">
+                        <h3 className="text-xl font-semibold">
+                          {value.title}
+                        </h3>
+                        <p className="text-base font-normal text-muted-foreground">
+                          {value.content}
+                        </p>
+                        {value.stat && (
+                          <p className="text-sm text-primary font-medium mt-auto pt-2">
+                            {value.stat}
+                          </p>
+                        )}
+                      </div>
+                      {value.cta && value.href && (
+                        <Button
+                          asChild
+                          className="w-full rounded-full"
+                          variant="outline"
+                        >
+                          <span>{value.cta}</span>
+                        </Button>
+                      )}
+                    </CardContent>
+                  </Card>
+                );
+
                 return (
                   <motion.div
                     key={index}
@@ -75,45 +117,16 @@ const Feature = ({
                       ease: [0.21, 0.47, 0.32, 0.98],
                     }}
                   >
-                    <Card className="py-10 h-full border-t-4 border-t-transparent transition-all duration-300 hover:border-t-primary hover:shadow-lg">
-                      <CardContent className="px-8 flex flex-col gap-6">
-                        <value.icon
-                          className="w-8 h-8 text-primary"
-                          strokeWidth={1.2}
-                        />
-                        <div className="flex flex-col gap-3">
-                          <h6 className="text-xl font-semibold">
-                            {value.title}
-                          </h6>
-                          <p className="text-base font-normal text-muted-foreground">
-                            {value.content}
-                          </p>
-                        </div>
-                      </CardContent>
-                    </Card>
+                    {value.href ? (
+                      <Link href={value.href} className="block h-full">
+                        {cardContent}
+                      </Link>
+                    ) : (
+                      cardContent
+                    )}
                   </motion.div>
                 );
               })}
-            </motion.div>
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.8,
-                ease: [0.21, 0.47, 0.32, 0.98],
-              }}
-              className="flex flex-col items-center justify-center gap-5"
-            >
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Asterisk size={16} />
-                <p className="font-normal text-sm">
-                  {bottomNote}
-                </p>
-              </div>
-              <Button asChild className="rounded-full px-5 py-2.5 shadow-xs h-full">
-                <a href="/contacts" target="_blank" rel="noopener noreferrer">{ctaText}</a>
-              </Button>
             </motion.div>
           </div>
         </div>

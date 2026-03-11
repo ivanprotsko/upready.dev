@@ -1,98 +1,96 @@
 "use client";
 
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { LucideIcon } from "lucide-react";
+import Link from "next/link";
 
-export default function Statistic() {
-  const TopCardInfo = [
-    {
-      key: "card1",
-      title: "Employees",
-      desc: "96",
-      img: "https://images.shadcnspace.com/assets/statistics/employees.svg",
-      bgColor: "bg-blue-500/10",
-      textColor: "text-blue-500",
-    },
-    {
-      key: "card2",
-      title: "Clients",
-      desc: "3,650",
-      img: "https://images.shadcnspace.com/assets/statistics/clients.svg",
-      bgColor: "bg-orange-400/10",
-      textColor: "text-orange-400",
-    },
-    {
-      key: "card3",
-      title: "Projects",
-      desc: "356",
-      img: "https://images.shadcnspace.com/assets/statistics/projects.svg",
-      bgColor: "bg-teal-400/10",
-      textColor: "text-teal-400",
-    },
-    {
-      key: "card4",
-      title: "Events",
-      desc: "696",
-      img: "https://images.shadcnspace.com/assets/statistics/events.svg",
-      bgColor: "bg-red-500/10",
-      textColor: "text-red-500",
-    },
-    {
-      key: "card5",
-      title: "Payroll",
-      desc: "$96k",
-      img: "https://images.shadcnspace.com/assets/statistics/payroll.svg",
-      bgColor: "bg-amber-300/10",
-      textColor: "text-amber-300",
-    },
-    {
-      key: "card6",
-      title: "Reports",
-      desc: "59",
-      img: "https://images.shadcnspace.com/assets/statistics/reports.svg",
-      bgColor: "bg-sky-400/10",
-      textColor: "text-sky-400",
-    },
-  ];
+type StatItem = {
+  icon: LucideIcon;
+  title: string;
+  desc: string;
+  label?: string;
+  bgColor: string;
+  textColor: string;
+  href?: string;
+};
 
+export default function Statistic({
+  data,
+  badgeText,
+  heading,
+  subtitle,
+}: {
+  data: StatItem[];
+  badgeText?: string;
+  heading?: string;
+  subtitle?: string;
+}) {
   return (
     <div className="lg:py-20 sm:py-16 py-8">
       <div className="max-w-7xl xl:px-16 lg:px-8 px-4 mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-          {TopCardInfo.map((item) => (
-            <Card
-              key={item.key}
-              className={cn(
-                "ring-0 shadow-none w-full transition-all duration-300 hover:scale-105 hover:shadow-lg",
-                item.bgColor,
-              )}
-            >
-              <CardContent className="pt-6">
-                <div className="flex flex-col items-center justify-center gap-4 text-center">
-                  <div className="relative group">
-                    <img
-                      src={item.img}
-                      width="48"
-                      height="48"
-                      className="size-12"
-                      alt={item.title}
-                    />
+        {(badgeText || heading) && (
+          <div className="flex flex-col items-center justify-center gap-4 mb-12 max-w-2xl mx-auto text-center">
+            {badgeText && (
+              <Badge variant={"outline"} className="px-3 py-1 h-auto text-sm">
+                {badgeText}
+              </Badge>
+            )}
+            {heading && (
+              <h2 className="text-3xl md:text-4xl font-semibold tracking-[-1px]">
+                {heading}
+              </h2>
+            )}
+            {subtitle && (
+              <p className="text-muted-foreground">{subtitle}</p>
+            )}
+          </div>
+        )}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+          {data.map((item, index) => {
+            const card = (
+              <Card
+                key={index}
+                className={cn(
+                  "ring-0 shadow-none w-full transition-all duration-300 hover:scale-105 hover:shadow-lg",
+                  item.bgColor,
+                )}
+              >
+                <CardContent className="pt-6">
+                  <div className="flex flex-col items-center justify-center gap-4 text-center">
+                    <div className="relative group">
+                      <item.icon className="size-10" strokeWidth={1.5} />
+                    </div>
+                    <div
+                      className={cn(
+                        "flex flex-col items-center gap-1",
+                        item.textColor,
+                      )}
+                    >
+                      {item.label && (
+                        <p className="text-xs text-muted-foreground">
+                          {item.label}
+                        </p>
+                      )}
+                      <p className="text-sm font-semibold">{item.title}</p>
+                      <p className="text-lg font-bold tracking-tight">
+                        {item.desc}
+                      </p>
+                    </div>
                   </div>
-                  <div
-                    className={cn(
-                      "flex flex-col items-center gap-1",
-                      item.textColor,
-                    )}
-                  >
-                    <p className="text-sm font-semibold">{item.title}</p>
-                    <p className="text-2xl font-bold tracking-tight">
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                </CardContent>
+              </Card>
+            );
+
+            return item.href ? (
+              <Link key={index} href={item.href} className="block">
+                {card}
+              </Link>
+            ) : (
+              <div key={index}>{card}</div>
+            );
+          })}
         </div>
       </div>
     </div>

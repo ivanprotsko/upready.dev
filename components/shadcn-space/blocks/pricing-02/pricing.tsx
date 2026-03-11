@@ -13,78 +13,36 @@ import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import { Check, Flame } from "lucide-react";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 export type PricingPlan = {
   plan_name: string;
   plan_descp: string;
-  plan_price: number;
+  plan_price: string;
   plan_feature: string[];
   plan_recommended: boolean;
+  plan_badge?: string;
+  plan_cta?: string;
+  plan_href?: string;
 };
 
-const pricingData: PricingPlan[] = [
-  {
-    plan_name: "Fast MVP",
-    plan_descp:
-      "Validate your idea fast with a focused, production-ready MVP.",
-    plan_price: 5000,
-    plan_feature: [
-      "Landing page + auth",
-      "3-5 core features",
-      "Stripe payments integration",
-      "Deployment to production",
-      "1-2 weeks delivery",
-      "Source code ownership",
-    ],
-    plan_recommended: false,
-  },
-  {
-    plan_name: "MVP + AI",
-    plan_descp:
-      "Smart MVP with AI-powered features for a competitive edge.",
-    plan_price: 8000,
-    plan_feature: [
-      "Everything in Fast MVP",
-      "AI-powered functionality",
-      "Custom AI integrations",
-      "Advanced business logic",
-      "2-3 weeks delivery",
-      "Post-launch support (1 week)",
-    ],
-    plan_recommended: true,
-  },
-  {
-    plan_name: "MVP + Dashboard",
-    plan_descp:
-      "Full product with admin panel, analytics, and AI features.",
-    plan_price: 12000,
-    plan_feature: [
-      "Everything in MVP + AI",
-      "Admin dashboard",
-      "Analytics & reporting",
-      "Role-based access control",
-      "3-4 weeks delivery",
-      "Post-launch support (2 weeks)",
-    ],
-    plan_recommended: false,
-  },
-];
-
 const Pricing = ({
-  plans = pricingData,
+  plans,
   badgeText = "Pricing",
   heading = "Pick the plan that fits your startup",
-  priceLabel = "one-time",
+  subtitle,
   ctaText = "Get started",
   popularLabel = "Most Popular",
+  footnote,
 }: {
-  plans?: PricingPlan[];
+  plans: PricingPlan[];
   badgeText?: string;
   heading?: string;
-  priceLabel?: string;
+  subtitle?: string;
   ctaText?: string;
   popularLabel?: string;
-} = {}) => {
+  footnote?: string;
+}) => {
   const pricingCardVariants = {
     hidden: {
       opacity: 0,
@@ -107,24 +65,33 @@ const Pricing = ({
         <div className="flex flex-col gap-8 md:gap-12 items-center justify-center w-full">
           {/* Heading */}
           <div className="flex flex-col gap-4 justify-center items-center">
-            {/* Badge */}
             <Badge
               variant={"outline"}
               className="py-1 px-3 text-sm font-normal leading-5 w-fit h-7"
             >
               {badgeText}
             </Badge>
-            {/* Heading */}
-            <div className="max-w-3xs sm:max-w-md mx-auto text-center">
+            <div className="max-w-2xl mx-auto text-center">
               <h2 className="text-foreground text-3xl sm:text-5xl font-medium">
                 {heading}
               </h2>
+              {subtitle && (
+                <p className="text-muted-foreground mt-3">{subtitle}</p>
+              )}
             </div>
           </div>
-          {/*  */}
-          <div className="flex flex-col lg:flex-row gap-6 items-stretch w-full">
-            {plans.map((plan: PricingPlan, index: number) => {
+
+          <div
+            className={cn(
+              "flex flex-col lg:flex-row gap-6 items-stretch w-full",
+              plans.length === 4 && "xl:grid xl:grid-cols-4"
+            )}
+          >
+            {plans.map((plan, index) => {
               const isFeatured = plan.plan_recommended;
+              const badgeLabel = plan.plan_badge || popularLabel;
+              const cta = plan.plan_cta || ctaText;
+              const href = plan.plan_href || "/contacts";
 
               return (
                 <motion.div
@@ -136,25 +103,22 @@ const Pricing = ({
                   custom={index}
                   className={cn(
                     "relative h-full w-full",
-                    isFeatured && "z-10 scale-102"
+                    isFeatured && "z-10 lg:scale-102"
                   )}
                 >
-                  {/* GRADIENT BORDER */}
                   {isFeatured && (
                     <div className="absolute -inset-0.5 rounded-2xl overflow-hidden">
-                      {/* Animated conic-gradient border */}
                       <div className="absolute -inset-full blur-xs animate-spin [animation-duration:2s] bg-conic from-blue-500 via-red-500 to-teal-400" />
-
-                      {/* Inner mask */}
                       <div className="absolute inset-0.5 rounded-2xl bg-card" />
                     </div>
                   )}
 
-                  {/* CARD */}
                   <Card
                     className={cn(
                       "relative h-full rounded-2xl p-8 gap-8",
-                      isFeatured ? "border-0 ring-0" : "border border-border"
+                      isFeatured
+                        ? "border-0 ring-0"
+                        : "border border-border"
                     )}
                   >
                     <CardHeader className="p-0">
@@ -165,7 +129,7 @@ const Pricing = ({
                           </CardTitle>
                           {isFeatured && (
                             <Badge className="py-1 px-3 text-sm font-medium leading-5 w-fit h-7 flex items-center gap-1.5 [&>svg]:size-4!">
-                              <Flame size={16} /> {popularLabel}
+                              <Flame size={16} /> {badgeLabel}
                             </Badge>
                           )}
                         </div>
@@ -178,10 +142,7 @@ const Pricing = ({
                     <CardContent className="flex flex-col flex-1 gap-8 p-0">
                       <div className="flex items-baseline gap-1">
                         <span className="text-foreground text-4xl sm:text-5xl font-medium">
-                          ${plan.plan_price}
-                        </span>
-                        <span className="text-muted-foreground text-base font-normal">
-                          {" "}{priceLabel}
+                          {plan.plan_price}
                         </span>
                       </div>
 
@@ -204,9 +165,7 @@ const Pricing = ({
                         className="w-full h-12"
                         variant={isFeatured ? "default" : "outline"}
                       >
-                        <a href="/contacts" target="_blank" rel="noopener noreferrer">
-                          {ctaText}
-                        </a>
+                        <Link href={href}>{cta}</Link>
                       </Button>
                     </CardContent>
                   </Card>
@@ -214,6 +173,12 @@ const Pricing = ({
               );
             })}
           </div>
+
+          {footnote && (
+            <p className="text-xs text-muted-foreground text-center leading-relaxed max-w-3xl">
+              {footnote}
+            </p>
+          )}
         </div>
       </div>
     </section>
