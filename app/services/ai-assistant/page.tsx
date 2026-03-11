@@ -8,6 +8,7 @@ import UseCaseSection from "@/components/services/use-case-section";
 import ComparisonTable from "@/components/services/comparison-table";
 import PricingSection from "@/components/services/pricing-section";
 import ServiceFaq from "@/components/services/service-faq";
+import RelatedServices from "@/components/services/related-services";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 
 const productStats = [
@@ -86,7 +87,7 @@ export default function AiAssistantPage() {
         title="Stop losing revenue to unanswered questions"
         description="Your team spends hours searching for answers that already exist in your documents. Deploy a private AI assistant that knows your business inside out, responds in seconds, and runs on your own server."
         icon={Bot}
-        ctaText="Book a Demo"
+        ctaText="Get Started"
       />
       <ProductShowcase
         title="Built on AnythingLLM"
@@ -119,9 +120,10 @@ export default function AiAssistantPage() {
         timeline="Launch timeline: 3-5 business days"
       />
       <ServiceFaq items={faqItems} />
+      <RelatedServices currentSlug="ai-assistant" />
       <CTA
         heading="Your knowledge is trapped. Let's free it."
-        description="Book a 30-minute call. We'll show you how the AI assistant works with your actual documents."
+        description="Describe your use case. We'll show you how the AI assistant works with your actual documents."
       />
     </>
   );

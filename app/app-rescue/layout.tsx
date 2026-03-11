@@ -9,14 +9,6 @@ export const metadata: Metadata = {
     description:
       "Works locally, breaks in production? AI keeps going in circles? A senior developer diagnoses your app for free in 48 hours. Fixed price, no judgment.",
     url: "https://upready.dev/app-rescue",
-    images: [
-      {
-        url: "/api/og?title=App+Rescue+%E2%80%94+We+Fix+AI-Built+Apps&description=Senior+developer+diagnoses+your+broken+app+for+free+in+48+hours.+Fixed+price,+no+judgment.",
-        width: 1200,
-        height: 630,
-        alt: "App Rescue — We Fix AI-Built Apps | upready.dev",
-      },
-    ],
   },
   alternates: { canonical: "https://upready.dev/app-rescue" },
 };
@@ -53,16 +45,17 @@ const serviceSchema = {
       "@type": "Offer",
       name: "App Rescue",
       description:
-        "Senior developer fixes root cause, tests in production, deploys. 50% upfront, 50% on delivery.",
-      lowPrice: "2000",
-      highPrice: "5000",
+        "Senior developer fixes root cause, tests in production, deploys. Hourly rate based on scope: $100/hr (<80 hrs), $75/hr (80+), $50/hr (120+). Tech Audit credited.",
+      price: "50",
       priceCurrency: "USD",
+      unitText: "HOUR",
     },
     {
       "@type": "Offer",
       name: "Emergency Security Response",
       description:
         "Immediate response for hacked apps, exposed API keys, or active data breaches. Security audit, containment, fix, and post-incident hardening.",
+      price: "2500",
       priceCurrency: "USD",
     },
   ],
@@ -85,7 +78,7 @@ const faqSchema = {
       name: "Why not just hire a freelancer on Upwork?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Most freelancers haven't worked with AI-generated codebases. They see unfamiliar patterns and either refactor working code or miss what's actually broken. We specialize specifically in Lovable, Bolt, Cursor, Replit, and v0 apps.",
+        text: "Most freelancers haven't worked with AI-generated codebases. They see unfamiliar patterns and either rebuild working code or miss what's actually broken. We specialize specifically in Lovable, Bolt, Cursor, Replit, and v0 apps.",
       },
     },
     {

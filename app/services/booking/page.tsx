@@ -21,6 +21,7 @@ import UseCaseSection from "@/components/services/use-case-section";
 import ComparisonTable from "@/components/services/comparison-table";
 import PricingSection from "@/components/services/pricing-section";
 import ServiceFaq from "@/components/services/service-faq";
+import RelatedServices from "@/components/services/related-services";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 
 const features = [
@@ -270,9 +271,10 @@ export default function BookingPage() {
         timeline="Launch timeline: 10-14 business days"
       />
       <ServiceFaq items={faqItems} />
+      <RelatedServices currentSlug="booking" />
       <CTA
         heading="Ready to own your scheduling?"
-        description="Book a call and we will set up a booking system that works exactly how you need it."
+        description="Tell us what you need and we'll set up a booking system that works exactly how you want it."
       />
     </>
   );

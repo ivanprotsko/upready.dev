@@ -9,13 +9,11 @@ export const metadata: Metadata = {
     description:
       "Umami deployed on your server: privacy-first analytics with no cookies, no consent required under GDPR. Used by AMD, ESPN, Siemens. 35K+ GitHub stars.",
     url: "https://upready.dev/services/analytics",
-    images: [{ url: "/api/og?title=GDPR-Compliant+Analytics&description=No+cookie+banner.+Self-hosted+Umami.&service=analytics", width: 1200, height: 630, alt: "GDPR-Compliant Self-Hosted Analytics — Umami" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "GDPR Analytics — No Cookies, No Consent Banner, Self-Hosted",
     description: "Deploy Umami on your server. Cookieless tracking, GDPR compliant, no cookie banner needed. Setup from $997.",
-    images: ["/api/og?title=GDPR-Compliant+Analytics&description=No+cookie+banner.+Umami.&service=analytics"],
   },
   alternates: { canonical: "https://upready.dev/services/analytics" },
 };

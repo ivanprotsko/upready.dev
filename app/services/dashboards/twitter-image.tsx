@@ -1,0 +1,13 @@
+import { createOgImage, OG_SIZE } from "@/lib/og-image";
+
+export const alt = "Self-Hosted Business Intelligence Dashboards";
+export const size = OG_SIZE;
+export const contentType = "image/png";
+
+export default function Image() {
+  return createOgImage({
+    title: "Self-Hosted Business Dashboards",
+    description:
+      "No per-seat BI pricing.",
+  });
+}

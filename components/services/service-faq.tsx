@@ -15,7 +15,7 @@ type ServiceFaqProps = {
 
 const ServiceFaq = ({ title = "FAQ", items }: ServiceFaqProps) => {
   return (
-    <section>
+    <section id="faq">
       <div className="py-8 sm:py-16 lg:py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-8">
           <motion.div

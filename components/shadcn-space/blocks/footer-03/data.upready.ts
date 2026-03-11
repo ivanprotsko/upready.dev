@@ -21,14 +21,15 @@ export const upreadyData: Footer03Data = {
         { title: "MVP Build", href: "/mvp-build" },
         { title: "App Rescue", href: "/app-rescue" },
         { title: "Tech Audit", href: "/tech-audit" },
-        { title: "Pricing", href: "/pricing" },
-        { title: "Our Work", href: "/our-work" },
+        { title: "All Services", href: "/services" },
+        { title: "Pricing", href: "/#pricing" },
       ],
     },
     {
       links: [
         { title: "About", href: "/about" },
         { title: "Contact", href: "/contacts" },
+        { title: "FAQ", href: "/#faq" },
         { title: "Privacy Policy", href: "/privacy-policy" },
         { title: "Terms & Conditions", href: "/terms-and-conditions" },
       ],

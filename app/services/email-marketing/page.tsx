@@ -23,6 +23,7 @@ import UseCaseSection from "@/components/services/use-case-section";
 import ComparisonTable from "@/components/services/comparison-table";
 import PricingSection from "@/components/services/pricing-section";
 import ServiceFaq from "@/components/services/service-faq";
+import RelatedServices from "@/components/services/related-services";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 
 const productStats = [
@@ -295,6 +296,7 @@ export default function EmailMarketingPage() {
         timeline="Setup takes 3-5 business days. Includes SES configuration, DNS setup, and template migration from Mailchimp if needed."
       />
       <ServiceFaq items={faqItems} />
+      <RelatedServices currentSlug="email-marketing" />
       <CTA
         heading="Stop paying per subscriber"
         description="We'll migrate your lists from Mailchimp and set up your self-hosted email platform in days, not weeks."

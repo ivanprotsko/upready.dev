@@ -3,7 +3,6 @@ import {
   ArrowUpRight,
   Check,
   CheckCircle2,
-  Clock,
   DollarSign,
   Users,
   Building2,
@@ -18,6 +17,15 @@ import {
   ShoppingCart,
   Monitor,
   Globe,
+  CircleOff,
+  Bug,
+  KeyRound,
+  RefreshCcw,
+  TrendingUp,
+  Lock,
+  Layers,
+  Package,
+  Megaphone,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -29,23 +37,64 @@ const services = [
   {
     headline: "Stuck at 80%? App got hacked?",
     body: "Your AI-built app works locally and breaks in production. Or it got hacked. Or the AI has been going in circles for weeks. A senior developer diagnoses it in 48 hours and fixes it at a fixed price.",
-    stat: "From $2,000 · 3–7 days · No judgment",
-    cta: "Fix my app →",
+    stat: "From $500 \u00B7 3\u20137 days \u00B7 No judgment",
+    cta: "Fix my app \u2192",
     href: "/app-rescue",
   },
   {
     headline: "Not sure if it's ready to launch?",
-    body: "A senior developer reviews your entire app and gives you a written report of every vulnerability, deployment risk, and code issue — in plain English. Know what's broken before it breaks in production.",
-    stat: "$500 flat · 48-hour turnaround · Credited toward rescue",
-    cta: "Get the audit →",
+    body: "A senior developer reviews your entire app and gives you a written report of every vulnerability, deployment risk, and code issue \u2014 in plain English. Know what's broken before it breaks in production.",
+    stat: "$500 flat \u00B7 48-hour turnaround \u00B7 Credited toward rescue",
+    cta: "Get the audit \u2192",
     href: "/tech-audit",
   },
   {
     headline: "Have an idea and no developer to trust?",
-    body: "From spec to launch in 4–6 weeks. Fixed scope, fixed price, weekly demos, and full repo access from Day 1. You own every line of code — and you can fire us any time and keep everything built so far.",
-    stat: "From $5,000 · 4–6 weeks · You own the repo",
-    cta: "Start building →",
+    body: "From spec to launch in 1\u20134 weeks. Fixed scope, fixed price, weekly demos, and full repo access from Day 1. You own every line of code \u2014 and you can fire us any time and keep everything built so far.",
+    stat: "From $2,500 \u00B7 1\u20134 weeks \u00B7 You own the repo",
+    cta: "Start building \u2192",
     href: "/mvp-build",
+  },
+];
+
+const problemsVibeCoding = [
+  {
+    icon: CircleOff,
+    title: "Works locally, breaks in production",
+    desc: "The app runs fine on your machine but fails the moment it hits a real server.",
+  },
+  {
+    icon: Bug,
+    title: "Every fix creates a new bug",
+    desc: "Payments fail. Features break. The AI goes in circles because it can\u2019t access your server, logs, or live database.",
+  },
+  {
+    icon: KeyRound,
+    title: "API keys exposed in frontend",
+    desc: "Hardcoded secrets get scraped within hours. Accounts get hacked.",
+  },
+  {
+    icon: RefreshCcw,
+    title: "AI can\u2019t escape the loop",
+    desc: "This isn\u2019t a prompting problem \u2014 it\u2019s an access problem. A developer in your real environment solves it in days.",
+  },
+];
+
+const problemsSaasTrap = [
+  {
+    icon: TrendingUp,
+    title: "Per-user pricing compounds fast",
+    desc: "HubSpot: $890/month. Mailchimp: $500/month. Calendly: $16/user/month. Combined: $2,000\u2013$3,000/month.",
+  },
+  {
+    icon: Lock,
+    title: "Vendor lock-in traps your data",
+    desc: "Features move to \u201cPro\u201d plans. Annual renewals double. Export is painful or impossible.",
+  },
+  {
+    icon: DollarSign,
+    title: "Open-source equivalents exist",
+    desc: "The difference: you own the instance. No per-user fees, ever.",
   },
 ];
 
@@ -53,7 +102,7 @@ const products = [
   {
     replaces: "Replace HubSpot",
     tool: "Twenty CRM",
-    keyLine: "$890/mo → $149/mo. No per-user fees.",
+    keyLine: "$890/mo \u2192 $149/mo. No per-user fees.",
     href: "/services/crm",
     icon: Building2,
   },
@@ -95,7 +144,7 @@ const products = [
   {
     replaces: "Replace Confluence",
     tool: "BookStack",
-    keyLine: "$8,000/yr → $149/mo. Same team, more features.",
+    keyLine: "$8,000/yr \u2192 $149/mo. Same team, more features.",
     href: "/services/knowledge-base",
     icon: BookOpen,
   },
@@ -136,33 +185,64 @@ const products = [
   },
 ];
 
+const bundles = [
+  {
+    icon: Layers,
+    name: "Sales Stack",
+    tools: ["CRM", "Booking", "E-Signature"],
+    price: "From $8,000 setup",
+    note: "vs. $9,000 individually",
+    href: "/contacts?type=bundle-sales",
+    highlight: false,
+  },
+  {
+    icon: Package,
+    name: "Ops Stack",
+    tools: ["Project Management", "Knowledge Base", "Dashboards"],
+    price: "From $7,500 setup",
+    note: null,
+    href: "/contacts?type=bundle-ops",
+    highlight: true,
+    badge: "Best Value",
+  },
+  {
+    icon: Megaphone,
+    name: "Marketing Stack",
+    tools: ["Email Marketing", "Analytics", "Forms"],
+    price: "From $6,500 setup",
+    note: null,
+    href: "/contacts?type=bundle-marketing",
+    highlight: false,
+  },
+];
+
 const processSteps = [
   {
     step: "01",
     title: "Tell us what's broken (or what you need built)",
-    body: "Book a free 30-minute call. No technical knowledge required — describe the problem in plain language, paste an error, or share the app URL. If you're cutting SaaS costs, tell us which tools you're paying for. We'll take it from there.",
-    detail: "Free · 30 minutes · No commitment",
+    body: "Paste an error, share the app URL, or tell us which SaaS tools you want replaced. We respond within 24 hours.",
+    detail: "Free \u00B7 24-hour response \u00B7 No commitment",
   },
   {
     step: "02",
     title: "We diagnose it and give you a fixed price",
-    body: "Within 48 hours, you get a written assessment: what's wrong, what it takes to fix, and the exact price. For products: setup timeline and total cost comparison vs. your current SaaS bill. No open-ended billing, no hidden costs.",
-    detail: "48-hour turnaround · Written deliverable · Fixed quote",
+    body: "Within 48 hours, you get a written assessment: what\u2019s wrong, what it takes to fix, and the exact price. For products: setup timeline and total cost comparison vs. your current SaaS bill. No open-ended billing, no hidden costs.",
+    detail: "48-hour turnaround \u00B7 Written deliverable \u00B7 Fixed quote",
   },
   {
     step: "03",
     title: "We fix it. You own it.",
-    body: "We do the work — fix the app, deploy the tools, migrate your data. You see it working before the final payment. Then it's yours: code, repo, data, configuration. No lock-in, no ongoing dependency on us unless you want it.",
-    detail: "You own everything · 50% upfront, 50% on delivery",
+    body: "We do the work \u2014 fix the app, deploy the tools, migrate your data. You see it working before the final payment. Then it\u2019s yours: code, repo, data, configuration. No lock-in, no ongoing dependency on us unless you want it.",
+    detail: "You own everything \u00B7 50% upfront, 50% on delivery",
   },
 ];
 
 const stats = [
-  { value: "15,000+", label: "GitHub stars — Twenty CRM", icon: CheckCircle2 },
-  { value: "$4M", label: "VC funding — Twenty CRM", icon: DollarSign },
-  { value: "$32M", label: "Raised — Cal.com", icon: DollarSign },
-  { value: "30,000+", label: "GitHub stars — Plane", icon: CheckCircle2 },
-  { value: "50+", label: "Founders we've helped", icon: Users },
+  { value: "15,000+", label: "GitHub stars \u2014 Twenty CRM", icon: CheckCircle2 },
+  { value: "$4M", label: "VC funding \u2014 Twenty CRM", icon: DollarSign },
+  { value: "$32M", label: "Raised \u2014 Cal.com", icon: DollarSign },
+  { value: "30,000+", label: "GitHub stars \u2014 Plane", icon: CheckCircle2 },
+  { value: "50+", label: "Founders we\u2019ve helped", icon: Users },
 ];
 
 const pricingTiers = [
@@ -174,7 +254,7 @@ const pricingTiers = [
       "48-hour written report",
       "Every vulnerability, every fix",
       "Fix-or-rebuild recommendation",
-      "30-minute walkthrough call",
+      "30-minute walkthrough included",
       "Credited toward rescue if you proceed",
     ],
     cta: "Order the $500 Audit",
@@ -183,14 +263,14 @@ const pricingTiers = [
   },
   {
     name: "App Rescue",
-    price: "From $2,000",
-    timeline: "3–7 business days",
+    price: "From $50/hr",
+    timeline: "Rate by scope",
     features: [
-      "Everything in the Audit",
-      "Senior developer fixes root cause",
-      "Testing in production conditions",
-      "50% upfront, 50% on delivery",
-      "Full code ownership — yours to keep",
+      "Tech Audit included ($500, credited)",
+      "Under 80 hrs \u2014 $100/hr",
+      "80+ hrs \u2014 $75/hr",
+      "120+ hrs \u2014 $50/hr",
+      "Full code ownership \u2014 yours to keep",
     ],
     cta: "Get a Free Diagnosis",
     href: "/contacts",
@@ -199,8 +279,8 @@ const pricingTiers = [
   },
   {
     name: "MVP Build",
-    price: "From $5,000",
-    timeline: "4–6 weeks",
+    price: "From $2,500",
+    timeline: "1\u20134 weeks",
     features: [
       "Fixed scope, fixed price",
       "Weekly demos from Day 1",
@@ -208,23 +288,23 @@ const pricingTiers = [
       "Modern stack any developer can maintain",
       "30 days support post-launch",
     ],
-    cta: "Book a Scoping Call",
+    cta: "Start a Project",
     href: "/contacts?type=build",
     highlight: false,
   },
   {
-    name: "Monthly Retainer",
-    price: "From $2,500/mo",
-    timeline: "Month-to-month",
+    name: "Ongoing Support",
+    price: "From $50/hr",
+    timeline: "Monthly hours",
     features: [
-      "Ongoing technical partner",
-      "Maintenance, deployments, monitoring",
-      "New features on request",
+      "Under 80 hrs/mo — $100/hr",
+      "80+ hrs/mo — $75/hr",
+      "120+ hrs/mo — $50/hr",
       "We already know your codebase",
       "Cancel anytime, no lock-in",
     ],
-    cta: "Start with a Trial Month",
-    href: "/contacts?type=retainer",
+    cta: "Start with Support",
+    href: "/contacts?type=support",
     highlight: false,
   },
 ];
@@ -233,42 +313,27 @@ const faqItems = [
   {
     question: "Can't I just keep prompting the AI to fix it?",
     answer:
-      "You can — and most founders have tried, extensively. The ceiling isn't effort, it's access. The AI can't log into your production environment, read your server logs, or see what's actually happening in your live database. When the problem is in the gap between the local sandbox and the real server, the AI is working blind. A developer with access to your actual environment solves it once.",
-  },
-  {
-    question: "What if open-source tools aren't as good as the SaaS I'm replacing?",
-    answer:
-      "Twenty CRM has raised $4 million in funding and has 15,000+ GitHub stars. Cal.com raised $32 million. Medusa powers enterprise e-commerce stores. Plane has 30,000+ stars. These are not hobby projects — they're production-grade tools used by hundreds of thousands of companies. The difference is: you own the instance.",
+      "You can \u2014 and most founders have tried, extensively. The ceiling isn't effort, it's access. The AI can't log into your production environment, read your server logs, or see what's actually happening in your live database. When the problem is in the gap between the local sandbox and the real server, the AI is working blind. A developer with access to your actual environment solves it once.",
   },
   {
     question: "I could deploy these tools myself. Why pay you?",
     answer:
-      "You could. The question is whether your time is better spent deploying Docker containers or building your business. Most \"I'll do it myself\" projects die in the NGINX configuration. We handle the deployment, SSL, backups, updates, and migration — so you get the tool running in 10 days without spending 40 hours on infrastructure.",
-  },
-  {
-    question: "What if something breaks after you deploy it?",
-    answer:
-      "For rescue and build work: 30 days of included support post-delivery. For self-hosted tools: ongoing monthly support included in the monthly fee. If something breaks outside of normal wear, we fix it. The monthly fee is not just infrastructure — it's maintenance.",
+      "You could. The question is whether your time is better spent configuring servers or building your business. Most \"I'll do it myself\" projects stall at server configuration. We handle the deployment, SSL, backups, updates, and migration \u2014 so you get the tool running in 10 days without spending 40 hours on infrastructure.",
   },
   {
     question: "Do I actually own the code?",
     answer:
-      "Yes. Unconditionally. You get the full repository — every file, every commit, every configuration. You can take the code to any developer. No subscription required to access your own app. No code held on our servers. After delivery, you have no dependency on us unless you choose the retainer.",
+      "Yes. Unconditionally. You get the full repository \u2014 every file, every commit, every configuration. You can take the code to any developer. No subscription required to access your own app. No code held on our servers. After delivery, you have no dependency on us unless you choose ongoing support.",
   },
   {
     question: "What if my budget is smaller than your minimums?",
     answer:
-      "Start with the $500 Audit. It's the lowest-risk entry point — you get a complete written picture of your app before spending more. If the rescue quote comes back higher than your budget, you'll at least know exactly what's wrong and can plan accordingly. The $500 is credited toward rescue if you proceed.",
+      "Start with the $500 Audit. It's the lowest-risk entry point \u2014 you get a complete written picture of your app before spending more. If the rescue quote comes back higher than your budget, you'll at least know exactly what's wrong and can plan accordingly. The $500 is credited toward rescue if you proceed.",
   },
   {
     question: "How is this different from hiring a freelancer?",
     answer:
-      "Freelancers quote hourly, which means the final bill is unknown. Most haven't worked with AI-generated codebases — they see unfamiliar patterns and either over-refactor or miss the root cause. We specialize in Lovable, Bolt, Cursor, and Replit apps specifically, and quote a fixed price before touching any code.",
-  },
-  {
-    question: "What's the retainer? Why would I need that?",
-    answer:
-      "If you have a live app with users, you need someone technical in your corner who already knows your codebase. The retainer is $2,500/month for ongoing maintenance, deployments, monitoring, and new features. Month-to-month — no lock-in. Most rescue clients move to the retainer after their app is stable. We already know your code, so there's no onboarding cost.",
+      "Freelancers quote hourly, which means the final bill is unknown. Most haven't worked with AI-generated codebases \u2014 they see unfamiliar patterns and either over-refactor or miss the root cause. We specialize in Lovable, Bolt, Cursor, and Replit apps specifically, and quote a fixed price before touching any code.",
   },
 ];
 
@@ -350,7 +415,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Problem Section */}
+      {/* Problem Section — icon-driven compact grid */}
       <section className="py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="text-center mb-12">
@@ -361,68 +426,70 @@ export default function HomePage() {
               Two walls. Most founders hit at least one.
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-            {/* Vibe-Coding Wall */}
-            <Card className="border-border/50 bg-background">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-semibold mb-4">
-                  AI coding gets you to 80%. The last 20% is where it stops.
-                </h3>
-                <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
-                  <p>
-                    AI tools are genuinely fast. You can get from idea to
-                    working prototype without writing a line of code. But then:
-                    it works locally and breaks in production. The AI starts
-                    going in circles — every fix creates a new bug. You add
-                    payments, and the wheels fall off. Or worse, the app gets
-                    hacked because API keys were hardcoded in the frontend.
-                  </p>
-                  <p>
-                    This isn&apos;t a prompting problem. It&apos;s an
-                    architectural limit. AI tools can&apos;t log into your
-                    production environment, read your server logs, or see the
-                    state of your live database. A human developer with access
-                    to your real environment solves it in days.
-                  </p>
-                </div>
-                <div className="mt-6 border-l-4 border-primary/60 pl-5">
-                  <p className="text-sm italic text-foreground/80">
-                    &ldquo;I tried more than one hundred times to get the AI to
-                    fix it.&rdquo;
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-1">
-                    — a founder, two weeks before booking a diagnosis call
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
 
-            {/* SaaS Trap */}
-            <Card className="border-border/50 bg-background">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-semibold mb-4">
-                  Per-user pricing. Annual increases. Vendor lock-in. It
-                  compounds.
-                </h3>
-                <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
-                  <p>
-                    You started with the free tier. Then your team grew. Then
-                    they removed a feature and put it in the &ldquo;Pro&rdquo;
-                    plan. Then the annual renewal landed and the number was
-                    twice what you remembered.
-                  </p>
-                  <p>
-                    HubSpot: $890/month. DocuSign: $45 per envelope after the
-                    limit. Mailchimp: $500/month for 50,000 contacts. Calendly:
-                    $16 per user, per month. Each line item looks reasonable.
-                    Combined, they&apos;re $2,000–$3,000 a month for tools that
-                    have open-source equivalents — fully functional,
-                    battle-tested, used by millions.
-                  </p>
-                  <p>The difference: you own the instance. No per-user fees, ever.</p>
-                </div>
-              </CardContent>
-            </Card>
+          <div className="max-w-6xl mx-auto space-y-10">
+            {/* Wall 1: Vibe-Coding */}
+            <div>
+              <h3 className="text-lg font-semibold mb-5">
+                AI coding gets you to 80%. The last 20% is where it stops.
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                {problemsVibeCoding.map((problem) => (
+                  <Card
+                    key={problem.title}
+                    className="border-border/50 bg-background"
+                  >
+                    <CardContent className="p-5">
+                      <div className="w-9 h-9 rounded-lg bg-destructive/10 flex items-center justify-center mb-3">
+                        <problem.icon className="w-4 h-4 text-destructive" />
+                      </div>
+                      <h4 className="text-sm font-semibold mb-1.5 leading-snug">
+                        {problem.title}
+                      </h4>
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        {problem.desc}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+              <div className="mt-5 border-l-4 border-primary/60 pl-5 max-w-xl">
+                <p className="text-sm italic text-foreground/80">
+                  &ldquo;I tried more than one hundred times to get the AI to
+                  fix it.&rdquo;
+                </p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  — a founder, two weeks before requesting a diagnosis
+                </p>
+              </div>
+            </div>
+
+            {/* Wall 2: SaaS Trap */}
+            <div>
+              <h3 className="text-lg font-semibold mb-5">
+                Per-user pricing. Annual increases. Vendor lock-in. It compounds.
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {problemsSaasTrap.map((problem) => (
+                  <Card
+                    key={problem.title}
+                    className="border-border/50 bg-background"
+                  >
+                    <CardContent className="p-5">
+                      <div className="w-9 h-9 rounded-lg bg-amber-500/10 flex items-center justify-center mb-3">
+                        <problem.icon className="w-4 h-4 text-amber-500" />
+                      </div>
+                      <h4 className="text-sm font-semibold mb-1.5 leading-snug">
+                        {problem.title}
+                      </h4>
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        {problem.desc}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -467,71 +534,91 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Bundle callout */}
-          <div className="max-w-3xl mx-auto">
-            <Card className="border-primary/20 bg-background">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-semibold mb-3">
-                  Or get the whole stack at once.
-                </h3>
-                <p className="text-sm text-muted-foreground mb-5">
-                  We bundle related tools to reduce setup cost and make
-                  migration simpler. Common bundles:
-                </p>
-                <div className="space-y-3 mb-6">
-                  {[
-                    {
-                      name: "Sales Stack",
-                      desc: "CRM + Booking + E-Signature",
-                      price: "From $8,000 setup",
-                      note: "vs. $9,000 individually",
-                    },
-                    {
-                      name: "Ops Stack",
-                      desc: "Project Management + Knowledge Base + Dashboards",
-                      price: "From $7,500 setup",
-                      note: "",
-                    },
-                    {
-                      name: "Marketing Stack",
-                      desc: "Email Marketing + Analytics + Forms",
-                      price: "From $6,500 setup",
-                      note: "",
-                    },
-                  ].map((bundle) => (
-                    <div
-                      key={bundle.name}
-                      className="flex items-start justify-between gap-4 py-3 border-b border-border/50 last:border-0"
-                    >
-                      <div>
-                        <span className="text-sm font-medium">
-                          {bundle.name}
-                        </span>
-                        <span className="text-sm text-muted-foreground">
-                          {" "}
-                          — {bundle.desc}
-                        </span>
+          {/* Bundle comparison cards */}
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-8">
+              <h3 className="text-xl font-semibold mb-2">
+                Or get the whole stack at once.
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                We bundle related tools to reduce setup cost and make
+                migration simpler.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              {bundles.map((bundle) => (
+                <Card
+                  key={bundle.name}
+                  className={`bg-background flex flex-col ${
+                    bundle.highlight
+                      ? "border-primary/60 border-2 relative overflow-hidden"
+                      : "border-border/50"
+                  }`}
+                >
+                  {bundle.highlight && (
+                    <div className="absolute top-0 inset-x-0 h-1 bg-primary" />
+                  )}
+                  <CardContent className="p-6 flex flex-col flex-1">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                        <bundle.icon className="w-5 h-5 text-primary" />
                       </div>
-                      <div className="text-right shrink-0">
-                        <span className="text-sm font-medium text-primary">
-                          {bundle.price}
-                        </span>
-                        {bundle.note && (
-                          <p className="text-xs text-muted-foreground">
-                            {bundle.note}
-                          </p>
-                        )}
+                      <div>
+                        <div className="flex items-center gap-2">
+                          <h4 className="text-base font-semibold">{bundle.name}</h4>
+                          {bundle.badge && (
+                            <Badge className="text-xs px-2 py-0.5 h-auto">
+                              {bundle.badge}
+                            </Badge>
+                          )}
+                        </div>
                       </div>
                     </div>
-                  ))}
-                </div>
-                <Button asChild className="rounded-full" variant="outline">
-                  <Link href="/services">
-                    See all 12 tools →
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
+                    <div className="flex flex-wrap gap-1.5 mb-4">
+                      {bundle.tools.map((tool) => (
+                        <Badge
+                          key={tool}
+                          variant="outline"
+                          className="text-xs px-2 py-0.5 h-auto font-normal"
+                        >
+                          {tool}
+                        </Badge>
+                      ))}
+                    </div>
+                    <div className="mb-4 flex-1">
+                      <span className="text-xl font-bold text-primary">
+                        {bundle.price}
+                      </span>
+                      {bundle.note && (
+                        <p className="text-xs text-muted-foreground mt-1">
+                          {bundle.note}
+                        </p>
+                      )}
+                    </div>
+                    <Button
+                      asChild
+                      className="w-full rounded-full"
+                      variant={bundle.highlight ? "default" : "outline"}
+                      size="sm"
+                    >
+                      <Link href={bundle.href}>
+                        Get this bundle
+                        {bundle.highlight && (
+                          <ArrowUpRight size={14} className="ml-1.5" />
+                        )}
+                      </Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            <p className="text-center mt-6">
+              <Button asChild variant="link" className="text-sm">
+                <Link href="/services">
+                  See all 12 tools and individual pricing →
+                </Link>
+              </Button>
+            </p>
           </div>
         </div>
       </section>
@@ -612,7 +699,7 @@ export default function HomePage() {
               Pricing
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-3">
-              Fixed prices. Published. No &ldquo;book a call to find out.&rdquo;
+              Fixed prices. Published. No &ldquo;contact us for pricing.&rdquo;
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
               31 of our competitors hide their prices. We don&apos;t.
@@ -677,23 +764,9 @@ export default function HomePage() {
           </div>
 
           <div className="mt-10 max-w-3xl mx-auto">
-            <p className="text-sm text-muted-foreground text-center leading-relaxed">
-              Self-hosted tool setup fees range from $2,000 to $6,000 depending
-              on the tool and migration complexity. Monthly infrastructure:
-              $149–$249/mo. Most clients break even vs. their old SaaS bill
-              within 5 months.{" "}
-              <Link
-                href="/services"
-                className="text-foreground hover:text-primary transition-colors underline underline-offset-4"
-              >
-                See tool-by-tool pricing →
-              </Link>
-            </p>
-            <p className="text-xs text-muted-foreground text-center mt-4">
-              All prices in USD. Fixed quote upfront — no open-ended billing.
-              Payment: 50% upfront, 50% on delivery for rescue and build.
-              Not sure where to start? The $500 Audit is the lowest-risk first
-              step for any service.
+            <p className="text-xs text-muted-foreground text-center leading-relaxed">
+              All prices in USD. We estimate hours upfront and hold to the quote.
+              Not sure where to start? The $500 Audit is the lowest-risk first step.
             </p>
           </div>
         </div>
@@ -717,8 +790,8 @@ export default function HomePage() {
                 Your app is stuck. Let&apos;s unblock it.
               </h3>
               <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
-                A free 30-minute call. A senior developer tells you exactly
-                what&apos;s wrong. No commitment — just a real diagnosis.
+                Describe your problem. A senior developer responds within 24
+                hours with a real diagnosis. No commitment, no sales pitch.
               </p>
               <Button
                 asChild
@@ -731,7 +804,7 @@ export default function HomePage() {
                 </Link>
               </Button>
               <p className="text-xs text-muted-foreground">
-                Free · 30 minutes · Fixed price follows
+                Free · 24-hour response · Fixed price follows
               </p>
             </div>
 

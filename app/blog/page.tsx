@@ -12,13 +12,6 @@ export const metadata: Metadata = {
     description:
       "Step-by-step migration guides from expensive SaaS to self-hosted alternatives.",
     url: "https://upready.dev/blog",
-    images: [
-      {
-        url: "/api/og?title=Migration+Guides+%26+Self-Hosting+Tips&description=Step-by-step+guides+from+expensive+SaaS+to+self-hosted+alternatives.+Real+cost+comparisons.",
-        width: 1200,
-        height: 630,
-      },
-    ],
   },
   alternates: {
     canonical: "https://upready.dev/blog",

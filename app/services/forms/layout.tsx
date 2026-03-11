@@ -9,13 +9,11 @@ export const metadata: Metadata = {
     description:
       "HeyForm deployed on your server: unlimited forms, unlimited responses, custom branding. No per-response pricing ever.",
     url: "https://upready.dev/services/forms",
-    images: [{ url: "/api/og?title=Self-Hosted+Form+Builder&description=No+response+limits.+GDPR+compliant.&service=forms", width: 1200, height: 630, alt: "Self-Hosted Form Builder — HeyForm" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Self-Hosted Forms — Unlimited Responses, No Typeform Fees",
     description: "Deploy HeyForm on your server. Unlimited responses, custom branding, no per-submission fees.",
-    images: ["/api/og?title=Self-Hosted+Form+Builder&description=No+response+limits.&service=forms"],
   },
   alternates: { canonical: "https://upready.dev/services/forms" },
 };

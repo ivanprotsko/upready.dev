@@ -12,6 +12,7 @@ import UseCaseSection from "@/components/services/use-case-section";
 import ComparisonTable from "@/components/services/comparison-table";
 import PricingSection from "@/components/services/pricing-section";
 import ServiceFaq from "@/components/services/service-faq";
+import RelatedServices from "@/components/services/related-services";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 
 const showcaseStats = [
@@ -116,6 +117,7 @@ export default function FormsPage() {
         timeline="Setup takes 3-5 business days. Includes deployment, branding, and webhook configuration."
       />
       <ServiceFaq items={faqItems} />
+      <RelatedServices currentSlug="forms" />
       <CTA
         heading="Stop hitting response limits"
         description="We deploy your self-hosted form platform and migrate your forms from Typeform in under a week."

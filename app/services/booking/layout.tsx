@@ -9,13 +9,11 @@ export const metadata: Metadata = {
     description:
       "Calendly charges per seat. Cal.com doesn't. We deploy and manage your own scheduling system — custom branding, payments at booking, 65+ language support.",
     url: "https://upready.dev/services/booking",
-    images: [{ url: "/api/og?title=Self-Hosted+Booking+System&description=No+per-seat+fees.+Cal.com+on+your+server.&service=booking", width: 1200, height: 630, alt: "Self-Hosted Booking System — Cal.com" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Self-Hosted Booking System — No Per-Seat Fees, Cal.com Setup",
     description: "We deploy Cal.com on your server. Unlimited seats, custom branding, Stripe payments. Setup from $2,997.",
-    images: ["/api/og?title=Self-Hosted+Booking+System&description=No+per-seat+fees.+Cal.com.&service=booking"],
   },
   alternates: { canonical: "https://upready.dev/services/booking" },
 };

@@ -34,7 +34,7 @@ const navigationData: NavigationSection[] = [
     items: [
       {
         title: "MVP Build",
-        description: "From idea to working product in 2-4 weeks",
+        description: "From idea to working product in 1-4 weeks",
         icon: Rocket,
         href: "/mvp-build",
       },
@@ -54,7 +54,7 @@ const navigationData: NavigationSection[] = [
   },
   {
     title: "Products",
-    subtitle: "Self-hosted tools we deploy on your server",
+    subtitle: "Private tools deployed on your infrastructure",
     layout: "grid",
     items: [
       {
@@ -138,6 +138,10 @@ const navigationData: NavigationSection[] = [
   {
     title: "FAQ",
     href: "/#faq",
+  },
+  {
+    title: "About",
+    href: "/about",
   },
 ];
 

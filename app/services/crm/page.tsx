@@ -21,6 +21,7 @@ import UseCaseSection from "@/components/services/use-case-section";
 import ComparisonTable from "@/components/services/comparison-table";
 import PricingSection from "@/components/services/pricing-section";
 import ServiceFaq from "@/components/services/service-faq";
+import RelatedServices from "@/components/services/related-services";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 
 const showcaseStats = [
@@ -270,6 +271,7 @@ export default function CrmPage() {
         timeline="Launch timeline: 7-14 business days"
       />
       <ServiceFaq items={faqItems} />
+      <RelatedServices currentSlug="crm" />
       <CTA
         heading="Ready to own your CRM?"
         description="Tell us about your sales process and team size. We'll design a CRM that fits your workflow -- deployed on your server in under two weeks."

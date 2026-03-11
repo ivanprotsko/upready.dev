@@ -8,7 +8,9 @@ export const metadata: Metadata = {
     title: "Contact upready.dev — Fixed Quote in 24 Hours",
     description:
       "Describe your project. Get a fixed price within 24 hours. App rescue, MVP builds, and self-hosted tool deployment.",
+    url: "https://upready.dev/contacts",
   },
+  alternates: { canonical: "https://upready.dev/contacts" },
 };
 
 export default function ContactsLayout({

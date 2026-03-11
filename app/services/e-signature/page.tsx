@@ -12,6 +12,7 @@ import UseCaseSection from "@/components/services/use-case-section";
 import ComparisonTable from "@/components/services/comparison-table";
 import PricingSection from "@/components/services/pricing-section";
 import ServiceFaq from "@/components/services/service-faq";
+import RelatedServices from "@/components/services/related-services";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 
 const productStats = [
@@ -126,6 +127,7 @@ export default function ESignaturePage() {
         timeline="Setup takes 5-7 business days. Includes deployment, branding, and template creation."
       />
       <ServiceFaq items={faqItems} />
+      <RelatedServices currentSlug="e-signature" />
       <CTA
         heading="Stop paying per envelope"
         description="We'll deploy your own e-signature platform with unlimited documents, custom branding, and API access. Up and running in under a week."

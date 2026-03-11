@@ -9,13 +9,11 @@ export const metadata: Metadata = {
     description:
       "Replace DocuSign with Documenso: unlimited envelopes, no per-signature pricing, API included at no extra cost. Your data, your server.",
     url: "https://upready.dev/services/e-signature",
-    images: [{ url: "/api/og?title=Documenso+vs+DocuSign&description=Unlimited+e-signatures,+no+per-envelope+fees.&service=e-signature", width: 1200, height: 630, alt: "Documenso — Open Source DocuSign Alternative" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Replace DocuSign With Unlimited E-Signatures — Documenso Setup",
     description: "DocuSign charges per envelope. Documenso doesn't. We deploy it on your server for a flat fee.",
-    images: ["/api/og?title=Documenso+vs+DocuSign&description=Unlimited+e-signatures,+flat+fee.&service=e-signature"],
   },
   alternates: { canonical: "https://upready.dev/services/e-signature" },
 };

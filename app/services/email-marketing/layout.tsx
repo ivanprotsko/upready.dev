@@ -9,13 +9,11 @@ export const metadata: Metadata = {
     description:
       "Mailchimp charges per subscriber. Listmonk doesn't. We deploy and manage your own email marketing platform — unlimited lists, SQL segmentation, zero per-send fees.",
     url: "https://upready.dev/services/email-marketing",
-    images: [{ url: "/api/og?title=Self-Hosted+Email+Marketing&description=Unlimited+subscribers.+Flat+fee.+No+Mailchimp+pricing.&service=email-marketing", width: 1200, height: 630, alt: "Self-Hosted Email Marketing — Listmonk by upready.dev" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Self-Hosted Email Marketing — Unlimited Subscribers, Flat Fee",
     description: "We deploy Listmonk on your server. Send to your entire list for $99/mo — no per-subscriber pricing ever.",
-    images: ["/api/og?title=Self-Hosted+Email+Marketing&description=Unlimited+subscribers,+flat+fee.&service=email-marketing"],
   },
   alternates: { canonical: "https://upready.dev/services/email-marketing" },
 };

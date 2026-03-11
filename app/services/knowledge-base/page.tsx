@@ -12,6 +12,7 @@ import UseCaseSection from "@/components/services/use-case-section";
 import ComparisonTable from "@/components/services/comparison-table";
 import PricingSection from "@/components/services/pricing-section";
 import ServiceFaq from "@/components/services/service-faq";
+import RelatedServices from "@/components/services/related-services";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 
 const showcaseStats = [
@@ -219,6 +220,7 @@ export default function KnowledgeBasePage() {
         timeline="Setup takes 3-5 business days. Includes deployment, content migration assistance, and training."
       />
       <ServiceFaq items={faqItems} />
+      <RelatedServices currentSlug="knowledge-base" />
       <CTA
         heading="Your knowledge deserves a permanent home"
         description="We'll deploy your knowledge base, migrate existing content, and train your team. Ready in under a week."

@@ -1,0 +1,60 @@
+{
+  "_comment": "Все цены в USD. Async + Crypto/PayPal. Через юрлицо: ×1.72 (42% overhead).",
+
+  "techAudit": {
+    "name": "Tech Audit",
+    "price": 500,
+    "unit": "fixed",
+    "timeline": "48 hours",
+    "description": "Manual code review by senior developer. Written report + walkthrough call."
+  },
+
+  "appRescue": {
+    "name": "App Rescue",
+    "model": "hourly",
+    "requiresAudit": true,
+    "auditCredited": true,
+    "tiers": [
+      { "label": "Under 80 hrs", "rate": 100 },
+      { "label": "80+ hrs", "rate": 75 },
+      { "label": "120+ hrs", "rate": 50 }
+    ],
+    "description": "Tech Audit mandatory first. Hourly rate depends on total rescue scope."
+  },
+
+  "mvpBuild": {
+    "name": "MVP Build",
+    "model": "fixed",
+    "timeline": "1-4 weeks",
+    "tiers": [
+      { "label": "Starter", "price": 2500 },
+      { "label": "Standard", "price": 5000 },
+      { "label": "Full", "price": 7500 }
+    ]
+  },
+
+  "ongoingSupport": {
+    "name": "Ongoing Support",
+    "model": "hourly",
+    "billing": "monthly",
+    "tiers": [
+      { "label": "Under 80 hrs/mo", "rate": 100 },
+      { "label": "80+ hrs/mo", "rate": 75 },
+      { "label": "120+ hrs/mo", "rate": 50 }
+    ]
+  },
+
+  "emergencyResponse": {
+    "name": "Emergency Response",
+    "price": 2500,
+    "unit": "from",
+    "timeline": "Within 24 hours",
+    "description": "Immediate response for hacked apps, breaches, exposed API keys."
+  },
+
+  "overheads": {
+    "crypto": { "label": "Crypto (USDT)", "markup": 0 },
+    "paypal": { "label": "PayPal", "markup": 0, "note": "Commission on sender" },
+    "corporate": { "label": "Corporate invoice", "markup": 0.42 }
+  }
+}

@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Check, Flame } from "lucide-react";
 
@@ -92,7 +93,7 @@ const PricingSection = ({ title = "Pricing", subtitle, plans, ctaText = "Get Sta
                         </ul>
 
                         <Button asChild className="w-full h-12" variant={isFeatured ? "default" : "outline"}>
-                          <a href="/contacts">{ctaText}</a>
+                          <Link href="/contacts">{ctaText}</Link>
                         </Button>
                       </CardContent>
                     </Card>

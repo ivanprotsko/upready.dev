@@ -9,13 +9,11 @@ export const metadata: Metadata = {
     description:
       "BookStack deployed on your server. Organize team documentation, wiki, and SOPs — unlimited users, no Atlassian pricing.",
     url: "https://upready.dev/services/knowledge-base",
-    images: [{ url: "/api/og?title=Self-Hosted+Knowledge+Base&description=Confluence+alternative.+Unlimited+users,+flat+fee.&service=knowledge-base", width: 1200, height: 630, alt: "Self-Hosted Knowledge Base — BookStack" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Replace Confluence — Self-Hosted Knowledge Base, Unlimited Users",
     description: "BookStack on your server. Unlimited users, flat fee. Leave Atlassian's per-user pricing behind.",
-    images: ["/api/og?title=Self-Hosted+Knowledge+Base&description=Confluence+alternative.&service=knowledge-base"],
   },
   alternates: { canonical: "https://upready.dev/services/knowledge-base" },
 };

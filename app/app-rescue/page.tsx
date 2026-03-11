@@ -52,7 +52,7 @@ const processSteps = [
     title: "Tell us what's broken",
     description:
       "Describe the problem in plain language. No technical knowledge required — paste the error, share the app URL, or just explain what stopped working. We'll do the rest.",
-    detail: "Free · 30 minutes · No commitment",
+    detail: "Free · 24-hour response · No commitment",
   },
   {
     step: "02",
@@ -106,7 +106,7 @@ const platforms = [
 const stats = [
   { value: "50+", label: "Founders rescued", icon: Users },
   { value: "48h", label: "Diagnosis turnaround", icon: Clock },
-  { value: "$2K", label: "Rescue starts at", icon: DollarSign },
+  { value: "$500", label: "Audit + Rescue starts at", icon: DollarSign },
   { value: "3–7", label: "Days avg fix time", icon: Clock },
   { value: "100%", label: "Code owned by you", icon: CheckCircle2 },
 ];
@@ -120,7 +120,7 @@ const faqItems = [
   {
     question: "Why not just hire a freelancer on Upwork?",
     answer:
-      "Most freelancers — even good ones — haven't worked with AI-generated codebases. They see unfamiliar patterns and either refactor working code or miss what's actually broken. We've fixed apps that a freelancer touched and made worse. We specialize specifically in Lovable, Bolt, Cursor, Replit, and v0 apps. That's the difference.",
+      "Most freelancers — even good ones — haven't worked with AI-generated codebases. They see unfamiliar patterns and either rebuild working code or miss what's actually broken. We've fixed apps that a freelancer touched and made worse. We specialize specifically in Lovable, Bolt, Cursor, Replit, and v0 apps. That's the difference.",
   },
   {
     question: "How do I know you won't make it worse?",
@@ -274,7 +274,7 @@ export default function RescuePage() {
                 it.&rdquo;
               </p>
               <p className="text-sm text-muted-foreground mt-2">
-                — a founder, two weeks before booking a diagnosis call
+                — a founder, two weeks before requesting a diagnosis
               </p>
             </div>
           </div>
@@ -409,15 +409,16 @@ export default function RescuePage() {
                   </p>
                 </div>
                 <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-4xl font-bold">$2,000</span>
-                  <span className="text-muted-foreground">– $5,000</span>
+                  <span className="text-4xl font-bold">From $50/hr</span>
                 </div>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Rate based on scope: $100/hr (&lt;80 hrs) · $75/hr (80+) · $50/hr (120+)
+                </p>
                 <ul className="space-y-3 mb-8 flex-1">
                   {[
-                    "Everything in the Audit",
+                    "Tech Audit included ($500, credited toward rescue)",
                     "Senior developer fixes the root cause",
                     "Testing in production conditions before delivery",
-                    "50% upfront, 50% on delivery — see it working first",
                     "Full code ownership — you get the repo, you keep it",
                   ].map((feature) => (
                     <li key={feature} className="flex items-start gap-2">
@@ -449,10 +450,7 @@ export default function RescuePage() {
                   </p>
                 </div>
                 <div className="flex items-baseline gap-1 mb-6">
-                  <span className="text-2xl font-bold">Custom</span>
-                  <span className="text-muted-foreground text-sm">
-                    — book a call
-                  </span>
+                  <span className="text-4xl font-bold">From $2,500</span>
                 </div>
                 <ul className="space-y-3 mb-8 flex-1">
                   {[
@@ -470,7 +468,7 @@ export default function RescuePage() {
                 </ul>
                 <Button asChild variant="outline" className="w-full rounded-full">
                   <Link href="/contacts?type=emergency">
-                    Book an Emergency Call
+                    Request Emergency Help
                   </Link>
                 </Button>
               </CardContent>
@@ -479,7 +477,7 @@ export default function RescuePage() {
           <p className="text-center text-sm text-muted-foreground mt-10 max-w-xl mx-auto">
             All prices in USD. Fixed quote after the free diagnosis — no
             open-ended billing. Not sure which tier you need? Start with the
-            free diagnosis call and we&apos;ll tell you.
+            free diagnosis and we&apos;ll tell you.
           </p>
         </div>
       </section>
@@ -501,7 +499,7 @@ export default function RescuePage() {
 
       {/* FAQ */}
       <ServiceFaq
-        title="Questions we hear before every first call"
+        title="Questions we hear before every engagement"
         items={faqItems}
       />
 
@@ -515,9 +513,9 @@ export default function RescuePage() {
                 <span className="text-primary">Let&apos;s close the gap.</span>
               </h2>
               <p className="text-muted-foreground text-base sm:text-lg">
-                A 30-minute call costs you nothing. A senior developer looks at
-                your app and tells you exactly what&apos;s wrong. No commitment,
-                no sales pitch — just a real diagnosis.
+                Describe your problem. A senior developer reviews your app and
+                responds within 24 hours with a real diagnosis. No commitment,
+                no sales pitch.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 items-center">
                 <Button

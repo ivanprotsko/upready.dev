@@ -15,14 +15,14 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
-import { Check, Mail, Clock, Shield } from "lucide-react";
+import { Check, Mail, Clock, Shield, Loader2 } from "lucide-react";
 import Footer from "@/components/shadcn-space/blocks/footer-03/footer";
 
 const serviceTypes = [
   { value: "audit", label: "Tech Audit — $500" },
-  { value: "rescue", label: "App Rescue — From $2,000" },
-  { value: "build", label: "MVP Build — From $5,000" },
-  { value: "retainer", label: "Monthly Retainer — From $2,500/mo" },
+  { value: "rescue", label: "App Rescue — From $500" },
+  { value: "build", label: "MVP Build — From $2,500" },
+  { value: "support", label: "Ongoing Support — From $50/hr" },
   { value: "self-hosted", label: "Self-Hosted Tool Setup" },
   { value: "other", label: "Something else" },
 ];
@@ -38,7 +38,10 @@ function ContactPageInner() {
     appUrl: "",
     message: "",
   });
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<
+    "idle" | "submitting" | "success" | "error"
+  >("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -47,16 +50,34 @@ function ContactPageInner() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // For now, open mailto with form data
-    const subject = `New inquiry: ${formData.service || "General"}`;
-    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nService: ${formData.service}\nApp URL: ${formData.appUrl}\n\nMessage:\n${formData.message}`;
-    window.location.href = `mailto:hello@upready.dev?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    setSubmitted(true);
+    setStatus("submitting");
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        setStatus("error");
+        setErrorMessage(data.error || "Something went wrong. Please try again.");
+        return;
+      }
+
+      setStatus("success");
+    } catch {
+      setStatus("error");
+      setErrorMessage("Network error. Please try again or email us directly.");
+    }
   };
 
-  if (submitted) {
+  if (status === "success") {
     return (
       <main>
         <section className="py-20 sm:py-32">
@@ -65,19 +86,20 @@ function ContactPageInner() {
               <Check className="w-8 h-8 text-primary" />
             </div>
             <h1 className="text-3xl font-semibold mb-4">
-              Your email client should open now
+              Message sent successfully
             </h1>
             <p className="text-muted-foreground mb-6">
-              If it didn't, send your message directly to{" "}
+              We got your inquiry and will respond within 24 hours. Usually
+              faster.
+            </p>
+            <p className="text-sm text-muted-foreground">
+              You can also reach us directly at{" "}
               <a
                 href="mailto:hello@upready.dev"
                 className="text-primary underline underline-offset-4"
               >
                 hello@upready.dev
               </a>
-            </p>
-            <p className="text-sm text-muted-foreground">
-              We respond within 24 hours. Usually faster.
             </p>
           </div>
         </section>
@@ -234,12 +256,26 @@ function ContactPageInner() {
                     />
                   </div>
 
+                  {status === "error" && (
+                    <p className="text-sm text-destructive text-center">
+                      {errorMessage}
+                    </p>
+                  )}
+
                   <Button
                     type="submit"
                     size="lg"
                     className="w-full rounded-full"
+                    disabled={status === "submitting"}
                   >
-                    Send inquiry
+                    {status === "submitting" ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin mr-2" />
+                        Sending...
+                      </>
+                    ) : (
+                      "Send inquiry"
+                    )}
                   </Button>
 
                   <p className="text-xs text-center text-muted-foreground">

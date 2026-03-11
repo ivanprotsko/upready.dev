@@ -21,6 +21,7 @@ import UseCaseSection from "@/components/services/use-case-section";
 import ComparisonTable from "@/components/services/comparison-table";
 import PricingSection from "@/components/services/pricing-section";
 import ServiceFaq from "@/components/services/service-faq";
+import RelatedServices from "@/components/services/related-services";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 
 const showcaseStats = [
@@ -261,9 +262,10 @@ export default function EcommercePage() {
         timeline="Setup takes 14-21 business days. Includes product migration, storefront design, and payment integration."
       />
       <ServiceFaq items={faqItems} />
+      <RelatedServices currentSlug="ecommerce" />
       <CTA
         heading="Own your commerce platform"
-        description="Book a call and we'll plan your migration from Shopify to a store you actually own. Stop renting, start building equity."
+        description="Describe your store and we'll plan your migration from Shopify to a store you actually own. Stop renting, start building equity."
       />
     </>
   );

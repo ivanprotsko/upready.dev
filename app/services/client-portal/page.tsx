@@ -12,6 +12,7 @@ import UseCaseSection from "@/components/services/use-case-section";
 import ComparisonTable from "@/components/services/comparison-table";
 import PricingSection from "@/components/services/pricing-section";
 import ServiceFaq from "@/components/services/service-faq";
+import RelatedServices from "@/components/services/related-services";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 
 const showcaseStats = [
@@ -125,9 +126,10 @@ export default function ClientPortalPage() {
         timeline="Setup takes 7-10 business days. Includes deployment, configuration, and onboarding."
       />
       <ServiceFaq items={faqItems} />
+      <RelatedServices currentSlug="client-portal" />
       <CTA
         heading="Give your clients a better experience"
-        description="Book a call and we'll set up a branded client portal for your business in under two weeks."
+        description="Tell us what you need and we'll set up a branded client portal for your business in under two weeks."
       />
     </>
   );

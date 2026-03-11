@@ -9,13 +9,11 @@ export const metadata: Metadata = {
     description:
       "AnythingLLM deployed on your infrastructure. Chat with your documents, automate support — without sending data to OpenAI or any third party.",
     url: "https://upready.dev/services/ai-assistant",
-    images: [{ url: "/api/og?title=HIPAA-Compliant+AI+Chatbot&description=Private+AI+assistant,+data+never+leaves+your+server.&service=ai-assistant", width: 1200, height: 630, alt: "HIPAA-Compliant Private AI Assistant" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "HIPAA-Compliant AI Chatbot — Private, Self-Hosted, Your Data",
     description: "Deploy an AI assistant that never sends your data to third parties. HIPAA-ready. Setup from $1,997.",
-    images: ["/api/og?title=HIPAA-Compliant+AI+Chatbot&description=Private+AI+assistant,+self-hosted.&service=ai-assistant"],
   },
   alternates: { canonical: "https://upready.dev/services/ai-assistant" },
 };

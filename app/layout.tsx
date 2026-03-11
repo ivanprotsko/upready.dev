@@ -33,23 +33,12 @@ export const metadata: Metadata = {
     title: "Fix Your App. Cut Your SaaS Bill. Fixed Prices. — upready.dev",
     description:
       "We rescue broken AI-built apps and replace expensive SaaS with open-source alternatives you control. Fixed prices, 48-hour turnaround, full ownership.",
-    images: [
-      {
-        url: "/api/og?title=Fix+Your+App.+Cut+Your+SaaS+Bill.&description=Senior+developers.+Fixed+prices.+You+own+everything.",
-        width: 1200,
-        height: 630,
-        alt: "upready.dev — Fix Your App. Cut Your SaaS Bill.",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Fix Your App. Cut Your SaaS Bill. — upready.dev",
     description:
       "We rescue AI-built apps and replace expensive SaaS with open-source alternatives. Fixed prices, fast turnaround, full ownership.",
-    images: [
-      "/api/og?title=Fix+Your+App.+Cut+Your+SaaS+Bill.&description=Senior+developers.+Fixed+prices.+You+own+everything.",
-    ],
   },
   robots: {
     index: true,
@@ -121,7 +110,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <Navbar />
           {children}
         </ThemeProvider>

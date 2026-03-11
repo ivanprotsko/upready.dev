@@ -9,13 +9,11 @@ export const metadata: Metadata = {
     description:
       "Shopify charges 2% transaction fees. Medusa doesn't. We deploy your own e-commerce platform with full product, order, and customer data migration from Shopify.",
     url: "https://upready.dev/services/ecommerce",
-    images: [{ url: "/api/og?title=Open+Source+Shopify+Alternative&description=Zero+transaction+fees.+Medusa+on+your+server.&service=ecommerce", width: 1200, height: 630, alt: "Open Source Shopify Alternative — Medusa E-Commerce" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Replace Shopify — Zero Transaction Fees, Self-Hosted Medusa",
     description: "We deploy Medusa on your server. 0% platform fees, Shopify migration included. Setup from $4,997.",
-    images: ["/api/og?title=Open+Source+Shopify+Alternative&description=Zero+transaction+fees.+Medusa.&service=ecommerce"],
   },
   alternates: { canonical: "https://upready.dev/services/ecommerce" },
 };

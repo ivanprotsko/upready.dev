@@ -12,6 +12,7 @@ import UseCaseSection from "@/components/services/use-case-section";
 import ComparisonTable from "@/components/services/comparison-table";
 import PricingSection from "@/components/services/pricing-section";
 import ServiceFaq from "@/components/services/service-faq";
+import RelatedServices from "@/components/services/related-services";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 
 const showcaseStats = [
@@ -117,9 +118,10 @@ export default function AnalyticsPage() {
         timeline="Launch timeline: 1-2 business days"
       />
       <ServiceFaq items={faqItems} />
+      <RelatedServices currentSlug="analytics" />
       <CTA
         heading="Ready to own your analytics?"
-        description="Book a call and we'll deploy a privacy-first analytics dashboard for your website in 1-2 days."
+        description="Tell us what you need and we'll deploy a privacy-first analytics dashboard for your website in 1-2 days."
       />
     </>
   );

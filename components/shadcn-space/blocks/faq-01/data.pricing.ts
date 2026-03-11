@@ -29,7 +29,7 @@ export const pricingFaqData: Faq01Data = {
     {
       question: "Is the audit fee always credited toward a project?",
       answer:
-        "Yes. If you do an audit and then proceed to a Rescue or MVP Build within 60 days, the full audit fee is subtracted from the project price. So a $500 Quick Triage + $2,500 Rescue = $2,500 total (not $3,000). A $1,500 Full Audit + $4,000 MVP Build = $4,000 total (not $5,500).",
+        "Yes. If you do an audit and then proceed to a Rescue or MVP Build within 60 days, the full $500 audit fee is subtracted from the project price. So a $500 Audit + $2,500 Rescue = $2,500 total (not $3,000).",
     },
     {
       question: "What is included in the quoted price?",

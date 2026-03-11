@@ -9,14 +9,6 @@ export const metadata: Metadata = {
     description:
       "A senior developer reviews your AI-built app and delivers a written report of every vulnerability, deployment risk, and code issue. $500. 48-hour turnaround. Plain English.",
     url: "https://upready.dev/tech-audit",
-    images: [
-      {
-        url: "/api/og?title=App+Audit+%E2%80%94+%24500+Written+Report+in+48+Hours&description=Senior+developer+reviews+your+AI-built+app.+Every+vulnerability+documented.+Plain+English.",
-        width: 1200,
-        height: 630,
-        alt: "App Audit — $500 Written Report in 48 Hours | upready.dev",
-      },
-    ],
   },
   alternates: { canonical: "https://upready.dev/tech-audit" },
 };

@@ -12,6 +12,7 @@ import UseCaseSection from "@/components/services/use-case-section";
 import ComparisonTable from "@/components/services/comparison-table";
 import PricingSection from "@/components/services/pricing-section";
 import ServiceFaq from "@/components/services/service-faq";
+import RelatedServices from "@/components/services/related-services";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 
 const productStats = [
@@ -127,6 +128,7 @@ export default function ProjectManagementPage() {
         timeline="Setup takes 5-7 business days. Includes deployment, migration, and team onboarding."
       />
       <ServiceFaq items={faqItems} />
+      <RelatedServices currentSlug="project-management" />
       <CTA
         heading="Ditch the per-seat pricing"
         description="We'll deploy your project management platform and migrate your data from Jira, Asana, or Linear in under a week."

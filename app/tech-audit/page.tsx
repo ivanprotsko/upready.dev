@@ -133,7 +133,7 @@ const faqItems = [
   {
     question: "What tech stacks do you know?",
     answer:
-      "We specialize in apps built with Lovable, Bolt.new, Cursor, Replit, v0, and Base44. The underlying stacks are typically Next.js, React, Supabase, Firebase, and Node.js. If your app uses a different stack, book a free 15-minute call first and we'll confirm scope.",
+      "We specialize in apps built with Lovable, Bolt.new, Cursor, Replit, v0, and Base44. The underlying stacks are typically Next.js, React, Supabase, Firebase, and Node.js. If your app uses a different stack, send us a message and we'll confirm scope within 24 hours.",
   },
   {
     question: "Do I have to give you production access?",
@@ -401,17 +401,17 @@ SECTION 3: CODE QUALITY
 SECTION 4: FIX-OR-REBUILD RECOMMENDATION
 Option A — Fix existing code
   Estimated effort: 3–5 days
-  Estimated cost: $2,000–$3,500
+  Estimated cost: $2,500–$5,000
   Best if: Foundation is sound, issues are isolated
 
 Option B — Partial rebuild (recommended)
-  Estimated effort: 5–7 days
-  Estimated cost: $3,500–$5,000
+  Estimated effort: 5–10 days
+  Estimated cost: $5,000–$7,500
   Best if: Auth and database architecture need redesign
 
 Option C — Full rebuild
-  Estimated effort: 4–6 weeks
-  Estimated cost: $5,000–$15,000
+  Estimated effort: 1–4 weeks
+  Estimated cost: $2,500–$7,500
   Best if: Scope has grown beyond original AI-built foundation
 
 ─────────────────────────────────────────────
@@ -525,7 +525,7 @@ APPENDIX: ISSUE PRIORITY LIST
                   href="/contacts"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4"
                 >
-                  Or start with a free 15-minute call →
+                  Or ask us a question first →
                 </Link>
               </div>
               <p className="text-sm text-muted-foreground">

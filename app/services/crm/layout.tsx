@@ -9,13 +9,11 @@ export const metadata: Metadata = {
     description:
       "Twenty CRM: Y Combinator-backed, 40K+ GitHub stars. We deploy and manage it on your server. Unlimited contacts, custom objects, email sync. No per-user fees.",
     url: "https://upready.dev/services/crm",
-    images: [{ url: "/api/og?title=Open+Source+CRM+Setup&description=Replace+HubSpot+at+90%25+less+cost.+Unlimited+contacts,+no+per-user+fees.&service=crm", width: 1200, height: 630, alt: "Self-Hosted CRM — Twenty CRM Managed Deployment" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Open Source CRM — Self-Hosted, Unlimited Contacts, No Per-User Fees",
     description: "We deploy Twenty CRM on your server. Replace HubSpot. Save $4,892+ in year one.",
-    images: ["/api/og?title=Open+Source+CRM+Setup&description=Replace+HubSpot+at+90%25+less+cost.&service=crm"],
   },
   alternates: { canonical: "https://upready.dev/services/crm" },
 };

@@ -1,22 +1,14 @@
-import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, Check } from "lucide-react";
+import { ArrowUpRight, Check } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import Logo from "@/assets/logo/logo";
 import Feature02 from "@/components/shadcn-space/blocks/feature-02";
 import Faq from "@/components/shadcn-space/blocks/faq-01/faq";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 import Footer from "@/components/shadcn-space/blocks/footer-03/footer";
 import { upreadyData as footerData } from "@/components/shadcn-space/blocks/footer-03/data.upready";
-
-export const metadata: Metadata = {
-  title: "MVP Build — From Prototype to Product in 2–4 Weeks",
-  description:
-    "Turn your idea or broken AI prototype into a working product. Auth, database, payments, deployment — the parts AI tools skip. Flat fee, $2,000–$5,000, you own the code.",
-};
 
 const deliverablesData = {
   badge_text: "What You Get",
@@ -109,7 +101,7 @@ const faqData = {
     {
       question: "How long does it actually take?",
       answer:
-        "1–4 weeks from scope approval to delivery. Micro MVP: 1–2 weeks. Standard: 2–3 weeks. Full: 3–4 weeks. The scope document takes 24–48 hours to prepare.",
+        "1–4 weeks from scope approval to delivery. Starter: 1–2 weeks. Standard: 2–3 weeks. Full: 3–4 weeks. The scope document takes 24–48 hours to prepare.",
     },
     {
       question: "Why are you so much cheaper than agencies?",
@@ -134,7 +126,7 @@ const faqData = {
     {
       question: "What happens after delivery?",
       answer:
-        "Two revision rounds are included. For ongoing work, our Retainer starts at $1,500/month. Most founders come back within 4–8 weeks with the first list of things users are asking for.",
+        "Two revision rounds are included. For ongoing support, rates start at $50/hr (120+ hrs/month). Most founders come back within 4–8 weeks with the first list of things users are asking for.",
     },
   ],
 };
@@ -172,10 +164,10 @@ const processSteps = [
 
 const pricingTiers = [
   {
-    name: "Micro MVP",
+    name: "Starter MVP",
     subtitle: "Validate one core idea",
-    price: "$2,000",
-    priceMax: "– $2,500",
+    price: "$2,500",
+    priceMax: "",
     timeline: "1–2 weeks",
     features: [
       "Landing page or simple interface",
@@ -189,8 +181,8 @@ const pricingTiers = [
   {
     name: "Standard MVP",
     subtitle: "A real product to charge for",
-    price: "$3,000",
-    priceMax: "– $4,000",
+    price: "$5,000",
+    priceMax: "",
     timeline: "2–3 weeks",
     features: [
       "Auth (email + Google OAuth)",
@@ -204,8 +196,8 @@ const pricingTiers = [
   {
     name: "Full MVP",
     subtitle: "Production-ready on day one",
-    price: "$4,000",
-    priceMax: "– $5,000",
+    price: "$7,500",
+    priceMax: "",
     timeline: "3–4 weeks",
     features: [
       "Full auth (email + OAuth + magic link)",
@@ -228,13 +220,14 @@ export default function BuildPage() {
             MVP Build
           </Badge>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight mb-6">
-            Your Prototype Is Not a Product.{" "}
-            <span className="text-primary">Let&apos;s Fix That.</span>
+            You&apos;ve Already Tried.{" "}
+            <span className="text-primary">We Finish What Others Couldn&apos;t.</span>
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-            You built something in Lovable or Bolt. It looks good. Real users
-            break it in 30 seconds. We build the real version — in 2–4 weeks,
-            flat fee, no meetings.
+            AI tools got you 80% there. The freelancer ghosted at 60%.
+            The agency quoted $30K and four months. You still don&apos;t have a
+            product. We pick up where they left off — 1–4 weeks, flat fee,
+            working code on delivery.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="rounded-full px-8">
@@ -256,7 +249,7 @@ export default function BuildPage() {
             </Button>
           </div>
           <p className="mt-6 text-sm text-muted-foreground">
-            Fixed scope. Flat fee. You own the code. No vendor lock-in.
+            50+ founders rescued. Fixed scope. Flat fee. You own every line of code.
           </p>
         </div>
       </section>
@@ -265,35 +258,31 @@ export default function BuildPage() {
       <section className="py-16 sm:py-24 bg-accent/30">
         <div className="max-w-3xl mx-auto px-4 sm:px-8">
           <Badge variant="outline" className="mb-4 px-3 py-1 h-auto text-sm">
-            The Hard Truth
+            Sound Familiar?
           </Badge>
           <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-8">
-            AI Tools Get You 70% There.{" "}
-            <span className="text-primary">The Last 30% Is What Ships.</span>
+            You&apos;ve Been Here Before.{" "}
+            <span className="text-primary">This Time It Gets Done.</span>
           </h2>
           <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
             <p>
-              Lovable, Bolt, and Cursor are genuinely good at making something
-              that <em>looks</em> like a product. Fast. In hours, not months.
+              You tried the AI builders. Lovable, Bolt, Cursor — maybe all
+              three. Got a prototype that looked great in the preview. Then real
+              users showed up, and everything fell apart.
             </p>
             <p>
-              Here&apos;s what they consistently skip: everything that makes it
-              actually work for real users.
+              So you hired a freelancer. They were responsive for two weeks,
+              then replies slowed, then stopped. You&apos;re left with
+              half-finished code you can&apos;t maintain and an invoice you
+              can&apos;t dispute.
             </p>
             <p>
-              The forms submit to nowhere. The login breaks in production. Stripe
-              works in preview and fails the moment you go live. The database is
-              hardcoded data, not a real schema.
+              Maybe you talked to an agency. They quoted $20K–$50K, a
+              three-month timeline, and a discovery phase before anything gets
+              built. You don&apos;t have that kind of runway.
             </p>
           </div>
           <div className="mt-8 space-y-4">
-            <blockquote className="border-l-4 border-primary pl-6 py-2 text-muted-foreground italic">
-              &ldquo;Lovable gets you 70% of the way there, but you&apos;ll
-              spend a lot of time wrestling with that last 30%.&rdquo;
-              <span className="block text-sm not-italic mt-1 text-muted-foreground/70">
-                — Superblocks review of Lovable, 2025
-              </span>
-            </blockquote>
             <blockquote className="border-l-4 border-primary pl-6 py-2 text-muted-foreground italic">
               &ldquo;I&apos;ve spent weeks prompting and the app is 80% done but
               I can&apos;t finish it.&rdquo;
@@ -301,9 +290,18 @@ export default function BuildPage() {
                 — Founder in r/lovable
               </span>
             </blockquote>
+            <blockquote className="border-l-4 border-primary pl-6 py-2 text-muted-foreground italic">
+              &ldquo;Hired a dev on Upwork. $3K later I have a repo I
+              can&apos;t deploy and a Stripe integration that throws
+              errors.&rdquo;
+              <span className="block text-sm not-italic mt-1 text-muted-foreground/70">
+                — Founder in r/SaaS
+              </span>
+            </blockquote>
           </div>
           <p className="mt-8 text-lg font-medium text-foreground">
-            We close the gap. That&apos;s the whole service.
+            We&apos;ve seen this pattern dozens of times. We know exactly
+            where it breaks, and we know how to finish it.
           </p>
         </div>
       </section>
@@ -423,7 +421,7 @@ export default function BuildPage() {
         data={{
           heading: "From Idea to Working Product.",
           description:
-            "Agencies charge $15,000–$50,000 and take 3–6 months. We charge $2,000–$5,000 and take 2–4 weeks. Describe your product — we'll scope it, price it, and tell you if we're the right fit.",
+            "Agencies charge $15,000–$50,000 and take 3–6 months. We charge $2,500–$7,500 and take 1–4 weeks. Describe your product — we'll scope it, price it, and tell you if we're the right fit.",
           ctaLabel: "Describe Your Product",
           ctaHref: "/contacts",
         }}

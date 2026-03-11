@@ -9,13 +9,11 @@ export const metadata: Metadata = {
     description:
       "Your own client portal on your server. File sharing, project updates, messaging — all under your brand with your domain.",
     url: "https://upready.dev/services/client-portal",
-    images: [{ url: "/api/og?title=Self-Hosted+Client+Portal&description=White-label,+unlimited+clients,+your+domain.&service=client-portal", width: 1200, height: 630, alt: "Self-Hosted Client Portal" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Self-Hosted Client Portal — Branded, Unlimited Clients",
     description: "Deploy your own client portal. Files, projects, messaging — under your brand, on your server.",
-    images: ["/api/og?title=Self-Hosted+Client+Portal&description=White-label,+unlimited+clients.&service=client-portal"],
   },
   alternates: { canonical: "https://upready.dev/services/client-portal" },
 };

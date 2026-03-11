@@ -12,6 +12,7 @@ import UseCaseSection from "@/components/services/use-case-section";
 import ComparisonTable from "@/components/services/comparison-table";
 import PricingSection from "@/components/services/pricing-section";
 import ServiceFaq from "@/components/services/service-faq";
+import RelatedServices from "@/components/services/related-services";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 
 const showcaseStats = [
@@ -118,6 +119,7 @@ export default function DashboardsPage() {
         timeline="Launch timeline: 5-10 business days"
       />
       <ServiceFaq items={faqItems} />
+      <RelatedServices currentSlug="dashboards" />
       <CTA
         heading="Need dashboards for your business?"
         description="Tell us about your data sources and KPIs. We will design and deploy the perfect dashboard platform for your team."

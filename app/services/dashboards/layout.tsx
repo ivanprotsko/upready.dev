@@ -9,13 +9,11 @@ export const metadata: Metadata = {
     description:
       "Your own analytics dashboard platform. Connect any database, build interactive reports, control access by role. Fixed monthly cost, unlimited users.",
     url: "https://upready.dev/services/dashboards",
-    images: [{ url: "/api/og?title=Self-Hosted+Business+Dashboards&description=No+per-seat+BI+pricing.&service=dashboards", width: 1200, height: 630, alt: "Self-Hosted Business Intelligence Dashboards" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Self-Hosted Business Dashboards — Unlimited Users, Fixed Price",
     description: "Deploy your own BI platform with unlimited users and no per-seat fees.",
-    images: ["/api/og?title=Self-Hosted+Business+Dashboards&description=No+per-seat+fees.&service=dashboards"],
   },
   alternates: { canonical: "https://upready.dev/services/dashboards" },
 };
