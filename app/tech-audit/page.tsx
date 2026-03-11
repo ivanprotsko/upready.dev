@@ -1,6 +1,7 @@
+"use client";
+
 import Link from "next/link";
 import {
-  ArrowUpRight,
   Shield,
   AlertTriangle,
   Code2,
@@ -10,12 +11,34 @@ import {
   FileText,
   Phone,
   Check,
+  Search,
+  ArrowUpRight,
 } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import ServiceFaq from "@/components/services/service-faq";
+
+import HeroSection from "@/components/shadcn-space/blocks/hero-01/hero";
+import Feature from "@/components/shadcn-space/blocks/feature-02/feature";
+import Pricing from "@/components/shadcn-space/blocks/pricing-02/pricing";
+import Faq from "@/components/shadcn-space/blocks/faq-01/faq";
+import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 import Footer from "@/components/shadcn-space/blocks/footer-03/footer";
+
+/* ─── Data ──────────────────────────────────────────────── */
+
+const whoThisIsFor = [
+  {
+    icon: Search,
+    title: "You're about to launch. You're not sure it's ready.",
+    content:
+      "You built the app with Lovable, Bolt, or Cursor. It works in the sandbox. You've tested it yourself. But you've read enough horror stories — exposed API keys, auth that breaks under real traffic, payment webhooks that fail silently — to know you don't know what you don't know. The Audit gives you a professional second opinion before real users touch it.",
+  },
+  {
+    icon: AlertTriangle,
+    title: "You're already live. Something feels off.",
+    content:
+      "The app is running. You have users. But there's a bug you can't reproduce, a security warning you don't understand, or a nagging sense that the codebase is more fragile than it should be. You're afraid every deployment is one broken change away from downtime. The Audit tells you exactly where the risk is — and what to do about it.",
+  },
+];
 
 const whatYouGet = [
   {
@@ -76,42 +99,58 @@ const whatYouGet = [
 
 const processSteps = [
   {
-    step: "01",
     icon: Send,
     title: "Send us the app",
-    description:
+    content:
       "Share your repository link (GitHub, GitLab, or zip) and a brief description of the app, the tech stack, and any specific concerns you have. If the app is live, share the URL.",
-    detail: "Takes 5 minutes · No technical knowledge required",
+    stat: "Takes 5 minutes · No technical knowledge required",
   },
   {
-    step: "02",
     icon: Clock,
     title: "Senior developer reviews your codebase",
-    description:
+    content:
       "A senior developer manually reviews your app — not an automated scanner. They look at the actual code, test the live app against production conditions, and document every issue they find.",
-    detail: "48-hour turnaround · Human review, not automated",
+    stat: "48-hour turnaround · Human review, not automated",
   },
   {
-    step: "03",
     icon: FileText,
     title: "You receive the written report",
-    description:
+    content:
       "Your report arrives within 48 hours. Every issue is listed, explained in plain English, and prioritized. You'll know exactly what's broken, what's risky, and what to do next — regardless of whether you proceed with us.",
-    detail: "Plain English · Prioritized issue list · Yours to keep",
+    stat: "Plain English · Prioritized issue list · Yours to keep",
   },
   {
-    step: "04",
     icon: Phone,
     title: "30-minute walkthrough (included)",
-    description:
+    content:
       "If you want to talk through the report, ask questions, or understand the severity of specific issues, the walkthrough call is included in the $500. No upsell — just a plain conversation about what we found.",
-    detail: "Included · Optional · No commitment to proceed",
+    stat: "Included · Optional · No commitment to proceed",
+  },
+];
+
+const auditPlan = [
+  {
+    plan_name: "App Audit",
+    plan_descp: "48-hour turnaround from submission",
+    plan_price: "$500",
+    plan_feature: [
+      "Manual review by a senior developer (not automated scanning)",
+      "Written report: security, deployment, code quality, and fix-or-rebuild",
+      "Prioritized issue list in plain English",
+      "Estimated cost and timeline for each fix path",
+      "30-minute walkthrough call (optional, included)",
+      "Report is yours to keep — no obligation to proceed",
+    ],
+    plan_recommended: true,
+    plan_badge: "$500 credited toward rescue if you proceed",
+    plan_cta: "Order the $500 Audit",
+    plan_href: "/contacts?type=audit",
   },
 ];
 
 const faqItems = [
   {
-    question: "Is this worth it if my app \"works\"?",
+    question: 'Is this worth it if my app "works"?',
     answer:
       '"Works" means different things. Working locally and working reliably under real traffic with real users are not the same thing. The most common issues we find — exposed API keys, auth edge cases, missing environment variables in production — are invisible to you until they\'re not. The $500 Audit is the cheapest way to find out before a user does.',
   },
@@ -152,215 +191,114 @@ const faqItems = [
   },
 ];
 
+/* ─── Page ──────────────────────────────────────────────── */
+
 export default function AuditPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="py-20 sm:py-32">
-        <div className="max-w-4xl mx-auto px-4 sm:px-8 text-center">
-          <Badge variant="outline" className="mb-6 px-3 py-1 h-auto text-sm">
-            $500 · 48-Hour Turnaround · Written Deliverable
-          </Badge>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight mb-6">
-            Launch Without{" "}
-            <span className="text-primary">Flying Blind.</span>
-          </h1>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            A senior developer reviews your AI-built app and gives you a
-            written report of every vulnerability, breaking risk, and fix — in
-            plain English. Before something goes wrong in production.
-          </p>
-          <div className="inline-flex flex-wrap items-center justify-center gap-x-6 gap-y-1 mb-10 text-sm font-medium">
-            <span>
-              <span className="text-2xl font-bold text-foreground">$500</span>{" "}
-              <span className="text-muted-foreground">flat</span>
-            </span>
-            <span className="text-muted-foreground hidden sm:inline">·</span>
-            <span className="text-muted-foreground">48-hour turnaround</span>
-            <span className="text-muted-foreground hidden sm:inline">·</span>
-            <span className="text-muted-foreground">Written report + walkthrough call</span>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="rounded-full px-8 h-13 text-base">
-              <Link href="/contacts?type=audit">
-                Order the $500 Audit
-                <ArrowUpRight size={16} className="ml-2" />
-              </Link>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="rounded-full px-8 h-13 text-base"
-            >
-              <Link href="#deliverables">See What&apos;s in the Report</Link>
-            </Button>
-          </div>
-          <p className="mt-6 text-sm text-muted-foreground">
-            Fixed price · No ongoing commitment · $500 credited toward rescue if you proceed
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        headingLine1="Launch Without"
+        headingLine2="Flying Blind."
+        headingItalic="Know what's wrong before something breaks."
+        subheading="A senior developer reviews your AI-built app and gives you a written report of every vulnerability, breaking risk, and fix — in plain English. Before something goes wrong in production."
+        buttonText="Order the $500 Audit"
+      />
 
       {/* Who This Is For */}
-      <section className="py-16 sm:py-24 bg-accent/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4 px-3 py-1 h-auto text-sm">
-              Is This For You?
-            </Badge>
-            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">
-              Two types of founders order the audit.
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {/* Sam */}
-            <Card className="border-border/50 bg-background">
-              <CardContent className="p-8">
-                <p className="text-base font-semibold mb-4 leading-snug">
-                  You&apos;re about to launch. You&apos;re not sure it&apos;s ready.
-                </p>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  You built the app with Lovable, Bolt, or Cursor. It works in the sandbox.
-                  You&apos;ve tested it yourself. But you&apos;ve read enough horror stories —
-                  exposed API keys, auth that breaks under real traffic, payment webhooks that
-                  fail silently — to know you don&apos;t know what you don&apos;t know.
-                </p>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  The Audit gives you a professional second opinion before real users touch it.
-                </p>
-              </CardContent>
-            </Card>
-            {/* Casey */}
-            <Card className="border-border/50 bg-background">
-              <CardContent className="p-8">
-                <p className="text-base font-semibold mb-4 leading-snug">
-                  You&apos;re already live. Something feels off.
-                </p>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  The app is running. You have users. But there&apos;s a bug you can&apos;t
-                  reproduce, a security warning you don&apos;t understand, or a nagging sense
-                  that the codebase is more fragile than it should be. You&apos;re afraid
-                  every deployment is one broken change away from downtime.
-                </p>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  The Audit tells you exactly where the risk is — and what to do about it.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      <Feature
+        featureData={whoThisIsFor}
+        badgeText="Is This For You?"
+        heading="Two types of founders order the audit."
+        columns={2}
+      />
 
-      {/* What You Get */}
-      <section className="py-16 sm:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4 px-3 py-1 h-auto text-sm">
-              What We Review
-            </Badge>
-            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">
-              Four areas. Every issue documented.{" "}
-              <span className="text-primary">Plain English throughout.</span>
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {whatYouGet.map((item, index) => (
-              <Card key={index} className="border-border/50 bg-background">
-                <CardContent className="p-8">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
-                    <item.icon className="w-5 h-5 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-semibold mb-4">{item.title}</h3>
-                  <div className="mb-4">
-                    <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
-                      What we check
-                    </p>
-                    <ul className="space-y-1.5">
-                      {item.checks.map((check, i) => (
-                        <li key={i} className="flex items-start gap-2">
-                          <Check className="w-3.5 h-3.5 text-primary mt-0.5 shrink-0" />
-                          <span className="text-sm text-muted-foreground">{check}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="mb-4">
-                    <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
-                      What we deliver
-                    </p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {item.deliver}
-                    </p>
-                  </div>
-                  <div className="border-t border-border/50 pt-4">
-                    <p className="text-sm text-muted-foreground italic leading-relaxed">
-                      {item.why}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+      {/* What You Get — custom section, no block fits nested check lists */}
+      <section>
+        <div className="lg:py-20 sm:py-16 py-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-8 py-8 sm:py-12">
+            <div className="flex flex-col gap-8 md:gap-16">
+              <div className="flex flex-col items-center justify-center gap-4 max-w-lg mx-auto">
+                <span className="inline-flex items-center rounded-full border border-border px-3 py-1 text-sm">
+                  What We Review
+                </span>
+                <h2 className="text-3xl md:text-4xl font-semibold text-center tracking-[-1px]">
+                  Four areas. Every issue documented. Plain English throughout.
+                </h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto w-full">
+                {whatYouGet.map((item, index) => (
+                  <Card key={index} className="border-border/50 bg-background">
+                    <CardContent className="p-8">
+                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
+                        <item.icon className="w-5 h-5 text-primary" />
+                      </div>
+                      <h3 className="text-lg font-semibold mb-4">{item.title}</h3>
+                      <div className="mb-4">
+                        <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
+                          What we check
+                        </p>
+                        <ul className="space-y-1.5">
+                          {item.checks.map((check, i) => (
+                            <li key={i} className="flex items-start gap-2">
+                              <Check className="w-3.5 h-3.5 text-primary mt-0.5 shrink-0" />
+                              <span className="text-sm text-muted-foreground">{check}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="mb-4">
+                        <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
+                          What we deliver
+                        </p>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          {item.deliver}
+                        </p>
+                      </div>
+                      <div className="border-t border-border/50 pt-4">
+                        <p className="text-sm text-muted-foreground italic leading-relaxed">
+                          {item.why}
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Process */}
-      <section className="py-16 sm:py-24 bg-accent/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4 px-3 py-1 h-auto text-sm">
-              How It Works
-            </Badge>
-            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">
-              Four steps. Starts today. Report in 48 hours.
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {processSteps.map((item) => (
-              <Card key={item.step} className="border-none bg-background">
-                <CardContent className="p-8">
-                  <span className="text-5xl font-bold text-primary/20">
-                    {item.step}
-                  </span>
-                  <h3 className="text-lg font-semibold mt-4 mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-5 leading-relaxed text-sm">
-                    {item.description}
-                  </p>
-                  <p className="text-sm text-primary font-medium">
-                    {item.detail}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Feature
+        featureData={processSteps}
+        badgeText="How It Works"
+        heading="Four steps. Starts today. Report in 48 hours."
+        columns={4}
+      />
 
-      {/* Deliverables */}
-      <section id="deliverables" className="py-16 sm:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-8">
-          <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4 px-3 py-1 h-auto text-sm">
-              What the Report Looks Like
-            </Badge>
-            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-4">
-              The actual report format.{" "}
-              <span className="text-primary">No vague &ldquo;findings summary.&rdquo;</span>
-            </h2>
-          </div>
-          <div className="rounded-xl border border-border bg-card overflow-hidden">
-            <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-muted/30">
-              <div className="w-3 h-3 rounded-full bg-red-500/60" />
-              <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
-              <div className="w-3 h-3 rounded-full bg-green-500/60" />
-              <span className="ml-2 text-xs text-muted-foreground font-mono">
-                App Audit Report — [App Name].md
+      {/* Deliverables — custom section, pre-formatted code mockup */}
+      <section id="deliverables">
+        <div className="lg:py-20 sm:py-16 py-8">
+          <div className="max-w-4xl mx-auto px-4 sm:px-8">
+            <div className="flex flex-col items-center justify-center gap-4 max-w-lg mx-auto mb-12">
+              <span className="inline-flex items-center rounded-full border border-border px-3 py-1 text-sm">
+                What the Report Looks Like
               </span>
+              <h2 className="text-3xl md:text-4xl font-semibold text-center tracking-[-1px]">
+                The actual report format. No vague &ldquo;findings summary.&rdquo;
+              </h2>
             </div>
-            <pre className="p-6 sm:p-8 text-xs sm:text-sm font-mono text-muted-foreground leading-relaxed overflow-x-auto whitespace-pre-wrap">
+            <div className="rounded-xl border border-border bg-card overflow-hidden">
+              <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-muted/30">
+                <div className="w-3 h-3 rounded-full bg-red-500/60" />
+                <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
+                <div className="w-3 h-3 rounded-full bg-green-500/60" />
+                <span className="ml-2 text-xs text-muted-foreground font-mono">
+                  App Audit Report — [App Name].md
+                </span>
+              </div>
+              <pre className="p-6 sm:p-8 text-xs sm:text-sm font-mono text-muted-foreground leading-relaxed overflow-x-auto whitespace-pre-wrap">
 {`App Audit Report — [App Name]
 Reviewed by: upready.dev
 Date: [Date]
@@ -419,122 +357,38 @@ Option C — Full rebuild
 APPENDIX: ISSUE PRIORITY LIST
 [All issues sorted by severity — Critical → High → Medium → Low]
 [Includes estimated fix time for each]`}
-            </pre>
+              </pre>
+            </div>
+            <p className="mt-6 text-sm text-muted-foreground text-center leading-relaxed max-w-2xl mx-auto">
+              This is the actual structure. Every audit delivers this — not a one-pager with vague
+              recommendations. If we find nothing critical, we&apos;ll tell you that too, and explain
+              what the low-priority items are.
+            </p>
           </div>
-          <p className="mt-6 text-sm text-muted-foreground text-center leading-relaxed max-w-2xl mx-auto">
-            This is the actual structure. Every audit delivers this — not a one-pager with vague
-            recommendations. If we find nothing critical, we&apos;ll tell you that too, and explain
-            what the low-priority items are.
-          </p>
         </div>
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="py-16 sm:py-24 bg-accent/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4 px-3 py-1 h-auto text-sm">
-              Pricing
-            </Badge>
-            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">
-              $500. No surprises.
-            </h2>
-          </div>
-          <div className="max-w-md mx-auto">
-            <Card className="bg-background border-primary/60 border-2 relative overflow-hidden">
-              <div className="absolute top-0 inset-x-0 h-1 bg-primary" />
-              <CardContent className="p-8 sm:p-10 flex flex-col">
-                <div className="mb-6">
-                  <h3 className="text-xl font-semibold mb-1">App Audit</h3>
-                  <p className="text-sm text-muted-foreground">48-hour turnaround from submission</p>
-                </div>
-                <div className="flex items-baseline gap-1 mb-8">
-                  <span className="text-5xl font-bold">$500</span>
-                  <span className="text-muted-foreground ml-1">flat</span>
-                </div>
-                <ul className="space-y-3 mb-8">
-                  {[
-                    "Manual review by a senior developer (not automated scanning)",
-                    "Written report: security, deployment, code quality, and fix-or-rebuild",
-                    "Prioritized issue list in plain English",
-                    "Estimated cost and timeline for each fix path",
-                    "30-minute walkthrough call (optional, included)",
-                    "Report is yours to keep — no obligation to proceed",
-                  ].map((feature) => (
-                    <li key={feature} className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <span className="text-sm text-muted-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="rounded-xl border border-primary/20 bg-primary/5 p-4 mb-8">
-                  <p className="text-sm text-foreground/80 leading-relaxed">
-                    If you proceed to{" "}
-                    <Link href="/app-rescue" className="text-primary hover:underline">
-                      App Rescue
-                    </Link>
-                    , the full $500 audit fee is credited toward your rescue quote. You&apos;re
-                    not paying for a diagnosis on top of the fix.
-                  </p>
-                </div>
-                <Button asChild size="lg" className="w-full rounded-full h-13 text-base">
-                  <Link href="/contacts?type=audit">
-                    Order the $500 Audit
-                    <ArrowUpRight size={16} className="ml-2" />
-                  </Link>
-                </Button>
-                <p className="text-xs text-muted-foreground mt-4 text-center leading-relaxed">
-                  Fixed price. No hourly billing. No scope creep. Payment upfront — you receive
-                  the report within 48 hours of submission.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      <Pricing
+        plans={auditPlan}
+        badgeText="Pricing"
+        heading="$500. No surprises."
+        footnote="Fixed price. No hourly billing. No scope creep. Payment upfront — you receive the report within 48 hours of submission. The $500 audit fee is credited toward App Rescue if you proceed."
+      />
 
       {/* FAQ */}
-      <ServiceFaq title="Questions before you order" items={faqItems} />
+      <Faq
+        items={faqItems}
+        badgeText="FAQ"
+        heading="Questions before you order"
+      />
 
       {/* Final CTA */}
-      <section className="py-16 sm:py-24 bg-accent/30">
-        <div className="max-w-7xl mx-auto sm:px-16 px-4">
-          <div className="relative overflow-hidden min-h-80 flex items-center justify-center px-6 border border-border rounded-3xl before:absolute before:w-full before:h-4/5 before:bg-linear-to-r before:from-sky-100 before:from-15% before:via-white before:via-55% before:to-amber-100 before:to-90% before:rounded-full before:top-24 before:blur-3xl before:-z-10 dark:before:from-sky-400/10 dark:before:from-40% dark:before:via-black dark:before:via-55% dark:before:to-amber-300/10 dark:before:to-60% dark:before:rounded-full dark:before:-z-10 py-16">
-            <div className="flex flex-col gap-6 items-center mx-auto text-center max-w-2xl">
-              <h2 className="text-3xl md:text-5xl font-semibold tracking-tight">
-                Know what&apos;s wrong{" "}
-                <span className="text-primary">before something breaks.</span>
-              </h2>
-              <p className="text-muted-foreground text-base sm:text-lg">
-                A senior developer reviews your app and delivers a written report in 48 hours.
-                Every vulnerability, every deployment risk, every code issue — documented and
-                prioritized. $500 flat.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 items-center">
-                <Button
-                  asChild
-                  size="lg"
-                  className="rounded-full px-8 h-13 text-base"
-                >
-                  <Link href="/contacts?type=audit">
-                    Order the $500 Audit
-                    <ArrowUpRight size={16} className="ml-2" />
-                  </Link>
-                </Button>
-                <Link
-                  href="/contacts"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4"
-                >
-                  Or ask us a question first →
-                </Link>
-              </div>
-              <p className="text-sm text-muted-foreground">
-                Fixed price · 48-hour turnaround · $500 credited toward rescue if you proceed
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CTA
+        heading="Know what's wrong before something breaks."
+        description="A senior developer reviews your app and delivers a written report in 48 hours. Every vulnerability, every deployment risk, every code issue — documented and prioritized. $500 flat."
+        buttonText="Order the $500 Audit"
+      />
 
       {/* Related Services */}
       <section className="py-8 sm:py-12 border-t border-border/50">
