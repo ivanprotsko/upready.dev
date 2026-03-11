@@ -2,15 +2,8 @@
 
 import { cn } from "@/lib/utils";
 import { LucideIcon, Plus } from "lucide-react";
-import { Instrument_Serif } from "next/font/google";
 import { useEffect, useRef } from "react";
 import { motion, useSpring, useTransform, useInView } from "motion/react";
-
-const instrumentSerif = Instrument_Serif({
-  subsets: ["latin"],
-  weight: ["400"],
-  style: ["italic"],
-});
 
 type aboutusData = {
   icon: LucideIcon;
@@ -87,10 +80,7 @@ const AboutUs = ({
                 >
                   <item.icon className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10" />
                   <span
-                    className={cn(
-                      "text-4xl font-normal",
-                      instrumentSerif.className
-                    )}
+                    className="text-4xl font-medium"
                   >
                     {item.title}
                   </span>
