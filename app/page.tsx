@@ -30,7 +30,7 @@ import {
   Rocket,
 } from "lucide-react";
 
-import HeroSection from "@/components/shadcn-space/blocks/hero-07/hero";
+import HeroSection from "@/components/shadcn-space/blocks/hero-01/hero";
 import Feature from "@/components/shadcn-space/blocks/feature-02/feature";
 import Statistic from "@/components/shadcn-space/blocks/statistics-06/statistics";
 import Pricing from "@/components/shadcn-space/blocks/pricing-02/pricing";
@@ -433,11 +433,8 @@ export default function HomePage() {
     <main>
       {/* Hero */}
       <HeroSection
-        badge="Senior Developers · Fixed Prices · You Own Everything"
-        heading="Senior developers."
-        headingHighlight="Fixed prices."
-        headingSuffix="You own everything."
-        description="We fix AI-built apps, build MVPs from scratch, and replace expensive SaaS with open-source alternatives you control."
+        heading="We fix AI-built apps, build MVPs from scratch, and replace expensive SaaS with open-source alternatives you control."
+        subheading="Senior developers. Fixed prices. You own everything."
         primaryCta={{ label: "Fix my app", href: "/app-rescue" }}
         secondaryCta={{ label: "Cut my SaaS bill", href: "#products" }}
         socialProof="50+ founders helped · Fixed price, no surprises · Full repo ownership guaranteed"
