@@ -4,7 +4,7 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
-import Footer from "@/components/shadcn-space/blocks/footer-01/footer";
+import Footer from "@/components/shadcn-space/blocks/footer-05/footer-upready";
 
 type Params = Promise<{ slug: string }>;
 

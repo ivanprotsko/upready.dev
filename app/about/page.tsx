@@ -12,7 +12,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import Footer from "@/components/shadcn-space/blocks/footer-03/footer";
+import Footer from "@/components/shadcn-space/blocks/footer-05/footer-upready";
 
 const principles = [
   {

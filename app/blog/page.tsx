@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
-import Footer from "@/components/shadcn-space/blocks/footer-01/footer";
+import Footer from "@/components/shadcn-space/blocks/footer-05/footer-upready";
 
 export const metadata: Metadata = {
   title: "Blog — Migration Guides & Self-Hosting Tips",

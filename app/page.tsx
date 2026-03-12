@@ -562,7 +562,7 @@ export default function HomePage() {
           >
             <Card className="p-6 sm:p-8 shadow-none rounded-2xl text-left bg-transparent h-full">
               <CardContent className="p-0 flex flex-col gap-4 h-full">
-                <Wrench className="w-7 h-7 text-primary" strokeWidth={1.5} />
+                <Wrench size={28} className="shrink-0 text-primary" />
                 <p className="text-xl font-semibold">Rescue AI-built app</p>
                 <p className="text-base italic text-muted-foreground">Your app works locally but breaks in production.</p>
                 <p className="text-base text-muted-foreground">
@@ -575,8 +575,8 @@ export default function HomePage() {
             </Card>
             <Card className="p-6 sm:p-8 shadow-none rounded-2xl text-left bg-transparent h-full">
               <CardContent className="p-0 flex flex-col gap-4 h-full">
-                <Rocket className="w-7 h-7 text-primary" strokeWidth={1.5} />
-                <p className="text-xl font-semibold">Launch MVPs from scratch</p>
+                <Rocket size={28} className="shrink-0 text-primary" />
+                <p className="text-xl font-semibold">Launch MVP from scratch</p>
                 <p className="text-base italic text-muted-foreground">{"From spec to launch in 1\u20133 weeks. 3 fixed tiers."}</p>
                 <p className="text-base text-muted-foreground">
                   $2500, $5000 or $7500. From scratch to launch. All infrastructure costs are included in the price.
@@ -588,7 +588,7 @@ export default function HomePage() {
             </Card>
             <Card className="p-6 sm:p-8 shadow-none rounded-2xl text-left bg-transparent h-full">
               <CardContent className="p-0 flex flex-col gap-4 h-full">
-                <Blocks className="w-7 h-7 text-primary" strokeWidth={1.5} />
+                <Blocks size={28} className="shrink-0 text-primary" />
                 <p className="text-xl font-semibold">Cure SaaS Addiction</p>
                 <p className="text-base italic text-muted-foreground">Replace with an open-source alternative app.</p>
                 <p className="text-base text-muted-foreground">

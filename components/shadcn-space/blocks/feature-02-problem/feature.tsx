@@ -71,8 +71,8 @@ const ProblemSection = ({
                     <Card className="py-10 h-full border-t-4 border-t-transparent bg-transparent shadow-none">
                       <CardContent className="px-8 flex flex-col gap-6">
                         <value.icon
-                          className="w-8 h-8 text-primary"
-                          strokeWidth={1.2}
+                          size={28}
+                          className="shrink-0 text-primary"
                         />
                         <div className="flex flex-col gap-3">
                           <h6 className="text-xl font-semibold whitespace-pre-line">

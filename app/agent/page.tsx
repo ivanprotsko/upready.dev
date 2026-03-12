@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Bot, MessageSquare, Shield, Zap } from "lucide-react";
 import Link from "next/link";
-import Footer from "@/components/shadcn-space/blocks/footer-03/footer";
+import Footer from "@/components/shadcn-space/blocks/footer-05/footer-upready";
 
 export default function AgentPage() {
   return (

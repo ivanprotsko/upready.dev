@@ -4,321 +4,317 @@ import {
   ShieldCheck,
   Table,
   Route,
-  CreditCard,
   Globe,
   FileText,
-  Rocket,
-  CodeXml,
-  Target,
-  ShoppingBag,
+  Server,
+  Search,
+  FileBarChart,
+  PenLine,
 } from "lucide-react";
 
+import { motion } from "motion/react";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/shadcn-space/blocks/hero-01/hero";
-import Feature from "@/components/shadcn-space/blocks/feature-02/feature";
+import Feature03 from "@/components/shadcn-space/blocks/feature-03/feature";
 import Pricing from "@/components/shadcn-space/blocks/pricing-02/pricing";
 import Faq from "@/components/shadcn-space/blocks/faq-01/faq";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
-import Footer from "@/components/shadcn-space/blocks/footer-03/footer";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
+import Footer from "@/components/shadcn-space/blocks/footer-05/footer-upready";
 
-/* ─── Data ──────────────────────────────────────────────── */
-
-const deliverablesData = [
-  {
-    icon: ShieldCheck,
-    title: "Real Authentication",
-    content:
-      "Email/password + Google OAuth. Sessions that persist. Role-based access. Not a hardcoded test login — a real auth system that survives production.",
-  },
-  {
-    icon: Table,
-    title: "Proper Database",
-    content:
-      "Structured tables, relationships, and access rules. Real data your users create — not hardcoded lists. Built on Supabase, scales to 10,000+ users.",
-  },
-  {
-    icon: Route,
-    title: "Core Business Logic",
-    content:
-      "Whatever makes your product work. Booking flows, marketplace listings, subscription logic, multi-user workflows. Scoped before we build.",
-  },
-  {
-    icon: CreditCard,
-    title: "Live Payments",
-    content:
-      "Stripe integration that actually processes money. One-time payments, subscriptions, or both. Webhooks configured. Live mode tested before delivery.",
-  },
-  {
-    icon: Globe,
-    title: "Production Deployment",
-    content:
-      'Deployed on Vercel with custom domain. Environment variables set. A pipeline you can use to push future updates. Not "works on my machine."',
-  },
-  {
-    icon: FileText,
-    title: "Full Code Ownership",
-    content:
-      "GitHub repo transferred to you. Supabase project under your account. Vercel under your account. Every credential documented. Zero lock-in.",
-  },
-];
-
-const audienceData = [
-  {
-    icon: Rocket,
-    title: "Non-technical founders",
-    content:
-      "You have the idea and the market insight. You need someone to build the technical foundation so you can focus on growing the business.",
-  },
-  {
-    icon: CodeXml,
-    title: "Stuck at 80%",
-    content:
-      "You've built something in Lovable, Bolt, or Cursor. It looks good but real users break it. Auth fails, payments don't work, data isn't persisting.",
-  },
-  {
-    icon: Target,
-    title: "Agency refugees",
-    content:
-      "Agencies quoted $15K–$50K and 3–6 months. You need the same result in weeks, not months, at a fraction of the cost.",
-  },
-  {
-    icon: ShoppingBag,
-    title: "Ready to charge",
-    content:
-      "You have users or customers waiting. You need a product that processes real payments and handles real accounts — not a demo.",
-  },
-];
-
-const faqItems = [
-  {
-    question: "Can you use my existing prototype, or does everything start over?",
-    answer:
-      "We evaluate it first. Most Lovable and Bolt prototypes have salvageable UI code and backend code that's faster to replace than fix. We keep what helps and replace what hurts. You never pay for a rewrite you didn't need.",
-  },
-  {
-    question: "How long does it actually take?",
-    answer:
-      "1–4 weeks from scope approval to delivery. Starter: 1–2 weeks. Standard: 2–3 weeks. Full: 3–4 weeks. The scope document takes 24–48 hours to prepare.",
-  },
-  {
-    question: "Why are you so much cheaper than agencies?",
-    answer:
-      "Agencies have offices, project managers, account managers, design reviews. You're paying for their structure, not your product. We use AI tools as our primary development stack — same output, 3–4x less cost, 3–4x faster.",
-  },
-  {
-    question: "What if my requirements change mid-build?",
-    answer:
-      "We pause and re-scope. Small changes: we absorb them. Large changes: we scope them separately. We'll never surprise you with a bill larger than the original estimate.",
-  },
-  {
-    question: "Do I own the code?",
-    answer:
-      "100%. GitHub repo transferred to your account. Supabase under your account. Vercel under your account. Every credential documented. You can hand it to any developer tomorrow. Zero lock-in.",
-  },
-  {
-    question: "What tech stack do you use?",
-    answer:
-      "Next.js for the frontend, Supabase for database and auth, Vercel for deployment, Stripe for payments. This stack handles most MVPs cleanly and has predictable scaling costs.",
-  },
-  {
-    question: "What happens after delivery?",
-    answer:
-      "Two revision rounds are included. For ongoing support, rates start at $50/hr (120+ hrs/month). Most founders come back within 4–8 weeks with the first list of things users are asking for.",
-  },
-];
+/* ─── Process Steps ────────────────────────────────────── */
 
 const processSteps = [
   {
     step: "01",
     title: "Describe your product",
     description:
-      "One paragraph from you. What does the first paying user do in your app, step by step? No spec doc needed.",
-    detail: "Your side. Takes 10 minutes.",
+      "One paragraph. What does the first paying user do in your app, step by step? No spec document needed. No wireframes. Just your idea in plain words.",
+    detail: "Takes you 10 minutes.",
   },
   {
     step: "02",
-    title: "We define exactly what we'll build",
+    title: "Discovery Week",
     description:
-      "We turn your description into a scope document. Which features are included, which are excluded, what the product looks like on delivery day. You approve it.",
-    detail: "24–48 hours from us.",
+      "We research your market, extract your value proposition, and build a product landing page you can show to users and investors. We test it with real people, collect feedback, and write a detailed technical specification with exact scope, timeline, and price.",
+    detail:
+      "$2,500 \u00B7 One week \u00B7 Landing page + spec + validation data are yours to keep.",
   },
   {
     step: "03",
-    title: "We build it",
+    title: "We build \u2014 you stay informed",
     description:
-      "Async development. No check-in meetings. Weekly progress updates. We build in the order that delivers the most value first — core features before polish.",
-    detail: "1–4 weeks depending on scope.",
+      "1\u20133 weeks of async development. $2,500 per week, paid at the start of each week. Progress reports every 2\u20133 days. Visual demos when there\u2019s something to show. You can pause between weeks if you need time.",
+    detail: "No meetings. No check-ins. Pause anytime between weeks.",
   },
   {
     step: "04",
-    title: "You get a working product",
+    title: "You see it working \u2014 then we hand it over",
     description:
-      "Deployed to production, tested with real user scenarios, GitHub repo transferred, all credentials documented. Everything you need to own it.",
-    detail: "Delivery day.",
+      "Deployed to a staging environment. You test it, request revisions, confirm it matches the spec. After the final weekly payment \u2014 repo transferred to your GitHub, deployed to your domain, all credentials documented and handed over.",
+    detail:
+      "Code transfers after final payment. Everything under YOUR accounts.",
   },
 ];
+
+/* ─── Pricing ──────────────────────────────────────────── */
 
 const pricingPlans = [
   {
-    plan_name: "Starter MVP",
-    plan_descp: "Validate one core idea",
-    plan_price: "$2,500",
-    plan_feature: [
-      "Landing page or simple interface",
-      "One core user action",
-      "Basic authentication",
-      "Simple data storage",
-      "Production deployment",
-    ],
-    plan_recommended: false,
-    plan_cta: "Get Started",
-    plan_href: "/contacts",
-  },
-  {
-    plan_name: "Standard MVP",
-    plan_descp: "A real product to charge for",
+    plan_name: "Starter",
+    plan_descp: "Validate and launch fast",
     plan_price: "$5,000",
     plan_feature: [
-      "Auth (email + Google OAuth)",
-      "3–5 core features",
+      "Discovery Week included (landing page + spec + validation)",
+      "1 build week",
+      "Authentication (email + password)",
+      "1\u20132 core features",
+      "Supabase database",
+      "Production deployment (Vercel, custom domain, SSL)",
+      "Full code ownership",
+      "2 weeks total",
+    ],
+    plan_recommended: false,
+    plan_cta: "Describe Your Product",
+    plan_href: "/contacts?service=mvp-build",
+  },
+  {
+    plan_name: "Standard",
+    plan_descp: "A real product users will pay for",
+    plan_price: "$7,500",
+    plan_feature: [
+      "Everything in Starter",
+      "2 build weeks",
+      "Auth with Google OAuth",
+      "3\u20135 core features",
       "User dashboard or profile",
       "Role separation if needed",
-      "Custom domain deployment",
+      "API integrations (1\u20132 external services)",
+      "3 weeks total",
     ],
     plan_recommended: true,
     plan_badge: "Most Popular",
-    plan_cta: "Get Started",
-    plan_href: "/contacts",
+    plan_cta: "Describe Your Product",
+    plan_href: "/contacts?service=mvp-build",
   },
   {
-    plan_name: "Full MVP",
+    plan_name: "Full",
     plan_descp: "Production-ready on day one",
-    plan_price: "$7,500",
+    plan_price: "$10,000",
     plan_feature: [
+      "Everything in Standard",
+      "3 build weeks",
       "Full auth (email + OAuth + magic link)",
-      "5–8 core features",
+      "5\u20138 core features",
       "Stripe payments (one-time or subscription)",
       "Multi-user roles & permissions",
       "Admin panel + email notifications",
+      "4 weeks total",
     ],
     plan_recommended: false,
-    plan_cta: "Get Started",
-    plan_href: "/contacts",
+    plan_cta: "Describe Your Product",
+    plan_href: "/contacts?service=mvp-build",
   },
 ];
 
-/* ─── Page ──────────────────────────────────────────────── */
+/* ─── FAQ ──────────────────────────────────────────────── */
+
+const faqItems = [
+  {
+    question: "What happens in the Discovery Week?",
+    answer:
+      "The first week is product work, not coding. We extract your value proposition, research your positioning, and build a product landing page you can show to potential users and investors. We test it with real people and collect their questions and feedback. By Friday you have: a working landing page, validation data, and a technical specification with exact scope, timeline, and price for the build. Discovery Week costs $2,500 and is included in every tier. If you decide not to proceed with the build, you keep everything \u2014 the landing page, the spec, the validation data.",
+  },
+  {
+    question: "How do I know you\u2019re legit?",
+    answer:
+      "Judge us by how we communicate before you pay anything. When we discuss your project, you\u2019ll see how we think, what questions we ask, and whether we actually understand your problem. The scope document is a detailed technical specification \u2014 if anything goes wrong, any developer can pick it up and continue. You pay weekly, so your maximum risk at any point is one week of work.",
+  },
+  {
+    question: "What if I\u2019m not happy with the result?",
+    answer:
+      "Two revision rounds are included in every tier. If the product doesn\u2019t match the approved specification, we fix it at no extra cost. If you want changes beyond the original scope, we re-scope and quote before continuing \u2014 no surprise bills. You can also pause between build weeks to reassess.",
+  },
+  {
+    question: "Can you use my existing prototype from Lovable, Bolt, or Cursor?",
+    answer:
+      "We evaluate it during Discovery Week. Most prototypes have salvageable UI code and backend code that\u2019s faster to replace than fix. We keep what works and replace what doesn\u2019t. You never pay for a rewrite you didn\u2019t need.",
+  },
+  {
+    question: "What if my requirements change mid-build?",
+    answer:
+      "Small changes: we absorb them. Large changes: we pause, re-scope, and you approve the new scope before we continue. Because you pay weekly, you always have a natural decision point \u2014 continue, adjust, or pause.",
+  },
+  {
+    question: "What if my project is simpler than expected?",
+    answer:
+      "You get a better product, not a bigger bill. If your app can be built in fewer weeks than expected, we\u2019ll recommend the smaller tier. If we finish the core early within a paid week, we use the remaining time to polish and improve \u2014 not charge for work that isn\u2019t needed. We recommend the tier that fits, not the one that costs more.",
+  },
+  {
+    question: "What if a third-party integration needs setup on my end?",
+    answer:
+      "Some integrations \u2014 like Stripe payments \u2014 require account verification on your side. We configure the code and test everything in test mode during the build. Going live is straightforward and documented step by step. If your verification takes longer than the build week, we move on to other features. Your scope includes the integration code \u2014 activating it is usually a 30-minute task once your accounts are ready.",
+  },
+  {
+    question: "What are the ongoing costs after launch?",
+    answer:
+      "Vercel: free tier covers most MVPs (upgrade from $20/mo if needed). Supabase: free tier up to 50,000 rows (then $25/mo). Domain: ~$12/year. Stripe: 2.9% + $0.30 per transaction. Total: $0\u2013$50/month for most early-stage products. We build on free tiers deliberately \u2014 your MVP runs at zero cost until you scale.",
+  },
+];
+
+/* ─── Page ─────────────────────────────────────────────── */
 
 export default function BuildPage() {
   return (
     <main>
       {/* Hero */}
       <HeroSection
-        headingLine1="You've Already Tried."
-        headingLine2="We Finish What Others"
-        headingItalic="Couldn't."
-        subheading="AI tools got you 80% there. The freelancer ghosted at 60%. The agency quoted $30K and four months. We pick up where they left off — 1–4 weeks, flat fee, working code on delivery."
-        buttonText="Describe Your Product"
+        headingLine1="Everything you need to know"
+        headingLine2=""
+        headingItalic="before we start."
+        subheading={
+          "What\u2019s included, how we build it, and what each tier costs."
+        }
+        buttonText=""
       />
 
-      {/* The 70% Problem */}
-      <section className="py-16 sm:py-24 bg-accent/30">
-        <div className="max-w-3xl mx-auto px-4 sm:px-8">
-          <Badge variant="outline" className="mb-4 px-3 py-1 h-auto text-sm">
-            Sound Familiar?
-          </Badge>
-          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-8">
-            You&apos;ve Been Here Before.{" "}
-            <span className="text-primary">This Time It Gets Done.</span>
-          </h2>
-          <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
-            <p>
-              You tried the AI builders. Lovable, Bolt, Cursor — maybe all
-              three. Got a prototype that looked great in the preview. Then real
-              users showed up, and everything fell apart.
-            </p>
-            <p>
-              So you hired a freelancer. They were responsive for two weeks,
-              then replies slowed, then stopped. You&apos;re left with
-              half-finished code you can&apos;t maintain and an invoice you
-              can&apos;t dispute.
-            </p>
-            <p>
-              Maybe you talked to an agency. They quoted $20K–$50K, a
-              three-month timeline, and a discovery phase before anything gets
-              built. You don&apos;t have that kind of runway.
-            </p>
-          </div>
-          <div className="mt-8 space-y-4">
-            <blockquote className="border-l-4 border-primary pl-6 py-2 text-muted-foreground italic">
-              &ldquo;I&apos;ve spent weeks prompting and the app is 80% done but
-              I can&apos;t finish it.&rdquo;
-              <span className="block text-sm not-italic mt-1 text-muted-foreground/70">
-                — Founder in r/lovable
-              </span>
-            </blockquote>
-            <blockquote className="border-l-4 border-primary pl-6 py-2 text-muted-foreground italic">
-              &ldquo;Hired a dev on Upwork. $3K later I have a repo I
-              can&apos;t deploy and a Stripe integration that throws
-              errors.&rdquo;
-              <span className="block text-sm not-italic mt-1 text-muted-foreground/70">
-                — Founder in r/SaaS
-              </span>
-            </blockquote>
-          </div>
-          <p className="mt-8 text-lg font-medium text-foreground">
-            We&apos;ve seen this pattern dozens of times. We know exactly
-            where it breaks, and we know how to finish it.
-          </p>
-        </div>
-      </section>
-
-      {/* Deliverables */}
-      <Feature
-        featureData={deliverablesData}
-        badgeText="What You Get"
-        heading="What We Build That AI Tools Leave Out"
-        columns={3}
+      {/* Discovery Week */}
+      <Feature03
+        cards={[
+          {
+            icon: Search,
+            title: "Product Research",
+            description:
+              "We extract your value proposition, understand your audience, and identify what makes your product different. You answer a structured questionnaire \u2014 we do the thinking.",
+          },
+          {
+            icon: PenLine,
+            title: "Product Landing Page",
+            description:
+              "A working page that presents your product as if it already exists. Show it to potential users, investors, or partners. Use it for validation interviews.",
+          },
+          {
+            icon: FileBarChart,
+            title: "Market Validation",
+            description:
+              "Test the landing page with real people. Collect their questions, objections, and interest signals. Know whether people want this before you invest in code.",
+          },
+          {
+            icon: FileText,
+            title: "Technical Specification",
+            description:
+              "Exact scope, features, timeline, and price. The spec becomes the agreement \u2014 what we build, what we don\u2019t, and how much it costs. You approve before any code is written.",
+          },
+        ]}
+        badgeText="Week One: Discovery"
+        heading="Before we write code, we understand your product."
+        description="Every project starts with a $2,500 Discovery Week. You get a landing page, validation data, and a detailed spec \u2014 regardless of whether you proceed to build."
+        footnote=""
+        buttonText=""
       />
 
-      {/* Who It's For */}
-      <Feature
-        featureData={audienceData}
-        badgeText="Who It's For"
-        heading="Founders who need more than a prototype"
-        columns={4}
+      {/* What We Build */}
+      <Feature03
+        cards={[
+          {
+            icon: ShieldCheck,
+            title: "Real Authentication",
+            description:
+              "Email/password + OAuth. Sessions that persist across devices. Role-based access when needed. Not a hardcoded test login \u2014 a production auth system.",
+          },
+          {
+            icon: Table,
+            title: "Proper Database",
+            description:
+              "Structured tables, relationships, and row-level security. Real data your users create \u2014 not hardcoded lists. Built on Supabase, scales to 10,000+ users.",
+          },
+          {
+            icon: Route,
+            title: "Core Business Logic",
+            description:
+              "Whatever makes YOUR product work. Booking flows, marketplace listings, multi-step workflows. Scoped in the spec, agreed before we build.",
+          },
+          {
+            icon: Globe,
+            title: "Production Deployment",
+            description:
+              "Custom domain, SSL, environment variables, CI/CD pipeline. Deployed on Vercel, tested with real user scenarios. Not \u201Cworks on my machine.\u201D",
+          },
+          {
+            icon: FileText,
+            title: "Full Code Ownership",
+            description:
+              "GitHub repo under YOUR account. Supabase under YOUR account. Vercel under YOUR account. Every credential documented. Hand it to any developer tomorrow.",
+          },
+          {
+            icon: Server,
+            title: "Zero Ongoing Fees",
+            description:
+              "Vercel free tier + Supabase free tier = $0/month. No hosting bills, no platform fees, no surprise invoices. Your MVP runs free until you scale.",
+          },
+        ]}
+        badgeText="What We Build"
+        heading="Six things every build includes."
+        description=""
+        footnote=""
+        buttonText=""
       />
 
-      {/* Process */}
-      <section className="py-16 sm:py-24 bg-accent/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-8">
-          <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4 px-3 py-1 h-auto text-sm">
-              Process
+      {/* How It Works */}
+      <section className="py-16 sm:py-24">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8 xl:px-16">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.8,
+              ease: [0.21, 0.47, 0.32, 0.98],
+            }}
+            className="text-center mb-12"
+          >
+            <Badge
+              variant="outline"
+              className="px-3 py-1 h-7 text-sm font-normal mb-6"
+            >
+              How It Works
             </Badge>
-            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">
-              Four Steps. Scope Before Build.
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight">
+              Four steps. You have control at every one.
             </h2>
-          </div>
+          </motion.div>
           <div className="max-w-3xl mx-auto space-y-6">
-            {processSteps.map((item) => (
-              <Card key={item.step} className="border-none bg-background">
-                <CardContent className="p-8 flex gap-6">
-                  <span className="text-4xl font-bold text-primary/20 shrink-0">
-                    {item.step}
-                  </span>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                    <p className="text-muted-foreground mb-2">
-                      {item.description}
-                    </p>
-                    <p className="text-sm text-primary font-medium">
-                      {item.detail}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
+            {processSteps.map((item, index) => (
+              <motion.div
+                key={item.step}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.6,
+                  delay: index * 0.1,
+                  ease: [0.21, 0.47, 0.32, 0.98],
+                }}
+              >
+                <Card className="shadow-none bg-transparent">
+                  <CardContent className="p-6 sm:p-8 flex gap-6">
+                    <span className="text-4xl font-bold text-primary/20 shrink-0">
+                      {item.step}
+                    </span>
+                    <div>
+                      <h3 className="text-xl font-semibold mb-2">
+                        {item.title}
+                      </h3>
+                      <p className="text-muted-foreground mb-2">
+                        {item.description}
+                      </p>
+                      <p className="text-sm text-primary font-medium">
+                        {item.detail}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -328,26 +324,29 @@ export default function BuildPage() {
       <Pricing
         plans={pricingPlans}
         badgeText="Pricing"
-        heading="Three Scopes. Pick Where You Are."
-        subtitle="Not sure which tier fits? Describe your product and we'll tell you."
-        footnote="Payment: 50% upfront to start, 50% on delivery. You see the working product before the final payment."
+        heading={
+          "Three tiers. The Discovery Week tells you which one\u00A0fits."
+        }
+        subtitle="Not sure? Describe your product \u2014 the spec will recommend the right tier."
+        footnote="Every project starts with a $2,500 Discovery Week (included in all tiers). Discovery Week is also available standalone. Payment: $2,500 per week, paid at the start of each week. USDT/USDC or PayPal."
       />
 
       {/* FAQ */}
       <Faq
         items={faqItems}
         badgeText="FAQ"
-        heading="Questions founders ask before starting"
+        heading="Questions founders ask before paying"
       />
 
       {/* CTA */}
       <CTA
-        heading="From Idea to Working Product."
-        description="Agencies charge $15,000–$50,000 and take 3–6 months. We charge $2,500–$7,500 and take 1–4 weeks. Describe your product — we'll scope it, price it, and tell you if we're the right fit."
+        heading="Ready? Describe your product."
+        description={
+          "One paragraph is enough. We\u2019ll get back to you within 24 hours."
+        }
         buttonText="Describe Your Product"
       />
 
-      {/* Footer */}
       <Footer />
     </main>
   );

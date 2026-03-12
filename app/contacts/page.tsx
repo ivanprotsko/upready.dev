@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import { Check, Mail, Clock, Shield, Loader2 } from "lucide-react";
-import Footer from "@/components/shadcn-space/blocks/footer-03/footer";
+import Footer from "@/components/shadcn-space/blocks/footer-05/footer-upready";
 
 const serviceTypes = [
   { value: "audit", label: "Tech Audit — $500" },

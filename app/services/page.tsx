@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import Footer from "@/components/shadcn-space/blocks/footer-03/footer";
+import Footer from "@/components/shadcn-space/blocks/footer-05/footer-upready";
 
 const products = [
   {

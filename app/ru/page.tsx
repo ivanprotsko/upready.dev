@@ -38,7 +38,7 @@ import AboutUs from "@/components/shadcn-space/blocks/about-us-01/about-us";
 import SocialProof from "@/components/shadcn-space/blocks/testimonial-01/testimonial";
 import CTA from "@/components/shadcn-space/blocks/cta-01/cta";
 import ServiceFaq from "@/components/services/service-faq";
-import Footer from "@/components/shadcn-space/blocks/footer-03/footer";
+import Footer from "@/components/shadcn-space/blocks/footer-05/footer-upready";
 
 /* ─── Data ──────────────────────────────────────────────── */
 

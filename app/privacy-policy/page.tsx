@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Footer from "@/components/shadcn-space/blocks/footer-03/footer";
+import Footer from "@/components/shadcn-space/blocks/footer-05/footer-upready";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
