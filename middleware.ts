@@ -1,6 +1,7 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-const MAINTENANCE_MODE = false;
+const MAINTENANCE_MODE = true;
+const PREVIEW_SECRET = "upready2026";
 
 const maintenanceHtml = `<!DOCTYPE html>
 <html lang="en">
@@ -50,8 +51,29 @@ const maintenanceHtml = `<!DOCTYPE html>
 </body>
 </html>`;
 
-export function middleware() {
+export function middleware(request: NextRequest) {
   if (!MAINTENANCE_MODE) return NextResponse.next();
+
+  const { searchParams } = request.nextUrl;
+  const previewParam = searchParams.get("preview");
+  const previewCookie = request.cookies.get("preview")?.value;
+
+  // First visit with ?preview=secret — set cookie and redirect without param
+  if (previewParam === PREVIEW_SECRET) {
+    const url = request.nextUrl.clone();
+    url.searchParams.delete("preview");
+    const response = NextResponse.redirect(url);
+    response.cookies.set("preview", PREVIEW_SECRET, {
+      httpOnly: true,
+      maxAge: 60 * 60 * 24 * 7, // 7 days
+    });
+    return response;
+  }
+
+  // Has valid cookie — let through
+  if (previewCookie === PREVIEW_SECRET) {
+    return NextResponse.next();
+  }
 
   return new NextResponse(maintenanceHtml, {
     status: 503,
