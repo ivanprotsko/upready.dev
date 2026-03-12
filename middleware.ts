@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const MAINTENANCE_MODE = false;
+const MAINTENANCE_MODE = true;
 
 const maintenanceHtml = `<!DOCTYPE html>
 <html lang="en">
